@@ -5,7 +5,7 @@ Created on Sat Feb 10 23:00:20 2024
 @author: Maria Laura
 
 Este programa que hace el ajuste de curva sinusoidal para todos los archivos 
-y devulve un csv con los parametros de la funcion de ajuste de cada uno
+y devuelve un csv con los parametros de la funcion de ajuste de cada uno
 """
 import csv
 import numpy as np
