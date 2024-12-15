@@ -24,7 +24,7 @@ const int dataRate = 3300; // SPS
 Adafruit_ADS1015 ads;
 
 // FFT parameters
-const uint16_t samples = 1024; // Número de muestras (debe ser una potencia de 2)
+const uint16_t samples = 256; // Número de muestras (debe ser una potencia de 2)
 const double samplingFrequency = 3300; // Frecuencia de muestreo en Hz
 double vReal[samples];
 double vImag[samples];
