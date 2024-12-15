@@ -1,0 +1,117 @@
+/// este código va en el arduino y general la señal con el AD9833, recibe una señal digital del ADS1015 y la analiza usando fourier para obtener la freucencia y amplitud de la señal
+
+#include <ArduinoFFT.h>
+#include <SPI.h>
+#include <Wire.h>
+#include <Adafruit_ADS1015.h>
+
+// Pines para el AD9833
+#define AD9833_FSYNC 10
+#define AD9833_SDATA 11
+#define AD9833_SCLK 13
+
+// Frecuencia inicial y final
+float f = 1000.0; // Frecuencia inicial en Hz
+float f_final = 5000.0; // Frecuencia final en Hz
+
+// Incremento de frecuencia
+float f_inc = 0.004; // Incremento de frecuencia en Hz, la resolución de frecuencia de AD9833
+
+// Data rate del ADS1015
+const int dataRate = 3300; // SPS
+
+// Crear objeto ADS1015
+Adafruit_ADS1015 ads;
+
+// FFT parameters
+const uint16_t samples = 1024; // Número de muestras (debe ser una potencia de 2)
+const double samplingFrequency = 3300; // Frecuencia de muestreo en Hz
+double vReal[samples];
+double vImag[samples];
+ArduinoFFT FFT = ArduinoFFT(vReal, vImag, samples, samplingFrequency);
+
+void setup() {
+  // Inicializar comunicación serial
+  Serial.begin(115200);
+
+  // Inicializar pines del AD9833 como salida
+  pinMode(AD9833_FSYNC, OUTPUT);
+  pinMode(AD9833_SDATA, OUTPUT);
+  pinMode(AD9833_SCLK, OUTPUT);
+
+  // Inicializar el ADS1015
+  ads.begin();
+  ads.setDataRate(dataRate);
+}
+
+void loop() {
+  // Generar señal sinusoidal con el AD9833
+  generarSenal(f);
+
+  // Adquirir datos del ADS1015
+  for (int i = 0; i < samples; i++) {
+    vReal[i] = ads.readADC_SingleEnded(0);
+    vImag[i] = 0; // Imaginary part is zero for real signals
+    
+  }
+
+  // Ajustar curva sinusoidal
+  float amplitud, frecuencia;
+  ajusteSinusoidal(vReal, samples, amplitud, frecuencia);
+
+  // Guardar datos en CSV
+  Serial.print(frecuencia);
+  Serial.print(",");
+  Serial.println(amplitud);
+
+  // Incrementar frecuencia
+  f += f_inc;
+
+  // Verificar si se ha alcanzado la frecuencia final
+  if (f >= f_final) {
+    // Terminar el bucle
+    while (1);
+  }
+
+}
+
+// Función para generar una señal sinusoidal con el AD9833
+void generarSenal(float frecuencia) {
+  // Calcular el valor de frecuencia para el AD9833
+  long freq = frecuencia * pow(2, 28) / 125000000;
+
+  // Enviar datos al AD9833
+  for (int i = 0; i < 4; i++) {
+    digitalWrite(AD9833_FSYNC, LOW);
+    for (int b = 0; b < 16; b++) {
+      digitalWrite(AD9833_SDATA, (freq >> (15 - b)) & 1);
+      digitalWrite(AD9833_SCLK, HIGH);
+      digitalWrite(AD9833_SCLK, LOW);
+    }
+    digitalWrite(AD9833_FSYNC, HIGH);
+  }
+}
+
+// Función para ajustar la curva sinusoidal y calcular la amplitud y frecuencia
+void ajusteSinusoidal(double* vReal, uint16_t samples, float& amplitud, float& frecuencia) {
+  FFT.Windowing(FFT_WIN_TYP_HAMMING, FFT_FORWARD); // Aplicar ventana de Hamming
+  FFT.Compute(FFT_FORWARD); // Realizar FFT
+  FFT.ComplexToMagnitude(); // Convertir a magnitud
+
+  double peak = 0; // Valor pico inicializado a 0
+  uint16_t peakIndex = 0; // Índice del valor pico
+
+  // Buscar el valor pico en el espectro
+  for (uint16_t i = 1; i < (samples / 2); i++) {
+    if (vReal[i] > peak) {
+      peak = vReal[i];
+      peakIndex = i;
+    }
+  }
+
+  // Calcular la frecuencia del valor pico
+  frecuencia = (peakIndex * samplingFrequency) / samples;
+
+  // Calcular la amplitud del valor pico
+  amplitud = peak * 2 / samples; // Escalar la magnitud para obtener la amplitud real
+}
