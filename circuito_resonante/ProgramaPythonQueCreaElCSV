@@ -1,0 +1,33 @@
+import serial
+import csv
+
+# Configuración del puerto serial
+puerto_serial = serial.Serial('COM3', 115200, timeout=1)  # Reemplaza 'COM3' con el puerto de tu Arduino
+archivo_csv = 'datos_arduino.csv'  # Nombre del archivo CSV
+
+# Encabezados del archivo CSV
+encabezados = ['Frecuencia', 'Voltaje']
+
+# Crear y abrir el archivo CSV para escritura
+with open(archivo_csv, 'w', newline='') as archivo:
+    escritor_csv = csv.writer(archivo)
+    escritor_csv.writerow(encabezados)  # Escribir los encabezados
+
+    print("Escuchando datos desde el Arduino...")
+
+    try:
+        while True:
+            linea = puerto_serial.readline().decode('utf-8').rstrip()  # Leer una línea del puerto serial
+            if linea:  # Verificar si la línea no está vacía
+                try:
+                    frecuencia, voltaje = linea.split(',')  # Dividir la línea en frecuencia y voltaje
+                    frecuencia = float(frecuencia)
+                    voltaje = float(voltaje)
+                    escritor_csv.writerow([frecuencia, voltaje])  # Escribir los datos en el archivo CSV
+                    print(f"Frecuencia: {frecuencia}, Voltaje: {voltaje}")  # Imprimir los datos en la consola
+                except ValueError:
+                    print(f"Error al procesar la línea: {linea}")  # Imprimir un mensaje de error
+    except KeyboardInterrupt:
+        print("\nDetenido por el usuario. Datos guardados en", archivo_csv)
+    finally:
+        puerto_serial.close()  # Cerrar el puerto serial
