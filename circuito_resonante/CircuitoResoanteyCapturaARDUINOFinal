@@ -6,20 +6,20 @@
 #include <SPI.h>
 #include <MD_AD9833.h> // Asegúrate de instalar una librería AD9833( MD_AD9833 by majicDesigns)
 
+// Frecuencia inicial y final
+
+float f; // Frecuencia inicial en Hz
+
+float f_final; // Frecuencia final en Hz
+// Incremento de frecuencia
+
+float f_inc; // Incremento de frecuencia en Hz, la resolución de frecuencia de AD9833
 // Pines para el AD9833
 const uint8_t PIN_DATA = 11; ///< SPI Data pin number
 const uint8_t PIN_CLK = 13;  ///< SPI Clock pin number
 const uint8_t PIN_FSYNC = 10; ///< SPI Load pin number (FSYNC in AD9833 usage)
 
 MD_AD9833 AD(PIN_FSYNC); // Hardware SPI
-
-
-// Frecuencia inicial y final
-float f = 1000.0; // Frecuencia inicial en Hz
-float f_final = 5000.0; // Frecuencia final en Hz
-
-// Incremento de frecuencia
-float f_inc = 0.004; // Incremento de frecuencia en Hz, la resolución de frecuencia de AD9833
 
 // Configuración de pines
 const int pinVoltaje = A0;
@@ -35,6 +35,18 @@ void setup() {
 //  configura el transistor
   pinMode(pinTransistor, OUTPUT);
   digitalWrite(pinTransistor, HIGH); // Transistor apagado
+
+  // Esperar a que los datos estén disponibles
+  while (Serial.available() == 0);
+
+  // Leer los valores desde el puerto serial
+  f = Serial.parseFloat();
+  while (Serial.read() != ','); // Esperar la coma
+
+  f_final = Serial.parseFloat();
+  while (Serial.read() != ','); // Esperar la coma
+
+  f_inc = Serial.parseFloat(); //Incremento de frecuencia en Hz, la resolución de frecuencia de AD9833
 
 }
 
