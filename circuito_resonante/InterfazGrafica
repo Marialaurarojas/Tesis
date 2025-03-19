@@ -1,0 +1,115 @@
+"""codigo de python que es la interfaz gráfica
+el usuario introducira los valores de frecuencia inicial (f) , 
+frecuencia final (f_final) y el incremento de frecuencia (f_inc),
+que usará el arduino en su programa, así mismo calculará el número
+de pasos N y los mostrará en pantalla, usando la ecuación N = (f - f_final) / f_inc.
+finalmente pedirá al usuario el nombre que se le quiere dar al archivo csv
+""
+
+import tkinter as tk
+from tkinter import messagebox
+import serial
+import csv
+import threading
+
+class ArduinoDataLogger:
+    def __init__(self, master):
+        self.master = master
+        master.title("Control Arduino y Datos CSV")
+
+        # Entradas para la frecuencia
+        tk.Label(master, text="Frecuencia Inicial (Hz):").grid(row=0, column=0)
+        self.f = tk.Entry(master)
+        self.f.grid(row=0, column=1)
+
+        tk.Label(master, text="Frecuencia Final (Hz):").grid(row=1, column=0)
+        self.f_final = tk.Entry(master)
+        self.f_final.grid(row=1, column=1)
+
+        tk.Label(master, text="Incremento de Frecuencia (Hz):").grid(row=2, column=0)
+        self.f_inc = tk.Entry(master)
+        self.f_inc.grid(row=2, column=1)
+
+        # Cálculo de pasos N
+        self.btn_calcular = tk.Button(master, text="Calcular Pasos (N)", command=self.calcular_pasos)
+        self.btn_calcular.grid(row=3, column=0, columnspan=2)
+
+        tk.Label(master, text="Pasos (N):").grid(row=4, column=0)
+        self.lbl_pasos = tk.Label(master, text="")
+        self.lbl_pasos.grid(row=4, column=1)
+
+        # Entrada para el nombre del archivo CSV
+        tk.Label(master, text="Nombre del Archivo CSV:").grid(row=5, column=0)
+        self.archivo_csv = tk.Entry(master)
+        self.archivo_csv.grid(row=5, column=1)
+
+        # Botón para iniciar el proceso
+        self.btn_iniciar = tk.Button(master, text="Iniciar Proceso", command=self.iniciar_proceso)
+        self.btn_iniciar.grid(row=6, column=0, columnspan=2)
+
+        # Variables para control de hilo
+        self.hilo_ejecutando = False
+        self.hilo = None
+
+    def calcular_pasos(self):
+        try:
+            f = float(self.f.get())
+            f_final = float(self.f_final.get())
+            f_inc = float(self.f_inc.get())
+            pasos = abs(int((f_final - f) / f_inc))  # Asegura N positivo
+            self.lbl_pasos.config(text=str(pasos))
+        except ValueError:
+            messagebox.showerror("Error", "Ingresa valores numéricos válidos.")
+
+    def iniciar_proceso(self):
+        if self.hilo_ejecutando:
+            messagebox.showinfo("Información", "El proceso ya está en ejecución.")
+            return
+
+        try:
+            f = float(self.f.get())
+            f_final = float(self.f_final.get())
+            f_inc = float(self.f_inc.get())
+            archivo_csv = self.archivo_csv.get() + ".csv"  # Asegura extensión .csv
+
+            self.hilo = threading.Thread(target=self.ejecutar_arduino, args=(f, f_final, f_inc, archivo_csv))
+            self.hilo.start()
+            self.hilo_ejecutando = True
+
+        except ValueError:
+            messagebox.showerror("Error", "Ingresa valores válidos.")
+
+    def ejecutar_arduino(self, f, f_final, f_inc, archivo_csv):
+        try:
+            puerto_serial = serial.Serial('COM3', 115200, timeout=1)  # Reemplaza 'COM3' con tu puerto
+            encabezados = ['Frecuencia', 'Voltaje']
+
+            with open(archivo_csv, 'w', newline='') as archivo:
+                escritor_csv = csv.writer(archivo)
+                escritor_csv.writerow(encabezados)
+
+                # Envía parámetros al Arduino
+                puerto_serial.write(f"{f},{f_final},{f_inc}\n".encode())
+
+                while True:
+                    linea = puerto_serial.readline().decode('utf-8').rstrip()
+                    if linea:
+                        try:
+                            frecuencia, voltaje = linea.split(',')
+                            frecuencia = float(frecuencia)
+                            voltaje = float(voltaje)
+                            escritor_csv.writerow([frecuencia, voltaje])
+                        except ValueError:
+                            print(f"Error al procesar: {linea}")
+
+            puerto_serial.close()
+
+        except serial.SerialException as e:
+            messagebox.showerror("Error", f"Error de puerto serial: {e}")
+        finally:
+            self.hilo_ejecutando = False
+            messagebox.showinfo("Información", "Proceso finalizado.")
+
+root = tk.Tk()
+app = ArduinoDataLogger(root)
+root.mainloop()
