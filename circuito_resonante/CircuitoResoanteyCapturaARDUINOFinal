@@ -40,6 +40,7 @@ void setup() {
 //  configura el transistor
   pinMode(pinTransistor, OUTPUT);
   digitalWrite(pinTransistor, HIGH); // Transistor apagado
+  Serial.println("Arduino listo"); // Mensaje de inicio
 }
 
 void loop() {
@@ -51,6 +52,8 @@ void loop() {
     while (Serial.read() != ','); // Esperar la coma
 
     f_inc = Serial.parseFloat(); // Incremento de frecuencia en Hz, la resolución de frecuencia de AD9833
+    while (Serial.read() != '\n') ///(agregar)
+      ; // Espera el salto de línea
     procesandoDatos = true;
   }
 
@@ -69,9 +72,7 @@ void loop() {
          float voltaje = lecturaAnalogica * (5.0 / 1023.0); // Convierte a voltaje
 
   // Envía los datos por el puerto serie
-         Serial.print(f);
-         Serial.print(",");
-         Serial.println(voltaje);
+         Serial.println(String(f) + "," + String(voltaje));
 
   // Descarga el capacitor
          digitalWrite(pinTransistor, LOW);
