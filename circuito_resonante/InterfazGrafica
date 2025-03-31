@@ -81,7 +81,12 @@ class ArduinoDataLogger:
 
     def ejecutar_arduino(self, f, f_final, f_inc, archivo_csv):
         try:
-            puerto_serial = serial.Serial('COM3', 115200, timeout=1)  # Reemplaza 'COM3' con tu puerto
+            puerto_serial = serial.Serial('COM3', 115200, timeout=2)  # Reemplaza 'COM3' con tu puerto
+            # Espera el mensaje de inicio del Arduino
+            print("Esperando mensaje de inicio del Arduino...")
+            arduino_inicio = puerto_serial.readline().decode('utf-8').rstrip()
+            print(f"Arduino dice: {arduino_inicio}")
+            
             encabezados = ['Frecuencia', 'Voltaje']
 
             with open(archivo_csv, 'w', newline='') as archivo:
@@ -91,9 +96,12 @@ class ArduinoDataLogger:
                 # Envía parámetros al Arduino
                 puerto_serial.write(f"{f},{f_final},{f_inc}\n".encode())
 
-                while True:
+                while f < f_final:  # Mientras haya algo en el buffer de entrada
                     linea = puerto_serial.readline().decode('utf-8').rstrip()
+                    print(f"Línea recibida: {linea}")  # Para depuración
+
                     if linea:
+                        f+= f_inc
                         try:
                             frecuencia, voltaje = linea.split(',')
                             frecuencia = float(frecuencia)
