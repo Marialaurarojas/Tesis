@@ -2,7 +2,7 @@
 ///descarga el capacitador , aumenta la frecuencia en 0.004hx y vuelve a empezar
 /// termina todo el proceso cuando se alcanza la frecuencia final
 ///vuelve a comenzar el proceso si recibe añguna nueva señal por el puerto serial
-
+/// NOTA el transistor es del tipo NPN, el emisor directamente a tierra (GND), la base a la salida del Arduino que controlará la descarga. el colector al lado del capacitor de 100nF que no está conectado a la fuente de voltaje. El otro lado del capacitor de 100nf conectado a la fuente de voltaje.
 
 #include <SPI.h>
 #include <MD_AD9833.h> // librería que controla el AD9833( MD_AD9833 by majicDesigns)
@@ -74,10 +74,10 @@ void loop() {
   // Envía los datos por el puerto serie
          Serial.println(String(f) + "," + String(voltaje));
 
-  // Descarga el capacitor
-         digitalWrite(pinTransistor, LOW);
+ // Descarga el capacitor usando un transistor NPN
+         digitalWrite(pinTransistor, HIGH);  // Activa el transistor NPN
          delay(50); // Tiempo de descarga
-         digitalWrite(pinTransistor, HIGH);
+         digitalWrite(pinTransistor, LOW);   // Desactiva el transistor NPN
 
   // Incrementa la frecuencia
          f += f_inc;
