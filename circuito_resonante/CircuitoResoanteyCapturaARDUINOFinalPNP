@@ -2,7 +2,7 @@
 ///descarga el capacitador , aumenta la frecuencia en 0.004hx y vuelve a empezar
 /// termina todo el proceso cuando se alcanza la frecuencia final
 ///vuelve a comenzar el proceso si recibe añguna nueva señal por el puerto serial
-
+///NOTA el transistor es del tipo PNP
 
 #include <SPI.h>
 #include <MD_AD9833.h> // librería que controla el AD9833( MD_AD9833 by majicDesigns)
