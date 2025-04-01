@@ -1,0 +1,91 @@
+/// este codigo va en el arduino y genera la señal con el AD9833, recibe una señal analogica rectificada, envia los valores de frecuencia y voltaje a la computadora,
+///descarga el capacitador , aumenta la frecuencia en 0.004hx y vuelve a empezar
+/// termina todo el proceso cuando se alcanza la frecuencia final
+///vuelve a comenzar el proceso si recibe añguna nueva señal por el puerto serial
+
+
+#include <SPI.h>
+#include <MD_AD9833.h> // librería que controla el AD9833( MD_AD9833 by majicDesigns)
+
+// Frecuencia inicial y final
+
+float f; // Frecuencia inicial en Hz
+
+float f_final; // Frecuencia final en Hz
+// Incremento de frecuencia
+
+float f_inc; // Incremento de frecuencia en Hz, la resolución de frecuencia de AD9833
+
+// Pines para el AD9833
+const uint8_t PIN_DATA = 11; ///< SPI Data pin number
+const uint8_t PIN_CLK = 13;  ///< SPI Clock pin number
+const uint8_t PIN_FSYNC = 10; ///< SPI Load pin number (FSYNC in AD9833 usage)
+
+MD_AD9833 AD(PIN_FSYNC); // Hardware SPI
+
+// Configuración de pines
+const int pinVoltaje = A0;
+const int pinTransistor = 2;
+
+bool procesandoDatos = false; // Variable para controlar si se están procesando datos
+
+
+void setup() {
+  // Inicializar comunicación serial
+  Serial.begin(115200);
+
+// Inicializar el AD9833
+  AD.begin();
+  AD.reset();
+//  configura el transistor
+  pinMode(pinTransistor, OUTPUT);
+  digitalWrite(pinTransistor, HIGH); // Transistor apagado
+  Serial.println("Arduino listo"); // Mensaje de inicio
+}
+
+void loop() {
+  if (Serial.available() > 0) {
+    f = Serial.parseFloat();
+    while (Serial.read() != ','); // Esperar la coma
+
+    f_final = Serial.parseFloat();
+    while (Serial.read() != ','); // Esperar la coma
+
+    f_inc = Serial.parseFloat(); // Incremento de frecuencia en Hz, la resolución de frecuencia de AD9833
+    while (Serial.read() != '\n') ///(agregar)
+      ; // Espera el salto de línea
+    procesandoDatos = true;
+  }
+
+  if (procesandoDatos == true) {
+
+      if (f < f_final) {
+  // Genera la señal con el AD9833
+         AD.setFrequency(MD_AD9833::CHAN_0, f);
+
+
+  // Espera un momento para que se estabilice la señal
+         delay(100);
+
+  // Lee el voltaje
+         int lecturaAnalogica = analogRead(pinVoltaje);
+         float voltaje = lecturaAnalogica * (5.0 / 1023.0); // Convierte a voltaje
+
+  // Envía los datos por el puerto serie
+         Serial.println(String(f) + "," + String(voltaje));
+
+  // Descarga el capacitor
+         digitalWrite(pinTransistor, LOW);
+         delay(50); // Tiempo de descarga
+         digitalWrite(pinTransistor, HIGH);
+
+  // Incrementa la frecuencia
+         f += f_inc;
+
+  // Espera un momento antes de la siguiente iteración
+         delay(10);
+  } else {
+         procesandoDatos = false;
+      }
+  }
+}
