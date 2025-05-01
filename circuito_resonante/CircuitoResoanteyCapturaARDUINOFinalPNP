@@ -25,7 +25,7 @@ MD_AD9833 AD(PIN_FSYNC); // Hardware SPI
 
 // Configuración de pines
 const int pinVoltaje = A0;
-const int pinTransistor = 2;
+const int pinTransistor = 3;
 
 bool procesandoDatos = false; // Variable para controlar si se están procesando datos
 
@@ -33,7 +33,7 @@ bool procesandoDatos = false; // Variable para controlar si se están procesando
 void setup() {
   // Inicializar comunicación serial
   Serial.begin(115200);
-
+  analogReference(INTERNAL); //esto establece la referencia dle voltaje interna que es de 1.1v para aumentar la precición en el voltaje que se lee en el pin analogico
 // Inicializar el AD9833
   AD.begin();
   AD.reset();
@@ -69,7 +69,7 @@ void loop() {
 
   // Lee el voltaje
          int lecturaAnalogica = analogRead(pinVoltaje);
-         float voltaje = lecturaAnalogica * (5.0 / 1023.0); // Convierte a voltaje
+         float voltaje = lecturaAnalogica * (1.1 / 1023.0); // Convierte a voltaje
 
   // Envía los datos por el puerto serie
          Serial.println(String(f) + "," + String(voltaje));
