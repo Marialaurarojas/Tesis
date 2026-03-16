@@ -36,29 +36,6 @@ def Lorentz(x, A, x_0, gamma, offset):
 #p0 = (np.max(y), 2 * np.pi * 600000, 0)  # Valores iniciales apropiados
 
 
-"""
-def fit_sin(tt, yy):
-    '''Fit sin to the input time sequence, and return fitting parameters "amp", "omega", "phase", "offset", "freq", "period" and "fitfunc"'''
-    tt = np.array(tt)
-    yy = np.array(yy)
-    ff = np.fft.fftfreq(len(tt), (tt[1]-tt[0]))   # assume uniform spacing
-    Fyy = abs(np.fft.fft(yy))
-    guess_freq = abs(ff[np.argmax(Fyy[1:])+1])   # excluding the zero frequency "peak", which is related to offset
-    guess_amp = np.std(yy) * 2.**0.5
-    guess_offset = np.mean(yy)
-    guess = np.array([guess_amp, 2.*np.pi*guess_freq, 0., guess_offset])
-    return guess
-
-p0 = fit_sin(x,y)
-print(p0)
-
-
-# Define los límites para A, x_0, gamma y offset
-#[A,x_0,gamma,offset]
-lower_bounds = [0.05, 100000, 0.00100, -np.inf]
-upper_bounds = [0.1, 200000, 0.01, np.inf]
-"""
-
 # Define los límites para A, x_0, gamma y offset 
 lower_bounds = [0, 0, 0, -np.inf] 
 upper_bounds = [np.inf, np.inf, np.inf, np.inf] 
