@@ -1,0 +1,93 @@
+% Centro de Estadística y Matemática Aplicada
+% Universidad Simón Bolívar
+% Plantilla LaTeX para manuscritos (tesis y pasantías)
+% pregrado y postgrado
+%
+% Andrés M. Sajo-Castelli
+% Carlos Contreras
+%
+% 15 Abril 2015 -- primera versión pública
+% ...
+% 11 Mayo 2018 --- Se agrega bibliografía en castellano via babelbib
+%
+\documentclass[pregrado]{tesis-usb}
+
+% paquetes
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+\usepackage{acronym}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{array}
+% \usepackage{hyperref}
+%acontinuación lo que se necesita para hacer tablas bonitas
+\usepackage{booktabs} 
+\usepackage{multirow}
+\usepackage{siunitx}
+
+% estilo de las referencias
+\usepackage[fixlanguage]{babelbib-and}\selectbiblanguage{spanish}
+\usepackage{url}
+\bibliographystyle{babplain-lf}
+
+%para agregar varias imagenes en una sola figura
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+
+\autor{María Laura Rojas González}
+\autori{M. Rojas}
+\usbid{19-10256}
+\titulo{Efectos de la densidad de energía gravitacional sobre la velocidad de la luz: verificación experimental de la Hipótesis de Céspedes-Curé}
+\fecha{Junio~de~2025}
+\agno{2025}
+\fechadefensa{30~de~Junio~de~2025}
+\tutor{Dr. Eduardo Greaves}
+% \usarcotutor
+\cotutor{Nombre y Apellido \mbox{(Afiliaci\'on)}} 
+\trabajo{Trabajo de grado}
+\coord{Física}
+\grado{Licenciado en física}
+\carrera{Física}
+\programa{Nombre del Programa}
+\juradouno{Nombre y Apellido}
+\juradodos{Nombre y Apellido \mbox{(Afiliaci\'on)}}
+\juradotres{Nombre y Apellido}
+
+% Cambia comillas simple por comilla cerrada en ambiente verbatim 
+\makeatletter
+\let \@sverbatim \@verbatim
+\def \@verbatim {\@sverbatim \verbatimplus}
+{\catcode`'=13 \gdef \verbatimplus{\catcode`'=13 \chardef '=13 }} 
+\makeatother
+
+\begin{document}
+
+\frontmatter
+\maketitle
+\input{dedicatoria}
+\input{agradecimientos}
+\begin{resumen}
+     Es una exposici\'on clara del tema tratado en el trabajo
+\end{resumen}
+\tableofcontents
+\listoffigures
+\listoftables
+\useacronyms
+\input{notacion}
+
+\mainmatter
+\input{introduccion}
+\input{Capitulo-1}
+\input{capitulo-2}
+\input{capitulo-3}
+\input{capitulo-4}
+\input{conclusiones}
+\nocite{*}
+\bibliography{referencias}
+\appendix
+\input{apendice-a.tex}
+\input{apendice-b.tex}
+
+\end{document}

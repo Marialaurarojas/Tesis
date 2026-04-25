@@ -1,0 +1,39 @@
+Razones/motivacion:
+  - Pioneer anomaly by greaves
+  - relación encontrada en los datos de ramdani
+
+El generador de funciones AD9833 tiene 7 pines. Aquí están los pines y sus funciones:
+
+Ref: Voltaje de referencia
+
+VCC: Alimentación del módulo (5V)
+
+GND: Tierra
+
+DAT: Pin de datos del bus SPI
+
+CLK: Pin de reloj del bus SPI
+
+FNC: Pin de carga del bus SPI
+
+Out: Salida del generador de funciones
+
+Para conectar el AD9833 a un Arduino Uno y controlar las funciones senoidales, sigue estos pasos:
+
+Conexión de energía:
+
+Conecta el pin VCC del AD9833 al pin 5V del Arduino Uno.
+
+Conecta el pin GND del AD9833 al pin GND del Arduino Uno.
+
+Conexión del bus SPI:
+
+Conecta el pin DAT del AD9833 al pin MOSI (Master Out Slave In) del Arduino Uno (pin 11).
+
+Conecta el pin CLK del AD9833 al pin SCK (Serial Clock) del Arduino Uno (pin 13).
+
+Conecta el pin FNC del AD9833 a un pin digital del Arduino Uno (por ejemplo, pin 10).
+
+Código de Arduino:
+
+Utiliza una biblioteca específica para el AD9833, como la disponible en GitHub. Aquí tienes un ejemplo básico de cómo configurar y usar el AD9833:
