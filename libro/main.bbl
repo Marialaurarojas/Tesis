@@ -1,0 +1,98 @@
+\begin{thebibliography}{10}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {NASACalculo}
+\btxtitlefont {\btxifchangecase {A possible scalar term describing energy density in the gravitational field}{A Possible Scalar Term Describing Energy Density in the Gravitational Field}}.
+\newblock {\latintext \btxurlfont{https://www.grc.nasa.gov/www/k-12/Numbers/Math/Mathematical_Thinking/possible_scalar_terms.htm}}.
+
+\bibitem {GuiaLab-SUNY}
+\btxnamefont {\btxlastnamefont {Ahmadi}, Aphrodite} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Wheeler}, Richard}\btxauthorcolon\ \btxtitlefont {Physics 357 Laboratory Manual}, \btxeditionnumlong {2015}{}, 2015.
+\newblock {\latintext \btxurlfont{https://facultyweb.cortland.edu/douglas.armstead/S15/intermediate/Lab5SpeedOfLight.pdf}}, Unpublished; Accessed on 2025-06-24.
+
+\bibitem {Anderson2008flyby}
+\btxnamefont {\btxlastnamefont {Anderson}, John\btxfnamespacelong D.}, \btxnamefont {\btxlastnamefont {Campbell}, James\btxfnamespacelong K.}, \btxnamefont {\btxlastnamefont {Ekelund}, John\btxfnamespacelong E.}, \btxnamefont {\btxlastnamefont {Ellis}, Jordan}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Jordan}, James\btxfnamespacelong F.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Anomalous orbital-energy changes observed during spacecraft flybys of earth}{Anomalous Orbital-Energy Changes Observed during Spacecraft Flybys of Earth}}.
+\newblock \btxjournalfont {Phys. Rev. Lett.}, 100:091102, \btxprintmonthyear{.}{Mar}{2008}{long}.
+\newblock {\latintext \btxurlfont{https://link.aps.org/doi/10.1103/PhysRevLett.100.091102}}.
+
+\bibitem {anderson1998}
+\btxnamefont {\btxlastnamefont {Anderson}, John\btxfnamespacelong D.}, \btxnamefont {\btxlastnamefont {Laing}, Philip\btxfnamespacelong A.}, \btxnamefont {\btxlastnamefont {Lau}, Eunice\btxfnamespacelong L.}, \btxnamefont {\btxlastnamefont {Liu}, Anthony\btxfnamespacelong S.}, \btxnamefont {\btxlastnamefont {Nieto}, Michael\btxfnamespacelong Martin}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Turyshev}, Slava\btxfnamespacelong G.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Indication, from pioneer 10/11, galileo, and ulysses data, of an apparent anomalous, weak, long-range acceleration}{Indication, from Pioneer 10/11, Galileo, and Ulysses Data, of an Apparent Anomalous, Weak, Long-Range Acceleration}}.
+\newblock \btxjournalfont {Phys. Rev. Lett.}, 81:2858--2861, \btxprintmonthyear{.}{Oct}{1998}{long}.
+\newblock {\latintext \btxurlfont{https://link.aps.org/doi/10.1103/PhysRevLett.81.2858}}.
+
+\bibitem {anderson2002}
+\btxnamefont {\btxlastnamefont {Anderson}, John\btxfnamespacelong D.}, \btxnamefont {\btxlastnamefont {Laing}, Philip\btxfnamespacelong A.}, \btxnamefont {\btxlastnamefont {Lau}, Eunice\btxfnamespacelong L.}, \btxnamefont {\btxlastnamefont {Liu}, Anthony\btxfnamespacelong S.}, \btxnamefont {\btxlastnamefont {Nieto}, Michael\btxfnamespacelong Martin}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Turyshev}, Slava\btxfnamespacelong G.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Study of the anomalous acceleration of pioneer 10 and 11}{Study of the anomalous acceleration of Pioneer 10 and 11}}.
+\newblock \btxjournalfont {Phys. Rev. D}, 65:082004, \btxprintmonthyear{.}{Apr}{2002}{long}.
+\newblock {\latintext \btxurlfont{https://link.aps.org/doi/10.1103/PhysRevD.65.082004}}.
+
+\bibitem {Aslakson2015}
+\btxnamefont {\btxlastnamefont {Aslakson}, Carl\btxfnamespacelong I.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {The velocity of light}{The Velocity of Light}}.
+\newblock \btxjournalfont {The International Hydrographic Review}, 41(1), \btxprintmonthyear{.}{Jun.}{2015}{long}.
+\newblock {\latintext \btxurlfont{https://journals.lib.unb.ca/index.php/ihr/article/view/24143}}.
+
+\bibitem {introductiontoastro}
+\btxnamefont {\btxlastnamefont {Carroll}, B.W.} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Ostlie}, D.A.}\btxauthorcolon\ \btxtitlefont {An Introduction to Modern Astrophysics}.
+\newblock \btxpublisherfont {Cambridge University Press}, 2017\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {9781108422161}}}.
+\newblock {\latintext \btxurlfont{https://books.google.hn/books?id=PY0wDwAAQBAJ}}.
+
+\bibitem {bib:el-libro}
+\btxnamefont {\btxlastnamefont {Cespédes-Curé}, Jorge}\btxauthorcolon\ \btxtitlefont {Einstein on Trial or Metaphysical Principles of Natural Philosophy}.
+\newblock \btxpublisherfont {Ramsey Laboratory, Incorporated}, 2002\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {0-9713873-0-3}}}.
+
+\bibitem {Evenson1972Speed}
+\btxnamefont {\btxlastnamefont {Evenson}, K.\btxfnamespacelong M.}, \btxnamefont {\btxlastnamefont {Wells}, J.\btxfnamespacelong S.}, \btxnamefont {\btxlastnamefont {Petersen}, F.\btxfnamespacelong R.}, \btxnamefont {\btxlastnamefont {Danielson}, B.\btxfnamespacelong L.}, \btxnamefont {\btxlastnamefont {Day}, G.\btxfnamespacelong W.}, \btxnamefont {\btxlastnamefont {Barger}, R.\btxfnamespacelong L.}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Hall}, J.\btxfnamespacelong L.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Speed of light from direct frequency and wavelength measurements of the methane-stabilized laser}{Speed of Light from Direct Frequency and Wavelength Measurements of the Methane-Stabilized Laser}}.
+\newblock \btxjournalfont {Physical Review Letters}, 29:1346, 1972.
+
+\bibitem {GUIAlab3}
+\btxnamefont {\btxlastnamefont {Figueroa}, Douglas}, \btxnamefont {\btxlastnamefont {Guerrero}, Luis\btxfnamespacelong E.}, \btxnamefont {\btxlastnamefont {Hernández}, María\btxfnamespacelong E.}, \btxnamefont {\btxlastnamefont {Sanchez}, Alfredo}, \btxnamefont {\btxlastnamefont {Suarez}, Neri}, \btxnamefont {\btxlastnamefont {Marciano}, A}, \btxnamefont {\btxlastnamefont {Escalona}, Rafael}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Greaves}, Eduardo}\btxauthorcolon\ \btxtitlefont {Laboratorio 3 de Física}.
+\newblock \btxpublisherfont {Universidad Simón Bolívar}, \btxeditionnumlong {4}{}, 2023.
+\newblock Edición Digital.
+
+\bibitem {vibracionesyondas}
+\btxnamefont {\btxlastnamefont {French}, A.P.}\btxauthorcolon\ \btxtitlefont {Vibraciones y ondas}.
+\newblock Curso de F{\'i}sica Del M.I.T Series. \btxpublisherfont {Editorial Revert{\'e}}, 1974\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {9788429140989}}}.
+\newblock {\latintext \btxurlfont{https://books.google.co.ve/books?id=yJjCwhP9wMkC}}.
+
+\bibitem {Cisnotconstant}
+\btxnamefont {\btxlastnamefont {Greaves}, E.\btxfnamespacelong D.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Nasa's astonishing evidence that c is not constant: The pioneer anomaly}{NASA's astonishing evidence that c is not constant: The pioneer anomaly}}, 2007.
+\newblock {\latintext \btxurlfont{https://arxiv.org/abs/physics/0701130}}.
+
+\bibitem {Greavesflyby}
+\btxnamefont {\btxlastnamefont {Greaves}, Eduardo}, \btxnamefont {\btxlastnamefont {Bracho}, Carlos}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Mikoss}, Imre}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {A solution to the flyby anomaly riddle}{A Solution to the Flyby Anomaly Riddle}}.
+\newblock \btxjournalfont {Progress in physics}, 16:49–57, \btxprintmonthyear{.}{04}{2020}{long}.
+
+\bibitem {propiedadesdelespaciovacio}
+\btxnamefont {\btxlastnamefont {Greaves}, Eduardo\btxfnamespacelong D.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Propiedades del espacio vacío con campos gravitacionales: Experiencias propuestas}{Propiedades del Espacio Vacío con Campos Gravitacionales: Experiencias Propuestas}}.
+\newblock 2017.
+
+\bibitem {GuiaLAB-MIT}
+\btxnamefont {\btxlastnamefont {{Massachusetts Institute of Technology, Physics Department}}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {An electrical measurement of the speed of light}{An Electrical Measurement of the Speed of Light}}.
+\newblock Junior Physics Laboratory Experiment \#007, 2001.
+\newblock {\latintext \btxurlfont{https://web.mit.edu/8.13/www/JLExperiments/JLExp007.pdf}}, Accessed on 2025-06-24.
+
+\bibitem {flyby2009}
+\btxnamefont {\btxlastnamefont {Nieto}, Michael\btxfnamespacelong Martin} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Anderson}, John\btxfnamespacelong D.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Earth flyby anomalies}{Earth flyby anomalies}}.
+\newblock \btxjournalfont {Physics Today}, 62(10):76–77, \btxprintmonthyear{.}{10}{2009}{long}\ifbtxprintISSN {, \mbox{\btxISSN~\btxISSNfont {1945-0699}}}.
+\newblock {\latintext \btxurlfont{http://dx.doi.org/10.1063/1.3248495}}.
+
+\bibitem {comunicacionpersonal}
+\btxnamefont {\btxlastnamefont {Orihuela}, Nuris}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Comunicación personal}{Comunicación personal}}, 2022.
+\newblock Comunicación personal.
+
+\bibitem {ramdani}
+\btxnamefont {\btxlastnamefont {Ramdani}, F.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Gravity constraints on the measurements of the speed of light}{Gravity Constraints on the Measurements of the Speed of Light}}.
+\newblock \btxjournalfont {International Journal of Astronomy and Astrophysics}, 9:265--273, \btxprintmonthyear{.}{Mar}{2019}{long}.
+\newblock {\latintext \btxurlfont{https://www.scirp.org/journal/paperinformation?paperid=94860}}.
+
+\end{thebibliography}

@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99e (TeX Live 2026)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: babplain-lf.bst
+Database file #1: referencias.bib
+Warning--to sort, need author or key in NASACalculo
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty language in NASACalculo
+Warning--empty journal in propiedadesdelespaciovacio
+You've used 18 entries,
+            2783 wiz_defined-function locations,
+            763 strings with 9469 characters,
+and the built_in function-call counts, 6883 in all, are:
+= -- 569
+> -- 289
+< -- 0
++ -- 121
+- -- 98
+* -- 777
+:= -- 1007
+add.period$ -- 47
+call.type$ -- 18
+change.case$ -- 100
+chr.to.int$ -- 0
+cite$ -- 21
+duplicate$ -- 337
+empty$ -- 654
+format.name$ -- 156
+if$ -- 1409
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 26
+newline$ -- 98
+num.names$ -- 34
+pop$ -- 143
+preamble$ -- 1
+purify$ -- 85
+quote$ -- 0
+skip$ -- 163
+stack$ -- 0
+substring$ -- 237
+swap$ -- 135
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 64
+warning$ -- 3
+while$ -- 42
+width$ -- 20
+write$ -- 211
+(There were 3 warnings)
