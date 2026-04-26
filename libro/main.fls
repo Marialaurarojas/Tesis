@@ -439,7 +439,11 @@ INPUT ./FactorQ-zemansky.png
 INPUT ./FactorQ-zemansky.png
 INPUT ./FactorQ-zemansky.png
 INPUT ./FactorQ-zemansky.png
-INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT ./SUNY-circuito.png
+INPUT ./SUNY-circuito.png
+INPUT ./SUNY-circuito.png
+INPUT ./SUNY-circuito.png
+INPUT ./SUNY-circuito.png
 INPUT ./circuitoDibujo.jpg
 INPUT ./circuitoDibujo.jpg
 INPUT ./circuitoDibujo.jpg
@@ -463,6 +467,7 @@ INPUT conclusiones.tex
 INPUT ./main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
+INPUT c:/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT ./apendice-a.tex
 INPUT ./apendice-a.tex
 INPUT apendice-a.tex

@@ -5,9 +5,9 @@
 \contentsline {chapter}{\MakeTextUppercase []{\'{I}ndice general}}{vi}{chapter*.4}%
 \contentsline {chapter}{\MakeTextUppercase []{\'{I}ndice de figuras}}{viii}{chapter*.5}%
 \contentsline {chapter}{\MakeTextUppercase []{\'{I}ndice de tablas}}{ix}{chapter*.6}%
-\contentsline {chapter}{\MakeTextUppercase []{LISTA DE ACR\'ONIMOS}}{x}{chapter*.7}%
-\contentsline {chapter}{\MakeTextUppercase []{Notaci\'on matem\'atica}}{xi}{chapter*.8}%
-\contentsline {chapter}{\MakeTextUppercase []{Introducci\'on}}{1}{chapter*.9}%
+\contentsline {chapter}{\MakeTextUppercase []{LISTA DE ACR\'ONIMOS}}{x}{chapter*.8}%
+\contentsline {chapter}{\MakeTextUppercase []{Notaci\'on matem\'atica}}{xi}{chapter*.9}%
+\contentsline {chapter}{\MakeTextUppercase []{Introducci\'on}}{1}{chapter*.10}%
 \contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~I:~\MakeTextUppercase []{Hipótesis de Céspedes-Curé}}{2}{chaptert.1}%
 \contentsline {section}{\numberline {1.1}Introducción}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Densidad de Energía}{3}{section.1.2}%
@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {1.4.1}Pioneer Anomaly}{5}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}Flyby Anomaly}{9}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}Análisis de medidas previas de la velocidad de la luz y aplicación de HCC sobre cualquier punto en la tierra}{12}{subsection.1.4.3}%
-\contentsline {subsubsection}{Aplicación sobre cualquier punto en la tierra}{12}{section*.14}%
+\contentsline {subsubsection}{Aplicación sobre cualquier punto en la tierra}{12}{section*.15}%
 \contentsline {section}{\numberline {1.5}Resultados esperados}{14}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Implicaciones de la HCC}{15}{section.1.6}%
 \contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~II:~\MakeTextUppercase []{Experimento I: Medición directa de la velocidad de la luz}}{18}{chaptert.2}%
@@ -30,19 +30,22 @@
 \contentsline {section}{\numberline {2.5}Cálculo de la precisión necesaria}{24}{section.2.5}%
 \contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~III:~\MakeTextUppercase []{Experimento II: medición indirecta usando un circuito resonante}}{27}{chaptert.3}%
 \contentsline {section}{\numberline {3.1}Circuitos LC: relación entre frecuencia de resonancia y velocidad de la luz}{27}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Circuito resonante implementado}{32}{section.3.2}%
+\contentsline {subsubsection}{Factor de calidad Q}{29}{section*.33}%
+\contentsline {subsubsection}{Planteamiento del procedimiento experimental}{29}{section*.35}%
+\contentsline {subsection}{\numberline {3.1.1}Estimación de los resultados}{30}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Circuito resonante implementado}{31}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Módulo de estabilidad}{32}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Resultados}{33}{section.3.4}%
-\contentsline {section}{\numberline {3.5}implicaciones}{33}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Modificaciones propuestas}{33}{section.3.6}%
-\contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{35}{chaptert.4}%
-\contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{35}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{35}{section.4.2}%
-\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{36}{chapter*.34}%
-\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{37}{chapter*.35}%
+\contentsline {section}{\numberline {3.4}Resultados}{32}{section.3.4}%
+\contentsline {section}{\numberline {3.5}implicaciones}{32}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Modificaciones propuestas}{32}{section.3.6}%
+\contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{34}{chaptert.4}%
+\contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{34}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{34}{section.4.2}%
+\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{35}{chapter*.39}%
+\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{36}{chapter*.40}%
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Licencia}}{39}{chaptert.1}%
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{EJEMPLO DE IMAGEN EN APÉNDICE}}{40}{chaptert.2}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Licencia}}{38}{chaptert.1}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{EJEMPLO DE IMAGEN EN APÉNDICE}}{39}{chaptert.2}%

@@ -1,12 +1,13 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Gráfica de los puntos encontrados para cada medida realizada.}}{23}{figure.caption.27}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Gráfica de los puntos encontrados la mediada realizada despues de aplicar las mejoras, en ambas gráficas se incluyen las barras de error.}}{24}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Gráfica de los puntos encontrados para cada medida realizada.}}{23}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Gráfica de los puntos encontrados la mediada realizada despues de aplicar las mejoras, en ambas gráficas se incluyen las barras de error.}}{24}{figure.caption.30}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Comportamiento del factor Q según la resistencia en el circuito \cite {searsZemanskyV2}.}}{29}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces circuito dibujado a mano alzada}}{33}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces circuito donde se explica claramente la conexión del arduino,}}{34}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Comportamiento del factor Q según la resistencia en el circuito \cite {searsZemanskyV2}.}}{29}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Circuito RLC en serie planteado por la referencia \cite {GuiaLab-SUNY}.}}{30}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces circuito dibujado a mano alzada}}{32}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces circuito donde se explica claramente la conexión del arduino,}}{33}{figure.caption.38}%
 \addvspace {10\p@ }
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
@@ -14,4 +15,4 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Título corto de imagen}}{40}{figure.caption.36}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Título corto de imagen}}{39}{figure.caption.41}%
