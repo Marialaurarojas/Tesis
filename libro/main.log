@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  25 APR 2026 22:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  26 APR 2026 00:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -526,14 +526,14 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 
 LaTeX Warning: Label `fig:figura1' multiply defined.
 
-LaTeX Info: Redefining \. on input line 211.
-LaTeX Info: Redefining \% on input line 211.
-LaTeX Info: Redefining \. on input line 212.
-LaTeX Info: Redefining \% on input line 212.
-LaTeX Info: Redefining \. on input line 223.
-LaTeX Info: Redefining \% on input line 223.
-LaTeX Info: Redefining \. on input line 224.
-LaTeX Info: Redefining \% on input line 224.
+LaTeX Info: Redefining \. on input line 214.
+LaTeX Info: Redefining \% on input line 214.
+LaTeX Info: Redefining \. on input line 215.
+LaTeX Info: Redefining \% on input line 215.
+LaTeX Info: Redefining \. on input line 226.
+LaTeX Info: Redefining \% on input line 226.
+LaTeX Info: Redefining \. on input line 227.
+LaTeX Info: Redefining \% on input line 227.
 )
 \openout1 = `main.aux'.
 
@@ -650,14 +650,14 @@ LaTeX Info: Redefining \% on input line 1.
  [6
 
 ]
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
-LaTeX Info: Redefining \. on input line 41.
-LaTeX Info: Redefining \% on input line 41.
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
 LaTeX Info: Redefining \. on input line 43.
 LaTeX Info: Redefining \% on input line 43.
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+LaTeX Info: Redefining \. on input line 45.
+LaTeX Info: Redefining \% on input line 45.
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
 )
 \tf@toc=\write4
 \openout4 = `main.toc'.
@@ -768,91 +768,87 @@ Package pdftex.def Info: CurvaPlanaGalaxias.png  used on input line 405.
 TESIS-USB: resetting all acronyms
 Cap\'{\i }tulo 2.
 Package acronym Info: Label `acro:HCC' overridden on input line 3.
-Package acronym Info: Label `acro:USB' overridden on input line 17.
-<experimento_guia.png, id=123, 443.256pt x 246.32025pt>
-File: experimento_guia.png Graphic file (type png)
-<use experimento_guia.png>
-Package pdftex.def Info: experimento_guia.png  used on input line 22.
-(pdftex.def)             Requested size: 332.44118pt x 184.73973pt.
 [18
 
-] [19 <./experimento_guia.png>]
+]
+Package acronym Info: Label `acro:USB' overridden on input line 30.
+<experimento_guia.png, id=127, 443.256pt x 246.32025pt>
+File: experimento_guia.png Graphic file (type png)
+<use experimento_guia.png>
+Package pdftex.def Info: experimento_guia.png  used on input line 35.
+(pdftex.def)             Requested size: 332.44118pt x 184.73973pt.
+ [19 <./experimento_guia.png>]
 <F0003TEK.png, id=132, 321.2pt x 240.9pt>
 File: F0003TEK.png Graphic file (type png)
 <use F0003TEK.png>
-Package pdftex.def Info: F0003TEK.png  used on input line 37.
+Package pdftex.def Info: F0003TEK.png  used on input line 50.
 (pdftex.def)             Requested size: 208.77753pt x 156.58313pt.
  [20 <./F0003TEK.png>]
 <AjusteF0003CH2.png, id=137, 392.46625pt x 279.0425pt>
 File: AjusteF0003CH2.png Graphic file (type png)
 <use AjusteF0003CH2.png>
-Package pdftex.def Info: AjusteF0003CH2.png  used on input line 58.
+Package pdftex.def Info: AjusteF0003CH2.png  used on input line 71.
 (pdftex.def)             Requested size: 235.48155pt x 167.42679pt.
-<n-1.png, id=138, 362.007pt x 217.467pt>
+ [21 <./AjusteF0003CH2.png>]
+<n-1.png, id=142, 362.007pt x 217.467pt>
 File: n-1.png Graphic file (type png)
 <use n-1.png>
-Package pdftex.def Info: n-1.png  used on input line 95.
+Package pdftex.def Info: n-1.png  used on input line 108.
 (pdftex.def)             Requested size: 228.90242pt x 137.5093pt.
-<n-2.png, id=139, 342.735pt x 217.248pt>
+<n-2.png, id=143, 342.735pt x 217.248pt>
 File: n-2.png Graphic file (type png)
 <use n-2.png>
-Package pdftex.def Info: n-2.png  used on input line 102.
+Package pdftex.def Info: n-2.png  used on input line 115.
 (pdftex.def)             Requested size: 228.90242pt x 145.09793pt.
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 93--106
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 106--119
 [][]  [] 
  []
 
-<n-3.png, id=140, 361.788pt x 217.248pt>
+<n-3.png, id=144, 361.788pt x 217.248pt>
 File: n-3.png Graphic file (type png)
 <use n-3.png>
-Package pdftex.def Info: n-3.png  used on input line 111.
+Package pdftex.def Info: n-3.png  used on input line 124.
 (pdftex.def)             Requested size: 228.90242pt x 137.4537pt.
-<n-4.1.png, id=141, 387.411pt x 216.153pt>
+<n-4.1.png, id=145, 387.411pt x 216.153pt>
 File: n-4.1.png Graphic file (type png)
 <use n-4.1.png>
-Package pdftex.def Info: n-4.1.png  used on input line 118.
+Package pdftex.def Info: n-4.1.png  used on input line 131.
 (pdftex.def)             Requested size: 228.90242pt x 127.71385pt.
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 109--122
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 122--135
 [][]  [] 
  []
 
-<n-4.2.png, id=142, 325.872pt x 215.934pt>
+<n-4.2.png, id=146, 325.872pt x 215.934pt>
 File: n-4.2.png Graphic file (type png)
 <use n-4.2.png>
-Package pdftex.def Info: n-4.2.png  used on input line 127.
+Package pdftex.def Info: n-4.2.png  used on input line 140.
 (pdftex.def)             Requested size: 228.90242pt x 151.68324pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21 <./AjusteF0003CH2.png>] [22 <./n-1.png> <./n-2.png> <./n-3.png> <./n-4.1.png> <./n-4.2.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<n-5.1.png, id=156, 362.007pt x 217.248pt>
+[22] [23 <./n-1.png> <./n-2.png> <./n-3.png> <./n-4.1.png> <./n-4.2.png>]
+<n-5.1.png, id=159, 362.007pt x 217.248pt>
 File: n-5.1.png Graphic file (type png)
 <use n-5.1.png>
-Package pdftex.def Info: n-5.1.png  used on input line 172.
+Package pdftex.def Info: n-5.1.png  used on input line 185.
 (pdftex.def)             Requested size: 228.90242pt x 137.37083pt.
-<n-5.2.png, id=157, 348.21pt x 227.322pt>
+<n-5.2.png, id=160, 348.21pt x 227.322pt>
 File: n-5.2.png Graphic file (type png)
 <use n-5.2.png>
-Package pdftex.def Info: n-5.2.png  used on input line 179.
+Package pdftex.def Info: n-5.2.png  used on input line 192.
 (pdftex.def)             Requested size: 228.90242pt x 149.43637pt.
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 170--183
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 183--196
 [][]  [] 
  []
 
+[24 <./n-5.1.png> <./n-5.2.png>]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Command \textendash invalid in math mode on input line 214.
 
-[23]
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 201.
-
-[24 <./n-5.1.png> <./n-5.2.png>]) (./capitulo-3.tex [25] [26]
+[25]) (./capitulo-3.tex [26]
 TESIS-USB: resetting all acronyms
 Cap\'{\i }tulo 3.
 <circuitoDibujo.jpg, id=173, 602.25pt x 260.975pt>
@@ -963,14 +959,14 @@ Package pdftex.def Info: ejemplo.pdf  used on input line 3.
  <./ejemplo.pdf, page is rotated 90 degrees>] (./main.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
-LaTeX Info: Redefining \. on input line 211.
-LaTeX Info: Redefining \% on input line 211.
-LaTeX Info: Redefining \. on input line 212.
-LaTeX Info: Redefining \% on input line 212.
-LaTeX Info: Redefining \. on input line 223.
-LaTeX Info: Redefining \% on input line 223.
-LaTeX Info: Redefining \. on input line 224.
-LaTeX Info: Redefining \% on input line 224.
+LaTeX Info: Redefining \. on input line 214.
+LaTeX Info: Redefining \% on input line 214.
+LaTeX Info: Redefining \. on input line 215.
+LaTeX Info: Redefining \% on input line 215.
+LaTeX Info: Redefining \. on input line 226.
+LaTeX Info: Redefining \% on input line 226.
+LaTeX Info: Redefining \. on input line 227.
+LaTeX Info: Redefining \% on input line 227.
 )
  ***********
 LaTeX2e <2025-11-01>
@@ -984,13 +980,13 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  23226 strings out of 467349
  492645 string characters out of 5419856
- 878592 words of memory out of 5000000
+ 878597 words of memory out of 5000000
  51926 multiletter control sequences out of 15000+600000
  636295 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,118p,1703b,651s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (47 pages, 1033924 bytes).
+Output written on main.pdf (47 pages, 1035338 bytes).
 PDF statistics:
  277 PDF objects out of 1000 (max. 8388607)
  162 compressed objects within 2 object streams

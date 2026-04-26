@@ -14,6 +14,19 @@ de modo que al variar $\Delta x$ se puede trazar una recta cuya pendiente es la 
 
 
 \section{Método experimental}
+
+\subsection{Materiales}
+
+\begin{itemize}
+    \item Láser de He-Ne
+    \item Lente
+    \item Espejo con soporte y tornillos de ajuste
+    \item Divisor de haz
+    \item Generdor de señales moduladas con fotodetectores
+    \item Osciloscopio Tektronix TDS 2024B 
+\end{itemize}
+
+\subsection{Procedimiento experimental}
 Para el montaje experimental se han usado dos variantes. La primera es la usada en la práctica de “Determinación de la velocidad de la luz” en Laboratorio 3 de la \ac{USB} \cite{GUIAlab3}, el esquema se puede ver en la figura \ref{fig:experimento_guia}.
 
 
@@ -198,22 +211,22 @@ que es la diferencia de camino entre diferencia de tiempo (desfase) entre cada h
     E_c = \frac{E_{\Delta x}}{\Delta t} + \frac{\Delta x}{(\Delta t)^2} E_{\Delta t} 
 \end{equation}
 
-Sea $k$ una fracción de la unidad, $0 < k < 1$ , y $f$ otra tal que $f = 1 – k$ entonces podemos dividir el error anterior en sus dos componentes, por una parte
+Sea $\kappa$ una fracción de la unidad, $0 < \kappa < 1$ , y $F$ otra tal que $F = 1 – \kappa$ entonces podemos dividir el error anterior en sus dos componentes, por una parte
 
 \begin{equation}
-    k \cdot E_c = \frac{E_{\Delta x}}{\Delta t} \implies E_{\Delta x} = k \cdot E_c \cdot \Delta t
+    \kappa \cdot E_c = \frac{E_{\Delta x}}{\Delta t} \implies E_{\Delta x} = \kappa \cdot E_c \cdot \Delta t
 \end{equation}
 
 y por otra parte
 
 \begin{equation}
-    f \cdot E_c = \frac{\Delta x}{(\Delta t)^2} E_{\Delta t} \implies E_{\Delta t} = f \cdot E_c \cdot \frac{(\Delta t)^2}{\Delta x}
+    F \cdot E_c = \frac{\Delta x}{(\Delta t)^2} E_{\Delta t} \implies E_{\Delta t} = F \cdot E_c \cdot \frac{(\Delta t)^2}{\Delta x}
 \end{equation}
 
 Para estimar los valores de los errores de distancia y tiempo consideremos un error de $c$ de  $E_c = 1$m/s. Para  $\Delta t$ los valores obtenidos están en el orden de los cientos de nano segundos, digamos 200 ns  es decir    $\Delta t= 2 \times 10^{-7}$s y las diferencias de distancias, cuando se hicieron mediciones en el pasillo, estuvieron entre $40$m y $80$m , así que tomemos   $\Delta x= 60$ m como valor representativo. Finalmente, usando los valores detallados anteriormente se tiene que
 \begin{align}
-    E_{\Delta x} &\sim k \cdot 2 \times 10^{-7} \text{ m} \\
-    E_{\Delta t} &\sim f \cdot 6.67 \times 10^{-16} \text{ s}
+    E_{\Delta x} &\sim \kappa \cdot 2 \times 10^{-7} \text{ m} \\
+    E_{\Delta t} &\sim F \cdot 6.67 \times 10^{-16} \text{ s}
 \end{align}
 
 Entonces, para obtener una velocidad de la luz con una precisión aceptable para diferenciar el efecto de la \ac{HCC} usando este método experimental es necesario que las diferencias de camino sean medidas con una precisión de decenas de nanómetros y las medidas de desfase con precisión de algunos femtosegundos. Es evidente que estas precisiones se escapan de nuestra capacidad. Para la distancia se usa una cinta métrica cuya apreciación es de un milímetro, alcanzar precisiones de nanómetros cuando se miden distancias tan grandes como $80$ m es una tarea complicada. Así mismo ocurre en el caso de la precisión en la medida de desfase, incluso con el osciloscopio y el cálculo de mejor ajuste con Python los errores para los $\Delta t$   están alrededor de $2 \times 10 ^{-10}$ s.

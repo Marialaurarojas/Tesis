@@ -22,9 +22,11 @@
 \contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~II:~\MakeTextUppercase []{Experimento I: Medición directa de la velocidad de la luz}}{18}{}%
 \contentsline {section}{\numberline {2.1}Introducción}{18}{}%
 \contentsline {section}{\numberline {2.2}Método experimental}{18}{}%
-\contentsline {section}{\numberline {2.3}Análisis de datos}{19}{}%
+\contentsline {subsection}{\numberline {2.2.1}Materiales}{18}{}%
+\contentsline {subsection}{\numberline {2.2.2}Procedimiento experimental}{19}{}%
+\contentsline {section}{\numberline {2.3}Análisis de datos}{20}{}%
 \contentsline {section}{\numberline {2.4}Resultados}{21}{}%
-\contentsline {subsection}{\numberline {2.4.1}Mejoras del método experimental}{23}{}%
+\contentsline {subsection}{\numberline {2.4.1}Mejoras del método experimental}{22}{}%
 \contentsline {section}{\numberline {2.5}Cálculo de la precisión necesaria}{24}{}%
 \contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~III:~\MakeTextUppercase []{Experimento II: medición indirecta usando un circuito resonante}}{27}{}%
 \contentsline {section}{\numberline {3.1}Circuitos LC: relación entre frecuencia de resonancia y velocidad de la luz}{27}{}%
@@ -32,6 +34,7 @@
 \contentsline {section}{\numberline {3.3}Módulo de estabilidad}{28}{}%
 \contentsline {section}{\numberline {3.4}Resultados}{28}{}%
 \contentsline {section}{\numberline {3.5}implicaciones}{28}{}%
+\contentsline {section}{\numberline {3.6}Modificaciones propuestas}{28}{}%
 \contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{29}{}%
 \contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{29}{}%
 \contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{29}{}%
