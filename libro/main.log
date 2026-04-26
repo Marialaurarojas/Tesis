@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  25 APR 2026 18:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  25 APR 2026 22:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -537,20 +537,20 @@ LaTeX Info: Redefining \% on input line 224.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -586,8 +586,8 @@ LaTeX Font Info:    ... okay on input line 65.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
 (c:/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count353
@@ -613,7 +613,7 @@ Package caption Info: End \AtBeginDocument code.
  (c:/texlive/2026/texmf-dist/tex/latex/translations/translations-basic-dictionary-spanish.trsl
 File: translations-basic-dictionary-spanish.trsl (spanish translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 65.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 68.
 
 babelbib: Set bibliography fall-back language to spanish
 (c:/texlive/2026/texmf-dist/tex/latex/babelbib/spanish.bdf
@@ -629,11 +629,11 @@ babelbib: Set language for keywords in the bibliography fixed to spanish
 
 
 {c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
  (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
  (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2] [1
@@ -706,12 +706,12 @@ TESIS-USB: resetting all acronyms
 ]) (./notacion.tex
 TESIS-USB: resetting all acronyms
 )
-Overfull \hbox (35.41614pt too wide) in paragraph at lines 2--79
+Overfull \hbox (45.44864pt too wide) in paragraph at lines 2--82
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--79
+Underfull \hbox (badness 10000) in paragraph at lines 2--82
 
  []
 
@@ -738,12 +738,16 @@ although it is yet undefined on input line 106.
 File: Curva c_i vs g_i.png Graphic file (type png)
 <use Curva c_i vs g_i.png>
 Package pdftex.def Info: Curva c_i vs g_i.png  used on input line 351.
-(pdftex.def)             Requested size: 317.08383pt x 246.62077pt.
+(pdftex.def)             Requested size: 253.66965pt x 197.29861pt.
 <curva c_i vs g_i zoom.png, id=104, 419.166pt x 328.8285pt>
 File: curva c_i vs g_i zoom.png Graphic file (type png)
 <use curva c_i vs g_i zoom.png>
 Package pdftex.def Info: curva c_i vs g_i zoom.png  used on input line 359.
-(pdftex.def)             Requested size: 314.37373pt x 246.62077pt.
+(pdftex.def)             Requested size: 251.50154pt x 197.29861pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <Imagen4.png, id=105, 337.86224pt x 222.23026pt>
 File: Imagen4.png Graphic file (type png)
 <use Imagen4.png>
@@ -751,7 +755,10 @@ Package pdftex.def Info: Imagen4.png  used on input line 369.
 (pdftex.def)             Requested size: 337.8614pt x 222.2297pt.
 Package acronym Info: Label `acro:USB' newly defined as it shall be overridden
 although it is yet undefined on input line 378.
- [14 <./Curva c_i vs g_i.png>] [15 <./curva c_i vs g_i zoom.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14 <./Curva c_i vs g_i.png>] [15 <./curva c_i vs g_i zoom.png>]
 <CurvaPlanaGalaxias.png, id=114, 473.97075pt x 336.0555pt>
 File: CurvaPlanaGalaxias.png Graphic file (type png)
 <use CurvaPlanaGalaxias.png>
@@ -977,13 +984,13 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  23226 strings out of 467349
  492645 string characters out of 5419856
- 878476 words of memory out of 5000000
+ 878592 words of memory out of 5000000
  51926 multiletter control sequences out of 15000+600000
  636295 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,118p,1673b,651s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,118p,1703b,651s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (47 pages, 1033595 bytes).
+Output written on main.pdf (47 pages, 1033924 bytes).
 PDF statistics:
  277 PDF objects out of 1000 (max. 8388607)
  162 compressed objects within 2 object streams

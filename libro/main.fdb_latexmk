@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1777156126.70953 "main.aux" "main.bbl" "main" 1777156743.65074 0
+["bibtex main"] 1777172201.63849 "main.aux" "main.bbl" "main" 1777172207.81606 0
   "./referencias.bib" 1777133371 7274 38b1980bba4ae5d735429e3d4d95f46d ""
   "c:/texlive/2026/texmf-dist/bibtex/bst/babelbib/babplain-lf.bst" 1777134898 27787 59c0e1ae1729e4dc6e42b51fa636506f ""
-  "main.aux" 1777156741 13874 f33753527cd5a627d9c88b4ead6c40eb "pdflatex"
+  "main.aux" 1777172206 13930 1aeaaa804194eb04d7495f36c8f1663b "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1777156737.0318 "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" "main.pdf" "main" 1777156743.6515 0
+["pdflatex"] 1777172202.3338 "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" "main.pdf" "main" 1777172207.81697 0
   "AjusteF0003CH2.png" 1777133371 29413 9679503fc89fc08f3b1fd3ef7e8e536d ""
-  "Capitulo-1.tex" 1777133371 35529 642037b07fe57ccafc90a0e88083d0d9 ""
+  "Capitulo-1.tex" 1777172194 35675 6dbc3f2cbaf927c9419c6605c1f65b07 ""
   "CircuitoCAD.png" 1777133371 69177 1f284c3d31eaa231922f8fe50b0c2ba6 ""
   "Curva c_i vs g_i.png" 1777133371 23347 ff13db1640a7cd67bc241e78b0ce629f ""
   "CurvaPlanaGalaxias.png" 1777133371 126202 1d834325ac673be2acbc166e31fd0c58 ""
@@ -20,7 +20,7 @@
   "apendice-a.tex" 1777133371 587 84fae5de796561008407e30ea2c76aa5 ""
   "apendice-b.tex" 1777133371 220 4551961f9ba34d45483cc1a329280192 ""
   "babelbib-and.sty" 1777133371 14321 f7975c354c5cff6f27ffdc8a28a2e8f4 ""
-  "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" 1777156735 2369 c677098e6624e2ad636fc4662ed849e4 ""
+  "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" 1777172030 2422 84fe79d775b335ced01d8310ccbcc373 ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1777136420 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1777139008 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1777137868 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -199,12 +199,12 @@
   "ejemplo.pdf" 1777133371 5383 b83701fc6d761d5a1ad6ec8fc45dc59d ""
   "experimento_guia.png" 1777133371 145712 f8d150fa120353b5f1eb6d427e7e208f ""
   "introduccion.tex" 1777156110 329 4e5d863c293781982ec7b1851a406fc5 ""
-  "main.aux" 1777156741 13874 f33753527cd5a627d9c88b4ead6c40eb "pdflatex"
-  "main.bbl" 1777156127 9820 d79609c28759ebfd8019a5bb4c0b51ed "bibtex main"
-  "main.lof" 1777156742 912 672810743a032885b727ddd1b246775d "pdflatex"
-  "main.lot" 1777156742 1341 601eceb25d9963fe157beaf8f4e0a3f2 "pdflatex"
-  "main.tex" 1777156735 2369 c677098e6624e2ad636fc4662ed849e4 ""
-  "main.toc" 1777156742 3572 002eaacd3a840967d111ba70ac07ce5e "pdflatex"
+  "main.aux" 1777172206 13930 1aeaaa804194eb04d7495f36c8f1663b "pdflatex"
+  "main.bbl" 1777172202 9820 d79609c28759ebfd8019a5bb4c0b51ed "bibtex main"
+  "main.lof" 1777172206 912 672810743a032885b727ddd1b246775d "pdflatex"
+  "main.lot" 1777172206 1397 70abaff86cd908bfda5dfb1ba12fe7f8 "pdflatex"
+  "main.tex" 1777172030 2422 84fe79d775b335ced01d8310ccbcc373 ""
+  "main.toc" 1777172206 3572 002eaacd3a840967d111ba70ac07ce5e "pdflatex"
   "n-1.png" 1777133371 27641 c5ca3d4f46120468d4c3ca4937bd8fb2 ""
   "n-2.png" 1777133371 31815 4dc0d73a087f776873fb0afcf8a8125f ""
   "n-3.png" 1777133371 34607 ac8f6550928694b01bad7a109edee6d9 ""
@@ -212,7 +212,7 @@
   "n-4.2.png" 1777133371 29056 7055a589f0333dde5abcd69d53f3a421 ""
   "n-5.1.png" 1777133371 72405 a54c366670b1be5fe85877e5e7d62b8f ""
   "n-5.2.png" 1777133371 61872 dceb1d2c67d919eaf950b4e22588f659 ""
-  "notacion.tex" 1777133371 747 cb445ed66f2e2c8eea586a490768387c ""
+  "notacion.tex" 1777170827 974 d42deae26a66a4fa31843c40d3a8e5c4 ""
   "tesis-usb.cls" 1777133371 51337 cacf8e9bb534bd8e51c255db356b0f4b ""
   (generated)
   "main.aux"
