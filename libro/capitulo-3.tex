@@ -5,7 +5,146 @@
 %recuerda incluir porque en la suma de las densidades que dice la HCC en este caso importa poco la componente electromagnetica y no es una mala aproximación solo tratar con la parte gravitacional (secreto: esta ultima es muchos ordenes de magnitud (ya eso lo calculó greaves en algun lado) mayor y ademas como el circuito es el mismo la parte electromagnetica más cercana se mantiene) 
 
 \section{Circuitos LC: relación entre frecuencia de resonancia y velocidad de la luz}
-aquí explicaria porqué esto sirve para demostrar la hipótesis
+
+
+El objetivo de este planteamiento es el de utilizar la relación de la velocidad de la luz con la permitividad eléctrica $\varepsilon_0$ y la permeabilidad magnética $\mu_0$ dada por
+\begin{equation}
+c=\frac{1}{\sqrt{\varepsilon_0\,\mu_0}}
+\end{equation}
+Donde usaremos el hecho de que $\mu_0$ es una constante cuyo valor es $\mu_0 = 4\pi\cdot 10^{-7}$H/m, por lo que basta con medir la permitividad eléctrica con precisión.
+
+La capacitancia de un capacitor de placas paralelas está dada por
+\begin{equation} \label{capacitanciaplacasparalelas}
+C_a=\varepsilon_0\,\frac{A_c}{d}=\frac{1}{c^{2}\mu_0}\,\frac{A_c}{d}
+\end{equation}
+Con $A_c$ siendo el área de las placas y $d$ la separación entre ellas. Entonces medir la capacitancia de un capacitor permite conocer el valor de $\epsilon_0$ que es equivalente a medir la velocidad de la luz. 
+
+Una manera de medir indirectamente la capacitancia es conectar dicho capacitor en serie (o en paralelo) con una resistencia $R$ y un inductor $L$ para crear un circuito R-L-C. La característica principal de este tipo de circuitos es que la energía almacenada en el capacitor se va liberando y a su vez almacenando en el inductor, para ser luego este último el que proporcione la energía al capacitor, en este proceso la corriente eléctrica cambia su dirección de modo que la corriente es alterna. Al aplicarle una corriente de frecuencia $f$ al circuito este responde con la producción de una corriente con la misma frecuencia y distinta amplitud, la amplitud de la corriente será máxima cuando la frecuencia aplicada sea igual a la frecuencia de resonancia del circuito la cual está dada por
+\begin{equation} \label{frecuenciaResonancia}
+f_0=\frac{1}{2\pi\sqrt{LC}}
+\end{equation}
+Aquí $L$ es la inductancia de la bobina, entonces si consideramos un solenoide toroidal con núcleo vacío de $N$ vueltas, con área transversal $A_L$ y radio $r$ la inductancia está dada por
+\begin{equation}
+L=\frac{\mu_0\,N^{2}\,A_L}{2\pi r}
+\end{equation}
+Como el fin último es medir la velocidad de la luz en diferentes puntos geográficos, si se usa el mismo inductor en el circuito el $L$ no se verá modificado y lo tomamos como una constante. Así al hacer la sustitución de ecuación \ref{capacitanciaplacasparalelas} en \ref{frecuenciaResonancia} nos queda
+\begin{equation}
+f_0=\frac{c}{2\pi\sqrt{\dfrac{L\,A_c}{d\,\mu_0}}}=k\,c
+\end{equation}
+Donde $k_0$ sería una constante dada por
+\begin{equation}
+k_0=\frac{1}{2\pi\sqrt{\dfrac{L\,A_c}{d\,\mu_0}}}
+\end{equation}
+Los valores esperados de $c$ según la hipótesis de Cespedes-Curé para cada uno de los puntos donde se realizarán mediciones ya se expusieron previamente en la tabla \ref{tab:Valores_c_esperados}. Para calcular los cambios esperados en la frecuencia de resonancia del mismo circuito pero en estas tres locaciones tomemos el valor de la constante como $k_0=0.002165397~\text{m}^{-1}$, este cálculo se hace con los siguientes datos $L=6.70\times 10^{-3}\,\text{H}$, $A_c=0.04\,\text{m}^{2}$, $d=0.001\,\text{m}$ y $\mu_0=4\pi\cdot 10^{-7} $ H/m.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Localidad & Velocidad $C$ m/s & $f_0$ Hz & $f_0/f_{\text{Carmen de Urea}}$\\
+\midrule
+Carmen de Urea & 299792471.69 & 103318.57\textcolor{red}{0664} & 1\\
+USB            & 299792473.97 & 103318.57\textcolor{red}{1449} & 1.000000008\\
+Teleférico     & 299792475.47 & 103318.57\textcolor{red}{1966} & 1.000000013\\
+\bottomrule
+\end{tabular}
+\caption{Tabla 2}
+\end{table}
+
+Se señalan en rojo las cifras que cambian en cada locación. Vemos que para este caso sería necesario alcanzar una resolución de micro Hz para poder apreciar el cambio.
+
+
+\textbf{Factor de calidad Q}
+
+Es importante señalar que para los circuitos resonantes existe un factor llamado calidad $Q$, el cual mide la eficiencia del circuito, es decir cuán bien el circuito almacena energía en comparación con la energía que pierde. Un alto valor de $Q$ implica una banda de frecuencia estrecha, como para un circuito RLC se tiene que
+\begin{equation} \label{factorQ}
+Q=\frac{\omega L}{R}
+\end{equation}
+
+\begin{figure}[h!]
+  \centering\includegraphics[width=0.6\linewidth]{FactorQ-zemansky.png}\caption{Comportamiento del factor Q según la resistencia en el circuito \cite{searsZemanskyV2}.}
+\end{figure}
+
+Basta con disminuir la resistencia y aumentar la inductancia para asegurarnos de tener una función bien estrecha que permita obtener un valor bien preciso de la frecuencia de resonancia.
+
+\textbf{Primer montaje experimental: Circuito RLC conectado a una fuente variable}
+
+% \begin{figure}[h!]\centering\includegraphics[width=0.7\linewidth]{montaje1.png}\caption{Esquema del primer montaje.}\end{figure}
+
+Esta primera forma está basada en la referencia [1] donde se usa el siguiente esquema. En nuestro caso se propone prescindir de la resistencia por la razón antes expuesta.
+
+\textbf{Segundo montaje experimental: Circuito LC con fem aplicada por inducción}
+
+% \begin{figure}[h!]\centering\includegraphics[width=0.6\linewidth]{montaje2.png}\caption{Esquema del segundo montaje.}\end{figure}
+
+En esta segunda forma se conectan la bobina y el condensador en serie, luego se enrolla un cable no aislado alrededor del inductor y los finales de este a un generador de frecuencia, de igual modo se usa otro cable para enrollarlo alrededor del condensador y se conectan sus extremos a un osciloscopio. Este montaje está basado en la referencia [2]. En este caso la corriente variable $i_0(t)$ induce una fem $\varepsilon$ en el circuito (ley de Faraday) que varía con la misma frecuencia que la corriente original, a su vez $\varepsilon$ genera una corriente inducida $i(t)$ en el circuito LC que tiene la misma frecuencia que $i_0(t)$. Para realizar las mediciones, en la misma referencia [2] se plantea enrollar otro cable no aislado alrededor del inductor (en otra zona del mismo como se ve en la siguiente imagen) y conectar los extremos de este a un osciloscopio.
+
+Por ahora no encuentro razones para decantarse por un montaje o el otro más que la practicidad que presenta el primer montaje, tomando en cuenta que requiere menos materiales que el segundo.
+
+Indiferentemente del montaje experimental que se use entre los dos anteriores, la frecuencia de la corriente que pasa por el circuito está dada por la fuente variable en ambos casos, de modo que si se varía la frecuencia generada por la misma con ``pasos'' lo suficientemente pequeños será posible generar una gráfica de amplitud de la corriente versus la frecuencia que permita determinar con cierta precisión la frecuencia de resonancia (aquella con mayor amplitud). En los generadores de funciones el paso más pequeño posible entre una y otra frecuencia se conoce como ``resolución de frecuencia''. En el caso de un generador comercial moderno, por ejemplo el JDS-2900 [3], la resolución de frecuencia es de $0.01\,\mu\text{Hz}$ ($0.00000001\,\text{Hz}$) lo que sería más que suficiente para generar unas gráficas bien precisas que permitan distinguir entre las frecuencias de resonancia que se incluyen en la Tabla 2.
+
+Además se asume que en el montaje experimental se pueda conectar una computadora, o en su defecto un Arduino, que permita controlar tanto los cambios de frecuencia de la fuente variable como la amplitud de la corriente en el circuito simultáneamente y de manera automática, esto con el fin de realizar miles de mediciones en un periodo de tiempo corto y para trazar una gráfica exenta de errores humanos.
+
+\textbf{Estimación de los resultados}
+
+Supongamos que trabajamos con los mismos valores con los que se calculó la frecuencia de resonancia antes, la amplitud de la corriente en el circuito está dada por
+\begin{equation}
+I=V/Z
+\end{equation}
+Donde $Z$ es la impedancia, por lo tanto
+\begin{equation}
+I=\frac{V}{\sqrt{R^{2}+\left(2\pi f L-\dfrac{1}{2\pi f C}\right)^{2}}}
+\end{equation}
+Al sustituir la ecuación (2) se tiene
+\begin{equation}
+I=\frac{V}{\sqrt{R^{2}+\left(2\pi f L-\dfrac{1}{2\pi f}\,\dfrac{c^{2}\mu_0\,d}{A_c}\right)^{2}}}
+\end{equation}
+Simplificando un poco
+\begin{equation}
+I=\frac{V}{\sqrt{R^{2}+\left(2\pi f L-\dfrac{2\,c^{2}\,d\cdot 10^{-7}}{f\,A_c}\right)^{2}}}
+\end{equation}
+A continuación, una gráfica de esta función usando valores de la frecuencia que van en pasos de $0.1\,\mu\text{Hz}$ (30\,000 puntos graficados en total), donde lo único que cambia es la velocidad de la luz $c$ según los valores que se predicen en la hipótesis de Cespedes-Cure, además el valor de la resistencia usado es de $0.0168\,\Omega$, que es equivalente a un cable de cobre de un metro de longitud y sección transversal de 1 mm$^{2}$, y para el voltaje se usó $1\,\text{mV}$.
+
+% \begin{figure}[h!]\centering\includegraphics[width=0.85\linewidth]{grafica1.png}\caption{Curvas $I(f)$ para las tres locaciones.}\end{figure}
+
+En la siguiente imagen se puede ver cómo de estrecha es la gráfica en realidad, en este caso se graficaron 10000 puntos igualmente espaciados, ya que con eso es suficiente para darnos una idea de la forma de la función (11) en este caso.
+
+% \begin{figure}[h!]\centering\includegraphics[width=0.85\linewidth]{grafica2.png}\caption{Detalle de la curva $I(f)$.}\end{figure}
+
+Para que las tres curvas correspondientes a las tres locaciones se puedan identificar correctamente es necesario medir la corriente con una apreciación de al menos 1 $\mu$A. Si consideramos un multímetro comercial muy preciso conectado en serie dentro del circuito resonante tenemos un problema: las apreciaciones para estos rangos de frecuencias son muy grandes. Por ejemplo, para el multímetro más preciso que encontré [4] el rango de 1 A sería perfecto para los valores con los que se está trabajando ya que el error asociado es del orden de 1 $\mu$A, sin embargo, la frecuencia máxima a la que puede realizar mediciones de corriente es 10\,kHz. Disminuir tanto la frecuencia de resonancia de nuestro circuito no es una opción, ya que implica que los cambios en el valor de la frecuencia debido a un cambio en la velocidad de la luz no podrían alcanzarse con la fuente de corriente alterna. Recordemos que dependemos de que la fuente pueda variar con ``pasos'' lo suficientemente pequeños como para alcanzar la frecuencia de resonancia exacta (o por lo menos muy cercana) del circuito en cada uno de los puntos geográficos donde se medirá. Entramos entonces en un ciclo: necesitamos una frecuencia alta para poder medir los cambios de ella (eje $x$ de la gráfica) y necesitamos medir con precisión la corriente (eje $y$) para lo cual se necesita disminuir al menos en dos órdenes de magnitud la frecuencia.
+
+Una alternativa pudiera ser el uso de un osciloscopio conectado como lo indica la referencia [2], actualmente estoy trabajando en esa posibilidad\ldots
+
+\underline{Falta:}
+
+Calcular la apreciación de la corriente que se puede medir, es decir los errores en $y$ de las dos gráficas anteriores.
+
+Considerar cómo afectan: temperatura, humedad, presión atmosférica a la frecuencia de resonancia.
+
+Proponer un montaje que minimice sus efectos.
+
+\bigskip
+
+\underline{Referencias:}
+
+[1] Laboratory 5 speed of light\\
+\url{https://facultyweb.cortland.edu/douglas.armstead/S15/intermediate/Lab5SpeedOfLight.pdf}
+
+[2] An Electrical Measurement of the Speed of Light. MIT\\
+\url{https://web.mit.edu/8.13/www/JLExperiments/JLExp007.pdf}
+
+\medskip
+La resolución de un contador de frecuencia comercial es de $0.000006\,\text{Hz}$, por ejemplo este (información en la página 5): \href{https://www.manualslib.com/manual/1606722/Feelelec-Fy6800-Series.html?page=5#manual}{FeelElec FY6800 Series User Manual}.
+
+La resolución de frecuencia de un generador de señal sinusoidal CA es de micro hertz, por ejemplo este tiene resolución de $0.01\,\mu\text{Hz}$ ($0.00000001\,\text{Hz}$).
+
+[3] \url{https://img.banggood.com/file/products/20180129015915JDS2600QuickGuide.pdf}\\
+\url{https://articulo.mercadolibre.com.ve/MLV-750552409-generador-senal-contador-precisa-pantalla-lcd-profesional-60-_JM}
+
+[4] Multímetro más preciso: \url{https://www.tek.com/en/datasheet/dmm4050-4040-digital-multimeter}
+
+
+
 \section{Circuito resonante implementado}
 Aquí va el diagrama del circuito y explicación de su funcionamiento
 \begin{figure}[hbt]

@@ -95,4 +95,9 @@
 \newblock \btxjournalfont {International Journal of Astronomy and Astrophysics}, 9:265--273, \btxprintmonthyear{.}{Mar}{2019}{long}.
 \newblock {\latintext \btxurlfont{https://www.scirp.org/journal/paperinformation?paperid=94860}}.
 
+\bibitem {searsZemanskyV2}
+\btxnamefont {\btxlastnamefont {Young}, H.D.}, \btxnamefont {\btxlastnamefont {Freedman}, R.A.}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Ford}, A.L.}\btxauthorcolon\ \btxtitlefont {Sears and Zemansky's University Physics}.
+\newblock \Btxnumberlong {}\ v. 2 \btxinserieslong {}\ \btxtitlefont {Addison-Wesley series in physics}. \btxpublisherfont {Pearson Addison Wesley}, 2004\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {9780805387667}}}.
+\newblock {\latintext \btxurlfont{https://books.google.com/books?id=A_aCPwAACAAJ}}.
+
 \end{thebibliography}

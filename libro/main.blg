@@ -7,45 +7,45 @@ Warning--to sort, need author or key in NASACalculo
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty language in NASACalculo
 Warning--empty journal in propiedadesdelespaciovacio
-You've used 18 entries,
+You've used 19 entries,
             2783 wiz_defined-function locations,
-            763 strings with 9469 characters,
-and the built_in function-call counts, 6883 in all, are:
-= -- 569
-> -- 289
-< -- 0
-+ -- 121
-- -- 98
-* -- 777
-:= -- 1007
-add.period$ -- 47
-call.type$ -- 18
-change.case$ -- 100
+            773 strings with 9704 characters,
+and the built_in function-call counts, 7287 in all, are:
+= -- 605
+> -- 307
+< -- 1
++ -- 128
+- -- 104
+* -- 826
+:= -- 1064
+add.period$ -- 51
+call.type$ -- 19
+change.case$ -- 105
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 337
-empty$ -- 654
-format.name$ -- 156
-if$ -- 1409
+cite$ -- 22
+duplicate$ -- 359
+empty$ -- 691
+format.name$ -- 166
+if$ -- 1495
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 26
-newline$ -- 98
-num.names$ -- 34
-pop$ -- 143
+int.to.str$ -- 19
+missing$ -- 28
+newline$ -- 103
+num.names$ -- 36
+pop$ -- 151
 preamble$ -- 1
-purify$ -- 85
+purify$ -- 90
 quote$ -- 0
-skip$ -- 163
+skip$ -- 170
 stack$ -- 0
-substring$ -- 237
-swap$ -- 135
-text.length$ -- 0
+substring$ -- 242
+swap$ -- 145
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 64
+type$ -- 66
 warning$ -- 3
-while$ -- 42
-width$ -- 20
-write$ -- 211
+while$ -- 44
+width$ -- 21
+write$ -- 224
 (There were 3 warnings)
