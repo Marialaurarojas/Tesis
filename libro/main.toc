@@ -29,23 +29,33 @@
 \contentsline {subsection}{\numberline {2.4.1}Mejoras del método experimental}{22}{subsection.2.4.1}%
 \contentsline {section}{\numberline {2.5}Cálculo de la precisión necesaria}{24}{section.2.5}%
 \contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~III:~\MakeTextUppercase []{Experimento II: medición indirecta usando un circuito resonante}}{27}{chaptert.3}%
-\contentsline {section}{\numberline {3.1}Circuitos LC: relación entre frecuencia de resonancia y velocidad de la luz}{27}{section.3.1}%
-\contentsline {subsubsection}{Factor de calidad Q}{29}{section*.33}%
-\contentsline {subsubsection}{Planteamiento del procedimiento experimental}{29}{section*.35}%
-\contentsline {subsection}{\numberline {3.1.1}Estimación de los resultados}{30}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Circuito resonante implementado}{32}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Módulo de estabilidad}{33}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Resultados}{33}{section.3.4}%
-\contentsline {section}{\numberline {3.5}implicaciones}{33}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Modificaciones propuestas}{33}{section.3.6}%
-\contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{35}{chaptert.4}%
-\contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{35}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{35}{section.4.2}%
-\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{36}{chapter*.41}%
-\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{37}{chapter*.42}%
+\contentsline {section}{\numberline {3.1}Fundamentos teóricos: Electrodinámica y Resonancia}{27}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Factor de calidad Q}{29}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Planteamiento del procedimiento experimental}{29}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Análisis de la respuesta en serie y simulaciones de sensibilidad}{30}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Alternativa de medición: Configuración en paralelo}{32}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}????Circuito resonante implementado- esquema experimental}{34}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}modulo generador}{34}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Modulo de lectura}{35}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}modulo automatizacion}{35}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}modulo estabilizador}{35}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Experimento RLC en Serie}{35}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}procedimiento experimental}{35}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Resultados}{35}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Experimento RLC en paralelo}{35}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}procedimiento experimental}{35}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Resultados}{35}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Calculo de la precisión necesaria: Ajuste de la curva por ODR}{36}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Modificaciones propuestas}{36}{section.3.7}%
+\contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{38}{chaptert.4}%
+\contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{38}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{38}{section.4.2}%
+\contentsline {section}{\numberline {4.3} Circuito LC con fem aplicada por inducción}{38}{section.4.3}%
+\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{39}{chapter*.41}%
+\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{40}{chapter*.42}%
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Licencia}}{39}{chaptert.1}%
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{EJEMPLO DE IMAGEN EN APÉNDICE}}{40}{chaptert.2}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Licencia}}{42}{chaptert.1}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{EJEMPLO DE IMAGEN EN APÉNDICE}}{43}{chaptert.2}%
