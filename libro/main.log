@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  26 APR 2026 14:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  9 MAY 2026 21:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1049,17 +1049,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [27
 
 ]
-Package acronym Info: Label `acro:HCC' overridden on input line 51.
+Package acronym Info: Label `acro:HCC' overridden on input line 52.
  [28]
 <FactorQ-zemansky.png, id=705, 272.81924pt x 205.9695pt>
 File: FactorQ-zemansky.png Graphic file (type png)
 <use FactorQ-zemansky.png>
-Package pdftex.def Info: FactorQ-zemansky.png  used on input line 69.
+Package pdftex.def Info: FactorQ-zemansky.png  used on input line 70.
 (pdftex.def)             Requested size: 274.6857pt x 207.38011pt.
 <SUNY-circuito.png, id=707, 353.52075pt x 157.7895pt>
 File: SUNY-circuito.png Graphic file (type png)
 <use SUNY-circuito.png>
-Package pdftex.def Info: SUNY-circuito.png  used on input line 74.
+Package pdftex.def Info: SUNY-circuito.png  used on input line 75.
 (pdftex.def)             Requested size: 228.90242pt x 102.1671pt.
 
 
@@ -1069,15 +1069,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <circuitoDibujo.jpg, id=733, 602.25pt x 260.975pt>
 File: circuitoDibujo.jpg Graphic file (type jpg)
 <use circuitoDibujo.jpg>
-Package pdftex.def Info: circuitoDibujo.jpg  used on input line 115.
+Package pdftex.def Info: circuitoDibujo.jpg  used on input line 116.
 (pdftex.def)             Requested size: 301.12425pt x 130.48718pt.
 <CircuitoCAD.png, id=734, 1034.06325pt x 417.35925pt>
 File: CircuitoCAD.png Graphic file (type png)
 <use CircuitoCAD.png>
-Package pdftex.def Info: CircuitoCAD.png  used on input line 123.
+Package pdftex.def Info: CircuitoCAD.png  used on input line 124.
 (pdftex.def)             Requested size: 517.03036pt x 208.67911pt.
 
-Overfull \hbox (59.22551pt too wide) in paragraph at lines 123--124
+Overfull \hbox (59.22551pt too wide) in paragraph at lines 124--125
  [] 
  []
 
@@ -1254,7 +1254,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  99i,13n,118p,1703b,1524s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (52 pages, 1135554 bytes).
+Output written on main.pdf (52 pages, 1135595 bytes).
 PDF statistics:
  923 PDF objects out of 1000 (max. 8388607)
  793 compressed objects within 8 object streams

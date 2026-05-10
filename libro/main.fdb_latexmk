@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1777227777.47518 "main.aux" "main.bbl" "main" 1777227931.81954 0
+["bibtex main"] 1777227963.64808 "main.aux" "main.bbl" "main" 1778376553.18808 0
   "./referencias.bib" 1777216196 7640 ae8407b85c9e9c2cceaa63bf5ab100f1 ""
   "c:/texlive/2026/texmf-dist/bibtex/bst/babelbib/babplain-lf.bst" 1777134898 27787 59c0e1ae1729e4dc6e42b51fa636506f ""
-  "main.aux" 1777227929 19318 d24012a498f3ad679832453ebb0cc9ab "pdflatex"
+  "main.aux" 1778376551 19459 39890e86e544d0a439b3e162500d92f1 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1777227924.98181 "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" "main.pdf" "main" 1777227931.82074 0
+["pdflatex"] 1778376544.84269 "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" "main.pdf" "main" 1778376553.18935 0
   "AjusteF0003CH2.png" 1777133371 29413 9679503fc89fc08f3b1fd3ef7e8e536d ""
   "Capitulo-1.tex" 1777219011 35684 2147b40da844c66118396d9f3985fcd3 ""
   "CircuitoCAD.png" 1777133371 69177 1f284c3d31eaa231922f8fe50b0c2ba6 ""
@@ -210,7 +210,7 @@
   "c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1777153601 3648469 b0320031242cb6b7c7a0c982a2808190 ""
   "c:/texlive/2026/texmf.cnf" 1777153346 713 e69b156964470283e0530f5060668171 ""
   "capitulo-2.tex" 1777176946 16716 e6eab90f73500514fe33d67f10d5a3be ""
-  "capitulo-3.tex" 1777227923 12360 6345b569d0a3188534d007f07df8cc3c ""
+  "capitulo-3.tex" 1778376541 12397 600a9f117c2cd1849a92cd8e7b29c724 ""
   "capitulo-4.tex" 1777133371 374 aeb04ddc1788effb6a93bbc4e6f80471 ""
   "circuitoDibujo.jpg" 1777133371 16884 add598e4f0c92d20f13550ea3791bff1 ""
   "conclusiones.tex" 1777133371 27 fef8898427cf9a25471539fbdf0029e4 ""
@@ -219,13 +219,13 @@
   "ejemplo.pdf" 1777133371 5383 b83701fc6d761d5a1ad6ec8fc45dc59d ""
   "experimento_guia.png" 1777133371 145712 f8d150fa120353b5f1eb6d427e7e208f ""
   "introduccion.tex" 1777156110 329 4e5d863c293781982ec7b1851a406fc5 ""
-  "main.aux" 1777227929 19318 d24012a498f3ad679832453ebb0cc9ab "pdflatex"
-  "main.bbl" 1777227778 10396 3a3171e01064d58d996f8bb9200a9f0f "bibtex main"
-  "main.lof" 1777227929 1321 2500cec6ff90327a32f7554263b72a9d "pdflatex"
-  "main.lot" 1777227929 1672 62a6f6da2c5ba5466fad3fe98af6591e "pdflatex"
-  "main.out" 1777227929 8484 3c75ed41466b18197cf61e7b8482e2b0 "pdflatex"
+  "main.aux" 1778376551 19459 39890e86e544d0a439b3e162500d92f1 "pdflatex"
+  "main.bbl" 1777227964 10396 3a3171e01064d58d996f8bb9200a9f0f "bibtex main"
+  "main.lof" 1778376551 1321 2500cec6ff90327a32f7554263b72a9d "pdflatex"
+  "main.lot" 1778376551 1672 62a6f6da2c5ba5466fad3fe98af6591e "pdflatex"
+  "main.out" 1778376551 8698 f4b27bb97d84ad375acb2183f53a04c3 "pdflatex"
   "main.tex" 1777215751 2554 c98cbc1c39931a35a1fd41f2d2a04395 ""
-  "main.toc" 1777227929 4445 8b65c2f255bfce8969f739924f2056c8 "pdflatex"
+  "main.toc" 1778376551 4545 d9aed7cb41c3cf45bbcb6de57b64431f "pdflatex"
   "n-1.png" 1777133371 27641 c5ca3d4f46120468d4c3ca4937bd8fb2 ""
   "n-2.png" 1777133371 31815 4dc0d73a087f776873fb0afcf8a8125f ""
   "n-3.png" 1777133371 34607 ac8f6550928694b01bad7a109edee6d9 ""
