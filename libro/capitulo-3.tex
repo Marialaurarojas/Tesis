@@ -14,13 +14,13 @@ c=\frac{1}{\sqrt{\varepsilon_0\,\mu_0}}
 \end{equation}
 Donde usaremos el hecho de que $\mu_0$ es una constante cuyo valor es $\mu_0 = 4\pi\cdot 10^{-7}$H/m, por lo que basta con medir la permitividad eléctrica con precisión.
 
-La capacitancia de un capacitor de placas paralelas está dada por
+Por otro lado, la capacitancia de un capacitor de placas paralelas está dada por
 \begin{equation} \label{capacitanciaplacasparalelas}
 C_a=\varepsilon_0\,\frac{A_c}{d}=\frac{1}{c^{2}\mu_0}\,\frac{A_c}{d}
 \end{equation}
-Con $A_c$ siendo el área de las placas y $d$ la separación entre ellas. Entonces, medir la capacitancia de un capacitor permite conocer el valor de $\epsilon_0$ que es equivalente a medir la velocidad de la luz. 
+Con $A_c$ siendo el área de las placas y $d$ la separación entre ellas. En cualquier capacitor se cumple que su capacitancia depende de su geometría y del material, con ecuaciones análogas a \ref{fig:curvaPlana} en cada caso. Entonces, medir la capacitancia de un capacitor permite conocer el valor de $\epsilon_0$ que es equivalente a medir la velocidad de la luz. 
 
-Una manera de medir indirectamente la capacitancia es conectar dicho capacitor en serie (o en paralelo) con una resistencia $R$ y un inductor $L$ para crear un circuito R-L-C. La característica principal de este tipo de circuitos es que la energía almacenada en el capacitor se va liberando y a su vez almacenando en el inductor, para ser luego este último el que proporcione la energía al capacitor, en este proceso la corriente eléctrica cambia su dirección de modo que la corriente es alterna. Al aplicarle una corriente de frecuencia $f$ al circuito este responde con la producción de una corriente con la misma frecuencia y distinta amplitud, la amplitud de la corriente será máxima cuando la frecuencia aplicada sea igual a la frecuencia de resonancia del circuito la cual está dada por
+Una manera de medir indirectamente la capacitancia $C$ es conectar dicho capacitor en serie (o en paralelo) con una resistencia $R$ y un inductor $L$ para crear un circuito R-L-C. La característica principal de este tipo de circuitos es que la energía almacenada en el capacitor se va liberando y a su vez almacenando en el inductor, para ser luego este último el que proporcione la energía al capacitor, en este proceso la corriente eléctrica cambia su dirección de modo que la corriente es alterna. Al aplicarle una corriente de frecuencia $f$ al circuito este responde con la producción de una corriente con la misma frecuencia y distinta amplitud, la amplitud de la corriente será máxima cuando la frecuencia aplicada sea igual a la frecuencia de resonancia del circuito la cual está dada por
 \begin{equation} \label{frecuenciaResonancia}
 f_0=\frac{1}{2\pi\sqrt{LC}}
 \end{equation}
@@ -74,7 +74,7 @@ Basta con disminuir la resistencia y aumentar la inductancia para asegurarnos de
 
 \begin{figure}[h!]\centering\includegraphics[width=0.5\linewidth]{SUNY-circuito.png}\caption{Circuito RLC en serie planteado por la referencia \cite{GuiaLab-SUNY}.} \label{fig:circuitoGUIASUNY}\end{figure}
 
-Usar la relación \ref{permitividadyc} para estimar el valor de la velocidad de la luz no es algo nuevo \cite{GuiaLab-SUNY}\cite{GuiaLAB-MIT}. Tomemos como punto de partida el montaje experimental plantado en \cite{GuiaLab-SUNY}, donde se usa el esquema de la figura \ref{fig:circuitoGUIASUNY}, ellos plantean determinar los valores de $L$ y $C$ a partir de las caracteristicas físicas de los componentes electronicos, sin embargo en nuestro caso eso no es necesario ya que el objetivo es comparar el comportamiento del circuito en las tres locaciones, y para ello basta con distinguir el pequeño corrimiento del pico en el barrido de frecuencia que predice la \ac{HCC}.
+Usar la relación \ref{permitividadyc} para estimar el valor de la velocidad de la luz no es algo nuevo \cite{GuiaLab-SUNY}\cite{GuiaLAB-MIT}. Tomemos como punto de partida el montaje experimental plantado en \cite{GuiaLab-SUNY}, donde se usa el esquema de la figura \ref{fig:circuitoGUIASUNY}. Ellos plantean determinar los valores de $L$ y $C$ a partir de las caracteristicas físicas de los componentes electronicos, sin embargo en nuestro caso eso no es necesario ya que el objetivo es comparar el comportamiento del circuito en las tres locaciones, y para ello basta con distinguir el pequeño corrimiento del pico en el barrido de frecuencia que predice la \ac{HCC}.
 
 Un cambio adicional necesario en el montaje experimental es que el mismo se pueda conectar a una computadora, o un Arduino, que permita controlar tanto los cambios de frecuencia de la fuente variable como la amplitud de la corriente en el circuito simultáneamente y de manera automática, esto con el fin de realizar miles de mediciones en un periodo de tiempo corto y para trazar una gráfica exenta de errores humanos.
 
@@ -98,11 +98,11 @@ I=\frac{V}{\sqrt{R^{2}+\left(2\pi f L-\dfrac{2\,c^{2}\,d\cdot 10^{-7}}{f\,A_c}\r
 \end{equation}
 A continuación, una gráfica de esta función usando valores de la frecuencia que van en pasos de $0.1\,\mu\text{Hz}$ (30\,000 puntos graficados en total), donde lo único que cambia es la velocidad de la luz $c$ según los valores que se predicen en la hipótesis de Cespedes-Cure, además el valor de la resistencia usado es de $0.0168\,\Omega$, que es equivalente a un cable de cobre de un metro de longitud y sección transversal de 1 mm$^{2}$, y para el voltaje se usó $1\,\text{mV}$.
 
-% \begin{figure}[h!]\centering\includegraphics[width=0.85\linewidth]{grafica1.png}\caption{Curvas $I(f)$ para las tres locaciones.}\end{figure}
+\begin{figure}[h!]\centering\includegraphics[width=0.85\linewidth]{Simulacion-respuesta1.png.png}\caption{Curvas $I(f)$ para las tres locaciones.}\end{figure}
 
 En la siguiente imagen se puede ver cómo de estrecha es la gráfica en realidad, en este caso se graficaron 10000 puntos igualmente espaciados, ya que con eso es suficiente para darnos una idea de la forma de la función (11) en este caso.
 
-% \begin{figure}[h!]\centering\includegraphics[width=0.85\linewidth]{grafica2.png}\caption{Detalle de la curva $I(f)$.}\end{figure}
+\begin{figure}[h!]\centering\includegraphics[width=0.85\linewidth]{Simulacion-respuesta2.png}\caption{Detalle de la curva $I(f)$.}\end{figure}
 
 Para que las tres curvas correspondientes a las tres locaciones se puedan identificar correctamente es necesario medir la corriente con una apreciación de al menos 1 $\mu$A. Si consideramos un multímetro comercial muy preciso conectado en serie dentro del circuito resonante tenemos un problema: las apreciaciones para estos rangos de frecuencias son muy grandes. Por ejemplo, para el multímetro más preciso que encontré [4] el rango de 1 A sería perfecto para los valores con los que se está trabajando ya que el error asociado es del orden de 1 $\mu$A, sin embargo, la frecuencia máxima a la que puede realizar mediciones de corriente es 10\,kHz. Disminuir tanto la frecuencia de resonancia de nuestro circuito no es una opción, ya que implica que los cambios en el valor de la frecuencia debido a un cambio en la velocidad de la luz no podrían alcanzarse con la fuente de corriente alterna. Recordemos que dependemos de que la fuente pueda variar con ``pasos'' lo suficientemente pequeños como para alcanzar la frecuencia de resonancia exacta (o por lo menos muy cercana) del circuito en cada uno de los puntos geográficos donde se medirá. Entramos entonces en un ciclo: necesitamos una frecuencia alta para poder medir los cambios de ella (eje $x$ de la gráfica) y necesitamos medir con precisión la corriente (eje $y$) para lo cual se necesita disminuir al menos en dos órdenes de magnitud la frecuencia.
 
