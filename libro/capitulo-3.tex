@@ -8,7 +8,7 @@ AQUI VA EL RESUMEN DEL CAPITULO
 \section{Fundamentos teóricos: Electrodinámica y Resonancia}
 
 
-El objetivo de este planteamiento es el de utilizar la relación de la velocidad de la luz con la permitividad eléctrica $\varepsilon_0$ y la permeabilidad magnética $\mu_0$ dada por
+El objetivo de este segundo experimento es el de utilizar la relación de la velocidad de la luz con la permitividad eléctrica $\varepsilon_0$ y la permeabilidad magnética $\mu_0$ dada por
 \begin{equation} \label{permitividadyc}
 c=\frac{1}{\sqrt{\varepsilon_0\,\mu_0}}
 \end{equation}
@@ -28,11 +28,11 @@ f_0=\frac{1}{2\pi\sqrt{LC}}
 
 Aquí $L$ es la inductancia de la bobina, entonces si consideramos un solenoide toroidal con núcleo vacío de $N$ vueltas, con área transversal $A_L$ y radio $r$ la inductancia está dada por
 
-\begin{equation}
+\begin{equation} \label{L-selenoide}
 L=\frac{\mu_0\,N^{2}\,A_L}{2\pi r}
 \end{equation}
 
-Como el fin último es medir la velocidad de la luz en diferentes puntos geográficos, si se usa el mismo inductor en el circuito el $L$ no se verá modificado y lo tomamos como una constante. Así al hacer la sustitución de ecuación \ref{capacitanciaplacasparalelas} en \ref{frecuenciaResonancia} nos queda
+Como el fin último es medir la velocidad de la luz en diferentes puntos geográficos, si se usa el mismo inductor en el circuito, la ecuación \ref{L-selenoide} indica que el $L$ no se verá modificado razon por la cual lo tomamos como una constante. Así al hacer la sustitución de ecuación \ref{capacitanciaplacasparalelas} en \ref{frecuenciaResonancia} nos queda
 \begin{equation}
 f_0=\frac{c}{2\pi\sqrt{\dfrac{L\,A_c}{d\,\mu_0}}}=k_0\,c
 \end{equation}
@@ -56,19 +56,19 @@ Teleférico     & 299792475.47 & 103318.57\textcolor{red}{1966} & 1.000000013\\
 \caption{Estimaciones de la frecuencia de resonancia de un circuito RLC según \ac{HCC} en las tres localidades planteadas.}
 \end{table}
 
-Se señalan en rojo las cifras que cambian en cada locación. Vemos que para este caso sería necesario alcanzar una resolución de micro Hz para poder apreciar el cambio.
+Se señalan en rojo las cifras que cambian en cada locación. Vemos que para este caso sería necesario alcanzar una resolución de por lo menos la novena cifra significativa.
 
 
 \subsection{Factor de calidad Q}
 
-Es importante señalar que para los circuitos resonantes existe un factor llamado calidad $Q$, el cual mide la eficiencia del circuito, es decir cuán bien el circuito almacena energía en comparación con la energía que pierde. Un alto valor de $Q$ implica una banda de frecuencia estrecha, como para un circuito RLC se tiene que
+Es importante señalar que para los circuitos resonantes existe un factor llamado calidad $Q$, el cual mide la eficiencia del circuito, es decir cuán bien el circuito almacena energía en comparación con la energía que pierde. Un alto valor de $Q$ implica una banda de frecuencia estrecha. En el caso de los cirucitos en serie, en la frecuencia de resonancia la impedancia es mínima y $Z=R$, de modo que el factor de calidad es
+
 \begin{equation} \label{factorQ}
-Q=\frac{\omega L}{R}
+Q=\frac{1}{R}\sqrt{\frac{ L}{C}}
 \end{equation}
 
 
-
-Basta con disminuir la resistencia y aumentar la inductancia para asegurarnos de tener una función bien estrecha que permita obtener un valor bien preciso de la frecuencia de resonancia.
+Esto nos dice que basta con disminuir la resistencia y aumentar la inductancia para asegurarnos de tener una función bien estrecha que permita obtener un valor bien preciso de la frecuencia de resonancia.
 
 \begin{figure}[h!]
   \centering\includegraphics[width=0.6\linewidth]{FactorQ-zemansky.png}\caption{Comportamiento del factor Q según la resistencia en el circuito \cite{searsZemanskyV2}.}
@@ -117,11 +117,11 @@ Para que las tres curvas correspondientes a las tres locaciones se puedan identi
 
 \subsection{Alternativa de medición: Configuración en paralelo}
 
-Otra forma de realizar el circuito es mediante una conexión en paralelo del capacitor y el inductor, como se ve en la figura \ref{fig:RLCparalelosencillo}.
+Otra forma de realizar el circuito es mediante una conexión en paralelo del capacitor y el inductor, como se ve en la figura \ref{fig:RLCparalelosencillo}. Esta configuración suele llamarse circuito tanque, ya que los elementos capacitivos e inductivos almacenan la energía.
 
 \begin{figure}[h]\centering\includegraphics[width=0.45\linewidth]{CL-paralelo-sencillo.png}\caption{Esquema básico de circuito RLC en paralelo.} \label{fig:RLCparalelosencillo}\end{figure}
 
-Es conveniente estudiar cuál será el comportamiento de este circuito planteado. Llamemos $Z_{\text{eq}}$ a la impedancia equivalente del capacitor y el inductor juntos, parte morada en figura \ref{fig:RLCparalelosencillo}. Entonces:
+Con el fin de estudiar cuál será el comportamiento de este circuito planteado llamemos $Z_{\text{eq}}$ a la impedancia equivalente del capacitor y el inductor juntos, parte morada en figura \ref{fig:RLCparalelosencillo}. Entonces:
  
 \begin{equation}
     \frac{1}{Z_{\text{eq}}} = \frac{1}{Z_C} + \frac{1}{Z_L} = i\omega C + \frac{1}{i\omega L}
@@ -156,8 +156,14 @@ Así mismo la frecuencia de resonancia se mantiene como:
     f_0 = \frac{c}{2\pi}\sqrt{\frac{A_c\,d\,\mu_0}{L}} = k_0 c
 \end{equation}
  
+\subsection{Factor Q para circuito en paralelo}
+
+Contrario a lo que ocurre en el circuito en serie, en paralelo a la frecuencia de resonancia se tiene que la impedancia $Z$ se hace máxima y ademas $Z = R$ de modo que el factor $Q$ está dado por una relación lineal con $R$
 
 
+\begin{equation}
+    Q = R \sqrt{\frac{C}{L}}
+\end{equation}
 
 
 \section{????Circuito resonante implementado- esquema experimental}
@@ -167,21 +173,33 @@ Para que el experimento pueda funcionar se requiere mucho más que solo una resi
 \begin{figure}[hbt]
 \begin{center}
 \includegraphics[width=1\linewidth]{SOLO-ESQUEMA.png}
-\caption{Modulos del experimento.}
+\caption{Esquema de las partes del experimento y sus relaciones.}
 \label{fig:SOLO-ESQUEMA}
 \end{center}
 \end{figure} 
 
-\subsection{modulo generador}
+\subsection{Módulo generador}
 
-Se encarga de generar y suministrar la señal sinusoidal al cirucito resonante R-L-C.Se comopone de:
+Se encarga de generar y suministrar la señal sinusoidal al cirucito resonante R-L-C. Se compone de:
 \begin{itemize}
-  \item Oscilador AD9833: es un modulo electrónico comercial que permite generar señales muy estables y de INCLUIR CARACTERISTICAS DESTACABLE, REFERRENCIAR AL DATA SHEET
-  \item Amplificador 1: Este se encarga de amplificar en voltaje y potencia la señal del generador, esto es necesario para poder excitar el ciruito resonante. INCLUIR LOS DOS CIRCUITOS QUE LO COMPONEN
+  \item Oscilador AD9833: es un módulo electrónico comercial que permite generar señales muy estables que se puede controlar mediante Arduino. Se escogió este aparato ya que puede generar señales con frecuencias de 0 hasta 12.5 MHz
+ y con una precisión de 0.1 Hz, eso último sería el mínimo paso que puede dar en el barrido de frecuencias. Si se sustituye el reloj incluido de 25 MHz por uno de 1 MHz la precisión para señales en el orden de los KHz es de 4 mHz. Otra característica a mencionar es que el voltaje máximo de la señal está en el orden de 0.65 V
+ y una potencia de 12.65 mW \cite{ad9833_datasheet}.
+  
+  \item Amplificador 1: Este se encarga de amplificar en voltaje y potencia la señal del generador, esto es necesario para poder excitar el ciruito resonante. Se compone a su vez de una etapa amplificadora de voltaje, incluida en la figura \ref{fig:amplificador1}, y una segunda etapa amplificadora de potencia que se explicará más adelante. El amplificador de voltaje se diseñó de esta manera para asegurar que el factor de amplificación se mantuviera constante en un amplio rango de frecuencias, concretamente entre los 100 KHz y 1 MHz.
+  
 \end{itemize} 
 
-\subsection{Modulo de lectura}
+\begin{figure}[hbt]
+\begin{center}
+\includegraphics[width=0.4\linewidth]{Amplificador1-voltaje.png}
+\caption{Esquemático de la etapa amplificadora de voltaje perteneciente al Amplificador 1 del módulo generador.}
+\label{fig:amplificador1}
+\end{center}
+\end{figure} 
 
+\subsection{Modulo de lectura}
+Este módulo se alimenta de la respuesta del circuito resonante y su objetivo es tanto transformar dicha respuesta como medirla con precisión.
 \begin{itemize}
   \item Rectificador
   \item Amplificador 2 INCLUIR OPAM Y EL DE CANBERRA
@@ -190,8 +208,12 @@ Se encarga de generar y suministrar la señal sinusoidal al cirucito resonante R
 
 \subsection{modulo automatizacion}
 
-
+\begin{itemize}
+  \item Arduino uno
+  \item PC: INCLUIR EXPLICACIÓN DEL SOFTWARE: EL PYTHON QUE CONTROLA PERO TAMBIEN LA PARTE QUE AJUSTA LA CURVA
+\end{itemize}
 \subsection{modulo estabilizador}
+INCLUIR ESQUEMÁTICO, BREVE EXPLICACIÓN DEL FUNCIONAMIENTO, GRAFICAS DE SU COMPORTAMIENTO.+ PROPUESTAS DE MEJORAS: JAULA DE FARADAY, 
 
 
 
@@ -210,7 +232,7 @@ Aquí va el diagrama del circuito y explicación de su funcionamiento
 \begin{center}
 \includegraphics[scale=0.5]{circuitoDibujo.jpg}
 \caption[circuito dibujado a mano alzada]{circuito dibujado a mano alzada}
-\label{fig:figura1}
+\label{fig:figuraa1}
 \end{center}
 \end{figure} 
 
@@ -218,7 +240,7 @@ Aquí va el diagrama del circuito y explicación de su funcionamiento
 \begin{center}
 \includegraphics[scale=0.5]{CircuitoCAD.png}
 \caption[circuito donde se explica claramente la conexión del arduino,]{circuito donde se explica claramente la conexión del arduino}
-\label{fig:figura1}
+\label{fig:figura1a}
 \end{center}
 \end{figure}
 

@@ -21,6 +21,11 @@
 \btxnamefont {\btxlastnamefont {Ahmadi}, Aphrodite} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Wheeler}, Richard}\btxauthorcolon\ \btxtitlefont {Physics 357 Laboratory Manual}, \btxeditionnumlong {2015}{}, 2015.
 \newblock {\latintext \btxurlfont{https://facultyweb.cortland.edu/douglas.armstead/S15/intermediate/Lab5SpeedOfLight.pdf}}, Unpublished; Accessed on 2025-06-24.
 
+\bibitem {ad9833_datasheet}
+\btxnamefont {\btxlastnamefont {{Analog Devices}}}\btxauthorcolon\ \btxtitlefont {Low Power, 12.65 mW, 2.3 V to 5.5 V, Programmable Waveform Generator Data Sheet AD9833}.
+\newblock Analog Devices, Inc., Norwood, MA, USA, 2018.
+\newblock {\latintext \btxurlfont{https://www.analog.com/media/en/technical-documentation/data-sheets/AD9833.pdf}}, Rev. F.
+
 \bibitem {Anderson2008flyby}
 \btxnamefont {\btxlastnamefont {Anderson}, John\btxfnamespacelong D.}, \btxnamefont {\btxlastnamefont {Campbell}, James\btxfnamespacelong K.}, \btxnamefont {\btxlastnamefont {Ekelund}, John\btxfnamespacelong E.}, \btxnamefont {\btxlastnamefont {Ellis}, Jordan}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Jordan}, James\btxfnamespacelong F.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Anomalous orbital-energy changes observed during spacecraft flybys of earth}{Anomalous Orbital-Energy Changes Observed during Spacecraft Flybys of Earth}}.
 \newblock \btxjournalfont {Phys. Rev. Lett.}, 100:091102, \btxprintmonthyear{.}{Mar}{2008}{long}.
