@@ -156,7 +156,7 @@ Así mismo la frecuencia de resonancia se mantiene como:
     f_0 = \frac{c}{2\pi}\sqrt{\frac{A_c\,d\,\mu_0}{L}} = k_0 c
 \end{equation}
  
-\subsection{Factor Q para circuito en paralelo}
+\subsubsection{Factor Q para circuito en paralelo}
 
 Contrario a lo que ocurre en el circuito en serie, en paralelo a la frecuencia de resonancia se tiene que la impedancia $Z$ se hace máxima y ademas $Z = R$ de modo que el factor $Q$ está dado por una relación lineal con $R$
 
@@ -198,12 +198,31 @@ Se encarga de generar y suministrar la señal sinusoidal al cirucito resonante R
 \end{center}
 \end{figure} 
 
-\subsection{Modulo de lectura}
-Este módulo se alimenta de la respuesta del circuito resonante y su objetivo es tanto transformar dicha respuesta como medirla con precisión.
+\subsection{Módulo de lectura}
+Este módulo se alimenta del voltaje de respuesta del circuito resonante y su objetivo consiste tanto transformar dicha respuesta como medirla con precisión. Lo componen las siguientes tres etapas:
+
 \begin{itemize}
-  \item Rectificador
-  \item Amplificador 2 INCLUIR OPAM Y EL DE CANBERRA
-  \item ADC INCLUIR SUS CARACTERISTICAS DESTACADAS QUE NOS HICIERON ELEGIRLO, Y REFERENCIAR AL  DATA SHEET
+  \item Rectificador: Toma la señal AC de respuesta y la convierte en una señal DC, su esquemático se incluye en la figura \ref{fig:rectificador}. Se utilizó un diodo de señal con una caida de tensión en directo de 0.261 V. Así mismo tambien se utilizó un transistor conectado en su base con el pin digital 9 del Arduino, esto con el fin de descargar el condensador de forma automatizada.
+  
+\begin{figure}[hbt]
+\begin{center}
+\includegraphics[width=0.62\linewidth]{Rectificador.png}
+\caption{Esquemático del "rectificador" perteneciente al módulo de lectura.}
+\label{fig:rectificador}
+\end{center}
+\end{figure} 
+
+  \item Amplificador 2: para este segundo amplificador se opta por un amplificador operacional debido a que se está trabajando con una señal de entrada DC. El objetivo de esta etapa es multiplicar por el mismo factor el voltaje para lográr diferenciar mejor las pequeñas variaciones de voltaje en cada paso del barrido de frecuencia. 
+  
+  \begin{figure}[hbt]
+\begin{center}
+\includegraphics[width=0.55\linewidth]{Amplificador2.png}
+\caption{Esquemático del amplificador 2 perteneciente al módulo de lectura.}
+\label{fig:amplificador2}
+\end{center}
+\end{figure} 
+
+  \item ADS1115: es un modulo electrónico comercial que funciona como convertidor analógico digital (ADC por sus siglas en ingles). En este caso va a medir el voltaje con una precisión de 16 bits. Se eligió este equipo en particular por su gran cantidad de bits a un bajo costo, además de que permite una fácil integración con Arduino gracias al protocolo I2C (Inter-Integrated Circuit), posee un rango variable para la medición del voltaje de hasta $\pm$ 6.144 V y cuenta con 4 canales totalmente independientes para la conversión, es como tener 4 ADC en uno \cite{ad9833_datasheet}. Lamentablemente, este aparato es delicado, por lo que se optó, en las mas recientes mediciones, agregarle una resistencia de 1 K$\Omega$  entre la señal de entrada y el pin de lectura a modo de protección.
 \end{itemize}
 
 \subsection{modulo automatizacion}

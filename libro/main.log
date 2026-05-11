@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  10 MAY 2026 21:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  10 MAY 2026 23:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -605,35 +605,35 @@ LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 11.
-LaTeX Info: Redefining \. on input line 267.
-LaTeX Info: Redefining \% on input line 267.
-LaTeX Info: Redefining \. on input line 268.
-LaTeX Info: Redefining \% on input line 268.
-LaTeX Info: Redefining \. on input line 281.
-LaTeX Info: Redefining \% on input line 281.
-LaTeX Info: Redefining \. on input line 282.
-LaTeX Info: Redefining \% on input line 282.
+LaTeX Info: Redefining \. on input line 273.
+LaTeX Info: Redefining \% on input line 273.
+LaTeX Info: Redefining \. on input line 274.
+LaTeX Info: Redefining \% on input line 274.
+LaTeX Info: Redefining \. on input line 288.
+LaTeX Info: Redefining \% on input line 288.
+LaTeX Info: Redefining \. on input line 289.
+LaTeX Info: Redefining \% on input line 289.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -669,8 +669,8 @@ LaTeX Font Info:    ... okay on input line 73.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 73.
-LaTeX Info: Redefining \% on input line 73.
+LaTeX Info: Redefining \. on input line 77.
+LaTeX Info: Redefining \% on input line 77.
 (c:/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count364
@@ -697,7 +697,7 @@ Package caption Info: End \AtBeginDocument code.
  (c:/texlive/2026/texmf-dist/tex/latex/translations/translations-basic-dictionary-spanish.trsl
 File: translations-basic-dictionary-spanish.trsl (spanish translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 73.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 77.
 
 babelbib: Set bibliography fall-back language to spanish
 (c:/texlive/2026/texmf-dist/tex/latex/babelbib/spanish.bdf
@@ -707,7 +707,7 @@ babelbib extension \btxifchangecaseoff added to \extrasspanish
 )
 babelbib: Load BibTeX extensions \bibsspanish for spanish
 babelbib: Set language for keywords in the bibliography fixed to spanish
-Package hyperref Info: Link coloring ON on input line 73.
+Package hyperref Info: Link coloring ON on input line 77.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -719,18 +719,18 @@ babelbib: Set language for keywords in the bibliography fixed to spanish
 
 
 {c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
  (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
  (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2]
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.77 \input
+l.81 \input
            {dedicatoria} [1
 
 ] (./dedicatoria.tex
@@ -755,14 +755,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\MakeTextUppercase   ' on input line 79.
+(hyperref)                removing `\MakeTextUppercase   ' on input line 83.
 
 [5
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\MakeTextUppercase   ' on input line 82.
+(hyperref)                removing `\MakeTextUppercase   ' on input line 86.
 
 (./main.toc
 LaTeX Info: Redefining \. on input line 1.
@@ -785,19 +785,19 @@ LaTeX Info: Redefining \% on input line 60.
  [7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\MakeTextUppercase   ' on input line 83.
+(hyperref)                removing `\MakeTextUppercase   ' on input line 87.
 
 (./main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 17.
-LaTeX Info: Redefining \% on input line 17.
-LaTeX Info: Redefining \. on input line 18.
-LaTeX Info: Redefining \% on input line 18.
 LaTeX Info: Redefining \. on input line 19.
 LaTeX Info: Redefining \% on input line 19.
 LaTeX Info: Redefining \. on input line 20.
 LaTeX Info: Redefining \% on input line 20.
+LaTeX Info: Redefining \. on input line 21.
+LaTeX Info: Redefining \% on input line 21.
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
 )
 \tf@lof=\write6
 \openout6 = `main.lof'.
@@ -807,7 +807,7 @@ LaTeX Info: Redefining \% on input line 20.
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\MakeTextUppercase   ' on input line 84.
+(hyperref)                removing `\MakeTextUppercase   ' on input line 88.
 
 (./main.lot
 LaTeX Info: Redefining \. on input line 1.
@@ -836,6 +836,12 @@ TESIS-USB: resetting all acronyms
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 13.
+
+
+LaTeX Warning: Hyper reference `acro:ADC' on page x undefined on input line 15.
+
+
+LaTeX Warning: Hyper reference `acro:ADC' on page x undefined on input line 15.
 
 
 LaTeX Warning: Hyper reference `acro:C' on page x undefined on input line 16.
@@ -870,12 +876,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 4.
 
 )
-Overfull \hbox (45.44864pt too wide) in paragraph at lines 5--87
+Overfull \hbox (45.44864pt too wide) in paragraph at lines 5--91
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--87
+Underfull \hbox (badness 10000) in paragraph at lines 5--91
 
  []
 
@@ -909,12 +915,12 @@ although it is yet undefined on input line 6.
 ] [3] [4]
 Package acronym Info: Label `acro:HCC' overridden on input line 106.
  [5{c:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [6] [7] [8] [9] [10] [11] [12] [13]
-<Curva c_i vs g_i.png, id=621, 422.7795pt x 328.8285pt>
+<Curva c_i vs g_i.png, id=630, 422.7795pt x 328.8285pt>
 File: Curva c_i vs g_i.png Graphic file (type png)
 <use Curva c_i vs g_i.png>
 Package pdftex.def Info: Curva c_i vs g_i.png  used on input line 351.
 (pdftex.def)             Requested size: 253.66965pt x 197.29861pt.
-<curva c_i vs g_i zoom.png, id=624, 419.166pt x 328.8285pt>
+<curva c_i vs g_i zoom.png, id=633, 419.166pt x 328.8285pt>
 File: curva c_i vs g_i zoom.png Graphic file (type png)
 <use curva c_i vs g_i zoom.png>
 Package pdftex.def Info: curva c_i vs g_i zoom.png  used on input line 359.
@@ -923,7 +929,7 @@ Package pdftex.def Info: curva c_i vs g_i zoom.png  used on input line 359.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagen4.png, id=629, 337.86224pt x 222.23026pt>
+<Imagen4.png, id=638, 337.86224pt x 222.23026pt>
 File: Imagen4.png Graphic file (type png)
 <use Imagen4.png>
 Package pdftex.def Info: Imagen4.png  used on input line 369.
@@ -934,7 +940,7 @@ although it is yet undefined on input line 378.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [14 <./Curva c_i vs g_i.png>] [15 <./curva c_i vs g_i zoom.png>]
-<CurvaPlanaGalaxias.png, id=653, 473.97075pt x 336.0555pt>
+<CurvaPlanaGalaxias.png, id=662, 473.97075pt x 336.0555pt>
 File: CurvaPlanaGalaxias.png Graphic file (type png)
 <use CurvaPlanaGalaxias.png>
 Package pdftex.def Info: CurvaPlanaGalaxias.png  used on input line 405.
@@ -955,30 +961,30 @@ Package acronym Info: Label `acro:HCC' overridden on input line 3.
 
 ]
 Package acronym Info: Label `acro:USB' overridden on input line 30.
-<experimento_guia.png, id=684, 443.256pt x 246.32025pt>
+<experimento_guia.png, id=693, 443.256pt x 246.32025pt>
 File: experimento_guia.png Graphic file (type png)
 <use experimento_guia.png>
 Package pdftex.def Info: experimento_guia.png  used on input line 35.
 (pdftex.def)             Requested size: 332.44118pt x 184.73973pt.
  [19 <./experimento_guia.png>]
-<F0003TEK.png, id=694, 321.2pt x 240.9pt>
+<F0003TEK.png, id=703, 321.2pt x 240.9pt>
 File: F0003TEK.png Graphic file (type png)
 <use F0003TEK.png>
 Package pdftex.def Info: F0003TEK.png  used on input line 50.
 (pdftex.def)             Requested size: 208.77753pt x 156.58313pt.
  [20 <./F0003TEK.png>]
-<AjusteF0003CH2.png, id=702, 392.46625pt x 279.0425pt>
+<AjusteF0003CH2.png, id=711, 392.46625pt x 279.0425pt>
 File: AjusteF0003CH2.png Graphic file (type png)
 <use AjusteF0003CH2.png>
 Package pdftex.def Info: AjusteF0003CH2.png  used on input line 71.
 (pdftex.def)             Requested size: 235.48155pt x 167.42679pt.
  [21 <./AjusteF0003CH2.png>]
-<n-1.png, id=713, 362.007pt x 217.467pt>
+<n-1.png, id=722, 362.007pt x 217.467pt>
 File: n-1.png Graphic file (type png)
 <use n-1.png>
 Package pdftex.def Info: n-1.png  used on input line 108.
 (pdftex.def)             Requested size: 228.90242pt x 137.5093pt.
-<n-2.png, id=714, 342.735pt x 217.248pt>
+<n-2.png, id=723, 342.735pt x 217.248pt>
 File: n-2.png Graphic file (type png)
 <use n-2.png>
 Package pdftex.def Info: n-2.png  used on input line 115.
@@ -988,12 +994,12 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 106--119
 [][]  [] 
  []
 
-<n-3.png, id=715, 361.788pt x 217.248pt>
+<n-3.png, id=724, 361.788pt x 217.248pt>
 File: n-3.png Graphic file (type png)
 <use n-3.png>
 Package pdftex.def Info: n-3.png  used on input line 124.
 (pdftex.def)             Requested size: 228.90242pt x 137.4537pt.
-<n-4.1.png, id=716, 387.411pt x 216.153pt>
+<n-4.1.png, id=725, 387.411pt x 216.153pt>
 File: n-4.1.png Graphic file (type png)
 <use n-4.1.png>
 Package pdftex.def Info: n-4.1.png  used on input line 131.
@@ -1003,7 +1009,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 122--135
 [][]  [] 
  []
 
-<n-4.2.png, id=717, 325.872pt x 215.934pt>
+<n-4.2.png, id=726, 325.872pt x 215.934pt>
 File: n-4.2.png Graphic file (type png)
 <use n-4.2.png>
 Package pdftex.def Info: n-4.2.png  used on input line 140.
@@ -1012,12 +1018,12 @@ Package pdftex.def Info: n-4.2.png  used on input line 140.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [22] [23 <./n-1.png> <./n-2.png> <./n-3.png> <./n-4.1.png> <./n-4.2.png>]
-<n-5.1.png, id=734, 362.007pt x 217.248pt>
+<n-5.1.png, id=743, 362.007pt x 217.248pt>
 File: n-5.1.png Graphic file (type png)
 <use n-5.1.png>
 Package pdftex.def Info: n-5.1.png  used on input line 185.
 (pdftex.def)             Requested size: 228.90242pt x 137.37083pt.
-<n-5.2.png, id=735, 348.21pt x 227.322pt>
+<n-5.2.png, id=744, 348.21pt x 227.322pt>
 File: n-5.2.png Graphic file (type png)
 <use n-5.2.png>
 Package pdftex.def Info: n-5.2.png  used on input line 192.
@@ -1047,12 +1053,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ]
 Package acronym Info: Label `acro:HCC' overridden on input line 56.
  [28]
-<FactorQ-zemansky.png, id=783, 272.81924pt x 205.9695pt>
+<FactorQ-zemansky.png, id=792, 272.81924pt x 205.9695pt>
 File: FactorQ-zemansky.png Graphic file (type png)
 <use FactorQ-zemansky.png>
 Package pdftex.def Info: FactorQ-zemansky.png  used on input line 74.
 (pdftex.def)             Requested size: 274.6857pt x 207.38011pt.
-<SUNY-circuito.png, id=785, 353.52075pt x 157.7895pt>
+<SUNY-circuito.png, id=794, 353.52075pt x 157.7895pt>
 File: SUNY-circuito.png Graphic file (type png)
 <use SUNY-circuito.png>
 Package pdftex.def Info: SUNY-circuito.png  used on input line 79.
@@ -1062,12 +1068,12 @@ Package pdftex.def Info: SUNY-circuito.png  used on input line 79.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [29 <./FactorQ-zemansky.png>] [30 <./SUNY-circuito.png>]
-<Simulacion-respuesta1.png, id=809, 556.32843pt x 368.1253pt>
+<Simulacion-respuesta1.png, id=819, 556.32843pt x 368.1253pt>
 File: Simulacion-respuesta1.png Graphic file (type png)
 <use Simulacion-respuesta1.png>
 Package pdftex.def Info: Simulacion-respuesta1.png  used on input line 105.
 (pdftex.def)             Requested size: 412.02156pt x 272.63876pt.
-<Simulacion-respuesta2.png, id=811, 465.99094pt x 335.75438pt>
+<Simulacion-respuesta2.png, id=821, 465.99094pt x 335.75438pt>
 File: Simulacion-respuesta2.png Graphic file (type png)
 <use Simulacion-respuesta2.png>
 Package pdftex.def Info: Simulacion-respuesta2.png  used on input line 109.
@@ -1077,7 +1083,7 @@ Package pdftex.def Info: Simulacion-respuesta2.png  used on input line 109.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [31 <./Simulacion-respuesta1.png>]
-<CL-paralelo-sencillo.png, id=820, 548.595pt x 284.919pt>
+<CL-paralelo-sencillo.png, id=829, 548.595pt x 284.919pt>
 File: CL-paralelo-sencillo.png Graphic file (type png)
 <use CL-paralelo-sencillo.png>
 Package pdftex.def Info: CL-paralelo-sencillo.png  used on input line 122.
@@ -1087,34 +1093,46 @@ Package pdftex.def Info: CL-paralelo-sencillo.png  used on input line 122.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [32 <./Simulacion-respuesta2.png>] [33 <./CL-paralelo-sencillo.png>]
-<SOLO-ESQUEMA.png, id=841, 605.26125pt x 274.02374pt>
+<SOLO-ESQUEMA.png, id=850, 605.26125pt x 274.02374pt>
 File: SOLO-ESQUEMA.png Graphic file (type png)
 <use SOLO-ESQUEMA.png>
 Package pdftex.def Info: SOLO-ESQUEMA.png  used on input line 175.
 (pdftex.def)             Requested size: 457.80486pt x 207.26506pt.
  [34 <./SOLO-ESQUEMA.png>]
-<Amplificador1-voltaje.png, id=850, 451.6875pt x 449.88075pt>
+<Amplificador1-voltaje.png, id=859, 449.88075pt x 449.88075pt>
 File: Amplificador1-voltaje.png Graphic file (type png)
 <use Amplificador1-voltaje.png>
 Package pdftex.def Info: Amplificador1-voltaje.png  used on input line 195.
-(pdftex.def)             Requested size: 183.11914pt x 182.38605pt.
+(pdftex.def)             Requested size: 183.11914pt x 183.12056pt.
  [35 <./Amplificador1-voltaje.png>]
-<circuitoDibujo.jpg, id=857, 602.25pt x 260.975pt>
+<Rectificador.png, id=867, 654.64575pt x 395.67825pt>
+File: Rectificador.png Graphic file (type png)
+<use Rectificador.png>
+Package pdftex.def Info: Rectificador.png  used on input line 209.
+(pdftex.def)             Requested size: 283.83676pt x 171.55714pt.
+<Amplificador2.png, id=868, 504.08325pt x 347.49825pt>
+File: Amplificador2.png Graphic file (type png)
+<use Amplificador2.png>
+Package pdftex.def Info: Amplificador2.png  used on input line 219.
+(pdftex.def)             Requested size: 251.79407pt x 173.57901pt.
+ [36 <./Rectificador.png> <./Amplificador2.png>]
+<circuitoDibujo.jpg, id=877, 602.25pt x 260.975pt>
 File: circuitoDibujo.jpg Graphic file (type jpg)
 <use circuitoDibujo.jpg>
-Package pdftex.def Info: circuitoDibujo.jpg  used on input line 233.
+Package pdftex.def Info: circuitoDibujo.jpg  used on input line 252.
 (pdftex.def)             Requested size: 301.12425pt x 130.48718pt.
-<CircuitoCAD.png, id=858, 1034.06325pt x 417.35925pt>
+ [37]
+<CircuitoCAD.png, id=882, 1034.06325pt x 417.35925pt>
 File: CircuitoCAD.png Graphic file (type png)
 <use CircuitoCAD.png>
-Package pdftex.def Info: CircuitoCAD.png  used on input line 241.
+Package pdftex.def Info: CircuitoCAD.png  used on input line 260.
 (pdftex.def)             Requested size: 517.03036pt x 208.67911pt.
 
-Overfull \hbox (59.22551pt too wide) in paragraph at lines 241--242
+Overfull \hbox (59.22551pt too wide) in paragraph at lines 260--261
  [] 
  []
 
-) (./capitulo-4.tex [36] [37 <./circuitoDibujo.jpg>] [38 <./CircuitoCAD.png>]
+) (./capitulo-4.tex [38 <./circuitoDibujo.jpg>] [39 <./CircuitoCAD.png>]
 TESIS-USB: resetting all acronyms
 Cap\'{\i }tulo 4.
 
@@ -1125,7 +1143,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 1.
 
-) (./conclusiones.tex [39
+) (./conclusiones.tex [40
 
 ]
 TESIS-USB: resetting all acronyms
@@ -1133,7 +1151,7 @@ TESIS-USB: resetting all acronyms
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 1.
 
-) (./main.bbl [40
+) (./main.bbl [41
 
 ]
 TESIS-USB: resetting all acronyms
@@ -1185,7 +1203,7 @@ LaTeX Info: Redefining \. on input line 40.
 LaTeX Info: Redefining \% on input line 40.
 LaTeX Info: Redefining \. on input line 50.
 LaTeX Info: Redefining \% on input line 50.
-[41
+[42
 
 ]
 LaTeX Info: Redefining \. on input line 59.
@@ -1204,18 +1222,18 @@ LaTeX Info: Redefining \. on input line 90.
 LaTeX Info: Redefining \% on input line 90.
 LaTeX Info: Redefining \. on input line 91.
 LaTeX Info: Redefining \% on input line 91.
-LaTeX Info: Redefining \. on input line 104.
-LaTeX Info: Redefining \% on input line 104.
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
- [42]
-LaTeX Info: Redefining \. on input line 108.
-LaTeX Info: Redefining \% on input line 108.
-LaTeX Info: Redefining \. on input line 108.
-LaTeX Info: Redefining \% on input line 108.
-) (./apendice-a.tex [43]
+ [43]
+LaTeX Info: Redefining \. on input line 109.
+LaTeX Info: Redefining \% on input line 109.
+LaTeX Info: Redefining \. on input line 110.
+LaTeX Info: Redefining \% on input line 110.
+LaTeX Info: Redefining \. on input line 110.
+LaTeX Info: Redefining \% on input line 110.
+LaTeX Info: Redefining \. on input line 113.
+LaTeX Info: Redefining \% on input line 113.
+LaTeX Info: Redefining \. on input line 113.
+LaTeX Info: Redefining \% on input line 113.
+) (./apendice-a.tex [44]
 TESIS-USB: resetting all acronyms
 
 pdfTeX warning (ext4): destination with the same identifier (name{chaptert.1}) has been already used, duplicate ignored
@@ -1232,7 +1250,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 1.
 
-) (./apendice-b.tex [44
+) (./apendice-b.tex [45
 
 ]
 TESIS-USB: resetting all acronyms
@@ -1251,24 +1269,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 1.
 
-<ejemplo.pdf, id=928, 794.97pt x 614.295pt>
+<ejemplo.pdf, id=949, 794.97pt x 614.295pt>
 File: ejemplo.pdf Graphic file (type pdf)
 <use ejemplo.pdf>
 Package pdftex.def Info: ejemplo.pdf  used on input line 3.
 (pdftex.def)             Requested size: 381.58127pt x 294.85825pt.
-) [45
+) [46
 
  <./ejemplo.pdf, page is rotated 90 degrees>] (./main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
-LaTeX Info: Redefining \. on input line 267.
-LaTeX Info: Redefining \% on input line 267.
-LaTeX Info: Redefining \. on input line 268.
-LaTeX Info: Redefining \% on input line 268.
-LaTeX Info: Redefining \. on input line 281.
-LaTeX Info: Redefining \% on input line 281.
-LaTeX Info: Redefining \. on input line 282.
-LaTeX Info: Redefining \% on input line 282.
+LaTeX Info: Redefining \. on input line 273.
+LaTeX Info: Redefining \% on input line 273.
+LaTeX Info: Redefining \. on input line 274.
+LaTeX Info: Redefining \% on input line 274.
+LaTeX Info: Redefining \. on input line 288.
+LaTeX Info: Redefining \% on input line 288.
+LaTeX Info: Redefining \. on input line 289.
+LaTeX Info: Redefining \% on input line 289.
 )
  ***********
 LaTeX2e <2025-11-01>
@@ -1279,21 +1297,21 @@ L3 programming layer <2026-03-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9B58E3730620BFFE99B2A6875A8A160F;11847.
+(rerunfilecheck)             Checksum: F5CD456E08CF13AD77B82477B15423BB;12178.
  ) 
 Here is how much of TeX's memory you used:
- 29929 strings out of 467349
- 596040 string characters out of 5419856
- 992030 words of memory out of 5000000
- 58310 multiletter control sequences out of 15000+600000
+ 29955 strings out of 467349
+ 596563 string characters out of 5419856
+ 991327 words of memory out of 5000000
+ 58331 multiletter control sequences out of 15000+600000
  636295 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,118p,1703b,1526s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (58 pages, 1587700 bytes).
+Output written on main.pdf (59 pages, 1641306 bytes).
 PDF statistics:
- 1062 PDF objects out of 1200 (max. 8388607)
- 914 compressed objects within 10 object streams
- 246 named destinations out of 1000 (max. 500000)
- 581 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1084 PDF objects out of 1200 (max. 8388607)
+ 931 compressed objects within 10 object streams
+ 251 named destinations out of 1000 (max. 500000)
+ 599 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -69,6 +69,10 @@
 \def \@verbatim {\@sverbatim \verbatimplus}
 {\catcode`'=13 \gdef \verbatimplus{\catcode`'=13 \chardef '=13 }} 
 \makeatother
+%esto permite que las subsubsection aparezcan en el indice
+\setcounter{tocdepth}{3} 
+%sto permite que las subsubsection se enumeren
+\setcounter{secnumdepth}{3}
 
 \begin{document}
 
