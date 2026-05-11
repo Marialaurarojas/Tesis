@@ -225,11 +225,14 @@ Este módulo se alimenta del voltaje de respuesta del circuito resonante y su ob
   \item ADS1115: es un modulo electrónico comercial que funciona como convertidor analógico digital (ADC por sus siglas en ingles). En este caso va a medir el voltaje con una precisión de 16 bits. Se eligió este equipo en particular por su gran cantidad de bits a un bajo costo, además de que permite una fácil integración con Arduino gracias al protocolo I2C (Inter-Integrated Circuit), posee un rango variable para la medición del voltaje de hasta $\pm$ 6.144 V y cuenta con 4 canales totalmente independientes para la conversión, es como tener 4 ADC en uno \cite{ad9833_datasheet}. Lamentablemente, este aparato es delicado, por lo que se optó, en las mas recientes mediciones, agregarle una resistencia de 1 K$\Omega$  entre la señal de entrada y el pin de lectura a modo de protección.
 \end{itemize}
 
-\subsection{modulo automatizacion}
+\subsection{Módulo de automatización}
+
+Para que el experimento funcione es necesario que el barrido de frecuencia se haga de la misma forma todas las veces, este modulo se encarga de garantizar esto, su objetivo es controlar la ejecución del experimento reduciendo al mínimo los posibles errores humanos. Los dos equipos utilizados para esto son:
 
 \begin{itemize}
-  \item Arduino uno
-  \item PC: INCLUIR EXPLICACIÓN DEL SOFTWARE: EL PYTHON QUE CONTROLA PERO TAMBIEN LA PARTE QUE AJUSTA LA CURVA
+  \item Arduino uno: Es una placa de hardware de desarrollo libre que continene un microcontrolador facilmente programable y un conjunto de pines analógicos y digitales. Se escogió por su versatilidad, economía y el fácil acceso que se tenia a ella. En la figura \ref{fig:SOLO-ESQUEMA} se puede ver que el Arduino interactua con cada uno de los modulos antes presentados: controla el generador de funciones AD9833, es decir le dice qué generar y cuando hacerlo; enciende y apaga el transistor para la descarga del capacitor en el modulo de lectura, así como tambien recibe la conversión a digital hecha por el ADS1115. Para más detalles del funcionamiento del código en el Arduino ver el apendice \ref{apx:Arduino}.
+  
+  \item PC: una laptop Lenovo Ideapad 3 fué la escogida para controlar al Arduino, además de recibir y tratar los datos del barrido con el fin de ajustar la curva y dar con el valor de la frecuencia de resonancia.  INCLUIR EXPLICACIÓN DEL SOFTWARE: EL PYTHON QUE CONTROLA PERO TAMBIEN LA PARTE QUE AJUSTA LA CURVA
 \end{itemize}
 \subsection{modulo estabilizador}
 INCLUIR ESQUEMÁTICO, BREVE EXPLICACIÓN DEL FUNCIONAMIENTO, GRAFICAS DE SU COMPORTAMIENTO.+ PROPUESTAS DE MEJORAS: JAULA DE FARADAY, 

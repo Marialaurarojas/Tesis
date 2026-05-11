@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1778471262.77375 "main.aux" "main.bbl" "main" 1778471586.56185 0
+["bibtex main"] 1778473132.70989 "main.aux" "main.bbl" "main" 1778473160.16462 0
   "./referencias.bib" 1778471121 8490 857d87d068f3936de9f9d3a814ba1f4c ""
   "c:/texlive/2026/texmf-dist/bibtex/bst/babelbib/babplain-lf.bst" 1777134898 27787 59c0e1ae1729e4dc6e42b51fa636506f ""
-  "main.aux" 1778471584 23575 6f881eee23bc3ccfe4c66526cfec602f "pdflatex"
+  "main.aux" 1778473157 23650 7d1b7717bb8fb87e107d5c191f85baf3 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778471578.61279 "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" "main.pdf" "main" 1778471586.56271 0
+["pdflatex"] 1778473149.61237 "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" "main.pdf" "main" 1778473160.16595 0
   "AjusteF0003CH2.png" 1777133371 29413 9679503fc89fc08f3b1fd3ef7e8e536d ""
   "Amplificador1-voltaje.png" 1778466209 52402 94b1aa18f453492a2ecda32809f5a4d5 ""
   "Amplificador2.png" 1778469683 31805 4af5e6c601f4f9728713d4755b942a30 ""
@@ -26,7 +26,7 @@
   "Simulacion-respuesta2.png" 1778379341 76436 ba9f9d09547033a29c3f769576382932 ""
   "acronimos.tex" 1778470643 1370 d54138b5b0387d5795910b38f306d7ba ""
   "agradecimientos.tex" 1777133371 319 3295c7c175fe255865844f668c978916 ""
-  "apendice-a.tex" 1777133371 587 84fae5de796561008407e30ea2c76aa5 ""
+  "apendice-a.tex" 1778473148 668 b3b6a48c92762a4489b731ade1b6780c ""
   "apendice-b.tex" 1777133371 220 4551961f9ba34d45483cc1a329280192 ""
   "babelbib-and.sty" 1777133371 14321 f7975c354c5cff6f27ffdc8a28a2e8f4 ""
   "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" 1778464841 2718 1bca23560d3279d4073703fa6babfaf3 ""
@@ -217,7 +217,7 @@
   "c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1777153601 3648469 b0320031242cb6b7c7a0c982a2808190 ""
   "c:/texlive/2026/texmf.cnf" 1777153346 713 e69b156964470283e0530f5060668171 ""
   "capitulo-2.tex" 1777176946 16716 e6eab90f73500514fe33d67f10d5a3be ""
-  "capitulo-3.tex" 1778471577 19582 c34e029bee9cda8f3ed8f68e25184079 ""
+  "capitulo-3.tex" 1778473121 20814 3908810696bd897e01a566f1f3195f77 ""
   "capitulo-4.tex" 1778389289 1453 f69d593f6c953ee700fbf23b39028db0 ""
   "circuitoDibujo.jpg" 1777133371 16884 add598e4f0c92d20f13550ea3791bff1 ""
   "conclusiones.tex" 1777133371 27 fef8898427cf9a25471539fbdf0029e4 ""
@@ -226,13 +226,13 @@
   "ejemplo.pdf" 1777133371 5383 b83701fc6d761d5a1ad6ec8fc45dc59d ""
   "experimento_guia.png" 1777133371 145712 f8d150fa120353b5f1eb6d427e7e208f ""
   "introduccion.tex" 1777156110 329 4e5d863c293781982ec7b1851a406fc5 ""
-  "main.aux" 1778471584 23575 6f881eee23bc3ccfe4c66526cfec602f "pdflatex"
-  "main.bbl" 1778471263 11183 d40262dfb0676c85d7b19a67ae459777 "bibtex main"
-  "main.lof" 1778471584 2302 4032e9bd48fed88c377794bdf29119e7 "pdflatex"
-  "main.lot" 1778471584 1672 2c03afbd917cb063be6c3d095a8988d3 "pdflatex"
-  "main.out" 1778471584 12178 f5cd456e08cf13ad77b82477b15423bb "pdflatex"
+  "main.aux" 1778473157 23650 7d1b7717bb8fb87e107d5c191f85baf3 "pdflatex"
+  "main.bbl" 1778473133 11183 d40262dfb0676c85d7b19a67ae459777 "bibtex main"
+  "main.lof" 1778473157 2302 4032e9bd48fed88c377794bdf29119e7 "pdflatex"
+  "main.lot" 1778473157 1672 2c03afbd917cb063be6c3d095a8988d3 "pdflatex"
+  "main.out" 1778473157 12238 261436a45bbb8438ec2552cd0cb4b53b "pdflatex"
   "main.tex" 1778464841 2718 1bca23560d3279d4073703fa6babfaf3 ""
-  "main.toc" 1778471584 5773 cd559c2dcc7f63b72578782d0b5b56e0 "pdflatex"
+  "main.toc" 1778473157 5785 eed2e28bb99f92293314873c0dc8a730 "pdflatex"
   "n-1.png" 1777133371 27641 c5ca3d4f46120468d4c3ca4937bd8fb2 ""
   "n-2.png" 1777133371 31815 4dc0d73a087f776873fb0afcf8a8125f ""
   "n-3.png" 1777133371 34607 ac8f6550928694b01bad7a109edee6d9 ""

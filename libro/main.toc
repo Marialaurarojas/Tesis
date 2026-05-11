@@ -38,7 +38,7 @@
 \contentsline {section}{\numberline {3.3}????Circuito resonante implementado- esquema experimental}{34}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Módulo generador}{34}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Módulo de lectura}{35}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}modulo automatizacion}{37}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.3}Módulo de automatización}{37}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}modulo estabilizador}{37}{subsection.3.3.4}%
 \contentsline {section}{\numberline {3.4}Experimento RLC en Serie}{38}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}procedimiento experimental}{38}{subsection.3.4.1}%
@@ -46,8 +46,8 @@
 \contentsline {section}{\numberline {3.5}Experimento RLC en paralelo}{38}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}procedimiento experimental}{38}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Resultados}{38}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Calculo de la precisión necesaria: Ajuste de la curva por ODR}{38}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Modificaciones propuestas}{38}{section.3.7}%
+\contentsline {section}{\numberline {3.6}Calculo de la precisión necesaria: Ajuste de la curva por ODR}{39}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Modificaciones propuestas}{39}{section.3.7}%
 \contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{40}{chaptert.4}%
 \contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{40}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{40}{section.4.2}%
@@ -58,5 +58,5 @@
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Licencia}}{45}{chaptert.1}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Código Arduino}}{45}{chaptert.1}%
 \contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{EJEMPLO DE IMAGEN EN APÉNDICE}}{46}{chaptert.2}%
