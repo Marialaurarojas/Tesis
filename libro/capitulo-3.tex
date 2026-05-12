@@ -236,8 +236,74 @@ Para que el experimento funcione es necesario que el barrido de frecuencia se ha
   \item PC: una laptop Lenovo Ideapad 3 fué la escogida para controlar al Arduino, además se encarga de recibir y tratar los datos del barrido con el fin de ajustar la curva y dar con el valor de la frecuencia de resonancia. Para más detalles del software involucrado ver el apendice \ref{apx:PC}.
     
 \end{itemize}
-\subsection{modulo estabilizador}
-INCLUIR ESQUEMÁTICO, BREVE EXPLICACIÓN DEL FUNCIONAMIENTO, GRAFICAS DE SU COMPORTAMIENTO.+ PROPUESTAS DE MEJORAS: JAULA DE FARADAY, 
+\subsection{Módulo estabilizador}
+%INCLUIR ESQUEMÁTICO, BREVE EXPLICACIÓN DEL FUNCIONAMIENTO, GRAFICAS DE SU COMPORTAMIENTO.+ PROPUESTAS DE MEJORAS: JAULA DE FARADAY, 
+
+Como se mencionó antes, el experimento parte del supuesto de que las condiciones ambientales del circuito son las mismas en las tres locaciones geográficas, es justamente este módulo el encargado de garantizar eso. Se sabe que factores como la temperatura, humedad, presión y señales electomagnéticas parásitas pueden cambiar el comportamiento de los equipos electrónicos. De estos factores se ha priorizado la temperatura, debido a que puede ser muy distinta en las localidades y por su mayor capacidad de afectar a los componentes. 
+
+Se planteó y ejecutó un circuito completamente independiente de los demás módulos que regula de forma automática la temperatura en un espacio pequeño y aislado. El esquemático del circuito está en la figura \ref{fig:ESQUEMA-CIRCUITO-TEMP} y en la figura \ref{fig:FOTO-CIRCUITO-TEMP} se puede observar una foto del mismo.
+
+\begin{figure}[hbt]
+\begin{center}
+\includegraphics[width=0.7\linewidth]{CIRCUITO CONTROL DE TEMP.JPG}
+\caption{Esquemático del circuito autónomo que regula la temperatura.}
+\label{fig:ESQUEMA-CIRCUITO-TEMP}
+\end{center}
+\end{figure} 
+
+\begin{figure}[hbt]
+\begin{center}
+\includegraphics[width=0.5\linewidth]{FOTO-circuito-temperatura.png}
+\caption{Foto del circuito autónomo que regula la temperatura.}
+\label{fig:FOTO-CIRCUITO-TEMP}
+\end{center}
+\end{figure} 
+
+El funcionamiento es bástante sencillo, el potenciómetro de \(10\text{ k}\Omega\) permite establecer el umbral de activación del amplificador operacional (741) definiendo el voltaje de referencia en la entrada inversora (pin 2). El termistor es una resistencia que varia su valor dependiendo de la temperatura, si el operacional detecta que el voltaje en el termistor es distinto al de la referencia manda una señal para que se encienda un pequeño ventilador que sopla sobre una resistencia caliente, arrastrando el aire caliente sobre el resto del circuito y regulando así la temperatura de todo el contenedor. 
+
+Este sistema ha demostrado funcionar por largos periodos de tiempo manteniendo una temperatura alrededor de los 36°C. En la figura \ref{fig:graficasTemperatura} se incluyen las gráficas del comportamiento de la temperatura ambiente o exterior, y la temperatura interior, que es la regulada por el circuito estabilizador. Los datos gráficados se obtuvieron en el periodo entre abril y julio de 2025, donde se mantuvo funcionando el circuito practicamente de manera ininterrumpida en las instalaciones de la \ac{USB} junto con un termometro digital para ambas mediciones de temperatura. Se halló que durante ese tiempo la temperautra interna fue de $(36,5 \pm 0,4)$°C, para determinar si ese nivel de estabilización es suficiente habria que hacer pruebas con un circuito resonante final dentro del modulo estabilizadorlas cuales no se realizaron.
+
+Más allá del control térmico, es importante mitigar las interferencias externas previamente enumeradas. Para el caso de señales externas, se propone la implementación de una jaula de Faraday diseñada a medida, cuyo propósito es aislar el montaje experimental de la radiación electromagnética ambiental. Este blindaje resulta crítico dado que el circuito tanque, por su naturaleza resonante, constituye la base de la sintonización de señales; en consecuencia, cualquier conductor con una longitud inadecuada podría actuar como una antena, introduciendo ruido espurio que comprometería la integridad de las mediciones.
+
+
+
+
+
+\begin{figure}[htbp]
+    \centering
+    % Primera imagen (a)
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{temperatura meses.pdf} % Sustituye por tu archivo
+        \caption{Temperaturas interior y exterior desde abril hasta julio del 2025.}
+        \label{fig:tempMeses}
+    \end{subfigure}
+    
+    \vspace{1.5em} % Espacio vertical entre las imágenes
+    
+    % Segunda imagen (b)
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{temperatura dia.pdf} % Sustituye por tu archivo
+        \caption{Temperatura interior y exterior durante el día.}
+        \label{fig:tempDia}
+    \end{subfigure}
+    
+    \vspace{1.5em} % Espacio vertical entre las imágenes
+    
+    % Tercera imagen (c)
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{temperatura exterior vs interior.pdf} % Sustituye por tu archivo
+        \caption{Temperatura interior como función de la temperatura exterior.}
+        \label{fig:tempVs}
+    \end{subfigure}
+
+    % Título general de la figura (Centrado y debajo según normativa USB)
+    \caption{Gráficas del comportamiento de la temperatura exterior (ambiente) e interior (regulada por el cirtuito estabilizador).}
+    \label{fig:graficasTemperatura}
+\end{figure}
+
 
 
 
@@ -253,15 +319,6 @@ AQUI VA EL MODELO DEL CIRCUITO QUE SE PRESENTÓ EN EL COLOQUIO Y SUS RESULTADOS
 \subsection{Resultados}
 
 
-
-Aquí va el diagrama del circuito y explicación de su funcionamiento
-\begin{figure}[hbt]
-\begin{center}
-\includegraphics[scale=0.5]{circuitoDibujo.jpg}
-\caption[circuito dibujado a mano alzada]{circuito dibujado a mano alzada}
-\label{fig:figuraa1}
-\end{center}
-\end{figure} 
 
 \begin{figure}[hbt]
 \begin{center}
@@ -289,5 +346,5 @@ AQUI VA TOTAL O PARCIALMENTE LOS CALCULOS DEL ARCHIVO avances.pdf ENVIADO EL 6 D
 
 
 
-hablar sobre la propuesta de prof Julio Wlater
+hablar sobre la propuesta de prof Julio Wlater (usar un pulso en lugar de un senal sinusoidal).
 Hablar sobre cambiarse de arduino a red pitaya
