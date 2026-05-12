@@ -33,30 +33,30 @@
 \contentsline {subsection}{\numberline {3.1.1}Factor de calidad Q}{29}{subsection.3.1.1}%
 \contentsline {section}{\numberline {3.2}Planteamiento del procedimiento experimental}{29}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Análisis de la respuesta en serie y simulaciones de sensibilidad}{30}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Alternativa de medición: Configuración en paralelo}{32}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Alternativa de medición: Configuración en paralelo}{33}{subsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.2.1}Factor Q para circuito en paralelo}{34}{subsubsection.3.2.2.1}%
 \contentsline {section}{\numberline {3.3}????Circuito resonante implementado- esquema experimental}{34}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Módulo generador}{34}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Módulo de lectura}{35}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Módulo de automatización}{37}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}modulo estabilizador}{37}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.4}modulo estabilizador}{38}{subsection.3.3.4}%
 \contentsline {section}{\numberline {3.4}Experimento RLC en Serie}{38}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}procedimiento experimental}{38}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Resultados}{38}{subsection.3.4.2}%
 \contentsline {section}{\numberline {3.5}Experimento RLC en paralelo}{38}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}procedimiento experimental}{38}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Resultados}{38}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Calculo de la precisión necesaria: Ajuste de la curva por ODR}{39}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Calculo de la precisión necesaria: Ajuste de la curva por ODR}{38}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Modificaciones propuestas}{39}{section.3.7}%
-\contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{40}{chaptert.4}%
-\contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{40}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{40}{section.4.2}%
-\contentsline {section}{\numberline {4.3} Circuito LC con fem aplicada por inducción}{40}{section.4.3}%
-\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{41}{chapter*.43}%
-\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{42}{chapter*.44}%
+\contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{41}{chaptert.4}%
+\contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{41}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{41}{section.4.2}%
+\contentsline {section}{\numberline {4.3} Circuito LC con fem aplicada por inducción}{41}{section.4.3}%
+\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{42}{chapter*.43}%
+\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{43}{chapter*.44}%
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Código Arduino}}{45}{chaptert.1}%
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{EJEMPLO DE IMAGEN EN APÉNDICE}}{46}{chaptert.2}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Código Arduino}}{46}{chaptert.1}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{Tratamiento de los datos con Python}}{47}{chaptert.2}%

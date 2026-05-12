@@ -26,21 +26,27 @@ Una manera de medir indirectamente la capacitancia $C$ es conectar dicho capacit
 f_0=\frac{1}{2\pi\sqrt{LC}}
 \end{equation}
 
-Aquí $L$ es la inductancia de la bobina, entonces si consideramos un solenoide toroidal con núcleo vacío de $N$ vueltas, con área transversal $A_L$ y radio $r$ la inductancia está dada por
+Aquí $L$ es la inductancia de la bobina. Si consideramos un solenoide toroidal con núcleo vacío de $N$ vueltas, con área transversal $A_L$ y radio $r$ la inductancia está dada por
 
 \begin{equation} \label{L-selenoide}
 L=\frac{\mu_0\,N^{2}\,A_L}{2\pi r}
 \end{equation}
 
 Como el fin último es medir la velocidad de la luz en diferentes puntos geográficos, si se usa el mismo inductor en el circuito, la ecuación \ref{L-selenoide} indica que el $L$ no se verá modificado razon por la cual lo tomamos como una constante. Así al hacer la sustitución de ecuación \ref{capacitanciaplacasparalelas} en \ref{frecuenciaResonancia} nos queda
-\begin{equation}
+
+\begin{equation} \label{f0igualaK0c}
 f_0=\frac{c}{2\pi\sqrt{\dfrac{L\,A_c}{d\,\mu_0}}}=k_0\,c
 \end{equation}
+
 Donde $k_0$ sería una constante dada por
+
 \begin{equation}
 k_0=\frac{1}{2\pi\sqrt{\dfrac{L\,A_c}{d\,\mu_0}}}
 \end{equation}
-Los valores esperados de $c$ según la hipótesis de Cespedes-Curé para cada uno de los puntos donde se realizarán mediciones ya se expusieron previamente en la tabla \ref{tab:Valores_c_esperados}. Para calcular los cambios esperados en la frecuencia de resonancia del mismo circuito pero en estas tres locaciones tomemos el valor de la constante como $k_0=0.002165397~\text{m}^{-1}$, este cálculo se hace con los siguientes datos $L=6.70\times 10^{-3}\,\text{H}$, $A_c=0.04\,\text{m}^{2}$, $d=0.001\,\text{m}$ y $\mu_0=4\pi\cdot 10^{-7} $ H/m.
+
+El experimento consiste entonces en hacer un barrido de frecuencias en la señal de entrada del circuito resonante y medir su respuesta, la curva obtenida tendrá un valor máximo correspondiente a la frecuencia de resonancia, la cual se relaciona directamente con c según la ecuación \ref{f0igualaK0c}. 
+
+Los valores esperados de $c$ según la hipótesis de Cespedes-Curé para cada uno de los puntos donde se realizarán mediciones ya se expusieron previamente en la tabla \ref{tab:Valores_c_esperados}. Para calcular los cambios esperados en la frecuencia de resonancia del mismo circuito pero en estas tres locaciones, que se resumen en la tabla \ref{tab:estimacionesdef0segunHCC},  se usó el valor de la constante como $k_0=0.002165397~\text{m}^{-1}$, este cálculo se hace con los siguientes datos $L=6.70\times 10^{-3}\,\text{H}$, $A_c=0.04\,\text{m}^{2}$, $d=0.001\,\text{m}$ y $\mu_0=4\pi\cdot 10^{-7} $ H/m.
 
 \begin{table}[h!]
 \centering
@@ -53,10 +59,10 @@ USB            & 299792473.97 & 103318.57\textcolor{red}{1449} & 1.000000008\\
 Teleférico     & 299792475.47 & 103318.57\textcolor{red}{1966} & 1.000000013\\
 \bottomrule
 \end{tabular}
-\caption{Estimaciones de la frecuencia de resonancia de un circuito RLC según \ac{HCC} en las tres localidades planteadas.}
+\caption{Estimaciones de la frecuencia de resonancia de un circuito RLC según \ac{HCC} en las tres localidades planteadas.}\label{tab:estimacionesdef0segunHCC}
 \end{table}
 
-Se señalan en rojo las cifras que cambian en cada locación. Vemos que para este caso sería necesario alcanzar una resolución de por lo menos la novena cifra significativa.
+Se señalan en rojo las cifras que cambian en cada locación. Vemos que para este caso sería necesario alcanzar una resolución de por lo menos la novena cifra significativa. La aproximación de decir que el valor de $f_0$ solo se verá afectado por la densidad de energía gravitacional se cumple siempre que las condiciones ambientales en las que esté el circuito sean las mismas, así mismo nos permitimos obviar el efecto de la densidad de energía debida a los campos electromagnéticos presentes por dos razones: la primera es que localmente serán los mismos campos, es decir los debidos al propio circuito, y la segunda es que la densidad debida a esos campos está por lo menos siete ordenes de mágnitud por debajo de $\rho_E$ \cite{propiedadesdelespaciovacio}.
 
 
 \subsection{Factor de calidad Q}
@@ -76,11 +82,11 @@ Esto nos dice que basta con disminuir la resistencia y aumentar la inductancia p
 
 \section{Planteamiento del procedimiento experimental}
 
+Usar la relación \ref{permitividadyc} para estimar el valor de la velocidad de la luz no es algo nuevo \cite{GuiaLab-SUNY}\cite{GuiaLAB-MIT}. Tomemos como punto de partida el montaje experimental plantado en \cite{GuiaLab-SUNY}, donde se usa el esquema de la figura \ref{fig:circuitoGUIASUNY}. Ellos plantean determinar los valores de $L$ y $C$ a partir de las caracteristicas físicas de los componentes electrónicos, sin embargo en nuestro caso eso no es necesario ya que el objetivo es comparar el comportamiento del circuito en las tres locaciones, y para ello basta con distinguir el pequeño corrimiento del pico en el barrido de frecuencia que predice la \ac{HCC}.
+
 \begin{figure}[h!]\centering\includegraphics[width=0.5\linewidth]{SUNY-circuito.png}\caption{Circuito RLC en serie planteado por la referencia \cite{GuiaLab-SUNY}.} \label{fig:circuitoGUIASUNY}\end{figure}
 
-Usar la relación \ref{permitividadyc} para estimar el valor de la velocidad de la luz no es algo nuevo \cite{GuiaLab-SUNY}\cite{GuiaLAB-MIT}. Tomemos como punto de partida el montaje experimental plantado en \cite{GuiaLab-SUNY}, donde se usa el esquema de la figura \ref{fig:circuitoGUIASUNY}. Ellos plantean determinar los valores de $L$ y $C$ a partir de las caracteristicas físicas de los componentes electronicos, sin embargo en nuestro caso eso no es necesario ya que el objetivo es comparar el comportamiento del circuito en las tres locaciones, y para ello basta con distinguir el pequeño corrimiento del pico en el barrido de frecuencia que predice la \ac{HCC}.
-
-Un cambio adicional necesario en el montaje experimental es que el mismo se pueda conectar a una computadora, o un Arduino, que permita controlar tanto los cambios de frecuencia de la fuente variable como la amplitud de la corriente en el circuito simultáneamente y de manera automática, esto con el fin de realizar miles de mediciones en un periodo de tiempo corto y para trazar una gráfica exenta de errores humanos.
+Un cambio adicional necesario en el montaje experimental es que el mismo se pueda conectar a una computadora, o un Arduino, que permita controlar tanto los cambios de frecuencia de la fuente variable como la respuesta del circuito simultáneamente y de manera automática, esto con el fin de realizar miles de mediciones en un periodo de tiempo corto y para trazar una gráfica exenta de errores humanos.
 
 \subsection{Análisis de la respuesta en serie y simulaciones de sensibilidad}
 
@@ -97,23 +103,18 @@ Al sustituir la ecuación (2) se tiene
 I=\frac{V}{\sqrt{R^{2}+\left(2\pi f L-\dfrac{1}{2\pi f}\,\dfrac{c^{2}\mu_0\,d}{A_c}\right)^{2}}}
 \end{equation}
 Simplificando un poco
-\begin{equation}
+\begin{equation} \label{curvacorriente}
 I=\frac{V}{\sqrt{R^{2}+\left(2\pi f L-\dfrac{2\,c^{2}\,d\cdot 10^{-7}}{f\,A_c}\right)^{2}}}
 \end{equation}
-A continuación, una gráfica de esta función usando valores de la frecuencia que van en pasos de $0.1\,\mu\text{Hz}$ (30\,000 puntos graficados en total), donde lo único que cambia es la velocidad de la luz $c$ según los valores que se predicen en la hipótesis de Cespedes-Cure, además el valor de la resistencia usado es de $0.0168\,\Omega$, que es equivalente a un cable de cobre de un metro de longitud y sección transversal de 1 mm$^{2}$, y para el voltaje se usó $1\,\text{mV}$.
+En la figura \ref{fig:simulacion1} se incluye la gráfica de esta función usando valores de la frecuencia que van en pasos de $0.1\,\mu\text{Hz}$ (30\,000 puntos graficados en total), donde lo único que cambia es la velocidad de la luz $c$ según los valores que se predicen en la hipótesis de Cespedes-Cure, además el valor de la resistencia usado es de $0.0168\,\Omega$, que es equivalente a un cable de cobre de un metro de longitud y sección transversal de 1 mm$^{2}$, y para el voltaje se usó $1\,\text{mV}$.
 
-\begin{figure}[h!]\centering\includegraphics[width=0.90\linewidth]{Simulacion-respuesta1.png}\caption{Curvas $I(f)$ para las tres locaciones.}\label{fig:simulacion1}\end{figure}
+\begin{figure}[h!]\centering\includegraphics[width=0.80\linewidth]{Simulacion-respuesta1.png}\caption{Curvas $I(f)$ para las tres locaciones.}\label{fig:simulacion1}\end{figure}
 
-En la figura \ref{fig:simulacion2} se puede ver cómo de estrecha es la gráfica en realidad, en este caso se graficaron 10000 puntos igualmente espaciados, ya que con eso es suficiente para darnos una idea de la forma de la función (11) en este caso donde el barrido es entre 103315 Hz y 103322 Hz.
+En la figura \ref{fig:simulacion2} se puede ver cómo de estrecha es la gráfica en realidad, en este caso se graficaron 10000 puntos igualmente espaciados, ya que con eso es suficiente para darnos una idea de la forma de la función \ref{curvacorriente} en este caso donde el barrido es entre 103315 Hz y 103322 Hz.
 
-\begin{figure}[h!]\centering\includegraphics[width=0.90\linewidth]{Simulacion-respuesta2.png}\caption{Detalle de la curva $I(f)$.}\label{fig:simulacion2}\end{figure}
+\begin{figure}[h!]\centering\includegraphics[width=0.80\linewidth]{Simulacion-respuesta2.png}\caption{Detalle de la curva $I(f)$.}\label{fig:simulacion2}\end{figure}
 
 Para que las tres curvas correspondientes a las tres locaciones se puedan identificar correctamente es necesario medir la amplitud de corriente con gran presicion. Si consideramos un multímetro comercial muy preciso conectado en serie dentro del circuito resonante tenemos un problema: las apreciaciones para estos rangos de frecuencias son muy grandes. Es por esto que se obtó por trabajar midiendo la respuesta del voltaje en lugar de la corriente.
-
-%Por ejemplo, para el multímetro más preciso que encontré [4] el rango de 1 A sería perfecto para los valores con los que se está trabajando ya que el error asociado es del orden de 1 $\mu$A, sin embargo, la frecuencia máxima a la que puede realizar mediciones de corriente es 10\,kHz. Disminuir tanto la frecuencia de resonancia de nuestro circuito no es una opción, ya que implica que los cambios en el valor de la frecuencia debido a un cambio en la velocidad de la luz no podrían alcanzarse con la fuente de corriente alterna. Recordemos que dependemos de que la fuente pueda variar con ``pasos'' lo suficientemente pequeños como para alcanzar la frecuencia de resonancia exacta (o por lo menos muy cercana) del circuito en cada uno de los puntos geográficos donde se medirá. Entramos entonces en un ciclo: necesitamos una frecuencia alta para poder medir los cambios de ella (eje $x$ de la gráfica) y necesitamos medir con precisión la corriente (eje $y$) para lo cual se necesita disminuir al menos en dos órdenes de magnitud la frecuencia.Una alternativa pudiera ser el uso de un osciloscopio conectado como lo indica la referencia [2], actualmente estoy trabajando en esa posibilidad\ldots
-
-  
-
 
 \subsection{Alternativa de medición: Configuración en paralelo}
 
@@ -150,15 +151,15 @@ donde $V_1$ es la amplitud del voltaje generado por la fuente. Por eso es import
     V = \frac{2\pi V_1 f L/R}{\left|1 - 4\pi^2 f^2 L \dfrac{1}{c^2\mu_0}\dfrac{A_c}{d}\right|}
 \end{equation}
  
-Así mismo la frecuencia de resonancia se mantiene como:
+Cuyo máximo está en la frecuencia de resonancia, que se mantiene como:
  
 \begin{equation}
-    f_0 = \frac{c}{2\pi}\sqrt{\frac{A_c\,d\,\mu_0}{L}} = k_0 c
+    f_0 = \frac{c}{2\pi}\sqrt{\frac{d\,\mu_0}{L A_c}} = k_0 c
 \end{equation}
  
 \subsubsection{Factor Q para circuito en paralelo}
 
-Contrario a lo que ocurre en el circuito en serie, en paralelo a la frecuencia de resonancia se tiene que la impedancia $Z$ se hace máxima y ademas $Z = R$ de modo que el factor $Q$ está dado por una relación lineal con $R$
+Contrario a lo que ocurre en el circuito en serie, en paralelo a la frecuencia de resonancia se tiene que la impedancia $Z$ se hace máxima y ademas $Z = R$ de modo que el factor $Q$ está dado por una relación lineal directa con $R$
 
 
 \begin{equation}
@@ -190,9 +191,9 @@ Se encarga de generar y suministrar la señal sinusoidal al cirucito resonante R
   
 \end{itemize} 
 
-\begin{figure}[hbt]
+\begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.4\linewidth]{Amplificador1-voltaje.png}
+\includegraphics[width=0.35\linewidth]{Amplificador1-voltaje.png}
 \caption{Esquemático de la etapa amplificadora de voltaje perteneciente al Amplificador 1 del módulo generador.}
 \label{fig:amplificador1}
 \end{center}
@@ -204,9 +205,9 @@ Este módulo se alimenta del voltaje de respuesta del circuito resonante y su ob
 \begin{itemize}
   \item Rectificador: Toma la señal AC de respuesta y la convierte en una señal DC, su esquemático se incluye en la figura \ref{fig:rectificador}. Se utilizó un diodo de señal con una caida de tensión en directo de 0.261 V. Así mismo tambien se utilizó un transistor conectado en su base con el pin digital 9 del Arduino, esto con el fin de descargar el condensador de forma automatizada.
   
-\begin{figure}[hbt]
+\begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.62\linewidth]{Rectificador.png}
+\includegraphics[width=0.5\linewidth]{Rectificador.png}
 \caption{Esquemático del "rectificador" perteneciente al módulo de lectura.}
 \label{fig:rectificador}
 \end{center}
@@ -214,15 +215,15 @@ Este módulo se alimenta del voltaje de respuesta del circuito resonante y su ob
 
   \item Amplificador 2: para este segundo amplificador se opta por un amplificador operacional debido a que se está trabajando con una señal de entrada DC. El objetivo de esta etapa es multiplicar por el mismo factor el voltaje para lográr diferenciar mejor las pequeñas variaciones de voltaje en cada paso del barrido de frecuencia. 
   
-  \begin{figure}[hbt]
+  \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.55\linewidth]{Amplificador2.png}
+\includegraphics[width=0.45\linewidth]{Amplificador2.png}
 \caption{Esquemático del amplificador 2 perteneciente al módulo de lectura.}
 \label{fig:amplificador2}
 \end{center}
 \end{figure} 
 
-  \item ADS1115: es un modulo electrónico comercial que funciona como convertidor analógico digital (ADC por sus siglas en ingles). En este caso va a medir el voltaje con una precisión de 16 bits. Se eligió este equipo en particular por su gran cantidad de bits a un bajo costo, además de que permite una fácil integración con Arduino gracias al protocolo I2C (Inter-Integrated Circuit), posee un rango variable para la medición del voltaje de hasta $\pm$ 6.144 V y cuenta con 4 canales totalmente independientes para la conversión, es como tener 4 ADC en uno \cite{ad9833_datasheet}. Lamentablemente, este aparato es delicado, por lo que se optó, en las mas recientes mediciones, agregarle una resistencia de 1 K$\Omega$  entre la señal de entrada y el pin de lectura a modo de protección.
+  \item ADS1115: es un modulo electrónico comercial que funciona como convertidor analógico digital (ADC por sus siglas en ingles) de 16 bits. Se eligió este equipo en particular por su gran cantidad de bits a un bajo costo, además de que permite una fácil integración con Arduino gracias al protocolo I2C (Inter-Integrated Circuit), posee un rango variable para la medición del voltaje de hasta $\pm$ 6.144 V y cuenta con 4 canales totalmente independientes para la conversión, es como tener 4 ADC en uno \cite{ad9833_datasheet}. Lamentablemente, este aparato es delicado, por lo que se optó, en las más recientes mediciones, agregarle una resistencia de 1 K$\Omega$  entre la señal de entrada y el pin de lectura a modo de protección.
 \end{itemize}
 
 \subsection{Módulo de automatización}
@@ -230,9 +231,10 @@ Este módulo se alimenta del voltaje de respuesta del circuito resonante y su ob
 Para que el experimento funcione es necesario que el barrido de frecuencia se haga de la misma forma todas las veces, este modulo se encarga de garantizar esto, su objetivo es controlar la ejecución del experimento reduciendo al mínimo los posibles errores humanos. Los dos equipos utilizados para esto son:
 
 \begin{itemize}
-  \item Arduino uno: Es una placa de hardware de desarrollo libre que continene un microcontrolador facilmente programable y un conjunto de pines analógicos y digitales. Se escogió por su versatilidad, economía y el fácil acceso que se tenia a ella. En la figura \ref{fig:SOLO-ESQUEMA} se puede ver que el Arduino interactua con cada uno de los modulos antes presentados: controla el generador de funciones AD9833, es decir le dice qué generar y cuando hacerlo; enciende y apaga el transistor para la descarga del capacitor en el modulo de lectura, así como tambien recibe la conversión a digital hecha por el ADS1115. Para más detalles del funcionamiento del código en el Arduino ver el apendice \ref{apx:Arduino}.
+  \item Arduino uno: Es una placa de hardware de desarrollo libre que continene un microcontrolador facilmente programable y un conjunto de pines analógicos y digitales. Se escogió por su versatilidad, economía y el fácil acceso que se tenia a ella. En la figura \ref{fig:SOLO-ESQUEMA} se puede ver que el Arduino interactua con cada uno de los modulos antes presentados: controla el generador de funciones AD9833, es decir le dice qué generar y cuando hacerlo; enciende y apaga el transistor para la descarga del capacitor en el modulo de lectura, así como tambien recibe la conversión a digital hecha por el ADS1115. Para más detalles del funcionamiento del Arduino a nivel de la programación ver el apendice \ref{apx:Arduino}.
   
-  \item PC: una laptop Lenovo Ideapad 3 fué la escogida para controlar al Arduino, además de recibir y tratar los datos del barrido con el fin de ajustar la curva y dar con el valor de la frecuencia de resonancia.  INCLUIR EXPLICACIÓN DEL SOFTWARE: EL PYTHON QUE CONTROLA PERO TAMBIEN LA PARTE QUE AJUSTA LA CURVA
+  \item PC: una laptop Lenovo Ideapad 3 fué la escogida para controlar al Arduino, además se encarga de recibir y tratar los datos del barrido con el fin de ajustar la curva y dar con el valor de la frecuencia de resonancia. Para más detalles del software involucrado ver el apendice \ref{apx:PC}.
+    
 \end{itemize}
 \subsection{modulo estabilizador}
 INCLUIR ESQUEMÁTICO, BREVE EXPLICACIÓN DEL FUNCIONAMIENTO, GRAFICAS DE SU COMPORTAMIENTO.+ PROPUESTAS DE MEJORAS: JAULA DE FARADAY, 
@@ -240,10 +242,13 @@ INCLUIR ESQUEMÁTICO, BREVE EXPLICACIÓN DEL FUNCIONAMIENTO, GRAFICAS DE SU COMP
 
 
 \section{Experimento RLC en Serie}
+AQUI VA TODO LO RELACIONADO AL ULTIMO MODELO FUNCIONAL, EL QUE ESTÁ EN LA PLACA PCB
+
 \subsection{procedimiento experimental}
 \subsection{Resultados}
 
 \section{Experimento RLC en paralelo}
+AQUI VA EL MODELO DEL CIRCUITO QUE SE PRESENTÓ EN EL COLOQUIO Y SUS RESULTADOS
 \subsection{procedimiento experimental}
 \subsection{Resultados}
 
@@ -277,7 +282,7 @@ Los pines del generador de funciones AD9833 en el diagrama son
 
 
 \section{Calculo de la precisión necesaria: Ajuste de la curva por ODR}
-
+AQUI VA TOTAL O PARCIALMENTE LOS CALCULOS DEL ARCHIVO avances.pdf ENVIADO EL 6 DE ABRIL
 
 \section{Modificaciones propuestas} 
 
