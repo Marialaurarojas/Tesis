@@ -208,12 +208,12 @@ Este módulo se alimenta del voltaje de respuesta del circuito resonante y su ob
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.5\linewidth]{Rectificador.png}
-\caption{Esquemático del "rectificador" perteneciente al módulo de lectura.}
+\caption{Esquemático del ``rectificador" perteneciente al módulo de lectura.}
 \label{fig:rectificador}
 \end{center}
 \end{figure} 
 
-  \item Amplificador 2: para este segundo amplificador se opta por un amplificador operacional debido a que se está trabajando con una señal de entrada DC. El objetivo de esta etapa es multiplicar por el mismo factor el voltaje para lográr diferenciar mejor las pequeñas variaciones de voltaje en cada paso del barrido de frecuencia. 
+  \item Amplificador 2: para este segundo amplificador, figura \ref{fig:amplificador2}, se opta por un amplificador operacional debido a que se está trabajando con una señal de entrada DC. El objetivo de esta etapa es multiplicar por el mismo factor el voltaje para lográr diferenciar mejor las pequeñas variaciones de voltaje en cada paso del barrido de frecuencia. 
   
   \begin{figure}[h!]
 \begin{center}
@@ -223,7 +223,7 @@ Este módulo se alimenta del voltaje de respuesta del circuito resonante y su ob
 \end{center}
 \end{figure} 
 
-  \item ADS1115: es un modulo electrónico comercial que funciona como convertidor analógico digital (ADC por sus siglas en ingles) de 16 bits. Se eligió este equipo en particular por su gran cantidad de bits a un bajo costo, además de que permite una fácil integración con Arduino gracias al protocolo I2C (Inter-Integrated Circuit), posee un rango variable para la medición del voltaje de hasta $\pm$ 6.144 V y cuenta con 4 canales totalmente independientes para la conversión, es como tener 4 ADC en uno \cite{ad9833_datasheet}. Lamentablemente, este aparato es delicado, por lo que se optó, en las más recientes mediciones, agregarle una resistencia de 1 K$\Omega$  entre la señal de entrada y el pin de lectura a modo de protección.
+  \item ADS1115: es un módulo electrónico comercial que funciona como convertidor analógico digital (ADC por sus siglas en ingles) de 16 bits. Se eligió este equipo en particular por su gran cantidad de bits a un bajo costo, además de que permite una fácil integración con Arduino gracias al protocolo I2C (Inter-Integrated Circuit), posee un rango variable para la medición del voltaje de hasta $\pm$ 6.144 V y cuenta con 4 canales totalmente independientes para la conversión, lo que equivale a tener 4 ADC en uno \cite{ad9833_datasheet}. Lamentablemente, este aparato es delicado, por lo que se optó, en las más recientes mediciones, agregarle una resistencia de 1 K$\Omega$  entre la señal de entrada y el pin de lectura a modo de protección.
 \end{itemize}
 
 \subsection{Módulo de automatización}
@@ -261,7 +261,7 @@ Se planteó y ejecutó un circuito completamente independiente de los demás mó
 
 El funcionamiento es bástante sencillo, el potenciómetro de \(10\text{ k}\Omega\) permite establecer el umbral de activación del amplificador operacional (741) definiendo el voltaje de referencia en la entrada inversora (pin 2). El termistor es una resistencia que varia su valor dependiendo de la temperatura, si el operacional detecta que el voltaje en el termistor es distinto al de la referencia manda una señal para que se encienda un pequeño ventilador que sopla sobre una resistencia caliente, arrastrando el aire caliente sobre el resto del circuito y regulando así la temperatura de todo el contenedor. 
 
-Este sistema ha demostrado funcionar por largos periodos de tiempo manteniendo una temperatura alrededor de los 36°C. En la figura \ref{fig:graficasTemperatura} se incluyen las gráficas del comportamiento de la temperatura ambiente o exterior, y la temperatura interior, que es la regulada por el circuito estabilizador. Los datos gráficados se obtuvieron en el periodo entre abril y julio de 2025, donde se mantuvo funcionando el circuito practicamente de manera ininterrumpida en las instalaciones de la \ac{USB} junto con un termometro digital para ambas mediciones de temperatura. Se halló que durante ese tiempo la temperautra interna fue de $(36,5 \pm 0,4)$°C, para determinar si ese nivel de estabilización es suficiente habria que hacer pruebas con un circuito resonante final dentro del modulo estabilizadorlas cuales no se realizaron.
+Este sistema ha demostrado funcionar por largos periodos de tiempo manteniendo una temperatura alrededor de los 36°C. En la figura \ref{fig:graficasTemperatura} se incluyen las gráficas del comportamiento de la temperatura ambiente o exterior, y la temperatura interior, que es la regulada por el circuito estabilizador. Los datos gráficados se obtuvieron en el periodo entre abril y julio de 2025, donde se mantuvo funcionando el circuito practicamente de manera ininterrumpida en las instalaciones de la \ac{USB} junto con un termometro digital para ambas mediciones de temperatura. Se halló que durante ese tiempo la temperautra interna fue de $(36,5 \pm 0,4)$°C, para determinar si ese nivel de estabilización es suficiente habria que hacer pruebas con un circuito resonante final dentro del modulo estabilizador las cuales no se realizaron.
 
 Más allá del control térmico, es importante mitigar las interferencias externas previamente enumeradas. Para el caso de señales externas, se propone la implementación de una jaula de Faraday diseñada a medida, cuyo propósito es aislar el montaje experimental de la radiación electromagnética ambiental. Este blindaje resulta crítico dado que el circuito tanque, por su naturaleza resonante, constituye la base de la sintonización de señales; en consecuencia, cualquier conductor con una longitud inadecuada podría actuar como una antena, introduciendo ruido espurio que comprometería la integridad de las mediciones.
 
@@ -294,7 +294,7 @@ Más allá del control térmico, es importante mitigar las interferencias extern
     % Tercera imagen (c)
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{temperatura exterior vs interior.pdf} % Sustituye por tu archivo
+        \includegraphics[width=0.9\linewidth]{temperatura exterior vs interior.pdf}
         \caption{Temperatura interior como función de la temperatura exterior.}
         \label{fig:tempVs}
     \end{subfigure}
@@ -307,18 +307,31 @@ Más allá del control térmico, es importante mitigar las interferencias extern
 
 
 
+\section{Experimento RLC en paralelo}
+%AQUI VA EL MODELO DEL CIRCUITO QUE SE PRESENTÓ EN EL COLOQUIO Y SUS RESULTADOS
+El primer prototipo del sistema descrito en la sección anterior se hizo considerando un arreglo en paralelo del circuito resonante, como el de la figura \ref{fig:RLCparalelosencillo}. Es esta ocasión, para el amplificador 1 en su etapa de amplificación de potencia, se usó el equema de la figura \ref{fig:amplificador1paralelo}. La resistencia $Ra$ es de potencia, el pin de entrada recibe la señal del amplificador de voltaje d ela figura \ref{fig:amplificador1} y a continuación de la salida viene la resistencia en serie y el condensador e inductor en paralelo. Todo el conjunto se armó y probo con un montaje en protobard tal como se en la figura \ref{}
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.4\linewidth]{Amplificador1-potencia-paralelo.png}
+\caption{Esquemático de la etapa amplificadora de potencia perteneciente al Amplificador 1, en el montaje en paralelo.}
+\label{fig:amplificador1paralelo}
+\end{center}
+\end{figure} 
+
+
+
+
+\subsection{procedimiento experimental}
+\subsection{Resultados}
+
+
+
 \section{Experimento RLC en Serie}
 AQUI VA TODO LO RELACIONADO AL ULTIMO MODELO FUNCIONAL, EL QUE ESTÁ EN LA PLACA PCB
 
 \subsection{procedimiento experimental}
 \subsection{Resultados}
-
-\section{Experimento RLC en paralelo}
-AQUI VA EL MODELO DEL CIRCUITO QUE SE PRESENTÓ EN EL COLOQUIO Y SUS RESULTADOS
-\subsection{procedimiento experimental}
-\subsection{Resultados}
-
-
 
 \begin{figure}[hbt]
 \begin{center}

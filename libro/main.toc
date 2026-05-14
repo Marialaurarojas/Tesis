@@ -40,20 +40,20 @@
 \contentsline {subsection}{\numberline {3.3.2}Módulo de lectura}{35}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Módulo de automatización}{37}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Módulo estabilizador}{38}{subsection.3.3.4}%
-\contentsline {section}{\numberline {3.4}Experimento RLC en Serie}{41}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Experimento RLC en paralelo}{41}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}procedimiento experimental}{41}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Resultados}{41}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Experimento RLC en paralelo}{41}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}procedimiento experimental}{41}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Resultados}{41}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.5}Experimento RLC en Serie}{41}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}procedimiento experimental}{42}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Resultados}{42}{subsection.3.5.2}%
 \contentsline {section}{\numberline {3.6}Calculo de la precisión necesaria: Ajuste de la curva por ODR}{42}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Modificaciones propuestas}{42}{section.3.7}%
 \contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{43}{chaptert.4}%
 \contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{43}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{43}{section.4.2}%
 \contentsline {section}{\numberline {4.3} Circuito LC con fem aplicada por inducción}{43}{section.4.3}%
-\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{44}{chapter*.46}%
-\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{45}{chapter*.47}%
+\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{44}{chapter*.47}%
+\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{45}{chapter*.48}%
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 

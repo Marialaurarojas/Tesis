@@ -1,14 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1778605286.41149 "main.aux" "main.bbl" "main" 1778605499.80718 0
+["bibtex main"] 1778780287.26493 "main.aux" "main.bbl" "main" 1778780359.28097 0
   "./referencias.bib" 1778471121 8490 857d87d068f3936de9f9d3a814ba1f4c ""
   "c:/texlive/2026/texmf-dist/bibtex/bst/babelbib/babplain-lf.bst" 1777134898 27787 59c0e1ae1729e4dc6e42b51fa636506f ""
-  "main.aux" 1778605498 25734 c5a79c3315fde6e1471ddc1a15cd7dc5 "pdflatex"
+  "main.aux" 1778780357 26151 dc17ab0904cb4ce3289c61c1a5c9b355 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778605492.62946 "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" "main.pdf" "main" 1778605499.80804 0
+["pdflatex"] 1778780352.21351 "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" "main.pdf" "main" 1778780359.28187 0
   "AjusteF0003CH2.png" 1777133371 29413 9679503fc89fc08f3b1fd3ef7e8e536d ""
+  "Amplificador1-potencia-paralelo.png" 1778780108 48268 a72cc5e67113605ae324751e334e21cc ""
   "Amplificador1-voltaje.png" 1778466209 52402 94b1aa18f453492a2ecda32809f5a4d5 ""
   "Amplificador2.png" 1778469683 31805 4af5e6c601f4f9728713d4755b942a30 ""
   "CIRCUITO CONTROL DE TEMP.JPG" 1749590457 39338 a27ae773a93f20835f5cdfbbdeb1e3dc ""
@@ -219,7 +220,7 @@
   "c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1777153601 3648469 b0320031242cb6b7c7a0c982a2808190 ""
   "c:/texlive/2026/texmf.cnf" 1777153346 713 e69b156964470283e0530f5060668171 ""
   "capitulo-2.tex" 1777176946 16716 e6eab90f73500514fe33d67f10d5a3be ""
-  "capitulo-3.tex" 1778605490 25522 a24ff9d1ad76c84d92a2a34802c69029 ""
+  "capitulo-3.tex" 1778780350 26516 88c0bea5ec66d74d67844533a2b1b8d6 ""
   "capitulo-4.tex" 1778605491 1474 e518a2a1ab3a98dc651ff32e762e4e63 ""
   "conclusiones.tex" 1777133371 27 fef8898427cf9a25471539fbdf0029e4 ""
   "curva c_i vs g_i zoom.png" 1777133371 26865 18bd7d838b87a97f50e80ba4b969df15 ""
@@ -227,13 +228,13 @@
   "ejemplo.pdf" 1777133371 5383 b83701fc6d761d5a1ad6ec8fc45dc59d ""
   "experimento_guia.png" 1777133371 145712 f8d150fa120353b5f1eb6d427e7e208f ""
   "introduccion.tex" 1777156110 329 4e5d863c293781982ec7b1851a406fc5 ""
-  "main.aux" 1778605498 25734 c5a79c3315fde6e1471ddc1a15cd7dc5 "pdflatex"
-  "main.bbl" 1778605287 11183 d40262dfb0676c85d7b19a67ae459777 "bibtex main"
-  "main.lof" 1778605498 2672 85a4a75835bac670d9bdbc5fd3448b73 "pdflatex"
-  "main.lot" 1778605498 1672 e808d8e8a07952beb2b7e1facb1e96e7 "pdflatex"
-  "main.out" 1778605498 12271 d1a63ca1396f87a4e20286d459813102 "pdflatex"
+  "main.aux" 1778780357 26151 dc17ab0904cb4ce3289c61c1a5c9b355 "pdflatex"
+  "main.bbl" 1778780288 11183 d40262dfb0676c85d7b19a67ae459777 "bibtex main"
+  "main.lof" 1778780357 2866 1a33781536fc39477107f83ef92dfb88 "pdflatex"
+  "main.lot" 1778780357 1672 e808d8e8a07952beb2b7e1facb1e96e7 "pdflatex"
+  "main.out" 1778780357 12271 813d6364518b4e6d2df0110b9bf6e31a "pdflatex"
   "main.tex" 1778464841 2718 1bca23560d3279d4073703fa6babfaf3 ""
-  "main.toc" 1778605498 5791 e9cb97487ea61f788d54b9e5bf3455cd "pdflatex"
+  "main.toc" 1778780357 5791 48427365ddfb073f37185260f8bde849 "pdflatex"
   "n-1.png" 1777133371 27641 c5ca3d4f46120468d4c3ca4937bd8fb2 ""
   "n-2.png" 1777133371 31815 4dc0d73a087f776873fb0afcf8a8125f ""
   "n-3.png" 1777133371 34607 ac8f6550928694b01bad7a109edee6d9 ""
