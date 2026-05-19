@@ -98,7 +98,7 @@ Donde $Z$ es la impedancia, por lo tanto
 \begin{equation}
 I=\frac{V}{\sqrt{R^{2}+\left(2\pi f L-\dfrac{1}{2\pi f C}\right)^{2}}}
 \end{equation}
-Al sustituir la ecuación (2) se tiene
+Al sustituir la ecuación \ref{capacitanciaplacasparalelas} se tiene
 \begin{equation}
 I=\frac{V}{\sqrt{R^{2}+\left(2\pi f L-\dfrac{1}{2\pi f}\,\dfrac{c^{2}\mu_0\,d}{A_c}\right)^{2}}}
 \end{equation}
@@ -110,7 +110,7 @@ En la figura \ref{fig:simulacion1} se incluye la gráfica de esta función usand
 
 \begin{figure}[h!]\centering\includegraphics[width=0.80\linewidth]{Simulacion-respuesta1.png}\caption{Curvas $I(f)$ para las tres locaciones.}\label{fig:simulacion1}\end{figure}
 
-En la figura \ref{fig:simulacion2} se puede ver cómo de estrecha es la gráfica en realidad, en este caso se graficaron 10000 puntos igualmente espaciados, ya que con eso es suficiente para darnos una idea de la forma de la función \ref{curvacorriente} en este caso donde el barrido es entre 103315 Hz y 103322 Hz.
+En la figura \ref{fig:simulacion2} se puede ver cómo de estrecha es la gráfica en realidad, en este caso se graficaron 10000 puntos igualmente espaciados, ya que con eso es suficiente para darnos una idea de la forma de la función \ref{curvacorriente}, en este caso donde el barrido es entre 103315 Hz y 103322 Hz.
 
 \begin{figure}[h!]\centering\includegraphics[width=0.80\linewidth]{Simulacion-respuesta2.png}\caption{Detalle de la curva $I(f)$.}\label{fig:simulacion2}\end{figure}
 
@@ -167,7 +167,7 @@ Contrario a lo que ocurre en el circuito en serie, en paralelo a la frecuencia d
 \end{equation}
 
 
-\section{????Circuito resonante implementado- esquema experimental}
+\section{????Circuito resonante implementado- esquema experimental}\label{seccion-modulos}
 
 Para que el experimento pueda funcionar se requiere mucho más que solo una resistencias, un capacitor y una bobina. La propuesta está en añadir modulos adicionales cada uno con su función especifica. El conjunto completo así como las relaciones entre ellos se pueden apreciar en la figura \ref{fig:SOLO-ESQUEMA}
 
@@ -185,7 +185,7 @@ Se encarga de generar y suministrar la señal sinusoidal al cirucito resonante R
 \begin{itemize}
   \item Oscilador AD9833: es un módulo electrónico comercial que permite generar señales muy estables que se puede controlar mediante Arduino. Se escogió este aparato ya que puede generar señales con frecuencias de 0 hasta 12.5 MHz
  y con una precisión de 0.1 Hz, eso último sería el mínimo paso que puede dar en el barrido de frecuencias. Si se sustituye el reloj incluido de 25 MHz por uno de 1 MHz la precisión para señales en el orden de los KHz es de 4 mHz. Otra característica a mencionar es que el voltaje máximo de la señal está en el orden de 0.65 V
- y una potencia de 12.65 mW \cite{ad9833_datasheet}.
+ y una potencia de 12.65 mW \cite{ad9833_datasheet}; por otro lado su alimentación es de 5V, la cual se conectó con la salida de igual voltaje del Arduino.
   
   \item Amplificador 1: Este se encarga de amplificar en voltaje y potencia la señal del generador, esto es necesario para poder excitar el ciruito resonante. Se compone a su vez de una etapa amplificadora de voltaje, incluida en la figura \ref{fig:amplificador1}, y una segunda etapa amplificadora de potencia que se explicará más adelante. El amplificador de voltaje se diseñó de esta manera para asegurar que el factor de amplificación se mantuviera constante en un amplio rango de frecuencias, concretamente entre los 100 KHz y 1 MHz.
   
@@ -223,7 +223,7 @@ Este módulo se alimenta del voltaje de respuesta del circuito resonante y su ob
 \end{center}
 \end{figure} 
 
-  \item ADS1115: es un módulo electrónico comercial que funciona como convertidor analógico digital (ADC por sus siglas en ingles) de 16 bits. Se eligió este equipo en particular por su gran cantidad de bits a un bajo costo, además de que permite una fácil integración con Arduino gracias al protocolo I2C (Inter-Integrated Circuit), posee un rango variable para la medición del voltaje de hasta $\pm$ 6.144 V y cuenta con 4 canales totalmente independientes para la conversión, lo que equivale a tener 4 ADC en uno \cite{ad9833_datasheet}. Lamentablemente, este aparato es delicado, por lo que se optó, en las más recientes mediciones, agregarle una resistencia de 1 K$\Omega$  entre la señal de entrada y el pin de lectura a modo de protección.
+  \item ADS1115: es un módulo electrónico comercial que funciona como convertidor analógico digital (ADC por sus siglas en ingles) de 16 bits. Se eligió este equipo en particular por su gran cantidad de bits a un bajo costo, además de que permite una fácil integración con Arduino gracias al protocolo I2C (Inter-Integrated Circuit), posee un rango variable para la medición del voltaje de hasta $\pm$ 6.144 V y cuenta con 4 canales totalmente independientes para la conversión, lo que equivale a tener 4 ADC en uno \cite{ad9833_datasheet}. La alimentación de este módulo es de 5V, así que al igual que el AD9833 se conectó con la salida del Arduino. Por último es necesario aclarar que este aparato es delicado, por lo que se optó, en las más recientes mediciones, por agregarle una resistencia de 1 K$\Omega$  entre la señal de entrada y el pin de lectura a modo de protección.
 \end{itemize}
 
 \subsection{Módulo de automatización}
@@ -241,7 +241,8 @@ Para que el experimento funcione es necesario que el barrido de frecuencia se ha
 
 Como se mencionó antes, el experimento parte del supuesto de que las condiciones ambientales del circuito son las mismas en las tres locaciones geográficas, es justamente este módulo el encargado de garantizar eso. Se sabe que factores como la temperatura, humedad, presión y señales electomagnéticas parásitas pueden cambiar el comportamiento de los equipos electrónicos. De estos factores se ha priorizado la temperatura, debido a que puede ser muy distinta en las localidades y por su mayor capacidad de afectar a los componentes. 
 
-Se planteó y ejecutó un circuito completamente independiente de los demás módulos que regula de forma automática la temperatura en un espacio pequeño y aislado. El esquemático del circuito está en la figura \ref{fig:ESQUEMA-CIRCUITO-TEMP} y en la figura \ref{fig:FOTO-CIRCUITO-TEMP} se puede observar una foto del mismo.
+Se planteó y ejecutó un circuito completamente independiente de los demás módulos que regula de forma automática la temperatura en un espacio pequeño y semiaislado. El esquemático del circuito está en la figura \ref{fig:ESQUEMA-CIRCUITO-TEMP} y en la figura \ref{fig:FOTO-CIRCUITO-TEMP} se puede observar una foto del mismo.
+%PONLE LAS BARRAR HORIZONTALES DE ERROR A LA GRAFICA
 
 \begin{figure}[hbt]
 \begin{center}
@@ -309,7 +310,12 @@ Más allá del control térmico, es importante mitigar las interferencias extern
 
 \section{Experimento RLC en paralelo}
 %AQUI VA EL MODELO DEL CIRCUITO QUE SE PRESENTÓ EN EL COLOQUIO Y SUS RESULTADOS
-El primer prototipo del sistema descrito en la sección anterior se hizo considerando un arreglo en paralelo del circuito resonante, como el de la figura \ref{fig:RLCparalelosencillo}. Es esta ocasión, para el amplificador 1 en su etapa de amplificación de potencia, se usó el equema de la figura \ref{fig:amplificador1paralelo}. La resistencia $Ra$ es de potencia, el pin de entrada recibe la señal del amplificador de voltaje d ela figura \ref{fig:amplificador1} y a continuación de la salida viene la resistencia en serie y el condensador e inductor en paralelo. Todo el conjunto se armó y probo con un montaje en protobard tal como se en la figura \ref{}
+
+\subsection{procedimiento experimental}
+El primer prototipo del sistema descrito en la sección \ref{seccion-modulos} se hizo considerando un arreglo en paralelo del circuito resonante, como el de la figura \ref{fig:RLCparalelosencillo}. Es esta ocasión, para el amplificador 1 en su etapa de amplificación de potencia, se usó el equema de la figura \ref{fig:amplificador1paralelo}. La resistencia $Ra$ es de potencia, el pin de entrada recibe la señal del amplificador de voltaje de la figura \ref{fig:amplificador1} y a continuación de la salida viene la resistencia en serie y el condensador e inductor en paralelo. Todo el conjunto se armó y probó con un montaje en protobard tal como se observa en la figura \ref{fig:foto-protoboard}
+
+
+
 
 \begin{figure}[h!]
 \begin{center}
@@ -320,9 +326,29 @@ El primer prototipo del sistema descrito en la sección anterior se hizo conside
 \end{figure} 
 
 
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.4\linewidth]{Foto-paralelo-protoboard.png}
+\caption{Foto de experimento RLC en paralelo.}
+\label{fig:foto-protoboard}
+\end{center}
+\end{figure} 
 
+Otras diferencias claves entre este prototipo de experimento y lo planteado en la sección \ref{seccion-modulos} que valen la pena señalar son: 
+\begin{itemize}
+    \item No existe el amplificador 2
+    \item La fuente de volaje $\pm12$ V utilizada es del tipo comercial, de regulador de laptop, adaptada para poder conectar su salida en el protoboard. Eso hace que este diseño necesite estár conectado a la red electrica para funcionar.
+    \item Al ADC no incluye la resistencia de protección en su entrada.  
+\end{itemize}
 
-\subsection{procedimiento experimental}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.4\linewidth]{Foto-paralelo-protoboard.png}
+\caption{ESQUEMATICO DE TODO EN PARALELO.}
+\label{fig:}
+\end{center}
+\end{figure} 
+
 \subsection{Resultados}
 
 
