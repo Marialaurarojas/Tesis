@@ -311,7 +311,7 @@ Más allá del control térmico, es importante mitigar las interferencias extern
 \section{Experimento RLC en paralelo}
 %AQUI VA EL MODELO DEL CIRCUITO QUE SE PRESENTÓ EN EL COLOQUIO Y SUS RESULTADOS
 
-\subsection{procedimiento experimental}
+\subsection{Procedimiento experimental}
 El primer prototipo del sistema descrito en la sección \ref{seccion-modulos} se hizo considerando un arreglo en paralelo del circuito resonante, como el de la figura \ref{fig:RLCparalelosencillo}. Es esta ocasión, para el amplificador 1 en su etapa de amplificación de potencia, se usó el equema de la figura \ref{fig:amplificador1paralelo}. La resistencia $Ra$ es de potencia, el pin de entrada recibe la señal del amplificador de voltaje de la figura \ref{fig:amplificador1} y a continuación de la salida viene la resistencia en serie y el condensador e inductor en paralelo. Todo el conjunto se armó y probó con un montaje en protobard tal como se observa en la figura \ref{fig:foto-protoboard}
 
 
@@ -341,20 +341,49 @@ Otras diferencias claves entre este prototipo de experimento y lo planteado en l
     \item Al ADC no incluye la resistencia de protección en su entrada.  
 \end{itemize}
 
+El esquemático del circuito completo se puede ver en la figura \ref{fig:total-paralelo}.
+
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.4\linewidth]{Foto-paralelo-protoboard.png}
-\caption{ESQUEMATICO DE TODO EN PARALELO.}
-\label{fig:}
+\includegraphics[width=1\linewidth]{esquematico-paralelo-total.png}
+\caption{Esquemático de todo el circuito del experimento RLC en paralelo.}
+\label{fig:total-paralelo}
 \end{center}
 \end{figure} 
+
 
 \subsection{Resultados}
 
 
 
+
+
+
+
+
 \section{Experimento RLC en Serie}
-AQUI VA TODO LO RELACIONADO AL ULTIMO MODELO FUNCIONAL, EL QUE ESTÁ EN LA PLACA PCB
+%AQUI VA TODO LO RELACIONADO AL ULTIMO MODELO FUNCIONAL, EL QUE ESTÁ EN LA PLACA PCB
+
+Esta versión del circuito resonante se ideó buscando mejorar los resultados de la anterior, además de utilizar un arreglo en serie midiendo el voltaje en la resistencia, como se plantea en \cite{GuiaLab-SUNY} (figura \ref{fig:circuitoGUIASUNY}) los cambios más importantes son:
+
+\begin{itemize}
+    \item Se dejó de lado el uso de protobard, y se obtó por placas perforadas comerciales y PCB.
+    \item Para la etapa amplificadora de potencia del amplificador 1 se utilizó el esquema de la figura \ref{fig:amplificador1serie}.
+    
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.75]{Amplificador1-potencia-serie.png}
+\caption[]{Esquemático de la etapa amplificadora de potencia del amplificador 1 en el experimento conectado en serie.}
+\label{fig:amplificador1serie}
+\end{center}
+\end{figure}
+
+
+
+    \item Se implementó el amplificador 2, que se incluye en la figura \ref{fig:amplificador2}.
+    \item Se incluyó la resistencia $R13$ de protección.
+\end{itemize}
+
 
 \subsection{procedimiento experimental}
 \subsection{Resultados}
