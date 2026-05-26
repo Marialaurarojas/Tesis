@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  21 MAY 2026 13:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  26 MAY 2026 16:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -605,14 +605,14 @@ LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 11.
-LaTeX Info: Redefining \. on input line 299.
-LaTeX Info: Redefining \% on input line 299.
 LaTeX Info: Redefining \. on input line 300.
 LaTeX Info: Redefining \% on input line 300.
-LaTeX Info: Redefining \. on input line 314.
-LaTeX Info: Redefining \% on input line 314.
+LaTeX Info: Redefining \. on input line 301.
+LaTeX Info: Redefining \% on input line 301.
 LaTeX Info: Redefining \. on input line 315.
 LaTeX Info: Redefining \% on input line 315.
+LaTeX Info: Redefining \. on input line 316.
+LaTeX Info: Redefining \% on input line 316.
 )
 \openout1 = `main.aux'.
 
@@ -1183,14 +1183,6 @@ Package pdftex.def Info: esquematico-paralelo-total.png  used on input line 348.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Amplificador1-potencia-serie.png, id=935, 386.6445pt x 355.92975pt>
-File: Amplificador1-potencia-serie.png Graphic file (type png)
-<use Amplificador1-potencia-serie.png>
-Package pdftex.def Info: Amplificador1-potencia-serie.png  used on input line 375.
-(pdftex.def)             Requested size: 289.98267pt x 266.94666pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [40] [41 <./temperatura meses.pdf> <./temperatura dia.pdf
 
 pdfTeX warning: pdflatex.exe (file ./temperatura dia.pdf): PDF inclusion: multiple pdfs with page group included in a single page
@@ -1198,17 +1190,40 @@ pdfTeX warning: pdflatex.exe (file ./temperatura dia.pdf): PDF inclusion: multip
 
 pdfTeX warning: pdflatex.exe (file ./temperatura exterior vs interior.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<CircuitoCAD.png, id=971, 1034.06325pt x 417.35925pt>
-File: CircuitoCAD.png Graphic file (type png)
-<use CircuitoCAD.png>
-Package pdftex.def Info: CircuitoCAD.png  used on input line 393.
-(pdftex.def)             Requested size: 517.03036pt x 208.67911pt.
+<Amplificador1-potencia-serie.png, id=969, 386.6445pt x 355.92975pt>
+File: Amplificador1-potencia-serie.png Graphic file (type png)
+<use Amplificador1-potencia-serie.png>
+Package pdftex.def Info: Amplificador1-potencia-serie.png  used on input line 376.
+(pdftex.def)             Requested size: 193.32178pt x 177.96443pt.
 
-Overfull \hbox (59.22551pt too wide) in paragraph at lines 393--394
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[42 <./Amplificador1-potencia-paralelo.png> <./Foto-paralelo-protoboard.png>]
+<Fuente-Con-Baterias.jpg, id=980, 686.565pt x 493.845pt>
+File: Fuente-Con-Baterias.jpg Graphic file (type jpg)
+<use Fuente-Con-Baterias.jpg>
+Package pdftex.def Info: Fuente-Con-Baterias.jpg  used on input line 392.
+(pdftex.def)             Requested size: 514.92249pt x 370.38283pt.
+
+Overfull \hbox (57.11763pt too wide) in paragraph at lines 392--393
  [] 
  []
 
-[42 <./Amplificador1-potencia-paralelo.png> <./Foto-paralelo-protoboard.png>] [43 <./esquematico-paralelo-total.png> <./Amplificador1-potencia-serie.png>]) (./capitulo-4.tex [44 <./CircuitoCAD.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<CircuitoCAD.png, id=981, 1034.06325pt x 417.35925pt>
+File: CircuitoCAD.png Graphic file (type png)
+<use CircuitoCAD.png>
+Package pdftex.def Info: CircuitoCAD.png  used on input line 403.
+(pdftex.def)             Requested size: 517.03036pt x 208.67911pt.
+
+Overfull \hbox (59.22551pt too wide) in paragraph at lines 403--404
+ [] 
+ []
+
+[43 <./esquematico-paralelo-total.png> <./Amplificador1-potencia-serie.png>]) (./capitulo-4.tex [44 <./Fuente-Con-Baterias.jpg>] [45 <./CircuitoCAD.png>]
 TESIS-USB: resetting all acronyms
 Cap\'{\i }tulo 4.
 
@@ -1219,7 +1234,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 1.
 
-) (./conclusiones.tex [45
+) (./conclusiones.tex [46
 
 ]
 TESIS-USB: resetting all acronyms
@@ -1227,7 +1242,7 @@ TESIS-USB: resetting all acronyms
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 1.
 
-) (./main.bbl [46
+) (./main.bbl [47
 
 ]
 TESIS-USB: resetting all acronyms
@@ -1279,7 +1294,7 @@ LaTeX Info: Redefining \. on input line 40.
 LaTeX Info: Redefining \% on input line 40.
 LaTeX Info: Redefining \. on input line 50.
 LaTeX Info: Redefining \% on input line 50.
-[47
+[48
 
 ]
 LaTeX Info: Redefining \. on input line 59.
@@ -1298,7 +1313,7 @@ LaTeX Info: Redefining \. on input line 90.
 LaTeX Info: Redefining \% on input line 90.
 LaTeX Info: Redefining \. on input line 91.
 LaTeX Info: Redefining \% on input line 91.
- [48]
+ [49]
 LaTeX Info: Redefining \. on input line 109.
 LaTeX Info: Redefining \% on input line 109.
 LaTeX Info: Redefining \. on input line 110.
@@ -1309,7 +1324,7 @@ LaTeX Info: Redefining \. on input line 113.
 LaTeX Info: Redefining \% on input line 113.
 LaTeX Info: Redefining \. on input line 113.
 LaTeX Info: Redefining \% on input line 113.
-) (./apendice-a.tex [49]
+) (./apendice-a.tex [50]
 TESIS-USB: resetting all acronyms
 
 pdfTeX warning (ext4): destination with the same identifier (name{chaptert.1}) has been already used, duplicate ignored
@@ -1326,7 +1341,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 1.
 
-) (./apendice-b.tex [50
+) (./apendice-b.tex [51
 
 ]
 TESIS-USB: resetting all acronyms
@@ -1345,24 +1360,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 1.
 
-<ejemplo.pdf, id=1048, 794.97pt x 614.295pt>
+<ejemplo.pdf, id=1055, 794.97pt x 614.295pt>
 File: ejemplo.pdf Graphic file (type pdf)
 <use ejemplo.pdf>
 Package pdftex.def Info: ejemplo.pdf  used on input line 6.
 (pdftex.def)             Requested size: 381.58127pt x 294.85825pt.
-) [51
+) [52
 
  <./ejemplo.pdf, page is rotated 90 degrees>] (./main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
-LaTeX Info: Redefining \. on input line 299.
-LaTeX Info: Redefining \% on input line 299.
 LaTeX Info: Redefining \. on input line 300.
 LaTeX Info: Redefining \% on input line 300.
-LaTeX Info: Redefining \. on input line 314.
-LaTeX Info: Redefining \% on input line 314.
+LaTeX Info: Redefining \. on input line 301.
+LaTeX Info: Redefining \% on input line 301.
 LaTeX Info: Redefining \. on input line 315.
 LaTeX Info: Redefining \% on input line 315.
+LaTeX Info: Redefining \. on input line 316.
+LaTeX Info: Redefining \% on input line 316.
 )
  ***********
 LaTeX2e <2025-11-01>
@@ -1373,21 +1388,21 @@ L3 programming layer <2026-03-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 19B41B24049AB8A27B82C47C0F6DD547;12271.
+(rerunfilecheck)             Checksum: 5923F63B62E463D3F16ADBFB6DFCA540;12271.
  ) 
 Here is how much of TeX's memory you used:
- 30041 strings out of 467349
- 599195 string characters out of 5419856
- 993943 words of memory out of 5000000
- 58405 multiletter control sequences out of 15000+600000
+ 30051 strings out of 467349
+ 599449 string characters out of 5419856
+ 993978 words of memory out of 5000000
+ 58413 multiletter control sequences out of 15000+600000
  636295 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,118p,1703b,1526s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (64 pages, 3957331 bytes).
+Output written on main.pdf (65 pages, 4033171 bytes).
 PDF statistics:
- 1186 PDF objects out of 1200 (max. 8388607)
- 1008 compressed objects within 11 object streams
- 263 named destinations out of 1000 (max. 500000)
- 639 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1194 PDF objects out of 1200 (max. 8388607)
+ 1014 compressed objects within 11 object streams
+ 265 named destinations out of 1000 (max. 500000)
+ 644 words of extra memory for PDF output out of 10000 (max. 10000000)
 

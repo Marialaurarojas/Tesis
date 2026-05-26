@@ -362,17 +362,18 @@ El esquemático del circuito completo se puede ver en la figura \ref{fig:total-p
 
 
 \section{Experimento RLC en Serie}
+\subsection{Procedimiento experimental}
 %AQUI VA TODO LO RELACIONADO AL ULTIMO MODELO FUNCIONAL, EL QUE ESTÁ EN LA PLACA PCB
 
 Esta versión del circuito resonante se ideó buscando mejorar los resultados de la anterior, además de utilizar un arreglo en serie midiendo el voltaje en la resistencia, como se plantea en \cite{GuiaLab-SUNY} (figura \ref{fig:circuitoGUIASUNY}) los cambios más importantes son:
 
 \begin{itemize}
-    \item Se dejó de lado el uso de protobard, y se obtó por placas perforadas comerciales y PCB.
+    \item Se dejó de lado el uso de protobard, y se obtó por placas perforadas comerciales y PCB. Las razones principales para este cambio son: por un lado que la capacitancia implicita del protoboard puede afectar de forma significativa al circuito se se estan usando altas frecuencias, y por otro lado que los cables que se usan para hacer las conexiones entre componentes sobre el protoboard puede excederse en su largo y actuar no solo como antena sino tambien como bobinas.  
     \item Para la etapa amplificadora de potencia del amplificador 1 se utilizó el esquema de la figura \ref{fig:amplificador1serie}.
     
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.75]{Amplificador1-potencia-serie.png}
+\includegraphics[scale=0.5]{Amplificador1-potencia-serie.png}
 \caption[]{Esquemático de la etapa amplificadora de potencia del amplificador 1 en el experimento conectado en serie.}
 \label{fig:amplificador1serie}
 \end{center}
@@ -381,11 +382,20 @@ Esta versión del circuito resonante se ideó buscando mejorar los resultados de
 
 
     \item Se implementó el amplificador 2, que se incluye en la figura \ref{fig:amplificador2}.
+    \item Como fuente de voltaje $\pm 12$ V se usó un equipo previamente fabricado por el Laboratorio de Física Nuclear (figura \ref{fig:fuente-baterias}), el cuál usa como entrada dos baterias recargables de 6 V y da de salida señales DC muy estables de diferentes valores de voltaje
     \item Se incluyó la resistencia $R13$ de protección.
+    
 \end{itemize}
 
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.75]{Fuente-Con-Baterias.jpg}
+\caption[]{Foto de la fuente utilizada en el experimento RLC en serie.}
+\label{fig:fuente-baterias}
+\end{center}
+\end{figure}
 
-\subsection{procedimiento experimental}
+
 \subsection{Resultados}
 
 \begin{figure}[hbt]

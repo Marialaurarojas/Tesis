@@ -44,19 +44,19 @@
 \contentsline {subsection}{\numberline {3.4.1}Procedimiento experimental}{40}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Resultados}{40}{subsection.3.4.2}%
 \contentsline {section}{\numberline {3.5}Experimento RLC en Serie}{40}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}procedimiento experimental}{44}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.1}Procedimiento experimental}{40}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Resultados}{44}{subsection.3.5.2}%
 \contentsline {section}{\numberline {3.6}Calculo de la precisión necesaria: Ajuste de la curva por ODR}{44}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Modificaciones propuestas}{44}{section.3.7}%
-\contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{45}{chaptert.4}%
-\contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{45}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{45}{section.4.2}%
-\contentsline {section}{\numberline {4.3} Circuito LC con fem aplicada por inducción}{45}{section.4.3}%
-\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{46}{chapter*.50}%
-\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{47}{chapter*.51}%
+\contentsline {section}{\numberline {3.7}Modificaciones propuestas}{45}{section.3.7}%
+\contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{46}{chaptert.4}%
+\contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{46}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{46}{section.4.2}%
+\contentsline {section}{\numberline {4.3} Circuito LC con fem aplicada por inducción}{46}{section.4.3}%
+\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{47}{chapter*.51}%
+\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{48}{chapter*.52}%
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Código Arduino}}{50}{chaptert.1}%
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{Tratamiento de los datos con Python}}{51}{chaptert.2}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Código Arduino}}{51}{chaptert.1}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{Tratamiento de los datos con Python}}{52}{chaptert.2}%
