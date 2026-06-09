@@ -4,7 +4,15 @@
 
 %recuerda incluir porque en la suma de las densidades que dice la HCC en este caso importa poco la componente electromagnetica y no es una mala aproximación solo tratar con la parte gravitacional (secreto: esta ultima es muchos ordenes de magnitud (ya eso lo calculó greaves en algun lado) mayor y ademas como el circuito es el mismo la parte electromagnetica más cercana se mantiene) 
 
+AQUI VA EL RESUMEN DEL CAPITULO \newline
+AQUI VA EL RESUMEN DEL CAPITULO \newline
+AQUI VA EL RESUMEN DEL CAPITULO \newline
+AQUI VA EL RESUMEN DEL CAPITULO \newline
+AQUI VA EL RESUMEN DEL CAPITULO \newline
+AQUI VA EL RESUMEN DEL CAPITULO \newline
+AQUI VA EL RESUMEN DEL CAPITULO \newline
 AQUI VA EL RESUMEN DEL CAPITULO
+
 \section{Fundamentos teóricos: Electrodinámica y Resonancia}
 
 
@@ -108,11 +116,11 @@ I=\frac{V}{\sqrt{R^{2}+\left(2\pi f L-\dfrac{2\,c^{2}\,d\cdot 10^{-7}}{f\,A_c}\r
 \end{equation}
 En la figura \ref{fig:simulacion1} se incluye la gráfica de esta función usando valores de la frecuencia que van en pasos de $0.1\,\mu\text{Hz}$ (30\,000 puntos graficados en total), donde lo único que cambia es la velocidad de la luz $c$ según los valores que se predicen en la hipótesis de Cespedes-Cure, además el valor de la resistencia usado es de $0.0168\,\Omega$, que es equivalente a un cable de cobre de un metro de longitud y sección transversal de 1 mm$^{2}$, y para el voltaje se usó $1\,\text{mV}$.
 
-\begin{figure}[h!]\centering\includegraphics[width=0.80\linewidth]{Simulacion-respuesta1.png}\caption{Curvas $I(f)$ para las tres locaciones.}\label{fig:simulacion1}\end{figure}
+\begin{figure}[h!]\centering\includegraphics[width=0.70\linewidth]{Simulacion-respuesta1.png}\caption{Curvas $I(f)$ para las tres locaciones.}\label{fig:simulacion1}\end{figure}
 
 En la figura \ref{fig:simulacion2} se puede ver cómo de estrecha es la gráfica en realidad, en este caso se graficaron 10000 puntos igualmente espaciados, ya que con eso es suficiente para darnos una idea de la forma de la función \ref{curvacorriente}, en este caso donde el barrido es entre 103315 Hz y 103322 Hz.
 
-\begin{figure}[h!]\centering\includegraphics[width=0.80\linewidth]{Simulacion-respuesta2.png}\caption{Detalle de la curva $I(f)$.}\label{fig:simulacion2}\end{figure}
+\begin{figure}[h!]\centering\includegraphics[width=0.70\linewidth]{Simulacion-respuesta2.png}\caption{Detalle de la curva $I(f)$.}\label{fig:simulacion2}\end{figure}
 
 Para que las tres curvas correspondientes a las tres locaciones se puedan identificar correctamente es necesario medir la amplitud de corriente con gran presicion. Si consideramos un multímetro comercial muy preciso conectado en serie dentro del circuito resonante tenemos un problema: las apreciaciones para estos rangos de frecuencias son muy grandes. Es por esto que se obtó por trabajar midiendo la respuesta del voltaje en lugar de la corriente.
 
@@ -262,7 +270,7 @@ Se planteó y ejecutó un circuito completamente independiente de los demás mó
 
 El funcionamiento es bástante sencillo, el potenciómetro de \(10\text{ k}\Omega\) permite establecer el umbral de activación del amplificador operacional (741) definiendo el voltaje de referencia en la entrada inversora (pin 2). El termistor es una resistencia que varia su valor dependiendo de la temperatura, si el operacional detecta que el voltaje en el termistor es distinto al de la referencia manda una señal para que se encienda un pequeño ventilador que sopla sobre una resistencia caliente, arrastrando el aire caliente sobre el resto del circuito y regulando así la temperatura de todo el contenedor. 
 
-Este sistema ha demostrado funcionar por largos periodos de tiempo manteniendo una temperatura alrededor de los 36°C. En la figura \ref{fig:graficasTemperatura} se incluyen las gráficas del comportamiento de la temperatura ambiente o exterior, y la temperatura interior, que es la regulada por el circuito estabilizador. Los datos gráficados se obtuvieron en el periodo entre abril y julio de 2025, donde se mantuvo funcionando el circuito practicamente de manera ininterrumpida en las instalaciones de la \ac{USB} junto con un termometro digital para ambas mediciones de temperatura. Se halló que durante ese tiempo la temperautra interna fue de $(36,5 \pm 0,4)$°C, para determinar si ese nivel de estabilización es suficiente habria que hacer pruebas con un circuito resonante final dentro del modulo estabilizador las cuales no se realizaron.
+Este sistema ha demostrado funcionar por largos periodos de tiempo manteniendo una temperatura alrededor de los 36°C. En la figura \ref{fig:graficasTemperatura} se incluyen las gráficas del comportamiento de la temperatura ambiente o exterior, y la temperatura interior, que es la regulada por el circuito estabilizador. Los datos gráficados se obtuvieron en el periodo entre abril y julio de 2025, donde se mantuvo funcionando el circuito practicamente de manera ininterrumpida en las instalaciones de la USB junto con un termómetro digital para ambas mediciones de temperatura. Se halló que durante ese tiempo la temperautra interna fue de $(36,5 \pm 0,4)$°C, para determinar si ese nivel de estabilización es suficiente habria que hacer pruebas con un circuito resonante final dentro del modulo estabilizador las cuales no se realizaron.
 
 Más allá del control térmico, es importante mitigar las interferencias externas previamente enumeradas. Para el caso de señales externas, se propone la implementación de una jaula de Faraday diseñada a medida, cuyo propósito es aislar el montaje experimental de la radiación electromagnética ambiental. Este blindaje resulta crítico dado que el circuito tanque, por su naturaleza resonante, constituye la base de la sintonización de señales; en consecuencia, cualquier conductor con una longitud inadecuada podría actuar como una antena, introduciendo ruido espurio que comprometería la integridad de las mediciones.
 
@@ -312,7 +320,7 @@ Más allá del control térmico, es importante mitigar las interferencias extern
 %AQUI VA EL MODELO DEL CIRCUITO QUE SE PRESENTÓ EN EL COLOQUIO Y SUS RESULTADOS
 
 \subsection{Procedimiento experimental}
-El primer prototipo del sistema descrito en la sección \ref{seccion-modulos} se hizo considerando un arreglo en paralelo del circuito resonante, como el de la figura \ref{fig:RLCparalelosencillo}. Es esta ocasión, para el amplificador 1 en su etapa de amplificación de potencia, se usó el equema de la figura \ref{fig:amplificador1paralelo}. La resistencia $Ra$ es de potencia, el pin de entrada recibe la señal del amplificador de voltaje de la figura \ref{fig:amplificador1} y a continuación de la salida viene la resistencia en serie y el condensador e inductor en paralelo. Todo el conjunto se armó y probó con un montaje en protobard tal como se observa en la figura \ref{fig:foto-protoboard}
+El primer prototipo del sistema descrito en la sección \ref{seccion-modulos} se hizo considerando un arreglo en paralelo del circuito resonante, como el de la figura \ref{fig:RLCparalelosencillo}. Es esta ocasión, para el amplificador 1 en su etapa de amplificación de potencia, se usó el equema de la figura \ref{fig:amplificador1paralelo}. La resistencia $Ra$ es de potencia, el pin de entrada recibe la señal del amplificador de voltaje de la figura \ref{fig:amplificador1} y a continuación de la salida viene la resistencia en serie y el condensador e inductor en paralelo. Todo el conjunto se armó y probó con un montaje en protoboard tal como se observa en la figura \ref{fig:foto-protoboard}
 
 
 
@@ -336,7 +344,7 @@ El primer prototipo del sistema descrito en la sección \ref{seccion-modulos} se
 
 Otras diferencias claves entre este prototipo de experimento y lo planteado en la sección \ref{seccion-modulos} que valen la pena señalar son: 
 \begin{itemize}
-    \item No existe el amplificador 2
+    \item No existe el amplificador 2.
     \item La fuente de volaje $\pm12$ V utilizada es del tipo comercial, de regulador de laptop, adaptada para poder conectar su salida en el protoboard. Eso hace que este diseño necesite estár conectado a la red electrica para funcionar.
     \item Al ADC no incluye la resistencia de protección en su entrada.  
 \end{itemize}
@@ -345,7 +353,7 @@ El esquemático del circuito completo se puede ver en la figura \ref{fig:total-p
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=1\linewidth]{esquematico-paralelo-total.png}
+\includegraphics[width=0.80\linewidth]{esquematico-paralelo-total.png}
 \caption{Esquemático de todo el circuito del experimento RLC en paralelo.}
 \label{fig:total-paralelo}
 \end{center}
@@ -353,9 +361,50 @@ El esquemático del circuito completo se puede ver en la figura \ref{fig:total-p
 
 
 \subsection{Resultados}
+Este procedimiento se intentó multiples veces, los mejores resultado se obtuvieron con un valor de R5 de $10 \Omega$ y R7 de $4 K\Omega$, para un barrido entre 520 KHz y 550 KHz con pasos de 500 Hz, los resultado se incluyen en la figura \ref{fig:resultado-RLC-paralelo}. Los puntos forman una curva suave, la cual se ajustó usando mínimos cuadrados con python como se explica en el apéndice \ref{apx:PC}, los resultado del ajuste son 
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|c|}
+\hline
+parametro de ajuste &   & Error Porcentual\\
+\hline
+A & ($150584843.14142781 \pm 10943043.65096375$) & $1\%$ \\
+gamma & $(21271.47871882 \pm 456.68294779 )$ & $6\%$ \\
+offset & $(0.06535192 \pm 0.01010142)$ & \\
+Frecuencia & $(533274.4926610\pm 19.3713475) $ & d \\
+\hline
+\end{tabular}
+\caption{}
+\label{tab:resultado-paralelo}
+\end{table}
 
 
 
+
+\begin{figure}[htbp]
+    \centering
+    % Primera imagen (a)
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{grafica-3Jun-10.png}
+        \caption{Descripción de la primera parte.}
+        \label{fig:parte_a}
+    \end{subfigure}
+    %\hfill
+    % Segunda imagen (b)
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{grafica-3Jun-12.png}
+        \caption{Descripción de la segunda parte.}
+        \label{fig:parte_b}
+    \end{subfigure}
+
+    % Título general: Centrado, debajo y en fuente regular (sin negritas ni cursivas) [1].
+    \caption{Título general de la figura siguiendo la normativa USB. Si no es propia, agregar la fuente \cite{autor2024}.}
+    \label{fig:resultado-RLC-paralelo}
+\end{figure}
 
 
 
@@ -368,7 +417,7 @@ El esquemático del circuito completo se puede ver en la figura \ref{fig:total-p
 Esta versión del circuito resonante se ideó buscando mejorar los resultados de la anterior, además de utilizar un arreglo en serie midiendo el voltaje en la resistencia, como se plantea en \cite{GuiaLab-SUNY} (figura \ref{fig:circuitoGUIASUNY}) los cambios más importantes son:
 
 \begin{itemize}
-    \item Se dejó de lado el uso de protobard, y se obtó por placas perforadas comerciales y PCB. Las razones principales para este cambio son: por un lado que la capacitancia implicita del protoboard puede afectar de forma significativa al circuito se se estan usando altas frecuencias, y por otro lado que los cables que se usan para hacer las conexiones entre componentes sobre el protoboard puede excederse en su largo y actuar no solo como antena sino tambien como bobinas.  
+    \item Se dejó de lado el uso de protobard, y se obtó por placas perforadas comerciales y PCB. Las razones principales para este cambio son: por un lado que la capacitancia implicita del protoboard puede afectar de forma significativa al circuito ya que se estan usando altas frecuencias, y por otro lado que los cables que se usan para hacer las conexiones entre componentes sobre el protoboard puede excederse en su largo y actuar no solo como antena sino tambien como bobinas.  
     \item Para la etapa amplificadora de potencia del amplificador 1 se utilizó el esquema de la figura \ref{fig:amplificador1serie}.
     
 \begin{figure}[h!]
@@ -382,14 +431,14 @@ Esta versión del circuito resonante se ideó buscando mejorar los resultados de
 
 
     \item Se implementó el amplificador 2, que se incluye en la figura \ref{fig:amplificador2}.
-    \item Como fuente de voltaje $\pm 12$ V se usó un equipo previamente fabricado por el Laboratorio de Física Nuclear (figura \ref{fig:fuente-baterias}), el cuál usa como entrada dos baterias recargables de 6 V y da de salida señales DC muy estables de diferentes valores de voltaje
-    \item Se incluyó la resistencia $R13$ de protección.
+    \item Como fuente de voltaje $\pm 12$ V se usó un equipo previamente fabricado por el Laboratorio de Física Nuclear (figura \ref{fig:fuente-baterias}), el cuál usa como entrada dos baterias recargables de 6 V y tiene como salida señales DC muy estables de diferentes valores de voltaje.
+    \item Se incluyó la resistencia R13 de protección.
     
 \end{itemize}
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.75]{Fuente-Con-Baterias.jpg}
+\includegraphics[scale=0.5]{Fuente-Con-Baterias.jpg}
 \caption[]{Foto de la fuente utilizada en el experimento RLC en serie.}
 \label{fig:fuente-baterias}
 \end{center}
@@ -398,13 +447,7 @@ Esta versión del circuito resonante se ideó buscando mejorar los resultados de
 
 \subsection{Resultados}
 
-\begin{figure}[hbt]
-\begin{center}
-\includegraphics[scale=0.5]{CircuitoCAD.png}
-\caption[circuito donde se explica claramente la conexión del arduino,]{circuito donde se explica claramente la conexión del arduino}
-\label{fig:figura1a}
-\end{center}
-\end{figure}
+
 
 Los pines del generador de funciones AD9833 en el diagrama son 
   1-ref
@@ -426,3 +469,11 @@ AQUI VA TOTAL O PARCIALMENTE LOS CALCULOS DEL ARCHIVO avances.pdf ENVIADO EL 6 D
 
 hablar sobre la propuesta de prof Julio Wlater (usar un pulso en lugar de un senal sinusoidal).
 Hablar sobre cambiarse de arduino a red pitaya
+
+\begin{figure}[hbt]
+\begin{center}
+\includegraphics[scale=0.5]{CircuitoCAD.png}
+\caption[circuito donde se explica claramente la conexión del arduino,]{circuito donde se explica claramente la conexión del arduino}
+\label{fig:figura1a}
+\end{center}
+\end{figure}

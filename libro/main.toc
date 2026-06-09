@@ -31,8 +31,8 @@
 \contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~III:~\MakeTextUppercase []{Experimento II: medición indirecta usando un circuito resonante}}{27}{chaptert.3}%
 \contentsline {section}{\numberline {3.1}Fundamentos teóricos: Electrodinámica y Resonancia}{27}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Factor de calidad Q}{29}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Planteamiento del procedimiento experimental}{29}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Análisis de la respuesta en serie y simulaciones de sensibilidad}{30}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.2}Planteamiento del procedimiento experimental}{30}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Análisis de la respuesta en serie y simulaciones de sensibilidad}{31}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Alternativa de medición: Configuración en paralelo}{33}{subsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.2.1}Factor Q para circuito en paralelo}{34}{subsubsection.3.2.2.1}%
 \contentsline {section}{\numberline {3.3}????Circuito resonante implementado- esquema experimental}{34}{section.3.3}%
@@ -43,20 +43,20 @@
 \contentsline {section}{\numberline {3.4}Experimento RLC en paralelo}{40}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Procedimiento experimental}{40}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Resultados}{40}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Experimento RLC en Serie}{40}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Procedimiento experimental}{40}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.5}Experimento RLC en Serie}{42}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Procedimiento experimental}{42}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Resultados}{44}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Calculo de la precisión necesaria: Ajuste de la curva por ODR}{44}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Calculo de la precisión necesaria: Ajuste de la curva por ODR}{45}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Modificaciones propuestas}{45}{section.3.7}%
-\contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{46}{chaptert.4}%
-\contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{46}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{46}{section.4.2}%
-\contentsline {section}{\numberline {4.3} Circuito LC con fem aplicada por inducción}{46}{section.4.3}%
-\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{47}{chapter*.51}%
-\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{48}{chapter*.52}%
+\contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{47}{chaptert.4}%
+\contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{47}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{47}{section.4.2}%
+\contentsline {section}{\numberline {4.3} Circuito LC con fem aplicada por inducción}{47}{section.4.3}%
+\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{48}{chapter*.52}%
+\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{49}{chapter*.53}%
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Código Arduino}}{51}{chaptert.1}%
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{Tratamiento de los datos con Python}}{52}{chaptert.2}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Código Arduino}}{52}{chaptert.1}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{Tratamiento de los datos con Python}}{53}{chaptert.2}%
