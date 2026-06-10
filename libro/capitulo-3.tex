@@ -11,6 +11,8 @@ AQUI VA EL RESUMEN DEL CAPITULO \newline
 AQUI VA EL RESUMEN DEL CAPITULO \newline
 AQUI VA EL RESUMEN DEL CAPITULO \newline
 AQUI VA EL RESUMEN DEL CAPITULO \newline
+AQUI VA EL RESUMEN DEL CAPITULO \newline
+AQUI VA EL RESUMEN DEL CAPITULO  \newline
 AQUI VA EL RESUMEN DEL CAPITULO
 
 \section{Fundamentos teóricos: Electrodinámica y Resonancia}
@@ -180,11 +182,10 @@ Contrario a lo que ocurre en el circuito en serie, en paralelo a la frecuencia d
 Para que el experimento pueda funcionar se requiere mucho más que solo una resistencias, un capacitor y una bobina. La propuesta está en añadir modulos adicionales cada uno con su función especifica. El conjunto completo así como las relaciones entre ellos se pueden apreciar en la figura \ref{fig:SOLO-ESQUEMA}
 
 \begin{figure}[hbt]
-\begin{center}
+\centering
 \includegraphics[width=1\linewidth]{SOLO-ESQUEMA.png}
 \caption{Esquema de las partes del experimento y sus relaciones.}
 \label{fig:SOLO-ESQUEMA}
-\end{center}
 \end{figure} 
 
 \subsection{Módulo generador}
@@ -200,11 +201,10 @@ Se encarga de generar y suministrar la señal sinusoidal al cirucito resonante R
 \end{itemize} 
 
 \begin{figure}[h!]
-\begin{center}
+\centering
 \includegraphics[width=0.35\linewidth]{Amplificador1-voltaje.png}
 \caption{Esquemático de la etapa amplificadora de voltaje perteneciente al Amplificador 1 del módulo generador.}
 \label{fig:amplificador1}
-\end{center}
 \end{figure} 
 
 \subsection{Módulo de lectura}
@@ -214,21 +214,19 @@ Este módulo se alimenta del voltaje de respuesta del circuito resonante y su ob
   \item Rectificador: Toma la señal AC de respuesta y la convierte en una señal DC, su esquemático se incluye en la figura \ref{fig:rectificador}. Se utilizó un diodo de señal con una caida de tensión en directo de 0.261 V. Así mismo tambien se utilizó un transistor conectado en su base con el pin digital 9 del Arduino, esto con el fin de descargar el condensador de forma automatizada.
   
 \begin{figure}[h!]
-\begin{center}
+\centering
 \includegraphics[width=0.5\linewidth]{Rectificador.png}
 \caption{Esquemático del ``rectificador" perteneciente al módulo de lectura.}
 \label{fig:rectificador}
-\end{center}
 \end{figure} 
 
   \item Amplificador 2: para este segundo amplificador, figura \ref{fig:amplificador2}, se opta por un amplificador operacional debido a que se está trabajando con una señal de entrada DC. El objetivo de esta etapa es multiplicar por el mismo factor el voltaje para lográr diferenciar mejor las pequeñas variaciones de voltaje en cada paso del barrido de frecuencia. 
   
   \begin{figure}[h!]
-\begin{center}
+\centering
 \includegraphics[width=0.45\linewidth]{Amplificador2.png}
 \caption{Esquemático del amplificador 2 perteneciente al módulo de lectura.}
 \label{fig:amplificador2}
-\end{center}
 \end{figure} 
 
   \item ADS1115: es un módulo electrónico comercial que funciona como convertidor analógico digital (ADC por sus siglas en ingles) de 16 bits. Se eligió este equipo en particular por su gran cantidad de bits a un bajo costo, además de que permite una fácil integración con Arduino gracias al protocolo I2C (Inter-Integrated Circuit), posee un rango variable para la medición del voltaje de hasta $\pm$ 6.144 V y cuenta con 4 canales totalmente independientes para la conversión, lo que equivale a tener 4 ADC en uno \cite{ad9833_datasheet}. La alimentación de este módulo es de 5V, así que al igual que el AD9833 se conectó con la salida del Arduino. Por último es necesario aclarar que este aparato es delicado, por lo que se optó, en las más recientes mediciones, por agregarle una resistencia de 1 K$\Omega$  entre la señal de entrada y el pin de lectura a modo de protección.
@@ -253,26 +251,24 @@ Se planteó y ejecutó un circuito completamente independiente de los demás mó
 %PONLE LAS BARRAR HORIZONTALES DE ERROR A LA GRAFICA
 
 \begin{figure}[hbt]
-\begin{center}
+\centering
 \includegraphics[width=0.7\linewidth]{CIRCUITO CONTROL DE TEMP.JPG}
 \caption{Esquemático del circuito autónomo que regula la temperatura.}
 \label{fig:ESQUEMA-CIRCUITO-TEMP}
-\end{center}
 \end{figure} 
 
 \begin{figure}[hbt]
-\begin{center}
+\centering
 \includegraphics[width=0.5\linewidth]{FOTO-circuito-temperatura.png}
 \caption{Foto del circuito autónomo que regula la temperatura.}
 \label{fig:FOTO-CIRCUITO-TEMP}
-\end{center}
 \end{figure} 
 
 El funcionamiento es bástante sencillo, el potenciómetro de \(10\text{ k}\Omega\) permite establecer el umbral de activación del amplificador operacional (741) definiendo el voltaje de referencia en la entrada inversora (pin 2). El termistor es una resistencia que varia su valor dependiendo de la temperatura, si el operacional detecta que el voltaje en el termistor es distinto al de la referencia manda una señal para que se encienda un pequeño ventilador que sopla sobre una resistencia caliente, arrastrando el aire caliente sobre el resto del circuito y regulando así la temperatura de todo el contenedor. 
 
 Este sistema ha demostrado funcionar por largos periodos de tiempo manteniendo una temperatura alrededor de los 36°C. En la figura \ref{fig:graficasTemperatura} se incluyen las gráficas del comportamiento de la temperatura ambiente o exterior, y la temperatura interior, que es la regulada por el circuito estabilizador. Los datos gráficados se obtuvieron en el periodo entre abril y julio de 2025, donde se mantuvo funcionando el circuito practicamente de manera ininterrumpida en las instalaciones de la USB junto con un termómetro digital para ambas mediciones de temperatura. Se halló que durante ese tiempo la temperautra interna fue de $(36,5 \pm 0,4)$°C, para determinar si ese nivel de estabilización es suficiente habria que hacer pruebas con un circuito resonante final dentro del modulo estabilizador las cuales no se realizaron.
 
-Más allá del control térmico, es importante mitigar las interferencias externas previamente enumeradas. Para el caso de señales externas, se propone la implementación de una jaula de Faraday diseñada a medida, cuyo propósito es aislar el montaje experimental de la radiación electromagnética ambiental. Este blindaje resulta crítico dado que el circuito tanque, por su naturaleza resonante, constituye la base de la sintonización de señales; en consecuencia, cualquier conductor con una longitud inadecuada podría actuar como una antena, introduciendo ruido espurio que comprometería la integridad de las mediciones.
+
 
 
 
@@ -314,6 +310,7 @@ Más allá del control térmico, es importante mitigar las interferencias extern
 \end{figure}
 
 
+Más allá del control térmico, es importante mitigar las interferencias externas previamente enumeradas. Para el caso de señales externas, se propone la implementación de una jaula de Faraday diseñada a medida, cuyo propósito es aislar el montaje experimental de la radiación electromagnética ambiental. Este blindaje resulta crítico dado que el circuito tanque, por su naturaleza resonante, constituye la base de la sintonización de señales; en consecuencia, cualquier conductor con una longitud inadecuada podría actuar como una antena, introduciendo ruido espurio que comprometería la integridad de las mediciones.
 
 
 \section{Experimento RLC en paralelo}
@@ -326,57 +323,55 @@ El primer prototipo del sistema descrito en la sección \ref{seccion-modulos} se
 
 
 \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.4\linewidth]{Amplificador1-potencia-paralelo.png}
+\centering
+\includegraphics[width=0.38\linewidth]{Amplificador1-potencia-paralelo.png}
 \caption{Esquemático de la etapa amplificadora de potencia perteneciente al Amplificador 1, en el montaje en paralelo.}
 \label{fig:amplificador1paralelo}
-\end{center}
 \end{figure} 
 
 
 \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.4\linewidth]{Foto-paralelo-protoboard.png}
+\centering
+\includegraphics[width=0.35\linewidth, angle=-90]{Foto-paralelo-protoboard.png}
 \caption{Foto de experimento RLC en paralelo.}
 \label{fig:foto-protoboard}
-\end{center}
 \end{figure} 
 
 Otras diferencias claves entre este prototipo de experimento y lo planteado en la sección \ref{seccion-modulos} que valen la pena señalar son: 
 \begin{itemize}
     \item No existe el amplificador 2.
-    \item La fuente de volaje $\pm12$ V utilizada es del tipo comercial, de regulador de laptop, adaptada para poder conectar su salida en el protoboard. Eso hace que este diseño necesite estár conectado a la red electrica para funcionar.
+    \item La fuente de voltaje $\pm12$ V utilizada es del tipo comercial, de regulador de laptop, adaptada para poder conectar su salida en el protoboard. Eso hace que este diseño necesite estar conectado a la red electrica para funcionar.
     \item Al ADC no incluye la resistencia de protección en su entrada.  
 \end{itemize}
 
 El esquemático del circuito completo se puede ver en la figura \ref{fig:total-paralelo}.
 
 \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.80\linewidth]{esquematico-paralelo-total.png}
+\centering
+\includegraphics[width=0.85\linewidth]{esquematico-paralelo-total.png}
 \caption{Esquemático de todo el circuito del experimento RLC en paralelo.}
 \label{fig:total-paralelo}
-\end{center}
 \end{figure} 
 
 
 \subsection{Resultados}
-Este procedimiento se intentó multiples veces, los mejores resultado se obtuvieron con un valor de R5 de $10 \Omega$ y R7 de $4 K\Omega$, para un barrido entre 520 KHz y 550 KHz con pasos de 500 Hz, los resultado se incluyen en la figura \ref{fig:resultado-RLC-paralelo}. Los puntos forman una curva suave, la cual se ajustó usando mínimos cuadrados con python como se explica en el apéndice \ref{apx:PC}, los resultado del ajuste son 
+
+Este procedimiento se intentó multiples veces, los mejores resultados se obtuvieron con un valor de R5 de $10 \Omega$ y R7 de $4 K\Omega$, para un barrido entre 520 KHz y 550 KHz con pasos de 500 Hz, los resultado se incluyen en la figura \ref{fig:resultado-RLC-paralelo}. Los puntos forman una curva suave, la cual se ajustó usando mínimos cuadrados con python como se explica en el apéndice \ref{apx:PC}, los resultado del ajuste se incluyen en la tabla \ref{tab:resultado-paralelo}. En la gráfica se puede apreciar que la cima de la curva está plana, así que con el fin de hacer un barrido más preciso y distingir mejor la cima de la curva se realizó otro barrido pero con pasos de 80 Hz, esta vez entre 530 KHz y 536 KHz. En este segundo barrido se encontó que los puntos presentan mayor dispersión de curva lorenztiana que se puede ver en la figura \ref{fig:resultado-RLC-paralelo}, aunque aun fué posible hacer una ajuste, los datos de este se incluyen en tabla \ref{tab:resultado-paralelo}. En la gráfica de este segundo barrido se evidencia que hay varios puntos cerca de la cima que comparten valor del voltaje, por lo que los puntos forman pequeñas lineas horizontales.
 
 
 \begin{table}[h]
 \centering
 \begin{tabular}{|l|l|c|}
 \hline
-parametro de ajuste &   & Error Porcentual\\
+Parámetro de ajuste &  Primer barrido & Segundo barrido\\
 \hline
-A & ($150584843.14142781 \pm 10943043.65096375$) & $1\%$ \\
-gamma & $(21271.47871882 \pm 456.68294779 )$ & $6\%$ \\
-offset & $(0.06535192 \pm 0.01010142)$ & \\
-Frecuencia & $(533274.4926610\pm 19.3713475) $ & d \\
+$(A) V \cdot Hz^2$ & $(151 \pm 11)\times 10^6$ & $(1,0\pm 1,1) \times 10^6$ \\
+$(\gamma) V$ & $(21271 \pm 457 )$ & $(5819\pm 1915 )$ \\
+$(\text{offset})Hz$ & $(0.065 \pm 0.010)$ & $(0.37\pm 0.02)$ \\
+$(f_0)Hz$ & $(533274\pm 19) $ & $(532959 \pm 29)$ \\
 \hline
 \end{tabular}
-\caption{}
+\caption{Valores de los parametros de ajuste de una curva lorenztiana para el primer y segundo barrido del experiemento en paralelo.}
 \label{tab:resultado-paralelo}
 \end{table}
 
@@ -386,10 +381,10 @@ Frecuencia & $(533274.4926610\pm 19.3713475) $ & d \\
 \begin{figure}[htbp]
     \centering
     % Primera imagen (a)
-    \begin{subfigure}{0.49\textwidth}
+    \begin{subfigure}{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{grafica-3Jun-10.png}
-        \caption{Descripción de la primera parte.}
+        \caption{Primer barrido de frecuencia, ancho entre 520 KHz y 550 KHz y pasos de 500 Hz.}
         \label{fig:parte_a}
     \end{subfigure}
     %\hfill
@@ -397,16 +392,14 @@ Frecuencia & $(533274.4926610\pm 19.3713475) $ & d \\
     \begin{subfigure}{0.49\textwidth}
         \centering
         \includegraphics[width=\linewidth]{grafica-3Jun-12.png}
-        \caption{Descripción de la segunda parte.}
+        \caption{Segundo barrido de frecuencia, ancho entre 530 KHz y 536 KHz y pasos de 80 Hz.}
         \label{fig:parte_b}
     \end{subfigure}
-
-    % Título general: Centrado, debajo y en fuente regular (sin negritas ni cursivas) [1].
-    \caption{Título general de la figura siguiendo la normativa USB. Si no es propia, agregar la fuente \cite{autor2024}.}
+    \caption{Graficas de los barridos de frecuencia con mejores resultado del experimento en paralelo, incluye los datos originales y la curva ajustada.}
     \label{fig:resultado-RLC-paralelo}
 \end{figure}
 
-
+Los resultados obtenidos con este experimento están lejos de tener un factor Q y una presión, en el ajuste de la curva, suficiente para verificar la \ac{HCC}. Después de realizar mejoras a nivel de software y hardware con resultados parecidos o peores a los aquí mostrados, se decidió cambiar la conexión del circuito resonante y con ello implementar un conjunto de mejoras más agresivas que se consideran como un nuevo prototipo del experimento, el cual será desarrollado a mayor profundidad en la siguiente sección.
 
 
 
@@ -421,27 +414,25 @@ Esta versión del circuito resonante se ideó buscando mejorar los resultados de
     \item Para la etapa amplificadora de potencia del amplificador 1 se utilizó el esquema de la figura \ref{fig:amplificador1serie}.
     
 \begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.5]{Amplificador1-potencia-serie.png}
+\centering
+\includegraphics[scale=0.65]{Amplificador1-potencia-serie.png}
 \caption[]{Esquemático de la etapa amplificadora de potencia del amplificador 1 en el experimento conectado en serie.}
 \label{fig:amplificador1serie}
-\end{center}
 \end{figure}
 
 
 
     \item Se implementó el amplificador 2, que se incluye en la figura \ref{fig:amplificador2}.
     \item Como fuente de voltaje $\pm 12$ V se usó un equipo previamente fabricado por el Laboratorio de Física Nuclear (figura \ref{fig:fuente-baterias}), el cuál usa como entrada dos baterias recargables de 6 V y tiene como salida señales DC muy estables de diferentes valores de voltaje.
-    \item Se incluyó la resistencia R13 de protección.
+    \item Se incluyó la resistencia R13 de protección en la entrada del ADC.
     
 \end{itemize}
 
 \begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.5]{Fuente-Con-Baterias.jpg}
+\centering
+\includegraphics[scale=0.4]{Fuente-Con-Baterias.jpg}
 \caption[]{Foto de la fuente utilizada en el experimento RLC en serie.}
 \label{fig:fuente-baterias}
-\end{center}
 \end{figure}
 
 
@@ -471,9 +462,8 @@ hablar sobre la propuesta de prof Julio Wlater (usar un pulso en lugar de un sen
 Hablar sobre cambiarse de arduino a red pitaya
 
 \begin{figure}[hbt]
-\begin{center}
+\centering
 \includegraphics[scale=0.5]{CircuitoCAD.png}
 \caption[circuito donde se explica claramente la conexión del arduino,]{circuito donde se explica claramente la conexión del arduino}
 \label{fig:figura1a}
-\end{center}
 \end{figure}

@@ -15,11 +15,11 @@
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Esquemático del amplificador 2 perteneciente al módulo de lectura.}}{37}{figure.caption.40}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Esquemático del circuito autónomo que regula la temperatura.}}{38}{figure.caption.41}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Foto del circuito autónomo que regula la temperatura.}}{39}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Gráficas del comportamiento de la temperatura exterior (ambiente) e interior (regulada por el cirtuito estabilizador).}}{41}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Esquemático de la etapa amplificadora de potencia perteneciente al Amplificador 1, en el montaje en paralelo.}}{42}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Foto de experimento RLC en paralelo.}}{42}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Esquemático de todo el circuito del experimento RLC en paralelo.}}{43}{figure.caption.46}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Título general de la figura siguiendo la normativa USB. Si no es propia, agregar la fuente \cite {autor2024}.}}{44}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Gráficas del comportamiento de la temperatura exterior (ambiente) e interior (regulada por el cirtuito estabilizador).}}{40}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Esquemático de la etapa amplificadora de potencia perteneciente al Amplificador 1, en el montaje en paralelo.}}{41}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Foto de experimento RLC en paralelo.}}{41}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Esquemático de todo el circuito del experimento RLC en paralelo.}}{42}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Graficas de los barridos de frecuencia con mejores resultado del experimento en paralelo, incluye los datos originales y la curva ajustada.}}{43}{figure.caption.48}%
 \contentsline {figure}{\numberline {3.19}{\ignorespaces circuito donde se explica claramente la conexión del arduino,}}{46}{figure.caption.51}%
 \addvspace {10\p@ }
 \babel@toc {spanish}{}\relax 
