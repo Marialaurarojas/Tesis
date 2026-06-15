@@ -421,7 +421,6 @@ Esta versión del circuito resonante se ideó buscando mejorar los resultados de
 \end{figure}
 
 
-
     \item Se implementó el amplificador 2, que se incluye en la figura \ref{fig:amplificador2}.
     \item Como fuente de voltaje $\pm 12$ V se usó un equipo previamente fabricado por el Laboratorio de Física Nuclear (figura \ref{fig:fuente-baterias}), el cuál usa como entrada dos baterias recargables de 6 V y tiene como salida señales DC muy estables de diferentes valores de voltaje.
     \item Se incluyó la resistencia R13 de protección en la entrada del ADC.
@@ -436,18 +435,35 @@ Esta versión del circuito resonante se ideó buscando mejorar los resultados de
 \end{figure}
 
 
+\begin{figure}[htbp]
+    \centering
+    % Primera imagen (a)
+    \begin{subfigure}{0.80\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{En-serie-prototipo1.jpg}
+        \caption{}
+        \label{fig:parte_c}
+    \end{subfigure}
+    
+    \vspace{0.5cm} % <-- Opcional: Agrega un espacio vertical sutil entre (a) y (b)
+
+    % Segunda imagen (b)
+    \begin{subfigure}{0.80\textwidth} % Cambiado a 0.80 para que tengan el mismo ancho visual, ajusta si lo deseas
+        \centering
+        \includegraphics[width=\linewidth, angle = -90]{En-serie-prototipo2.jpg}
+        \caption{}
+        \label{fig:parte_d}
+    \end{subfigure}
+    \caption{Graficas de los barridos de frecuencia con mejores resultado del experimento en paralelo, incluye los datos originales y la curva ajustada.}
+    \label{fig:fotos-prototipos}
+\end{figure}
+
+
 \subsection{Resultados}
+%3Mar26-6 y 3Mar26-5 son lo mismo pero muestra que cad avez que s ehacia el barrido se encontraba algo distinto
+%3Mar26-1 es lo mejorcito que hay
 
 
-
-Los pines del generador de funciones AD9833 en el diagrama son 
-  1-ref
-  2-VCC
-  3-GND
-  4-DAT
-  5-CLK
-  6-FNC
-  7-OUT
 
 
 \section{Calculo de la precisión necesaria: Ajuste de la curva por ODR}
@@ -460,6 +476,15 @@ AQUI VA TOTAL O PARCIALMENTE LOS CALCULOS DEL ARCHIVO avances.pdf ENVIADO EL 6 D
 
 hablar sobre la propuesta de prof Julio Wlater (usar un pulso en lugar de un senal sinusoidal).
 Hablar sobre cambiarse de arduino a red pitaya
+
+Los pines del generador de funciones AD9833 en el diagrama son 
+  1-ref
+  2-VCC
+  3-GND
+  4-DAT
+  5-CLK
+  6-FNC
+  7-OUT
 
 \begin{figure}[hbt]
 \centering

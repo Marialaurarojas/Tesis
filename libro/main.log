@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  10 JUN 2026 11:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  15 JUN 2026 13:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -605,14 +605,14 @@ LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 11.
-LaTeX Info: Redefining \. on input line 306.
-LaTeX Info: Redefining \% on input line 306.
-LaTeX Info: Redefining \. on input line 307.
-LaTeX Info: Redefining \% on input line 307.
-LaTeX Info: Redefining \. on input line 321.
-LaTeX Info: Redefining \% on input line 321.
-LaTeX Info: Redefining \. on input line 322.
-LaTeX Info: Redefining \% on input line 322.
+LaTeX Info: Redefining \. on input line 312.
+LaTeX Info: Redefining \% on input line 312.
+LaTeX Info: Redefining \. on input line 313.
+LaTeX Info: Redefining \% on input line 313.
+LaTeX Info: Redefining \. on input line 327.
+LaTeX Info: Redefining \% on input line 327.
+LaTeX Info: Redefining \. on input line 328.
+LaTeX Info: Redefining \% on input line 328.
 )
 \openout1 = `main.aux'.
 
@@ -790,14 +790,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (./main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
 LaTeX Info: Redefining \. on input line 28.
 LaTeX Info: Redefining \% on input line 28.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
 )
 \tf@lof=\write6
 \openout6 = `main.lof'.
@@ -915,12 +915,12 @@ although it is yet undefined on input line 6.
 ] [3] [4]
 Package acronym Info: Label `acro:HCC' overridden on input line 106.
  [5{c:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [6] [7] [8] [9] [10] [11] [12] [13]
-<Curva c_i vs g_i.png, id=648, 422.7795pt x 328.8285pt>
+<Curva c_i vs g_i.png, id=651, 422.7795pt x 328.8285pt>
 File: Curva c_i vs g_i.png Graphic file (type png)
 <use Curva c_i vs g_i.png>
 Package pdftex.def Info: Curva c_i vs g_i.png  used on input line 351.
 (pdftex.def)             Requested size: 253.66965pt x 197.29861pt.
-<curva c_i vs g_i zoom.png, id=651, 419.166pt x 328.8285pt>
+<curva c_i vs g_i zoom.png, id=654, 419.166pt x 328.8285pt>
 File: curva c_i vs g_i zoom.png Graphic file (type png)
 <use curva c_i vs g_i zoom.png>
 Package pdftex.def Info: curva c_i vs g_i zoom.png  used on input line 359.
@@ -929,7 +929,7 @@ Package pdftex.def Info: curva c_i vs g_i zoom.png  used on input line 359.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagen4.png, id=656, 337.86224pt x 222.23026pt>
+<Imagen4.png, id=659, 337.86224pt x 222.23026pt>
 File: Imagen4.png Graphic file (type png)
 <use Imagen4.png>
 Package pdftex.def Info: Imagen4.png  used on input line 369.
@@ -940,7 +940,7 @@ although it is yet undefined on input line 378.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [14 <./Curva c_i vs g_i.png>] [15 <./curva c_i vs g_i zoom.png>]
-<CurvaPlanaGalaxias.png, id=680, 473.97075pt x 336.0555pt>
+<CurvaPlanaGalaxias.png, id=683, 473.97075pt x 336.0555pt>
 File: CurvaPlanaGalaxias.png Graphic file (type png)
 <use CurvaPlanaGalaxias.png>
 Package pdftex.def Info: CurvaPlanaGalaxias.png  used on input line 405.
@@ -961,30 +961,30 @@ Package acronym Info: Label `acro:HCC' overridden on input line 3.
 
 ]
 Package acronym Info: Label `acro:USB' overridden on input line 30.
-<experimento_guia.png, id=712, 443.256pt x 246.32025pt>
+<experimento_guia.png, id=715, 443.256pt x 246.32025pt>
 File: experimento_guia.png Graphic file (type png)
 <use experimento_guia.png>
 Package pdftex.def Info: experimento_guia.png  used on input line 35.
 (pdftex.def)             Requested size: 332.44118pt x 184.73973pt.
  [19 <./experimento_guia.png>]
-<F0003TEK.png, id=721, 321.2pt x 240.9pt>
+<F0003TEK.png, id=724, 321.2pt x 240.9pt>
 File: F0003TEK.png Graphic file (type png)
 <use F0003TEK.png>
 Package pdftex.def Info: F0003TEK.png  used on input line 50.
 (pdftex.def)             Requested size: 208.77753pt x 156.58313pt.
  [20 <./F0003TEK.png>]
-<AjusteF0003CH2.png, id=729, 392.46625pt x 279.0425pt>
+<AjusteF0003CH2.png, id=732, 392.46625pt x 279.0425pt>
 File: AjusteF0003CH2.png Graphic file (type png)
 <use AjusteF0003CH2.png>
 Package pdftex.def Info: AjusteF0003CH2.png  used on input line 71.
 (pdftex.def)             Requested size: 235.48155pt x 167.42679pt.
  [21 <./AjusteF0003CH2.png>]
-<n-1.png, id=740, 362.007pt x 217.467pt>
+<n-1.png, id=743, 362.007pt x 217.467pt>
 File: n-1.png Graphic file (type png)
 <use n-1.png>
 Package pdftex.def Info: n-1.png  used on input line 108.
 (pdftex.def)             Requested size: 228.90242pt x 137.5093pt.
-<n-2.png, id=741, 342.735pt x 217.248pt>
+<n-2.png, id=744, 342.735pt x 217.248pt>
 File: n-2.png Graphic file (type png)
 <use n-2.png>
 Package pdftex.def Info: n-2.png  used on input line 115.
@@ -994,12 +994,12 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 106--119
 [][]  [] 
  []
 
-<n-3.png, id=742, 361.788pt x 217.248pt>
+<n-3.png, id=745, 361.788pt x 217.248pt>
 File: n-3.png Graphic file (type png)
 <use n-3.png>
 Package pdftex.def Info: n-3.png  used on input line 124.
 (pdftex.def)             Requested size: 228.90242pt x 137.4537pt.
-<n-4.1.png, id=743, 387.411pt x 216.153pt>
+<n-4.1.png, id=746, 387.411pt x 216.153pt>
 File: n-4.1.png Graphic file (type png)
 <use n-4.1.png>
 Package pdftex.def Info: n-4.1.png  used on input line 131.
@@ -1009,7 +1009,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 122--135
 [][]  [] 
  []
 
-<n-4.2.png, id=744, 325.872pt x 215.934pt>
+<n-4.2.png, id=747, 325.872pt x 215.934pt>
 File: n-4.2.png Graphic file (type png)
 <use n-4.2.png>
 Package pdftex.def Info: n-4.2.png  used on input line 140.
@@ -1018,12 +1018,12 @@ Package pdftex.def Info: n-4.2.png  used on input line 140.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [22] [23 <./n-1.png> <./n-2.png> <./n-3.png> <./n-4.1.png> <./n-4.2.png>]
-<n-5.1.png, id=761, 362.007pt x 217.248pt>
+<n-5.1.png, id=764, 362.007pt x 217.248pt>
 File: n-5.1.png Graphic file (type png)
 <use n-5.1.png>
 Package pdftex.def Info: n-5.1.png  used on input line 185.
 (pdftex.def)             Requested size: 228.90242pt x 137.37083pt.
-<n-5.2.png, id=762, 348.21pt x 227.322pt>
+<n-5.2.png, id=765, 348.21pt x 227.322pt>
 File: n-5.2.png Graphic file (type png)
 <use n-5.2.png>
 Package pdftex.def Info: n-5.2.png  used on input line 192.
@@ -1052,7 +1052,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ] [28]
 Package acronym Info: Label `acro:HCC' overridden on input line 72.
-<FactorQ-zemansky.png, id=813, 272.81924pt x 205.9695pt>
+<FactorQ-zemansky.png, id=816, 272.81924pt x 205.9695pt>
 File: FactorQ-zemansky.png Graphic file (type png)
 <use FactorQ-zemansky.png>
 Package pdftex.def Info: FactorQ-zemansky.png  used on input line 90.
@@ -1062,13 +1062,13 @@ Package pdftex.def Info: FactorQ-zemansky.png  used on input line 90.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [29]
-<SUNY-circuito.png, id=826, 353.52075pt x 157.7895pt>
+<SUNY-circuito.png, id=830, 353.52075pt x 157.7895pt>
 File: SUNY-circuito.png Graphic file (type png)
 <use SUNY-circuito.png>
 Package pdftex.def Info: SUNY-circuito.png  used on input line 97.
 (pdftex.def)             Requested size: 228.90242pt x 102.1671pt.
  [30 <./FactorQ-zemansky.png> <./SUNY-circuito.png>]
-<Simulacion-respuesta1.png, id=839, 556.32843pt x 368.1253pt>
+<Simulacion-respuesta1.png, id=842, 556.32843pt x 368.1253pt>
 File: Simulacion-respuesta1.png Graphic file (type png)
 <use Simulacion-respuesta1.png>
 Package pdftex.def Info: Simulacion-respuesta1.png  used on input line 121.
@@ -1077,7 +1077,7 @@ Package pdftex.def Info: Simulacion-respuesta1.png  used on input line 121.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Simulacion-respuesta2.png, id=842, 465.99094pt x 335.75438pt>
+<Simulacion-respuesta2.png, id=845, 465.99094pt x 335.75438pt>
 File: Simulacion-respuesta2.png Graphic file (type png)
 <use Simulacion-respuesta2.png>
 Package pdftex.def Info: Simulacion-respuesta2.png  used on input line 125.
@@ -1086,19 +1086,19 @@ Package pdftex.def Info: Simulacion-respuesta2.png  used on input line 125.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [31] [32 <./Simulacion-respuesta1.png> <./Simulacion-respuesta2.png>]
-<CL-paralelo-sencillo.png, id=858, 548.595pt x 284.919pt>
+<CL-paralelo-sencillo.png, id=861, 548.595pt x 284.919pt>
 File: CL-paralelo-sencillo.png Graphic file (type png)
 <use CL-paralelo-sencillo.png>
 Package pdftex.def Info: CL-paralelo-sencillo.png  used on input line 133.
 (pdftex.def)             Requested size: 206.01077pt x 106.99652pt.
  [33 <./CL-paralelo-sencillo.png>]
-<SOLO-ESQUEMA.png, id=872, 605.26125pt x 274.02374pt>
+<SOLO-ESQUEMA.png, id=875, 605.26125pt x 274.02374pt>
 File: SOLO-ESQUEMA.png Graphic file (type png)
 <use SOLO-ESQUEMA.png>
 Package pdftex.def Info: SOLO-ESQUEMA.png  used on input line 186.
 (pdftex.def)             Requested size: 457.80486pt x 207.26506pt.
  [34]
-<Amplificador1-voltaje.png, id=882, 449.88075pt x 449.88075pt>
+<Amplificador1-voltaje.png, id=885, 449.88075pt x 449.88075pt>
 File: Amplificador1-voltaje.png Graphic file (type png)
 <use Amplificador1-voltaje.png>
 Package pdftex.def Info: Amplificador1-voltaje.png  used on input line 205.
@@ -1107,13 +1107,13 @@ Package pdftex.def Info: Amplificador1-voltaje.png  used on input line 205.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Rectificador.png, id=884, 654.64575pt x 395.67825pt>
+<Rectificador.png, id=887, 654.64575pt x 395.67825pt>
 File: Rectificador.png Graphic file (type png)
 <use Rectificador.png>
 Package pdftex.def Info: Rectificador.png  used on input line 218.
 (pdftex.def)             Requested size: 228.90242pt x 138.35059pt.
 [35 <./SOLO-ESQUEMA.png>]
-<Amplificador2.png, id=892, 504.08325pt x 347.49825pt>
+<Amplificador2.png, id=895, 504.08325pt x 347.49825pt>
 File: Amplificador2.png Graphic file (type png)
 <use Amplificador2.png>
 Package pdftex.def Info: Amplificador2.png  used on input line 227.
@@ -1123,28 +1123,28 @@ Package pdftex.def Info: Amplificador2.png  used on input line 227.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [36 <./Amplificador1-voltaje.png> <./Rectificador.png>] [37 <./Amplificador2.png>]
-<CIRCUITO CONTROL DE TEMP.JPG, id=911, 578.16pt x 393.72093pt>
+<CIRCUITO CONTROL DE TEMP.JPG, id=914, 578.16pt x 393.72093pt>
 File: CIRCUITO CONTROL DE TEMP.JPG Graphic file (type jpg)
 <use CIRCUITO CONTROL DE TEMP.JPG>
 Package pdftex.def Info: CIRCUITO CONTROL DE TEMP.JPG  used on input line 255.
 (pdftex.def)             Requested size: 320.46199pt x 218.22932pt.
-<FOTO-circuito-temperatura.png, id=912, 475.02469pt x 432.86719pt>
+<FOTO-circuito-temperatura.png, id=915, 475.02469pt x 432.86719pt>
 File: FOTO-circuito-temperatura.png Graphic file (type png)
 <use FOTO-circuito-temperatura.png>
 Package pdftex.def Info: FOTO-circuito-temperatura.png  used on input line 262.
 (pdftex.def)             Requested size: 228.90242pt x 208.5863pt.
  [38 <./CIRCUITO CONTROL DE TEMP.JPG>]
-<temperatura meses.pdf, id=918, 908.39375pt x 272.01625pt>
+<temperatura meses.pdf, id=921, 908.39375pt x 272.01625pt>
 File: temperatura meses.pdf Graphic file (type pdf)
 <use temperatura meses.pdf>
 Package pdftex.def Info: temperatura meses.pdf  used on input line 282.
 (pdftex.def)             Requested size: 412.02156pt x 123.37743pt.
-<temperatura dia.pdf, id=919, 908.39375pt x 226.8475pt>
+<temperatura dia.pdf, id=922, 908.39375pt x 226.8475pt>
 File: temperatura dia.pdf Graphic file (type pdf)
 <use temperatura dia.pdf>
 Package pdftex.def Info: temperatura dia.pdf  used on input line 292.
 (pdftex.def)             Requested size: 412.02156pt x 102.8904pt.
-<temperatura exterior vs interior.pdf, id=920, 908.39375pt x 226.8475pt>
+<temperatura exterior vs interior.pdf, id=923, 908.39375pt x 226.8475pt>
 File: temperatura exterior vs interior.pdf Graphic file (type pdf)
 <use temperatura exterior vs interior.pdf>
 Package pdftex.def Info: temperatura exterior vs interior.pdf  used on input line 302.
@@ -1156,18 +1156,18 @@ pdfTeX warning: pdflatex.exe (file ./temperatura dia.pdf): PDF inclusion: multip
 
 pdfTeX warning: pdflatex.exe (file ./temperatura exterior vs interior.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Amplificador1-potencia-paralelo.png, id=961, 572.73975pt x 355.92975pt>
+<Amplificador1-potencia-paralelo.png, id=964, 572.73975pt x 355.92975pt>
 File: Amplificador1-potencia-paralelo.png Graphic file (type png)
 <use Amplificador1-potencia-paralelo.png>
 Package pdftex.def Info: Amplificador1-potencia-paralelo.png  used on input line 327.
 (pdftex.def)             Requested size: 173.96808pt x 108.11035pt.
-<Foto-paralelo-protoboard.png, id=962, 519.44063pt x 692.5875pt>
+<Foto-paralelo-protoboard.png, id=965, 519.44063pt x 692.5875pt>
 File: Foto-paralelo-protoboard.png Graphic file (type png)
 <use Foto-paralelo-protoboard.png>
 Package pdftex.def Info: Foto-paralelo-protoboard.png  used on input line 335.
 (pdftex.def)             Requested size: 160.23448pt x 213.6431pt.
  [41 <./Amplificador1-potencia-paralelo.png> <./Foto-paralelo-protoboard.png>]
-<esquematico-paralelo-total.png, id=971, 735.34724pt x 247.52475pt>
+<esquematico-paralelo-total.png, id=974, 735.34724pt x 247.52475pt>
 File: esquematico-paralelo-total.png Graphic file (type png)
 <use esquematico-paralelo-total.png>
 Package pdftex.def Info: esquematico-paralelo-total.png  used on input line 351.
@@ -1176,43 +1176,61 @@ Package pdftex.def Info: esquematico-paralelo-total.png  used on input line 351.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<grafica-3Jun-10.png, id=977, 424.2249pt x 308.5929pt>
+<grafica-3Jun-10.png, id=980, 424.2249pt x 308.5929pt>
 File: grafica-3Jun-10.png Graphic file (type png)
 <use grafica-3Jun-10.png>
 Package pdftex.def Info: grafica-3Jun-10.png  used on input line 386.
 (pdftex.def)             Requested size: 219.74437pt x 159.84767pt.
-<grafica-3Jun-12.png, id=978, 430.0065pt x 308.5929pt>
+<grafica-3Jun-12.png, id=981, 430.0065pt x 308.5929pt>
 File: grafica-3Jun-12.png Graphic file (type png)
 <use grafica-3Jun-12.png>
 Package pdftex.def Info: grafica-3Jun-12.png  used on input line 394.
 (pdftex.def)             Requested size: 224.32689pt x 160.98718pt.
 [42 <./esquematico-paralelo-total.png>] [43 <./grafica-3Jun-10.png> <./grafica-3Jun-12.png>]
-<Amplificador1-potencia-serie.png, id=995, 386.6445pt x 355.92975pt>
+<Amplificador1-potencia-serie.png, id=998, 386.6445pt x 355.92975pt>
 File: Amplificador1-potencia-serie.png Graphic file (type png)
 <use Amplificador1-potencia-serie.png>
 Package pdftex.def Info: Amplificador1-potencia-serie.png  used on input line 418.
 (pdftex.def)             Requested size: 251.31595pt x 231.3516pt.
-<Fuente-Con-Baterias.jpg, id=998, 686.565pt x 493.845pt>
+<Fuente-Con-Baterias.jpg, id=1001, 686.565pt x 493.845pt>
 File: Fuente-Con-Baterias.jpg Graphic file (type jpg)
 <use Fuente-Con-Baterias.jpg>
-Package pdftex.def Info: Fuente-Con-Baterias.jpg  used on input line 433.
+Package pdftex.def Info: Fuente-Con-Baterias.jpg  used on input line 432.
 (pdftex.def)             Requested size: 274.62112pt x 197.53448pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[44 <./Amplificador1-potencia-serie.png>]
-<CircuitoCAD.png, id=1006, 1034.06325pt x 417.35925pt>
-File: CircuitoCAD.png Graphic file (type png)
-<use CircuitoCAD.png>
-Package pdftex.def Info: CircuitoCAD.png  used on input line 466.
-(pdftex.def)             Requested size: 517.03036pt x 208.67911pt.
+<En-serie-prototipo1.jpg, id=1002, 963.6pt x 488.82625pt>
+File: En-serie-prototipo1.jpg Graphic file (type jpg)
+<use En-serie-prototipo1.jpg>
+Package pdftex.def Info: En-serie-prototipo1.jpg  used on input line 443.
+(pdftex.def)             Requested size: 366.24527pt x 185.79318pt.
+<En-serie-prototipo2.jpg, id=1003, 837.1275pt x 1284.8pt>
+File: En-serie-prototipo2.jpg Graphic file (type jpg)
+<use En-serie-prototipo2.jpg>
+Package pdftex.def Info: En-serie-prototipo2.jpg  used on input line 453.
+(pdftex.def)             Requested size: 366.24527pt x 562.09863pt.
 
-Overfull \hbox (59.22551pt too wide) in paragraph at lines 466--467
+Overfull \hbox (195.85336pt too wide) in paragraph at lines 453--454
  [][] 
  []
 
-) (./capitulo-4.tex [45 <./Fuente-Con-Baterias.jpg>] [46 <./CircuitoCAD.png>]
+
+LaTeX Warning: Float too large for page by 28.0082pt on input line 459.
+
+[44 <./Amplificador1-potencia-serie.png>]
+<CircuitoCAD.png, id=1011, 1034.06325pt x 417.35925pt>
+File: CircuitoCAD.png Graphic file (type png)
+<use CircuitoCAD.png>
+Package pdftex.def Info: CircuitoCAD.png  used on input line 491.
+(pdftex.def)             Requested size: 517.03036pt x 208.67911pt.
+
+Overfull \hbox (59.22551pt too wide) in paragraph at lines 491--492
+ [][] 
+ []
+
+) (./capitulo-4.tex [45 <./Fuente-Con-Baterias.jpg>] [46 <./En-serie-prototipo1.jpg> <./En-serie-prototipo2.jpg>] [47 <./CircuitoCAD.png>]
 TESIS-USB: resetting all acronyms
 Cap\'{\i }tulo 4.
 
@@ -1223,7 +1241,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 1.
 
-) (./conclusiones.tex [47
+) (./conclusiones.tex [48
 
 ]
 TESIS-USB: resetting all acronyms
@@ -1231,7 +1249,7 @@ TESIS-USB: resetting all acronyms
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 1.
 
-) (./main.bbl [48
+) (./main.bbl [49
 
 ]
 TESIS-USB: resetting all acronyms
@@ -1283,7 +1301,7 @@ LaTeX Info: Redefining \. on input line 40.
 LaTeX Info: Redefining \% on input line 40.
 LaTeX Info: Redefining \. on input line 50.
 LaTeX Info: Redefining \% on input line 50.
-[49
+[50
 
 ]
 LaTeX Info: Redefining \. on input line 59.
@@ -1302,7 +1320,7 @@ LaTeX Info: Redefining \. on input line 90.
 LaTeX Info: Redefining \% on input line 90.
 LaTeX Info: Redefining \. on input line 91.
 LaTeX Info: Redefining \% on input line 91.
- [50]
+ [51]
 LaTeX Info: Redefining \. on input line 109.
 LaTeX Info: Redefining \% on input line 109.
 LaTeX Info: Redefining \. on input line 110.
@@ -1313,7 +1331,7 @@ LaTeX Info: Redefining \. on input line 113.
 LaTeX Info: Redefining \% on input line 113.
 LaTeX Info: Redefining \. on input line 113.
 LaTeX Info: Redefining \% on input line 113.
-) (./apendice-a.tex [51]
+) (./apendice-a.tex [52]
 TESIS-USB: resetting all acronyms
 
 pdfTeX warning (ext4): destination with the same identifier (name{chaptert.1}) has been already used, duplicate ignored
@@ -1330,7 +1348,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 1.
 
-) (./apendice-b.tex [52
+) (./apendice-b.tex [53
 
 ]
 TESIS-USB: resetting all acronyms
@@ -1349,24 +1367,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 1.
 
-<ejemplo.pdf, id=1073, 794.97pt x 614.295pt>
+<ejemplo.pdf, id=1082, 794.97pt x 614.295pt>
 File: ejemplo.pdf Graphic file (type pdf)
 <use ejemplo.pdf>
 Package pdftex.def Info: ejemplo.pdf  used on input line 6.
 (pdftex.def)             Requested size: 381.58127pt x 294.85825pt.
-) [53
+) [54
 
  <./ejemplo.pdf, page is rotated 90 degrees>] (./main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
-LaTeX Info: Redefining \. on input line 306.
-LaTeX Info: Redefining \% on input line 306.
-LaTeX Info: Redefining \. on input line 307.
-LaTeX Info: Redefining \% on input line 307.
-LaTeX Info: Redefining \. on input line 321.
-LaTeX Info: Redefining \% on input line 321.
-LaTeX Info: Redefining \. on input line 322.
-LaTeX Info: Redefining \% on input line 322.
+LaTeX Info: Redefining \. on input line 312.
+LaTeX Info: Redefining \% on input line 312.
+LaTeX Info: Redefining \. on input line 313.
+LaTeX Info: Redefining \% on input line 313.
+LaTeX Info: Redefining \. on input line 327.
+LaTeX Info: Redefining \% on input line 327.
+LaTeX Info: Redefining \. on input line 328.
+LaTeX Info: Redefining \% on input line 328.
 )
  ***********
 LaTeX2e <2025-11-01>
@@ -1377,21 +1395,21 @@ L3 programming layer <2026-03-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DF45BD28F69D177B4F01F4598B2D1032;12271.
+(rerunfilecheck)             Checksum: 902F30E11AB4421C43F6B6041A352BB5;12271.
  ) 
 Here is how much of TeX's memory you used:
- 30073 strings out of 467349
- 599952 string characters out of 5419856
- 994755 words of memory out of 5000000
- 58433 multiletter control sequences out of 15000+600000
+ 30094 strings out of 467349
+ 600476 string characters out of 5419856
+ 995068 words of memory out of 5000000
+ 58452 multiletter control sequences out of 15000+600000
  636295 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,118p,1703b,1526s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (66 pages, 4089203 bytes).
+Output written on main.pdf (67 pages, 4441115 bytes).
 PDF statistics:
- 1212 PDF objects out of 1440 (max. 8388607)
- 1027 compressed objects within 11 object streams
- 267 named destinations out of 1000 (max. 500000)
- 654 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1222 PDF objects out of 1440 (max. 8388607)
+ 1034 compressed objects within 11 object streams
+ 269 named destinations out of 1000 (max. 500000)
+ 664 words of extra memory for PDF output out of 10000 (max. 10000000)
 

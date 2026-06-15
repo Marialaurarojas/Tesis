@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1781106856.73501 "main.aux" "main.bbl" "main" 1781106915.94623 0
+["bibtex main"] 1781543226.16118 "main.aux" "main.bbl" "main" 1781543234.80864 0
   "./referencias.bib" 1778471121 8490 857d87d068f3936de9f9d3a814ba1f4c ""
   "c:/texlive/2026/texmf-dist/bibtex/bst/babelbib/babplain-lf.bst" 1777134898 27787 59c0e1ae1729e4dc6e42b51fa636506f ""
-  "main.aux" 1781106914 28354 49a46afcdd26fab3978210a92d52246f "pdflatex"
+  "main.aux" 1781543232 29086 33db4bd6de4b442d30402b34be2ff669 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1781106908.61911 "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" "main.pdf" "main" 1781106915.94713 0
+["pdflatex"] 1781543226.89198 "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" "main.pdf" "main" 1781543234.8095 0
   "AjusteF0003CH2.png" 1777133371 29413 9679503fc89fc08f3b1fd3ef7e8e536d ""
   "Amplificador1-potencia-paralelo.png" 1778780108 48268 a72cc5e67113605ae324751e334e21cc ""
   "Amplificador1-potencia-serie.png" 1779382562 44160 8d24f137909b5f048c27acfdfdceda0b ""
@@ -19,6 +19,8 @@
   "CircuitoCAD.png" 1777133371 69177 1f284c3d31eaa231922f8fe50b0c2ba6 ""
   "Curva c_i vs g_i.png" 1777133371 23347 ff13db1640a7cd67bc241e78b0ce629f ""
   "CurvaPlanaGalaxias.png" 1777133371 126202 1d834325ac673be2acbc166e31fd0c58 ""
+  "En-serie-prototipo1.jpg" 1781542648 115850 45ea3f2a944dcc6b2f2f5651ec1b39dc ""
+  "En-serie-prototipo2.jpg" 1781542455 234930 d6493ec8ada5226b82151e53d5ba9ee2 ""
   "F0003TEK.png" 1777133371 3787 7bad800bff77bea3ca4b96260db8ef99 ""
   "FOTO-circuito-temperatura.png" 1778599696 747181 07fff6b9408e267f45a85b6149576891 ""
   "FactorQ-zemansky.png" 1777215880 51509 e53040b26ec3f9f70cf4bb28cc0c779a ""
@@ -223,7 +225,7 @@
   "c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1777153601 3648469 b0320031242cb6b7c7a0c982a2808190 ""
   "c:/texlive/2026/texmf.cnf" 1777153346 713 e69b156964470283e0530f5060668171 ""
   "capitulo-2.tex" 1777176946 16716 e6eab90f73500514fe33d67f10d5a3be ""
-  "capitulo-3.tex" 1781106907 33314 367020450fa9795093637d246b77ce9b ""
+  "capitulo-3.tex" 1781543217 34336 3aad8259fc377afcb1e788f842175175 ""
   "capitulo-4.tex" 1778605491 1474 e518a2a1ab3a98dc651ff32e762e4e63 ""
   "conclusiones.tex" 1777133371 27 fef8898427cf9a25471539fbdf0029e4 ""
   "curva c_i vs g_i zoom.png" 1777133371 26865 18bd7d838b87a97f50e80ba4b969df15 ""
@@ -234,13 +236,13 @@
   "grafica-3Jun-10.png" 1779377283 35177 7b57e18f63e597b8e5b07e4ea292dc26 ""
   "grafica-3Jun-12.png" 1779377301 37452 deb9c3bd61f51bd5d649bddb6c588485 ""
   "introduccion.tex" 1777156110 329 4e5d863c293781982ec7b1851a406fc5 ""
-  "main.aux" 1781106914 28354 49a46afcdd26fab3978210a92d52246f "pdflatex"
-  "main.bbl" 1781106857 11183 d40262dfb0676c85d7b19a67ae459777 "bibtex main"
-  "main.lof" 1781106914 3355 a70cb103d6310c783cbd94cc2ba603fc "pdflatex"
-  "main.lot" 1781106914 1875 e82768b5701ec4b67c0971451b6e2579 "pdflatex"
-  "main.out" 1781106914 12271 df45bd28f69d177b4f01f4598b2d1032 "pdflatex"
+  "main.aux" 1781543232 29086 33db4bd6de4b442d30402b34be2ff669 "pdflatex"
+  "main.bbl" 1781543226 11183 d40262dfb0676c85d7b19a67ae459777 "bibtex main"
+  "main.lof" 1781543232 3577 3e6af496348fdab2458001bd7059b6e9 "pdflatex"
+  "main.lot" 1781543232 1875 e82768b5701ec4b67c0971451b6e2579 "pdflatex"
+  "main.out" 1781543232 12271 902f30e11ab4421c43f6b6041a352bb5 "pdflatex"
   "main.tex" 1778464841 2718 1bca23560d3279d4073703fa6babfaf3 ""
-  "main.toc" 1781106914 5791 c2548507759e44d2f626fcc043c059f0 "pdflatex"
+  "main.toc" 1781543232 5791 69aff80f06dfafef17b587f7c802e647 "pdflatex"
   "n-1.png" 1777133371 27641 c5ca3d4f46120468d4c3ca4937bd8fb2 ""
   "n-2.png" 1777133371 31815 4dc0d73a087f776873fb0afcf8a8125f ""
   "n-3.png" 1777133371 34607 ac8f6550928694b01bad7a109edee6d9 ""
