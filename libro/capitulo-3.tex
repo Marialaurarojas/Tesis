@@ -433,37 +433,70 @@ Esta versión del circuito resonante se ideó buscando mejorar los resultados de
 \caption[]{Foto de la fuente utilizada en el experimento RLC en serie.}
 \label{fig:fuente-baterias}
 \end{figure}
+Este experimento en serie se desarrolló por varios meses en los cuales se logró construir secuancialmente dos prototipos cuyas fotos estan en la figura \ref{fig:fotos-prototipos-placas}. El esquema electrónico de ambos es en escencia el que se ha venido discutiendo, y en tema de diseño físico se elaboraron ambos de forma que tienen pines que calzan en la parte superior del Arduino UNO. El prototipo elaborado en PCB (figura \ref{fig:placa-blanca}) fué el ultimo en elaborarse y es el que tiene las exactas caracteristicas que se discutieron en la sección \ref{seccion-modulos}, ya que tuvo los mejores resultados dentro del marco de una conexión en serie.
+
+\begin{figure}[htbp]
+    \centering
+    % Primera imagen (a)
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{En-serie-prototipo1.jpg} % Sustituye por tu archivo
+        \caption{Prototipo eleaborado con placa perforada.}
+        \label{fig:placa-verde}
+    \end{subfigure}
+    %\vspace{1.5em} % Espacio vertical entre las imágenes
+    % Segunda imagen (b)
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{En-serie-prototipo2.jpg} % Sustituye por tu archivo
+        \caption{Prototipo elaborado en PCB.}
+        \label{fig:placa-blanca}
+    \end{subfigure}
+    %\vspace{1.5em} % Espacio vertical entre las imágene
+    \caption{Fotos de los dos principales prototipos eleborados con el circuito en serie.}
+    \label{fig:fotos-prototipos-placas}
+\end{figure}
+
+
+ 
+
+\subsection{Resultados}
+%3Mar26-6 y 3Mar26-5 son lo mismo pero muestra que cada vez que se hacia el barrido se encontraba algo distinto
+%3Mar26-1 es lo mejorcito que hay
+
+Para un barrido entre 300 K HZ y 600 k Hz usando pasos de 10 K Hz se tiene la curva de la figura \ref{fig:resultado-serie}, estos resultado provienen del prototipo en PCB cuyo esquematico completo se incluye en el apendice \ref{ape:esquematico}.
+
+
+Barridos de frecuencia para el circuito en serie realizados ente 400 K Hz y 440 K Hz con pasos de 1000 Hz
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.65]{resultado-serie-3Mar26-1.png}
+\caption[]{Mejores resultados obtenidos con el circuito en serie.}
+\label{fig:resultado-serie}
+\end{figure}
 
 
 \begin{figure}[htbp]
     \centering
     % Primera imagen (a)
-    \begin{subfigure}{0.80\textwidth}
+    \begin{subfigure}{0.48\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{En-serie-prototipo1.jpg}
+        \includegraphics[width=\linewidth]{resultado-serie-3Mar26-5.png}
         \caption{}
-        \label{fig:parte_c}
+        \label{fig:parte_a2}
     \end{subfigure}
-    
-    \vspace{0.5cm} % <-- Opcional: Agrega un espacio vertical sutil entre (a) y (b)
-
+    %\hfill
     % Segunda imagen (b)
-    \begin{subfigure}{0.80\textwidth} % Cambiado a 0.80 para que tengan el mismo ancho visual, ajusta si lo deseas
+    \begin{subfigure}{0.49\textwidth}
         \centering
-        \includegraphics[width=\linewidth, angle = -90]{En-serie-prototipo2.jpg}
+        \includegraphics[width=\linewidth]{resultado-serie-3Mar26-6.png}
         \caption{}
-        \label{fig:parte_d}
+        \label{fig:parte_b2}
     \end{subfigure}
-    \caption{Graficas de los barridos de frecuencia con mejores resultado del experimento en paralelo, incluye los datos originales y la curva ajustada.}
-    \label{fig:fotos-prototipos}
+    \caption{Dos barridos con las mismas caracteristicas realizados consecutivamente con minutos de diferencia.}
+    \label{fig:resultado-RLC-serie}
 \end{figure}
-
-
-\subsection{Resultados}
-%3Mar26-6 y 3Mar26-5 son lo mismo pero muestra que cad avez que s ehacia el barrido se encontraba algo distinto
-%3Mar26-1 es lo mejorcito que hay
-
-
 
 
 \section{Calculo de la precisión necesaria: Ajuste de la curva por ODR}
