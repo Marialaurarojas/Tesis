@@ -2,7 +2,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Gráfica de los puntos encontrados para cada medida realizada.}}{23}{figure.caption.27}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Gráfica de los puntos encontrados la mediada realizada despues de aplicar las mejoras, en ambas gráficas se incluyen las barras de error.}}{24}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Gráfica de los puntos encontrados la medición realizada después de aplicar las mejoras, en ambas gráficas se incluyen las barras de error.}}{24}{figure.caption.29}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Comportamiento del factor Q según la resistencia en el circuito \cite {searsZemanskyV2}.}}{30}{figure.caption.32}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Circuito RLC en serie planteado por la referencia \cite {GuiaLab-SUNY}.}}{30}{figure.caption.33}%
@@ -20,9 +20,9 @@
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Foto de experimento RLC en paralelo.}}{41}{figure.caption.45}%
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Esquemático de todo el circuito del experimento RLC en paralelo.}}{42}{figure.caption.46}%
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Graficas de los barridos de frecuencia con mejores resultado del experimento en paralelo, incluye los datos originales y la curva ajustada.}}{43}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Fotos de los dos principales prototipos eleborados con el circuito en serie.}}{45}{figure.caption.51}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Dos barridos con las mismas caracteristicas realizados consecutivamente con minutos de diferencia.}}{47}{figure.caption.53}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces circuito donde se explica claramente la conexión del arduino,}}{47}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Fotos de los dos principales prototipos eleborados con el circuito en serie.}}{45}{figure.caption.52}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Dos barridos con las mismas caracteristicas realizados consecutivamente con minutos de diferencia.}}{47}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces circuito donde se explica claramente la conexión del arduino,}}{48}{figure.caption.56}%
 \addvspace {10\p@ }
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
@@ -30,6 +30,5 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Título corto de imagen}}{54}{figure.caption.57}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Diagrama esquemático completo del prototipo conectado en serie diseñado en KiCad.}}{56}{figure.caption.58}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Diagrama esquemático completo del prototipo conectado en serie diseñado en KiCad.}}{60}{figure.caption.59}%

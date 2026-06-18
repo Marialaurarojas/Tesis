@@ -1,10 +1,52 @@
+%INCLUIR EXPLICACIÓN DEL SOFTWARE: EL PYTHON QUE CONTROLA PERO TAMBIEN LA PARTE QUE AJUSTA LA CURVA
+
 \chapter{Tratamiento de los datos con Python}\label{apx:PC}
 
-INCLUIR EXPLICACIÓN DEL SOFTWARE: EL PYTHON QUE CONTROLA PERO TAMBIEN LA PARTE QUE AJUSTA LA CURVA
+El software desarrollado en Python para este experimento se divide en dos programas independientes: uno que sirve de interfaz gráfica para controlar el Arduino y guardar los datos del barrido, y otro que toma esos datos y ajusta la curva de resonancia para extraer la frecuencia $f_0$.
 
-\begin{figure}[ht]
-\includegraphics[scale=0.48,angle=0]{ejemplo}
-\caption[Título corto de imagen]{Título corto de imagen}\label{img:imgscl}
-\end{figure}
+\section{Programa de control del Arduino}
 
+Este programa implementa una interfaz gráfica sencilla utilizando la biblioteca \texttt{tkinter}, mediante la cual el usuario introduce los tres parámetros del barrido: la frecuencia inicial, la frecuencia final y el incremento de frecuencia, todos en Hz. A partir de estos valores, el programa calcula y muestra el número de pasos $N$ que tendrá el barrido según
+
+\begin{equation}
+    N = \frac{f_{\text{final}} - f}{f_{\text{inc}}}
+\end{equation}
+
+permitiendo al usuario estimar el tiempo que tomará el experimento antes de iniciarlo. Adicionalmente se solicita el nombre con el que se guardará el archivo de salida, al cual se le añade automáticamente la extensión \texttt{.csv}.
+
+Al presionar el botón de inicio, el programa establece la comunicación con el Arduino por el puerto serial COM4 a 115200 baudios y espera el mensaje de confirmación \texttt{"Arduino listo"}. Una vez confirmada la conexión, transmite los tres parámetros en una sola línea con el formato \texttt{f,f\_final,f\_inc\textbackslash n}. A partir de ese momento, el programa entra en un bucle de lectura en el que recibe línea a línea los pares de valores \texttt{frecuencia,voltaje} enviados por el Arduino, los convierte a número de punto flotante y los escribe en el archivo CSV con los encabezados \texttt{Frecuencia} y \texttt{Voltaje}. El bucle continúa hasta que se han recibido tantos puntos como pasos $N$ tiene el barrido, momento en el que se cierra el puerto serial y se notifica al usuario mediante una ventana emergente.
+
+La comunicación con el Arduino se ejecuta en un hilo secundario mediante la biblioteca \texttt{threading}, de modo que la interfaz gráfica permanece activa y no se congela mientras el barrido está en curso.
+
+\section{Programa de ajuste de la curva}
+
+Una vez concluido el barrido, el archivo CSV resultante se procesa con un segundo programa cuyo objetivo es ajustar una función lorentziana a los datos y extraer la frecuencia de resonancia $f_0$ junto con su incertidumbre.
+
+El programa lee el archivo con la biblioteca \texttt{pandas} y extrae las columnas de frecuencia y voltaje como arreglos de NumPy. Antes del ajuste se aplica un filtro que elimina cualquier valor no finito (NaN o infinito) que pueda haber quedado registrado por errores de lectura del ADC, garantizando que \texttt{curve\_fit} opere sobre datos limpios.
+
+\subsection{Función de ajuste}
+
+La función utilizada para el ajuste es una lorentziana de la forma
+
+\begin{equation}\label{eq:lorentz}
+    L(f) = \frac{A}{(f - f_0)^2 + \gamma^2} + \text{offset}
+\end{equation}
+
+donde $A$ es una constante de amplitud, $f_0$ es la frecuencia de resonancia (posición del máximo), $\gamma$ es el semiancho del pico y \texttt{offset} es un nivel de fondo constante. Esta función corresponde a la forma esperada para la respuesta en voltaje del circuito resonante discutida en el capítulo \ref{cap:3}.
+
+\subsection{Estimación automática de parámetros iniciales}
+
+Dado que \texttt{curve\_fit} es sensible a los valores iniciales \cite{scipy_curvefit}, el programa estima automáticamente los cuatro parámetros de partida en lugar de fijarlos manualmente. El nivel de fondo se estima como el percentil 10 del voltaje medido, para evitar que valores atípicos distorsionen la estimación. La frecuencia central $f_0$ se aproxima por la frecuencia a la que se observa el voltaje máximo. El semiancho $\gamma$ se estima a partir del ancho a media altura (FWHM) del pico: se identifican los puntos cuyo voltaje supera la mitad de la altura neta sobre el fondo y se toma la mitad de la separación entre el primero y el último de esos puntos. Finalmente, la amplitud $A$ se estima de la relación $A \approx (V_{\max} - \text{offset})\cdot\gamma^2$, que se desprende directamente de la ecuación \ref{eq:lorentz} evaluada en $f=f_0$.
+
+\subsection{Ajuste y estimación de incertidumbres con \texttt{curve\_fit}}
+
+La función \texttt{curve\_fit} de la biblioteca \texttt{scipy.optimize} ajusta los parámetros de un modelo no lineal a datos experimentales minimizando la suma de cuadrados de los residuos
+
+\begin{equation}
+    S(\boldsymbol{\theta}) = \sum_{i} \left[ y_i - L(f_i;\, \boldsymbol{\theta}) \right]^2
+\end{equation}
+
+donde $\boldsymbol{\theta} = (A,\, f_0,\, \gamma,\, \text{offset})$ es el vector de parámetros y $(f_i, y_i)$ son los datos medidos. Para resolver este problema de mínimos cuadrados no lineales, \texttt{curve\_fit} utiliza por defecto el algoritmo de Levenberg-Marquardt, que interpola entre el método de descenso por gradiente y el método de Gauss-Newton, combinando la robustez del primero con la velocidad de convergencia del segundo. La función devuelve el vector de parámetros óptimos \texttt{popt} y la matriz de covarianza estimada \texttt{pcov}; los elementos diagonales de esta matriz son las varianzas de cada parámetro, de modo que los errores estándar se obtienen como $\sigma_i = \sqrt{(\texttt{pcov})_{ii}}$. En el programa se fijan cotas inferiores de cero para $A$, $f_0$ y $\gamma$, lo que restringe la búsqueda al dominio físicamente válido. El número máximo de evaluaciones de la función se fija en 20000 para dar al algoritmo suficiente margen en casos en que la curva presente ruido elevado.
+
+Una vez obtenidos los parámetros, el programa genera una gráfica que superpone los datos originales y la curva ajustada, e imprime en consola los valores de $A$, $f_0$, $\gamma$ y \texttt{offset} junto con sus errores estándar, siendo $f_0$ y su incertidumbre los resultados de interés experimental.
 

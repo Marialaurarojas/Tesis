@@ -1,17 +1,31 @@
 \chapter{Código Arduino}\label{apx:Arduino}
 
+El programa cargado en el Arduino UNO cumple tres funciones principales: generar la señal sinusoidal de barrido a través del módulo AD9833, adquirir la respuesta del circuito resonante mediante el convertidor analógico-digital ADS1115, y transmitir los datos de frecuencia y voltaje a la computadora por el puerto serial. El ciclo se repite tantas veces como la PC lo indique enviando los parámetros de un nuevo barrido.
 
-AQUI VA LA EXPLICACIÓN DEL PROGRAMA DEL ARDUINO.
-Copyright 2012 C. Contreras and A. Sajo-Castelli
-  
-  This work may be distributed and/or modified under the
-  conditions of the LaTeX Project Public License, either version 1.3
-  of this license or (at your option) any later version.
-  The latest version of this license is in
-    http://www.latex-project.org/lppl.txt
-  and version 1.3 or later is part of all distributions of LaTeX
-  version 2005/12/01 or later.
-  
-  This work has the LPPL maintenance status `maintained'.
-  
-  The Current Maintainer of this work are C. Contreras and A. Sajo-Castelli
+\section{Librerías y configuración de pines}
+
+Se emplean cuatro librerías externas: \texttt{SPI.h} y \texttt{MD\_AD9833.h} para controlar el generador de funciones AD9833 por SPI de software, y \texttt{Wire.h} junto con \texttt{Adafruit\_ADS1X15.h} para comunicarse con el ADS1115 por el protocolo de comunicación I$^2$C (\textit{Inter-Integrated Circuit}).
+
+Los pines 13, 12 y 11 están asignados a las líneas de datos, reloj y habilitación del AD9833 respectivamente. El pin digital 9 controla la base del transistor PNP que descarga el capacitor del módulo de lectura; al ser de tipo PNP, una señal \texttt{HIGH} mantiene el transistor apagado y una señal \texttt{LOW} lo enciende.
+
+Las características del barrido quedan definidas por tres variables de punto flotante: la frecuencia de inicio \texttt{f}, la frecuencia final \texttt{f\_final} y el incremento entre pasos \texttt{f\_inc}. Estos valores no están fijados en el código sino que son enviados por la PC antes de cada barrido, lo que permite modificar el rango y la resolución sin reprogramar el Arduino.
+
+\section{Inicialización}
+
+La función \texttt{setup()} inicializa la comunicación serial a 115200 baudios, el módulo AD9833 (incluyendo un reset para asegurar un estado conocido), y el ADS1115 con una ganancia de \texttt{GAIN\_EIGHT} ($\pm\,0.512\,$V, resolución de $0.015625\,$mV/bit), elegida para adecuar el rango del ADC al nivel de voltaje esperado a la salida del módulo de lectura. El transistor se deja inicialmente apagado y se envía el mensaje \texttt{Arduino listo} por serial para confirmar a la PC que el sistema está operativo.
+
+\section{Ciclo principal}
+
+La función \texttt{loop()} opera en dos bloques. En el primero, si hay datos disponibles en el puerto serial, se leen los tres parámetros del barrido separados por comas y terminados en salto de línea (\texttt{f}, \texttt{f\_final}, \texttt{f\_inc}), y se activa la bandera \texttt{procesandoDatos}.
+
+En el segundo bloque, activo mientras \texttt{procesandoDatos} sea verdadero y \texttt{f\,<\,f\_final}, se ejecuta el siguiente ciclo para cada punto del barrido:
+
+\begin{enumerate}
+    \item Se configura el AD9833 para generar la frecuencia \texttt{f} y se espera 100\,ms para que la señal en el circuito se estabilice.
+    \item Se realiza una lectura en el canal 2 del ADS1115 y se convierte a voltios con \texttt{computeVolts}.
+    \item Se transmite por serial una línea con el formato \texttt{f,voltaje}, con cuatro y seis cifras decimales respectivamente.
+    \item Se enciende el transistor durante 100\,ms para descargar el capacitor del rectificador y luego se apaga, asegurando que cada punto del barrido sea una medición independiente.
+    \item Se incrementa \texttt{f} en \texttt{f\_inc} y se espera 50\,ms antes de la siguiente iteración.
+\end{enumerate}
+
+Al alcanzar \texttt{f\_final}, la bandera se desactiva y el programa queda a la espera de un nuevo conjunto de parámetros por parte de la PC.

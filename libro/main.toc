@@ -3,10 +3,10 @@
 \contentsline {chapter}{\MakeTextUppercase []{Agradecimientos}}{iv}{chapter*.2}%
 \contentsline {chapter}{\MakeTextUppercase []{Resumen}}{v}{chapter*.3}%
 \contentsline {chapter}{\MakeTextUppercase []{\'{I}ndice general}}{vi}{chapter*.4}%
-\contentsline {chapter}{\MakeTextUppercase []{\'{I}ndice de figuras}}{viii}{chapter*.5}%
-\contentsline {chapter}{\MakeTextUppercase []{\'{I}ndice de tablas}}{ix}{chapter*.6}%
-\contentsline {chapter}{\MakeTextUppercase []{LISTA DE ACR\'ONIMOS}}{x}{chapter*.8}%
-\contentsline {chapter}{\MakeTextUppercase []{Notaci\'on matem\'atica}}{xi}{chapter*.9}%
+\contentsline {chapter}{\MakeTextUppercase []{\'{I}ndice de figuras}}{ix}{chapter*.5}%
+\contentsline {chapter}{\MakeTextUppercase []{\'{I}ndice de tablas}}{x}{chapter*.6}%
+\contentsline {chapter}{\MakeTextUppercase []{LISTA DE ACR\'ONIMOS}}{xi}{chapter*.8}%
+\contentsline {chapter}{\MakeTextUppercase []{Notaci\'on matem\'atica}}{xii}{chapter*.9}%
 \contentsline {chapter}{\MakeTextUppercase []{Introducci\'on}}{1}{chapter*.10}%
 \contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~I:~\MakeTextUppercase []{Hipótesis de Céspedes-Curé}}{2}{chaptert.1}%
 \contentsline {section}{\numberline {1.1}Introducción}{2}{section.1.1}%
@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {3.2.1}Análisis de la respuesta en serie y simulaciones de sensibilidad}{31}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Alternativa de medición: Configuración en paralelo}{33}{subsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.2.1}Factor Q para circuito en paralelo}{34}{subsubsection.3.2.2.1}%
-\contentsline {section}{\numberline {3.3}????Circuito resonante implementado- esquema experimental}{34}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Arquitectura del montaje experimental: módulos y su intereacción}{34}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Módulo generador}{34}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Módulo de lectura}{35}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Módulo de automatización}{37}{subsection.3.3.3}%
@@ -46,19 +46,27 @@
 \contentsline {section}{\numberline {3.5}Experimento RLC en Serie}{43}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Procedimiento experimental}{43}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Resultados}{46}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Calculo de la precisión necesaria: Ajuste de la curva por ODR}{46}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Modificaciones propuestas}{46}{section.3.7}%
-\contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{48}{chaptert.4}%
-\contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{48}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{48}{section.4.2}%
-\contentsline {section}{\numberline {4.3} Circuito LC con fem aplicada por inducción}{48}{section.4.3}%
-\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{49}{chapter*.55}%
-\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{50}{chapter*.56}%
+\contentsline {section}{\numberline {3.6}Calculo de la precisión necesaria: Ajuste de la curva por ODR}{47}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Modificaciones propuestas}{47}{section.3.7}%
+\contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{49}{chaptert.4}%
+\contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{49}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{49}{section.4.2}%
+\contentsline {section}{\numberline {4.3} Circuito LC con fem aplicada por inducción}{49}{section.4.3}%
+\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{50}{chapter*.57}%
+\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{51}{chapter*.58}%
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Código Arduino}}{53}{chaptert.1}%
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{Tratamiento de los datos con Python}}{54}{chaptert.2}%
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~C:~\MakeTextUppercase []{Apéndice C: Esquemático completo del circuito resonante en serie}}{55}{chaptert.3}%
-\contentsline {chapter}{Apéndice C: Esquemático del circuito}{55}{chaptert.3}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Código Arduino}}{54}{chaptert.1}%
+\contentsline {section}{\numberline {A.1}Librerías y configuración de pines}{54}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Inicialización}{54}{section.Alph1.2}%
+\contentsline {section}{\numberline {A.3}Ciclo principal}{55}{section.Alph1.3}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{Tratamiento de los datos con Python}}{56}{chaptert.2}%
+\contentsline {section}{\numberline {B.1}Programa de control del Arduino}{56}{section.Alph2.1}%
+\contentsline {section}{\numberline {B.2}Programa de ajuste de la curva}{57}{section.Alph2.2}%
+\contentsline {subsection}{\numberline {B.2.1}Función de ajuste}{57}{subsection.Alph2.2.1}%
+\contentsline {subsection}{\numberline {B.2.2}Estimación automática de parámetros iniciales}{57}{subsection.Alph2.2.2}%
+\contentsline {subsection}{\numberline {B.2.3}Ajuste y estimación de incertidumbres con \texttt {curve\_fit}}{58}{subsection.Alph2.2.3}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~C:~\MakeTextUppercase []{Apéndice C: Esquemático completo del circuito resonante en serie}}{59}{chaptert.3}%
+\contentsline {chapter}{Apéndice C: Esquemático del circuito}{59}{chaptert.3}%

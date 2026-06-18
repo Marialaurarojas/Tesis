@@ -1,4 +1,4 @@
-\chapter{Experimento II: medición indirecta usando un circuito resonante}
+\chapter{Experimento II: medición indirecta usando un circuito resonante} \label{cap:3}
 
 % recuerda incluir que las referencias GuiaLAB-MIT y GuiaLab-SUNY son guias de laboratorio donde se explican este experimento con circuito resonante
 
@@ -177,7 +177,7 @@ Contrario a lo que ocurre en el circuito en serie, en paralelo a la frecuencia d
 \end{equation}
 
 
-\section{????Circuito resonante implementado- esquema experimental}\label{seccion-modulos}
+\section{Arquitectura del montaje experimental: módulos y su intereacción}\label{seccion-modulos}
 
 Para que el experimento pueda funcionar se requiere mucho más que solo una resistencias, un capacitor y una bobina. La propuesta está en añadir modulos adicionales cada uno con su función especifica. El conjunto completo así como las relaciones entre ellos se pueden apreciar en la figura \ref{fig:SOLO-ESQUEMA}
 
@@ -356,7 +356,7 @@ El esquemático del circuito completo se puede ver en la figura \ref{fig:total-p
 
 \subsection{Resultados}
 
-Este procedimiento se intentó multiples veces, los mejores resultados se obtuvieron con un valor de R5 de $10 \Omega$ y R7 de $4 K\Omega$, para un barrido entre 520 KHz y 550 KHz con pasos de 500 Hz, los resultado se incluyen en la figura \ref{fig:resultado-RLC-paralelo}. Los puntos forman una curva suave, la cual se ajustó usando mínimos cuadrados con python como se explica en el apéndice \ref{apx:PC}, los resultado del ajuste se incluyen en la tabla \ref{tab:resultado-paralelo}. En la gráfica se puede apreciar que la cima de la curva está plana, así que con el fin de hacer un barrido más preciso y distingir mejor la cima de la curva se realizó otro barrido pero con pasos de 80 Hz, esta vez entre 530 KHz y 536 KHz. En este segundo barrido se encontó que los puntos presentan mayor dispersión de curva lorenztiana que se puede ver en la figura \ref{fig:resultado-RLC-paralelo}, aunque aun fué posible hacer una ajuste, los datos de este se incluyen en tabla \ref{tab:resultado-paralelo}. En la gráfica de este segundo barrido se evidencia que hay varios puntos cerca de la cima que comparten valor del voltaje, por lo que los puntos forman pequeñas lineas horizontales.
+Este procedimiento se intentó multiples veces, los mejores resultados se obtuvieron con un valor de R5 de $10 \Omega$ y R7 de $4 K\Omega$, para un barrido entre 520 KHz y 550 KHz con pasos de 500 Hz, los resultado se incluyen en la figura \ref{fig:resultado-RLC-paralelo}. Los puntos forman una curva suave, la cual se ajustó usando mínimos cuadrados con python como se explica en el apéndice \ref{apx:PC}, los resultado del ajuste se incluyen en la tabla \ref{tab:resultado-paralelo}. En la gráfica se puede apreciar que la cima de la curva está plana, así que con el fin de hacer un barrido más preciso y distingir mejor la cima de la curva se realizó otro barrido pero con pasos de 80 Hz, esta vez entre 530 KHz y 536 KHz. En este segundo barrido se encontó que los puntos presentan mayor dispersión con respecto al caso anterior, lo cual se puede ver en la figura \ref{fig:resultado-RLC-paralelo}, aun así fué posible hacer una ajuste, los datos de este se incluyen en tabla \ref{tab:resultado-paralelo}. En la gráfica de este segundo barrido se evidencia que hay varios puntos cerca de la cima que comparten valor del voltaje, por lo que los puntos forman pequeñas lineas horizontales.
 
 
 \begin{table}[h]
@@ -371,7 +371,7 @@ $(\text{offset})Hz$ & $(0.065 \pm 0.010)$ & $(0.37\pm 0.02)$ \\
 $(f_0)Hz$ & $(533274\pm 19) $ & $(532959 \pm 29)$ \\
 \hline
 \end{tabular}
-\caption{Valores de los parametros de ajuste de una curva lorenztiana para el primer y segundo barrido del experiemento en paralelo.}
+\caption{Valores de los parametros de ajuste de una curva lorenztiana para el primer y segundo barrido del experimento en paralelo.}
 \label{tab:resultado-paralelo}
 \end{table}
 
@@ -399,7 +399,7 @@ $(f_0)Hz$ & $(533274\pm 19) $ & $(532959 \pm 29)$ \\
     \label{fig:resultado-RLC-paralelo}
 \end{figure}
 
-Los resultados obtenidos con este experimento están lejos de tener un factor Q y una presión, en el ajuste de la curva, suficiente para verificar la \ac{HCC}. Después de realizar mejoras a nivel de software y hardware con resultados parecidos o peores a los aquí mostrados, se decidió cambiar la conexión del circuito resonante y con ello implementar un conjunto de mejoras más agresivas que se consideran como un nuevo prototipo del experimento, el cual será desarrollado a mayor profundidad en la siguiente sección.
+Los resultados obtenidos con este experimento están lejos de tener un factor Q y una presión, en el ajuste de la curva, suficiente para verificar la \ac{HCC}. Después de realizar mejoras a nivel de software y hardware con resultados parecidos o peores a los aquí mostrados, se decidió cambiar la conexión del circuito resonante y con ello implementar un conjunto de mejoras más agresivas que se consideran como un nuevo experimento, el cual será desarrollado a mayor profundidad en la siguiente sección.
 
 
 
@@ -433,7 +433,7 @@ Esta versión del circuito resonante se ideó buscando mejorar los resultados de
 \caption[]{Foto de la fuente utilizada en el experimento RLC en serie.}
 \label{fig:fuente-baterias}
 \end{figure}
-Este experimento en serie se desarrolló por varios meses en los cuales se logró construir secuancialmente dos prototipos cuyas fotos estan en la figura \ref{fig:fotos-prototipos-placas}. El esquema electrónico de ambos es en escencia el que se ha venido discutiendo, y en tema de diseño físico se elaboraron ambos de forma que tienen pines que calzan en la parte superior del Arduino UNO. El prototipo elaborado en PCB (figura \ref{fig:placa-blanca}) fué el ultimo en elaborarse y es el que tiene las exactas caracteristicas que se discutieron en la sección \ref{seccion-modulos}, ya que tuvo los mejores resultados dentro del marco de una conexión en serie.
+Este experimento en serie se desarrolló por varios meses en los cuales se logró construir secuencialmente dos prototipos cuyas fotos estan en la figura \ref{fig:fotos-prototipos-placas}. El esquema electrónico de ambos es en escencia el que se ha venido discutiendo, y en tema de diseño físico se elaboraron ambos de forma que tienen pines que calzan en la parte superior del Arduino UNO. El prototipo armado en \ac{PCB} (figura \ref{fig:placa-blanca}) fué el ultimo en desarrollarse y es el que tiene las exactas caracteristicas que se discutieron en la sección \ref{seccion-modulos}, ya que tuvo los mejores resultados dentro del marco de una conexión en serie.
 
 \begin{figure}[htbp]
     \centering
@@ -464,10 +464,7 @@ Este experimento en serie se desarrolló por varios meses en los cuales se logr�
 %3Mar26-6 y 3Mar26-5 son lo mismo pero muestra que cada vez que se hacia el barrido se encontraba algo distinto
 %3Mar26-1 es lo mejorcito que hay
 
-Para un barrido entre 300 K HZ y 600 k Hz usando pasos de 10 K Hz se tiene la curva de la figura \ref{fig:resultado-serie}, estos resultado provienen del prototipo en PCB cuyo esquematico completo se incluye en el apendice \ref{ape:esquematico}.
-
-
-Barridos de frecuencia para el circuito en serie realizados ente 400 K Hz y 440 K Hz con pasos de 1000 Hz
+Para un barrido entre 300 K HZ y 600 k Hz usando pasos de 10 K Hz se tiene la curva de la figura \ref{fig:resultado-serie}, estos resultado provienen del prototipo en \ac{PCB} cuyo esquematico completo se incluye en el apendice \ref{ape:esquematico}. La curva obtenida no tiene un alto factor $Q$ y la forma de la curva es peor (parametros de ajuste se incluyen en la tabla \ref{tab:resultado-serie}), esto se evidencia si comparamos el error relativo porcentual de la frecuencia de resonancia en este caso que es de $0.34\%$ con el mismo parametro pero del primer barrido en paralelo, el cual se encuentra dos ordenes de magnitud por debajo, con un valor de $0.0036 \%$. Entonces en terminos de la forma de la curva los mejores resultados se dieron con la conexión en paralelo, aunque ambos siguen sin presentar una curva estrecha.
 
 \begin{figure}[h!]
 \centering
@@ -476,6 +473,23 @@ Barridos de frecuencia para el circuito en serie realizados ente 400 K Hz y 440 
 \label{fig:resultado-serie}
 \end{figure}
 
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|c|}
+\hline
+Parámetro de ajuste &  Barrido de frecuencia en serie\\
+\hline
+$(A) V \cdot Hz^2$ & $(6 \pm 2)\times 10^9$ \\
+$(\gamma) V$ & $(158 \pm 17 ) \times 10^3$ \\
+$(\text{offset})Hz$ & $(0.22 \pm 0.03)$ \\
+$(f_0)Hz$ & $(425930\pm 1475) $\\
+\hline
+\end{tabular}
+\caption{Valores de los parametros de ajuste de una curva lorenztiana para el barrido del experimento en serie.}
+\label{tab:resultado-serie}
+\end{table}
+
+Posteriormente se buscó realizar barrido más pequeños y centrados en la cima de la curva, en esos casos se encontró que no exisita una estabilidad en la medida, es decir mediciones consecutivas no arrojaban el mismo resultado. Por ejemplo, para barridos entre 400 K Hz y 440 K Hz con pasos de 1000 Hz, se obtuvieron multiples resultados distintos, dos de ellos se ejemplifican en la figura \ref{fig:resultado-malo-serie}. En estos casos es imposible ajustar nada, ya que los datos muestran una dispersión enorme y ruido. Para explicar este inusual comportamiento, que solo aparecia en los barrido más pequeños se hicieron algunas pruebas adicionales que no llegaron a resolver nada como: cambiar el tipo de diodo rectificador, hacer modificaciones en lso tiempos de espera dentro del sorfware de arudino, colocar de frente al circuito un fuerte ventilador, entre otras. Por lo que la razon de no poder hacer medidas consecutivas igaules en barridos pequeños con este dispositivo permanece sin resolver.
 
 \begin{figure}[htbp]
     \centering
@@ -495,9 +509,10 @@ Barridos de frecuencia para el circuito en serie realizados ente 400 K Hz y 440 
         \label{fig:parte_b2}
     \end{subfigure}
     \caption{Dos barridos con las mismas caracteristicas realizados consecutivamente con minutos de diferencia.}
-    \label{fig:resultado-RLC-serie}
+    \label{fig:resultado-malo-serie}
 \end{figure}
 
+%AGREGAR UN PARRAFO DONDE SE HABLE DEL FRACASO DE LSO EXPERIENTOS Y LAS BUSQUEDA DE MEJORAS Y REPSUESTAS
 
 \section{Calculo de la precisión necesaria: Ajuste de la curva por ODR}
 AQUI VA TOTAL O PARCIALMENTE LOS CALCULOS DEL ARCHIVO avances.pdf ENVIADO EL 6 DE ABRIL
