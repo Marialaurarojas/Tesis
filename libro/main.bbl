@@ -100,9 +100,19 @@
 \newblock \btxjournalfont {International Journal of Astronomy and Astrophysics}, 9:265--273, \btxprintmonthyear{.}{Mar}{2019}{long}.
 \newblock {\latintext \btxurlfont{https://www.scirp.org/journal/paperinformation?paperid=94860}}.
 
+\bibitem {scipy_odr}
+\btxnamefont {\btxlastnamefont {{SciPy Developers}}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {scipy.odr --- orthogonal distance regression --- {SciPy} documentation}{scipy.odr --- Orthogonal Distance Regression --- {SciPy} documentation}}.
+\newblock \url{https://docs.scipy.org/doc/scipy/reference/odr.html}.
+\newblock Accedido: abril 2026.
+
 \bibitem {scipy_curvefit}
 \btxnamefont {\btxlastnamefont {{SciPy Developers}}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {scipy.optimize.curve\_fit --- {SciPy} documentation}{scipy.optimize.curve\_fit --- {SciPy} documentation}}.
 \newblock \url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html}.
+\newblock Accedido: abril 2026.
+
+\bibitem {tutorialspoint_odr}
+\btxnamefont {\btxlastnamefont {{Tutorialspoint}}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {{SciPy} --- orthogonal distance regression ({ODR})}{{SciPy} --- Orthogonal Distance Regression ({ODR})}}.
+\newblock \url{https://www.tutorialspoint.com/scipy/scipy_odr.htm}.
 \newblock Accedido: abril 2026.
 
 \bibitem {searsZemanskyV2}

@@ -42,7 +42,7 @@ Aquí $L$ es la inductancia de la bobina. Si consideramos un solenoide toroidal 
 L=\frac{\mu_0\,N^{2}\,A_L}{2\pi r}
 \end{equation}
 
-Como el fin último es medir la velocidad de la luz en diferentes puntos geográficos, si se usa el mismo inductor en el circuito, la ecuación \ref{L-selenoide} indica que el $L$ no se verá modificado razon por la cual lo tomamos como una constante. Así al hacer la sustitución de ecuación \ref{capacitanciaplacasparalelas} en \ref{frecuenciaResonancia} nos queda
+Como el fin último es medir la velocidad de la luz en diferentes puntos geográficos, si se usa el mismo inductor en el circuito, la ecuación \ref{L-selenoide} indica que el $L$ no se verá modificado razón por la cual lo tomamos como una constante. Así al hacer la sustitución de ecuación \ref{capacitanciaplacasparalelas} en \ref{frecuenciaResonancia} nos queda
 
 \begin{equation} \label{f0igualaK0c}
 f_0=\frac{c}{2\pi\sqrt{\dfrac{L\,A_c}{d\,\mu_0}}}=k_0\,c
@@ -92,7 +92,7 @@ Esto nos dice que basta con disminuir la resistencia y aumentar la inductancia p
 
 \section{Planteamiento del procedimiento experimental}
 
-Usar la relación \ref{permitividadyc} para estimar el valor de la velocidad de la luz no es algo nuevo \cite{GuiaLab-SUNY}\cite{GuiaLAB-MIT}. Tomemos como punto de partida el montaje experimental plantado en \cite{GuiaLab-SUNY}, donde se usa el esquema de la figura \ref{fig:circuitoGUIASUNY}. Ellos plantean determinar los valores de $L$ y $C$ a partir de las caracteristicas físicas de los componentes electrónicos, sin embargo en nuestro caso eso no es necesario ya que el objetivo es comparar el comportamiento del circuito en las tres locaciones, y para ello basta con distinguir el pequeño corrimiento del pico en el barrido de frecuencia que predice la \ac{HCC}.
+Usar la relación \ref{permitividadyc} para estimar el valor de la velocidad de la luz no es algo nuevo \cite{GuiaLab-SUNY}\cite{GuiaLAB-MIT}. Tomemos como punto de partida el montaje experimental plantado en \cite{GuiaLab-SUNY}, donde se usa el esquema de la figura \ref{fig:circuitoGUIASUNY}. Ellos plantean determinar los valores de $L$ y $C$ a partir de las características físicas de los componentes electrónicos, sin embargo en nuestro caso eso no es necesario ya que el objetivo es comparar el comportamiento del circuito en las tres locaciones, y para ello basta con distinguir el pequeño corrimiento del pico en el barrido de frecuencia que predice la \ac{HCC}.
 
 \begin{figure}[h!]\centering\includegraphics[width=0.5\linewidth]{SUNY-circuito.png}\caption{Circuito RLC en serie planteado por la referencia \cite{GuiaLab-SUNY}.} \label{fig:circuitoGUIASUNY}\end{figure}
 
@@ -177,7 +177,7 @@ Contrario a lo que ocurre en el circuito en serie, en paralelo a la frecuencia d
 \end{equation}
 
 
-\section{Arquitectura del montaje experimental: módulos y su intereacción}\label{seccion-modulos}
+\section{Arquitectura del montaje experimental: módulos y su interacción}\label{seccion-modulos}
 
 Para que el experimento pueda funcionar se requiere mucho más que solo una resistencias, un capacitor y una bobina. La propuesta está en añadir modulos adicionales cada uno con su función especifica. El conjunto completo así como las relaciones entre ellos se pueden apreciar en la figura \ref{fig:SOLO-ESQUEMA}
 
@@ -196,7 +196,7 @@ Se encarga de generar y suministrar la señal sinusoidal al cirucito resonante R
  y con una precisión de 0.1 Hz, eso último sería el mínimo paso que puede dar en el barrido de frecuencias. Si se sustituye el reloj incluido de 25 MHz por uno de 1 MHz la precisión para señales en el orden de los KHz es de 4 mHz. Otra característica a mencionar es que el voltaje máximo de la señal está en el orden de 0.65 V
  y una potencia de 12.65 mW \cite{ad9833_datasheet}; por otro lado su alimentación es de 5V, la cual se conectó con la salida de igual voltaje del Arduino.
   
-  \item Amplificador 1: Este se encarga de amplificar en voltaje y potencia la señal del generador, esto es necesario para poder excitar el ciruito resonante. Se compone a su vez de una etapa amplificadora de voltaje, incluida en la figura \ref{fig:amplificador1}, y una segunda etapa amplificadora de potencia que se explicará más adelante. El amplificador de voltaje se diseñó de esta manera para asegurar que el factor de amplificación se mantuviera constante en un amplio rango de frecuencias, concretamente entre los 100 KHz y 1 MHz.
+  \item Amplificador 1: Este se encarga de amplificar en voltaje y potencia la señal del generador, esto es necesario para poder excitar el circuito resonante. Se compone a su vez de una etapa amplificadora de voltaje, incluida en la figura \ref{fig:amplificador1}, y una segunda etapa amplificadora de potencia que se explicará más adelante. El amplificador de voltaje se diseñó de esta manera para asegurar que el factor de amplificación se mantuviera constante en un amplio rango de frecuencias, concretamente entre los 100 KHz y 1 MHz.
   
 \end{itemize} 
 
@@ -220,7 +220,7 @@ Este módulo se alimenta del voltaje de respuesta del circuito resonante y su ob
 \label{fig:rectificador}
 \end{figure} 
 
-  \item Amplificador 2: para este segundo amplificador, figura \ref{fig:amplificador2}, se opta por un amplificador operacional debido a que se está trabajando con una señal de entrada DC. El objetivo de esta etapa es multiplicar por el mismo factor el voltaje para lográr diferenciar mejor las pequeñas variaciones de voltaje en cada paso del barrido de frecuencia. 
+  \item Amplificador 2: para este segundo amplificador, figura \ref{fig:amplificador2}, se opta por un amplificador operacional debido a que se está trabajando con una señal de entrada DC. El objetivo de esta etapa es multiplicar por el mismo factor el voltaje para lograr diferenciar mejor las pequeñas variaciones de voltaje en cada paso del barrido de frecuencia. 
   
   \begin{figure}[h!]
 \centering
@@ -229,7 +229,7 @@ Este módulo se alimenta del voltaje de respuesta del circuito resonante y su ob
 \label{fig:amplificador2}
 \end{figure} 
 
-  \item ADS1115: es un módulo electrónico comercial que funciona como convertidor analógico digital (ADC por sus siglas en ingles) de 16 bits. Se eligió este equipo en particular por su gran cantidad de bits a un bajo costo, además de que permite una fácil integración con Arduino gracias al protocolo I2C (Inter-Integrated Circuit), posee un rango variable para la medición del voltaje de hasta $\pm$ 6.144 V y cuenta con 4 canales totalmente independientes para la conversión, lo que equivale a tener 4 ADC en uno \cite{ad9833_datasheet}. La alimentación de este módulo es de 5V, así que al igual que el AD9833 se conectó con la salida del Arduino. Por último es necesario aclarar que este aparato es delicado, por lo que se optó, en las más recientes mediciones, por agregarle una resistencia de 1 K$\Omega$  entre la señal de entrada y el pin de lectura a modo de protección.
+  \item ADS1115: es un módulo electrónico comercial que funciona como convertidor analógico digital (ADC por sus siglas en inglés) de 16 bits. Se eligió este equipo en particular por su gran cantidad de bits a un bajo costo, además de que permite una fácil integración con Arduino gracias al protocolo I2C (Inter-Integrated Circuit), posee un rango variable para la medición del voltaje de hasta $\pm$ 6.144 V y cuenta con 4 canales totalmente independientes para la conversión, lo que equivale a tener 4 ADC en uno \cite{ad9833_datasheet}. La alimentación de este módulo es de 5V, así que al igual que el AD9833 se conectó con la salida del Arduino. Por último es necesario aclarar que este aparato es delicado, por lo que se optó, en las más recientes mediciones, por agregarle una resistencia de 1 K$\Omega$  entre la señal de entrada y el pin de lectura a modo de protección.
 \end{itemize}
 
 \subsection{Módulo de automatización}
@@ -305,7 +305,7 @@ Este sistema ha demostrado funcionar por largos periodos de tiempo manteniendo u
     \end{subfigure}
 
     % Título general de la figura (Centrado y debajo según normativa USB)
-    \caption{Gráficas del comportamiento de la temperatura exterior (ambiente) e interior (regulada por el cirtuito estabilizador).}
+    \caption{Gráficas del comportamiento de la temperatura exterior (ambiente) e interior (regulada por el circuito estabilizador).}
     \label{fig:graficasTemperatura}
 \end{figure}
 
@@ -356,7 +356,7 @@ El esquemático del circuito completo se puede ver en la figura \ref{fig:total-p
 
 \subsection{Resultados}
 
-Este procedimiento se intentó multiples veces, los mejores resultados se obtuvieron con un valor de R5 de $10 \Omega$ y R7 de $4 K\Omega$, para un barrido entre 520 KHz y 550 KHz con pasos de 500 Hz, los resultado se incluyen en la figura \ref{fig:resultado-RLC-paralelo}. Los puntos forman una curva suave, la cual se ajustó usando mínimos cuadrados con python como se explica en el apéndice \ref{apx:PC}, los resultado del ajuste se incluyen en la tabla \ref{tab:resultado-paralelo}. En la gráfica se puede apreciar que la cima de la curva está plana, así que con el fin de hacer un barrido más preciso y distingir mejor la cima de la curva se realizó otro barrido pero con pasos de 80 Hz, esta vez entre 530 KHz y 536 KHz. En este segundo barrido se encontó que los puntos presentan mayor dispersión con respecto al caso anterior, lo cual se puede ver en la figura \ref{fig:resultado-RLC-paralelo}, aun así fué posible hacer una ajuste, los datos de este se incluyen en tabla \ref{tab:resultado-paralelo}. En la gráfica de este segundo barrido se evidencia que hay varios puntos cerca de la cima que comparten valor del voltaje, por lo que los puntos forman pequeñas lineas horizontales.
+Este procedimiento se intentó múltiples veces, los mejores resultados se obtuvieron con un valor de R5 de $10 \Omega$ y R7 de $4 K\Omega$, para un barrido entre 520 KHz y 550 KHz con pasos de 500 Hz, los resultado se incluyen en la figura \ref{fig:resultado-RLC-paralelo}. Los puntos forman una curva suave, la cual se ajustó usando mínimos cuadrados con python como se explica en el apéndice \ref{apx:PC}, los resultado del ajuste se incluyen en la tabla \ref{tab:resultado-paralelo}. En la gráfica se puede apreciar que la cima de la curva está plana, así que con el fin de hacer un barrido más preciso y distingir mejor la cima de la curva se realizó otro barrido pero con pasos de 80 Hz, esta vez entre 530 KHz y 536 KHz. En este segundo barrido se encontó que los puntos presentan mayor dispersión con respecto al caso anterior, lo cual se puede ver en la figura \ref{fig:resultado-RLC-paralelo}, aun así fué posible hacer una ajuste, los datos de este se incluyen en tabla \ref{tab:resultado-paralelo}. En la gráfica de este segundo barrido se evidencia que hay varios puntos cerca de la cima que comparten valor del voltaje, por lo que los puntos forman pequeñas lineas horizontales.
 
 
 \begin{table}[h]
@@ -371,7 +371,7 @@ $(\text{offset})Hz$ & $(0.065 \pm 0.010)$ & $(0.37\pm 0.02)$ \\
 $(f_0)Hz$ & $(533274\pm 19) $ & $(532959 \pm 29)$ \\
 \hline
 \end{tabular}
-\caption{Valores de los parametros de ajuste de una curva lorenztiana para el primer y segundo barrido del experimento en paralelo.}
+\caption{Valores de los parámetros de ajuste de una curva lorentziana para el primer y segundo barrido del experimento en paralelo.}
 \label{tab:resultado-paralelo}
 \end{table}
 
@@ -395,7 +395,7 @@ $(f_0)Hz$ & $(533274\pm 19) $ & $(532959 \pm 29)$ \\
         \caption{Segundo barrido de frecuencia, ancho entre 530 KHz y 536 KHz y pasos de 80 Hz.}
         \label{fig:parte_b}
     \end{subfigure}
-    \caption{Graficas de los barridos de frecuencia con mejores resultado del experimento en paralelo, incluye los datos originales y la curva ajustada.}
+    \caption{Gráficas de los barridos de frecuencia con mejores resultados del experimento en paralelo, incluye los datos originales y la curva ajustada.}
     \label{fig:resultado-RLC-paralelo}
 \end{figure}
 
@@ -433,7 +433,7 @@ Esta versión del circuito resonante se ideó buscando mejorar los resultados de
 \caption[]{Foto de la fuente utilizada en el experimento RLC en serie.}
 \label{fig:fuente-baterias}
 \end{figure}
-Este experimento en serie se desarrolló por varios meses en los cuales se logró construir secuencialmente dos prototipos cuyas fotos estan en la figura \ref{fig:fotos-prototipos-placas}. El esquema electrónico de ambos es en escencia el que se ha venido discutiendo, y en tema de diseño físico se elaboraron ambos de forma que tienen pines que calzan en la parte superior del Arduino UNO. El prototipo armado en \ac{PCB} (figura \ref{fig:placa-blanca}) fué el ultimo en desarrollarse y es el que tiene las exactas caracteristicas que se discutieron en la sección \ref{seccion-modulos}, ya que tuvo los mejores resultados dentro del marco de una conexión en serie.
+Este experimento en serie se desarrolló por varios meses en los cuales se logró construir secuencialmente dos prototipos cuyas fotos estan en la figura \ref{fig:fotos-prototipos-placas}. El esquema electrónico de ambos es en escencia el que se ha venido discutiendo, y en tema de diseño físico se elaboraron ambos de forma que tienen pines que calzan en la parte superior del Arduino UNO. El prototipo armado en \ac{PCB} (figura \ref{fig:placa-blanca}) fué el ultimo en desarrollarse y es el que tiene las exactas características que se discutieron en la sección \ref{seccion-modulos}, ya que tuvo los mejores resultados dentro del marco de una conexión en serie.
 
 \begin{figure}[htbp]
     \centering
@@ -453,7 +453,7 @@ Este experimento en serie se desarrolló por varios meses en los cuales se logr�
         \label{fig:placa-blanca}
     \end{subfigure}
     %\vspace{1.5em} % Espacio vertical entre las imágene
-    \caption{Fotos de los dos principales prototipos eleborados con el circuito en serie.}
+    \caption{Fotos de los dos principales prototipos elaborados con el circuito en serie.}
     \label{fig:fotos-prototipos-placas}
 \end{figure}
 
@@ -464,7 +464,7 @@ Este experimento en serie se desarrolló por varios meses en los cuales se logr�
 %3Mar26-6 y 3Mar26-5 son lo mismo pero muestra que cada vez que se hacia el barrido se encontraba algo distinto
 %3Mar26-1 es lo mejorcito que hay
 
-Para un barrido entre 300 K HZ y 600 k Hz usando pasos de 10 K Hz se tiene la curva de la figura \ref{fig:resultado-serie}, estos resultado provienen del prototipo en \ac{PCB} cuyo esquematico completo se incluye en el apendice \ref{ape:esquematico}. La curva obtenida no tiene un alto factor $Q$ y la forma de la curva es peor (parametros de ajuste se incluyen en la tabla \ref{tab:resultado-serie}), esto se evidencia si comparamos el error relativo porcentual de la frecuencia de resonancia en este caso que es de $0.34\%$ con el mismo parametro pero del primer barrido en paralelo, el cual se encuentra dos ordenes de magnitud por debajo, con un valor de $0.0036 \%$. Entonces en terminos de la forma de la curva los mejores resultados se dieron con la conexión en paralelo, aunque ambos siguen sin presentar una curva estrecha.
+Para un barrido entre 300 K HZ y 600 k Hz usando pasos de 10 K Hz se tiene la curva de la figura \ref{fig:resultado-serie}, estos resultado provienen del prototipo en \ac{PCB} cuyo esquematico completo se incluye en el apendice \ref{ape:esquematico}. La curva obtenida no tiene un alto factor $Q$ y la forma de la curva es peor (parámetros de ajuste se incluyen en la tabla \ref{tab:resultado-serie}), esto se evidencia si comparamos el error relativo porcentual de la frecuencia de resonancia en este caso que es de $0.34\%$ con el mismo parametro pero del primer barrido en paralelo, el cual se encuentra dos ordenes de magnitud por debajo, con un valor de $0.0036 \%$. Entonces en terminos de la forma de la curva los mejores resultados se dieron con la conexión en paralelo, aunque ambos siguen sin presentar una curva estrecha.
 
 \begin{figure}[h!]
 \centering
@@ -485,11 +485,11 @@ $(\text{offset})Hz$ & $(0.22 \pm 0.03)$ \\
 $(f_0)Hz$ & $(425930\pm 1475) $\\
 \hline
 \end{tabular}
-\caption{Valores de los parametros de ajuste de una curva lorenztiana para el barrido del experimento en serie.}
+\caption{Valores de los parámetros de ajuste de una curva lorentziana para el barrido del experimento en serie.}
 \label{tab:resultado-serie}
 \end{table}
 
-Posteriormente se buscó realizar barrido más pequeños y centrados en la cima de la curva, en esos casos se encontró que no exisita una estabilidad en la medida, es decir mediciones consecutivas no arrojaban el mismo resultado. Por ejemplo, para barridos entre 400 K Hz y 440 K Hz con pasos de 1000 Hz, se obtuvieron multiples resultados distintos, dos de ellos se ejemplifican en la figura \ref{fig:resultado-malo-serie}. En estos casos es imposible ajustar nada, ya que los datos muestran una dispersión enorme y ruido. Para explicar este inusual comportamiento, que solo aparecia en los barrido más pequeños se hicieron algunas pruebas adicionales que no llegaron a resolver nada como: cambiar el tipo de diodo rectificador, hacer modificaciones en lso tiempos de espera dentro del sorfware de arudino, colocar de frente al circuito un fuerte ventilador, entre otras. Por lo que la razon de no poder hacer medidas consecutivas igaules en barridos pequeños con este dispositivo permanece sin resolver.
+Posteriormente se buscó realizar barrido más pequeños y centrados en la cima de la curva, en esos casos se encontró que no exisita una estabilidad en la medida, es decir mediciones consecutivas no arrojaban el mismo resultado. Por ejemplo, para barridos entre 400 K Hz y 440 K Hz con pasos de 1000 Hz, se obtuvieron múltiples resultados distintos, dos de ellos se ejemplifican en la figura \ref{fig:resultado-malo-serie}. En estos casos es imposible ajustar nada, ya que los datos muestran una dispersión enorme y ruido. Para explicar este inusual comportamiento, que solo aparecia en los barrido más pequeños se hicieron algunas pruebas adicionales que no llegaron a resolver nada como: cambiar el tipo de diodo rectificador, hacer modificaciones en los tiempos de espera dentro del software de Arduino, colocar de frente al circuito un fuerte ventilador, entre otras. Por lo que la razón de no poder hacer medidas consecutivas iguales en barridos pequeños con este dispositivo permanece sin resolver.
 
 \begin{figure}[htbp]
     \centering
@@ -508,14 +508,27 @@ Posteriormente se buscó realizar barrido más pequeños y centrados en la cima 
         \caption{}
         \label{fig:parte_b2}
     \end{subfigure}
-    \caption{Dos barridos con las mismas caracteristicas realizados consecutivamente con minutos de diferencia.}
+    \caption{Dos barridos con las mismas características realizados consecutivamente con minutos de diferencia.}
     \label{fig:resultado-malo-serie}
 \end{figure}
 
-%AGREGAR UN PARRAFO DONDE SE HABLE DEL FRACASO DE LSO EXPERIENTOS Y LAS BUSQUEDA DE MEJORAS Y REPSUESTAS
+%AGREGAR UN PARRAFO DONDE SE HABLE DEL FRACASO DE LOs EXPERIENTOS Y LAS BUSQUEDA DE MEJORAS Y REPSUESTAS y un puente para la siguiente sección
 
-\section{Calculo de la precisión necesaria: Ajuste de la curva por ODR}
-AQUI VA TOTAL O PARCIALMENTE LOS CALCULOS DEL ARCHIVO avances.pdf ENVIADO EL 6 DE ABRIL
+\section{Cálculo de la precisión necesaria: Ajuste de la curva por ODR}
+%AQUI VA TOTAL O PARCIALMENTE LOS CALCULOS DEL ARCHIVO avances.pdf ENVIADO EL 6 DE ABRIL
+
+El ajuste de la curva hasta ahora se ha hecho con Python y la librería scipy con su poderosa formula de Curve\_fit como se explica en el apendice \ref{apx:PC}. Esta fórmula usa el método de mínimos cuadrados aplicando el algoritmo de la región de confianza reflectiva (Trust Region Reflective algorithm, trf) \cite{scipy_curvefit}. Sin embargo, usar este enfoque implica que los valores en el eje x (frecuencia) no tienen error, esto en la práctica no es cierto ya que se ha usado el AD9833 para generar las frecuencias, este módulo incluye un reloj de 25 MHz que según el fabricante puede alcanzar una resolución de 0.1Hz \cite{ad9833_datasheet}, por lo tanto la señal generada sí tiene un cierto margen de incertidumbre dado en principio por este valor de 0.1Hz, es decir la séptima cifra significativa.
+
+Se propone pues el uso de la técnica de ajuste “distancia de regresión ortogonal” ( Orthogonal Distance Regression, ODR) \cite{scipy_odr} ya que esta busca minimizar la distancia ortogonal de la curva con la de ajuste \cite{tutorialspoint_odr}, de modo que tanto los valores en X como los valores en Y tienen una cierta incertidumbre, y la misma se toma en cuenta dentro del algoritmo. El nuevo método de ajuste usa los errores de las medidas de frecuencia y voltaje para hacer un ``Ajuste por Mínimos Cuadrados Ponderados", esto quiere decir que las medidas con menor error tienen más peso en el ajuste y viceversa. Esto es matemáticamente óptimo porque minimiza la probabilidad de que el ruido aleatorio desvíe el centro del pico. En el apendice \ref{ape:odr} se encuentra la explicación detallada de como funcióna el \ac{ODR} y se deduce la ecuación de la incertidumbre asociada al valor de ajuste $f_0$ arrojado por el ODR, dada por:
+
+\begin{equation}
+    \mathrm{Var}(x_0) \approx \frac{8L\gamma^5\sigma_y^2}{NA^2\pi} \tag{16}
+\end{equation}
+
+
+
+
+
 
 \section{Modificaciones propuestas} 
 
@@ -523,7 +536,7 @@ AQUI VA TOTAL O PARCIALMENTE LOS CALCULOS DEL ARCHIVO avances.pdf ENVIADO EL 6 D
 
 
 hablar sobre la propuesta de prof Julio Wlater (usar un pulso en lugar de un senal sinusoidal).
-Hablar sobre cambiarse de arduino a red pitaya
+Hablar sobre cambiarse de Arduino a red pitaya
 
 Los pines del generador de funciones AD9833 en el diagrama son 
   1-ref
@@ -537,6 +550,6 @@ Los pines del generador de funciones AD9833 en el diagrama son
 \begin{figure}[hbt]
 \centering
 \includegraphics[scale=0.5]{CircuitoCAD.png}
-\caption[circuito donde se explica claramente la conexión del arduino,]{circuito donde se explica claramente la conexión del arduino}
+\caption[Circuito donde se explica claramente la conexión del Arduino,]{Circuito donde se explica claramente la conexión del Arduino}
 \label{fig:figura1a}
 \end{figure}

@@ -15,14 +15,14 @@
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Esquemático del amplificador 2 perteneciente al módulo de lectura.}}{37}{figure.caption.40}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Esquemático del circuito autónomo que regula la temperatura.}}{38}{figure.caption.41}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Foto del circuito autónomo que regula la temperatura.}}{39}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Gráficas del comportamiento de la temperatura exterior (ambiente) e interior (regulada por el cirtuito estabilizador).}}{40}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Gráficas del comportamiento de la temperatura exterior (ambiente) e interior (regulada por el circuito estabilizador).}}{40}{figure.caption.43}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Esquemático de la etapa amplificadora de potencia perteneciente al Amplificador 1, en el montaje en paralelo.}}{41}{figure.caption.44}%
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Foto de experimento RLC en paralelo.}}{41}{figure.caption.45}%
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Esquemático de todo el circuito del experimento RLC en paralelo.}}{42}{figure.caption.46}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Graficas de los barridos de frecuencia con mejores resultado del experimento en paralelo, incluye los datos originales y la curva ajustada.}}{43}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Fotos de los dos principales prototipos eleborados con el circuito en serie.}}{45}{figure.caption.52}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Dos barridos con las mismas caracteristicas realizados consecutivamente con minutos de diferencia.}}{47}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces circuito donde se explica claramente la conexión del arduino,}}{48}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Gráficas de los barridos de frecuencia con mejores resultados del experimento en paralelo, incluye los datos originales y la curva ajustada.}}{43}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Fotos de los dos principales prototipos elaborados con el circuito en serie.}}{45}{figure.caption.52}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Dos barridos con las mismas características realizados consecutivamente con minutos de diferencia.}}{47}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Circuito donde se explica claramente la conexión del Arduino,}}{48}{figure.caption.58}%
 \addvspace {10\p@ }
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
@@ -31,4 +31,5 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Diagrama esquemático completo del prototipo conectado en serie diseñado en KiCad.}}{60}{figure.caption.59}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Diagrama esquemático completo del prototipo conectado en serie diseñado en KiCad.}}{60}{figure.caption.61}%
+\addvspace {10\p@ }

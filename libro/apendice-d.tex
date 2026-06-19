@@ -1,0 +1,278 @@
+\chapter{Matemática detrás del ajuste por ODR} % Título centrado y en negrita según norma
+
+\label{ape:odr}
+
+% =====================================================================
+\section{ODR — Regresión Ortogonal de Distancias: ¿cómo funciona?}
+
+El ajuste usando ODR busca los parámetros $\boldsymbol{\beta}$ y las correcciones $\delta_i$ que minimicen la suma ponderada de los cuadrados de los errores de ambas variables. Dicha función a minimizar es:
+
+\begin{equation}
+    S = \sum_{i=1}^{N} \left( \frac{\epsilon_i^2}{d_{y_i}^2} + \frac{\delta_i^2}{d_{x_i}^2} \right) \label{eq:S}
+\end{equation}
+
+de modo que si la función de ajuste es $f$, entonces se cumplen las siguientes restricciones para cada punto $i$:
+\begin{equation}
+    y_i - \epsilon_i = f\!\left(x_i - \delta_i\,,\, \boldsymbol{\beta}\right) \label{eq:restriccion}
+\end{equation}
+
+donde
+\begin{itemize}
+    \item $\epsilon_i$: corrección a cada $y_i$ medido.
+    \item $\delta_i$: corrección a cada $x_i$ medido.
+    \item $d_{x_i},\, d_{y_i}$: desviaciones estándar (o pesos) que representan la incertidumbre de los datos.
+\end{itemize}
+
+En nuestro caso la función $f$ es la función Lorentziana:
+\begin{equation}
+    f(x) = \frac{A}{(x - x_0)^2 + \gamma^2} + \text{offset} \label{eq:lorentz}
+\end{equation}
+
+de modo que los parámetros de ajuste están dados por el vector
+\begin{equation}
+    \boldsymbol{\beta} = \left(x_0,\, A,\, \gamma,\, \text{offset}\right) \label{eq:beta}
+\end{equation}
+
+En \texttt{scipy}, con la función \texttt{RealData(x, y, sx=sx, sy=sy)} se incluyen los valores del error de medición asociado a cada punto $x_i$ e $y_i$ como los correspondientes pesos en la ecuación de sumatoria \eqref{eq:S}:
+\begin{equation}
+    d_{x_i} = s_{x_i} \qquad \text{y} \qquad d_{y_i} = s_{y_i} \label{eq:pesos}
+\end{equation}
+
+de modo que un punto con un error asociado muy grande contribuye menos que uno con error menor, ya que la relación es inversa. Esto garantiza que los puntos más precisos tengan una aproximación de la curva de ajuste más cercana a ellos.
+
+% =====================================================================
+\subsection{Ajuste de \texorpdfstring{$\boldsymbol{\beta}$}{beta}}
+
+El ODR en \texttt{scipy} usa una versión modificada del algoritmo Levenberg-Marquardt, el cual hace de forma simultánea lo siguiente:
+
+\begin{enumerate}
+    \item \textbf{Estima los errores} de cada punto $x_i$, es decir el valor $\delta_i$ que se aleja la curva ajustada al punto $x_i$.
+
+    \item \textbf{Linealización:} Se trabaja con la expansión de Taylor de primer orden de la función $f$ al rededor de la solución $\boldsymbol{\beta}$ y $\boldsymbol{\delta}$ en evaluación.
+
+    \item \textbf{Resolución del Sistema:} Como este algoritmo trata las correcciones $\delta_i$ como incógnitas adicionales, se plantea un sistema de ecuaciones de $4 + N$ incógnitas. Este se consigue al sustituir \eqref{eq:restriccion} en \eqref{eq:S} y aplicar la versión linealizada de la función $f$. Aquí podemos definir:
+\end{enumerate}
+
+\begin{align}
+    r_i &= y_i - f(x_i, \hat{\boldsymbol{\beta}}) \tag{5.1} \label{eq:residuo}
+    && \text{residuo con el punto actual}\\[6pt]
+    j_i^T &= \left.\frac{\partial f}{\partial \boldsymbol{\beta}^T}\right|_{x_i,\,\hat{\boldsymbol{\beta}}} \tag{5.2} \label{eq:jacobfila}
+    && \text{fila }i\text{ del jacobiano, vector }1\times p\\[6pt]
+    d_i &= \left.\frac{\partial f}{\partial x}\right|_{x_i,\,\hat{\boldsymbol{\beta}}} \tag{5.3} \label{eq:sensib}
+    && \text{sensibilidad local en }x\\[6pt]
+    \Delta\boldsymbol{\beta} &= \boldsymbol{\beta} - \hat{\boldsymbol{\beta}} \tag{5.4} \label{eq:paso}
+    && \text{paso de actualización}
+\end{align}
+
+(Los elementos \eqref{eq:jacobfila}–\eqref{eq:paso} son los parámetros de la expansión de Taylor.)
+
+Así, la sustitución de la linealización queda:
+\begin{equation}
+    S \approx \sum_{i=1}^{N} \left[ \frac{\left(r_i - j_i^T \Delta\boldsymbol{\beta} + d_i\,\delta_i\right)^2}{\sigma_{y_i}^2} + \frac{\delta_i^2}{\sigma_{x_i}^2} \right] \label{eq:S_lin}
+\end{equation}
+
+Buscando eliminar a $\delta_i$ se asume que $\partial S / \partial \delta_i = 0$, lo cual permite reescribir:
+\begin{equation}
+    \delta_i = \frac{d_i\,\sigma_{x_i}^2}{\sigma_{y_i}^2 + d_i^2\,\sigma_{x_i}^2}\left(r_i - j_i^T \Delta\boldsymbol{\beta}\right) \label{eq:delta}
+\end{equation}
+
+Así que al sustituir \eqref{eq:delta} en \eqref{eq:S_lin} se tiene:
+\begin{equation}
+    S_{\text{red}}(\Delta\boldsymbol{\beta}) = \sum_{i=1}^{N} \frac{\left(r_i - j_i^T \Delta\boldsymbol{\beta}\right)^2}{\sigma_{y_i}^2 + d_i^2\,\sigma_{x_i}^2}
+\end{equation}
+
+Aquí se puede definir el \textbf{peso efectivo} de cada punto como
+\begin{equation}
+    w_i = \frac{1}{\sigma_{y_i}^2 + d_i^2\,\sigma_{x_i}^2}
+\end{equation}
+
+entonces
+\begin{equation}
+    S_{\text{red}}(\Delta\boldsymbol{\beta}) = \sum_{i=1}^{N} w_i\left(r_i - j_i^T \Delta\boldsymbol{\beta}\right)^2 \label{eq:Sred}
+\end{equation}
+
+Esto último es lo que se conoce con un problema de mínimos cuadrados ponderados en $\Delta\boldsymbol{\beta}$.
+
+Por último se hace la minimización considerando $\partial S_{\text{red}} / \partial\Delta\boldsymbol{\beta} = 0$ pero de forma matricial, de modo que el sistema de ecuaciones que se resuelve es:
+\begin{equation}
+    \left(\mathbb{J}^T W \mathbb{J} + \lambda\,\mathrm{diag}\!\left(\mathbb{J}^T W \mathbb{J}\right)\right)
+    \begin{pmatrix}\Delta\boldsymbol{\beta}\\ \Delta\boldsymbol{\delta}\end{pmatrix}
+    = -\mathbb{J}^T W\,\mathbf{r} \label{eq:sistema}
+\end{equation}
+
+Note que el término que tiene $\lambda$ es un término de regularización agregado por Levenberg-Marquardt, el cual penaliza los pasos grandes. En \eqref{eq:sistema} tenemos:
+\begin{itemize}
+    \item $\mathbb{J}$: la matriz Jacobiana ($N \times p$)
+    \item $W$: la matriz de pesos ($N \times N$)
+    \item $\mathbf{r}$: residuos $N \times 1$
+    \item $\Delta\boldsymbol{\beta}$: corrección a los parámetros ($p \times 1$)
+\end{itemize}
+
+% =====================================================================
+\section{Confiabilidad del resultado del ODR}
+
+La matriz de covarianza es la herramienta que usa \texttt{scipy} para determinar que tan confiables son los parámetros encontrados. Normalmente esta matriz contiene en su diagonal la varianza de cada parámetro; así la raíz cuadrada de estos valores son los errores estándar que arroja \texttt{scipy}. Y en el resto de los elementos de la matriz está la covarianza o correlación entre los parámetros:
+
+\begin{equation}
+    \mathrm{Cov} = \begin{pmatrix} \mathrm{Var}(\beta_1) & \mathrm{Cov}(\beta_1,\beta_2) \\ \mathrm{Cov}(\beta_2,\beta_1) & \mathrm{Var}(\beta_2) \end{pmatrix}
+\end{equation}
+
+Para el caso que estamos tratando, la matriz de covarianza está dada por:
+\begin{equation}
+    \mathrm{Cov}(\hat{\boldsymbol{\beta}}) = \left(\mathbb{J}^T W \mathbb{J}\right)^{-1} \label{eq:cov}
+\end{equation}
+
+A nosotros nos interesa un solo elemento de esa matriz: la varianza de $x_0$. Para poder calcularla sin hacer la inversa explícitamente podemos descomponer la matriz por bloques:
+\begin{equation}
+    \mathbb{J}^T W \mathbb{J} = \begin{pmatrix} \left[\mathbb{J}^T W \mathbb{J}\right]_{x_0 x_0} & \mathbf{c}^T \\ \mathbf{c} & \mathbb{B} \end{pmatrix} \label{eq:bloques}
+\end{equation}
+
+donde $\left[\mathbb{J}^T W \mathbb{J}\right]_{x_0 x_0}$ es justamente el elemento correspondiente al parámetro $x_0$ que nos interesa, $\mathbf{c}$ es el vector de acoplamiento de $x_0$ con los otros 3 parámetros, y $\mathbb{B}$ la submatriz $3\times 3$ que contiene el resto de elementos.
+
+\subsection*{Complemento de Schur}
+
+Sea $M$ una matriz cuadrada con dimensiones $(n+m)\times(n+m)$ partida en bloques más pequeñas:
+\begin{equation}
+    M_{(n+m)\times(n+m)} = \begin{pmatrix} A_{n\times n} & B_{n\times m} \\ C_{m\times n} & D_{m\times m} \end{pmatrix}
+\end{equation}
+
+Con $D$ invertible, se define el complemento de Schur del bloque $D$ de la matriz $M$ como $A - BD^{-1}C = S$. Se tiene que:
+\begin{equation}
+    \left[M^{-1}\right]_{11} = S^{-1}
+\end{equation}
+
+Entonces esta propiedad la podemos usar para obtener el elemento que necesitamos:
+\begin{equation}
+    \mathrm{Var}(x_0) = \left[\left(\mathbb{J}^T W \mathbb{J}\right)^{-1}\right]_{x_0 x_0} = \frac{1}{\left[\mathbb{J}^T W \mathbb{J}\right]_{x_0 x_0} - \mathbf{c}^T \mathbb{B}^{-1} \mathbf{c}} \label{eq:var_schur}
+\end{equation}
+
+% =====================================================================
+\subsection{Elementos del Jacobiano}
+
+Ahora escribimos todos los elementos del jacobiano. Para la diagonal de $\mathbb{J}$ hacemos las derivadas parciales de \eqref{eq:lorentz}, con el fin de simplificar introducimos la siguiente notación:
+\begin{equation}
+    u_i = x_i - x_0 \qquad D_i = u_i^2 + \gamma^2
+\end{equation}
+
+así derivamos parcialmente:
+\begin{align}
+    \mathbb{J}_{i,x_0} &= \frac{2A\,u_i}{D_i^2} &
+    \mathbb{J}_{i,A} &= \frac{1}{D_i} &
+    \mathbb{J}_{i,\gamma} &= \frac{-2A\,\gamma}{D_i^2} &
+    \mathbb{J}_{i,\text{off}} &= 1
+\end{align}
+
+Como $\mathbb{J}^T W \mathbb{J}$ es $4\times4$ simétrica, entonces tiene 10 elementos independientes. Para cada elemento se cumple:
+\begin{equation}
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{ab} = \sum_{i=1}^{N} w_i\,\mathbb{J}_{i,a}\,\mathbb{J}_{i,b}
+\end{equation}
+
+entonces en la diagonal:
+\begin{align}
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{x_0 x_0} &= \sum_{i=1}^{N} \frac{4A^2 u_i^2}{D_i^4}\,w_i &
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{AA} &= \sum_{i=1}^{N} \frac{w_i}{D_i^2} \nonumber\\[4pt]
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{\gamma\gamma} &= \sum_{i=1}^{N} \frac{-4A^2\gamma^2}{D_i^4}\,w_i &
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{\text{off\,off}} &= \sum_{i=1}^{N} w_i \label{eq:diagonal}
+\end{align}
+
+y el resto de elementos
+
+\begin{align}
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{A x_0} &= \sum_{i=1}^{N} \frac{2A\,u_i\,w_i}{D_i^3} &
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{A\gamma} &= \sum_{i=1}^{N} \frac{-2A\,\gamma\,w_i}{D_i^3} \nonumber\\[4pt]
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{A\,\text{off}} &= \sum_{i=1}^{N} \frac{w_i}{D_i} &
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{x_0\gamma} &= \sum_{i=1}^{N} \frac{-4A^2\gamma u_i\,w_i}{D_i^4} \nonumber\\[4pt]
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{x_0\,\text{off}} &= \sum_{i=1}^{N} \frac{2A\,u_i\,w_i}{D_i^2} &
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{\gamma\,\text{off}} &= \sum_{i=1}^{N} \frac{-2A\,\gamma\,w_i}{D_i^2} \label{eq:fuera_diag}
+\end{align}
+
+% =====================================================================
+\subsection*{Consideraciones}
+
+Digamos que los errores son homogéneos: $\sigma_{x_i} = \sigma_x$, $\sigma_{y_i} = \sigma_y$. Esto implica en el experimento que todos los puntos se midieron con igual precisión, lo cual es de esperar normalmente si se usa el mismo instrumento para todas las medidas. Asumimos también una distribución uniforme de los $N$ puntos entre $x_0 - L$ y $x_0 + L$. Por último, en el límite continuo las sumas se convierten en integrales:
+\begin{equation}
+    \sum_{i=1}^{N} w_i\,\mathbb{J}_{i,a}\,\mathbb{J}_{i,b} \approx \frac{N}{2L} \int_{-L}^{L} w(u)\,\mathbb{J}_{a}(u)\,\mathbb{J}_{b}(u)\,du \label{eq:integral}
+\end{equation}
+
+Para los pesos recordamos que $w_i = \dfrac{1}{\sigma_{y_i}^2 + d_i^2\,\sigma_{x_i}^2}$; si consideramos (5.4):
+\begin{equation}
+    d_i = \left.\frac{\partial f}{\partial x}\right|_{x_i} = \frac{-2A\,u_i}{D_i^2} = \frac{4A^2 u^2}{(u^2+\gamma^2)^4}
+\end{equation}
+
+entonces si $|u| \gg \gamma$ se tiene que $d_i \to 0$ $\therefore$ $w_i \approx \dfrac{1}{\sigma_y^2}$, y si $u \approx 0$ también $d_i \to 0$ y $w \to 1/\sigma_y^2$, así que asumimos la sustitución de $w_i \approx 1/\sigma_y^2$ como una aproximación.
+
+Para resolver las integrales se hace el cambio $u = \gamma\tan\theta$, lo cual permite resolver las integrales de forma directa:
+\begin{equation}
+    I_n = \int_{-\infty}^{\infty} \frac{du}{(u^2+\gamma^2)^n} = \frac{\pi}{\gamma^{2n-1}} \frac{(2n-3)!!}{(2n-2)!!}
+\end{equation}
+
+Las 4 primeras soluciones son:
+\begin{equation}
+    I_1 = \frac{\pi}{\gamma} \qquad I_2 = \frac{\pi}{2\gamma^3} \qquad I_3 = \frac{3\pi}{8\gamma^5} \qquad I_4 = \frac{5\pi}{16\gamma^7}
+\end{equation}
+
+La otra integral que aparece tiene $u$ en el numerador; sin embargo al ser simétrica la Lorentziana en $u$, las potencias impares se anulan:
+\begin{equation}
+    \int_{-\infty}^{\infty} \frac{u^{2k+1}}{(u^2+\gamma^2)^n}\,du = 0
+\end{equation}
+
+% =====================================================================
+\subsection{Matriz final de \texorpdfstring{$\mathbb{J}^T W \mathbb{J}$}{J^T W J}}
+
+Usando las consideraciones anteriores, integrando las ecuaciones \eqref{eq:diagonal}:
+
+\begin{align}
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{x_0 x_0} &\approx \frac{N A^2 \pi}{8L\sigma_y^2\gamma^5} \\[4pt]
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{AA} &\approx \frac{N\pi}{2L\sigma_y^2\gamma} \\[4pt]
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{\gamma\gamma} &\approx -\frac{5}{8}\frac{A^2 N\pi}{\sigma_y^2 L\gamma^5} \\[4pt]
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{\text{off\,off}} &= \frac{N}{\sigma_y^2}
+\end{align}
+
+y en las ecuaciones \eqref{eq:fuera_diag}:
+
+\begin{align}
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{A x_0} &\approx 0 \\
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{A\,\text{off}} &\approx \frac{N}{\sigma_y^2 2L}\cdot\frac{\pi}{\gamma} \\
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{x_0\,\text{off}} &\approx 0 \\
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{A\gamma} &\approx -\frac{3}{4}\frac{AN\pi}{\sigma_y^2 L\gamma^4} \\
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{x_0\gamma} &\approx 0 \\
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{\gamma\,\text{off}} &\approx -\frac{AN\pi}{2\sigma_y^2 L\gamma^2}
+\end{align}
+
+Entonces la matriz $\mathbb{J}^T W \mathbb{J}$ es:
+
+\begin{equation}
+    \mathbb{J}^T W \mathbb{J} \approx \frac{N}{\sigma_y^2}
+    \begin{pmatrix}
+        \dfrac{A^2\pi}{8L\gamma^5} & 0 & 0 & 0 \\[10pt]
+        0 & \dfrac{\pi}{2L\gamma} & \dfrac{-3A\pi}{4L\gamma^4} & \dfrac{\pi}{4L\gamma} \\[10pt]
+        0 & \dfrac{-3A\pi}{4L\gamma^4} & \dfrac{-5A^2\pi}{8L\gamma^5} & \dfrac{-A\pi}{2L\gamma^2} \\[10pt]
+        0 & \dfrac{\pi}{4L\gamma} & \dfrac{-A\pi}{2L\gamma^2} & 1
+    \end{pmatrix}
+    \label{eq:matrizfinal}
+\end{equation}
+
+% =====================================================================
+\subsection{Aplicando el complemento de Schur}
+
+Vemos que debido a la simetría de la Lorentziana, el vector $\mathbf{c}$ solo tiene ceros; por lo tanto el complemento de Schur \eqref{eq:var_schur} queda así:
+
+\begin{equation}
+    \mathrm{Var}(x_0) = \left[\left(\mathbb{J}^T W \mathbb{J}\right)^{-1}\right]_{x_0 x_0}
+    = \frac{1}{\left[\mathbb{J}^T W \mathbb{J}\right]_{x_0 x_0} - \mathbf{c}^T \mathbb{B}^{-1} \mathbf{c}}
+    = \frac{1}{\left[\mathbb{J}^T W \mathbb{J}\right]_{x_0 x_0}}
+\end{equation}
+
+\begin{equation}
+    \boxed{\mathrm{Var}(x_0) = \frac{1}{\dfrac{N}{\sigma_y^2}\cdot\dfrac{A^2\pi}{8L\gamma^5}} = \frac{8L\gamma^5\sigma_y^2}{NA^2\pi}} \label{eq:var_final}
+\end{equation}
+
+Para que este resultado sea cierto es necesario que:
+\begin{itemize}
+    \item Todos los errores originales de las medidas sean iguales.
+    \item Los $N$ puntos estén distribuidos de forma simétrica a cada lado del máximo de la curva.
+    \item Así mismo los puntos se distribuyen desde $x_0 - L$ hasta $x_0 + L$, donde $L$ es lo suficientemente grande para abarcar parte de la curva que se hace cero (esto para que la aproximación $w_i \approx 1/\sigma_y^2$ tenga sentido, al igual que la integración en el infinito).
+    \item La curva sí tenga una forma simétrica, es decir que los datos se ajusten bien a la curva de Lorentz.
+\end{itemize}
+
+
