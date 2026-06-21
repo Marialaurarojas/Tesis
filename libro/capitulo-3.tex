@@ -519,15 +519,38 @@ Posteriormente se buscó realizar barrido más pequeños y centrados en la cima 
 
 El ajuste de la curva hasta ahora se ha hecho con Python y la librería scipy con su poderosa formula de Curve\_fit como se explica en el apendice \ref{apx:PC}. Esta fórmula usa el método de mínimos cuadrados aplicando el algoritmo de la región de confianza reflectiva (Trust Region Reflective algorithm, trf) \cite{scipy_curvefit}. Sin embargo, usar este enfoque implica que los valores en el eje x (frecuencia) no tienen error, esto en la práctica no es cierto ya que se ha usado el AD9833 para generar las frecuencias, este módulo incluye un reloj de 25 MHz que según el fabricante puede alcanzar una resolución de 0.1Hz \cite{ad9833_datasheet}, por lo tanto la señal generada sí tiene un cierto margen de incertidumbre dado en principio por este valor de 0.1Hz, es decir la séptima cifra significativa.
 
-Se propone pues el uso de la técnica de ajuste “distancia de regresión ortogonal” ( Orthogonal Distance Regression, ODR) \cite{scipy_odr} ya que esta busca minimizar la distancia ortogonal de la curva con la de ajuste \cite{tutorialspoint_odr}, de modo que tanto los valores en X como los valores en Y tienen una cierta incertidumbre, y la misma se toma en cuenta dentro del algoritmo. El nuevo método de ajuste usa los errores de las medidas de frecuencia y voltaje para hacer un ``Ajuste por Mínimos Cuadrados Ponderados", esto quiere decir que las medidas con menor error tienen más peso en el ajuste y viceversa. Esto es matemáticamente óptimo porque minimiza la probabilidad de que el ruido aleatorio desvíe el centro del pico. En el apendice \ref{ape:odr} se encuentra la explicación detallada de como funcióna el \ac{ODR} y se deduce la ecuación de la incertidumbre asociada al valor de ajuste $f_0$ arrojado por el ODR, dada por:
+Se propone pues el uso de la técnica de ajuste “distancia de regresión ortogonal” ( Orthogonal Distance Regression, ODR) \cite{scipy_odr} ya que esta busca minimizar la distancia ortogonal de la curva con la de ajuste \cite{tutorialspoint_odr}, de modo que tanto los valores en X como los valores en Y tienen una cierta incertidumbre, y la misma se toma en cuenta dentro del algoritmo. El nuevo método de ajuste usa los errores de las medidas de frecuencia y voltaje para hacer un ``Ajuste por Mínimos Cuadrados Ponderados", esto quiere decir que las medidas con menor error tienen más peso en el ajuste y viceversa. Esto es matemáticamente óptimo porque minimiza la probabilidad de que el ruido aleatorio desvíe el centro del pico. En el apendice \ref{ape:odr} se encuentra la explicación detallada de como funcióna el ODR y se deduce la ecuación de la incertidumbre asociada al valor de ajuste $f_0$ arrojado por el ODR, dada por:
 
-\begin{equation}
-    \mathrm{Var}(x_0) \approx \frac{8L\gamma^5\sigma_y^2}{NA^2\pi} \tag{16}
+\begin{equation} \label{eq:var}
+    \mathrm{Var}(f_0) \approx \frac{8l\gamma^5\sigma_y^2}{NA^2\pi} 
 \end{equation}
 
+donde $l$ es la mitad del ancho del barrido, $N$ la cantidad de puntos, $\sigma_y^2$ el valor del error de la medida en en eje vertical, considerando que todos los puntos tienen igual incertidumbre; mientras que $\gamma$ y $A$ son los parámetros de ajuste de la curva. La ecuación \ref{eq:var} depende fuertemente de la forma de la curva. Una curva estrecha y alta tiene menor incertidumbre. Por otro lado, la $l$ se puede reescribir considerando el paso $p$, que es la diferencia en frecuencia entre un punto y el siguiente, es decir el paso en el barrido de frecuencia:
+\begin{equation}
+    l = \frac{N}{2}\,p 
+\end{equation}
 
+\begin{equation} \label{eq:error_f0}
+    \Rightarrow \mathrm{Var}(x_0) \approx \frac{4p\,\gamma^5\,\sigma_y^2}{A^2\,\pi}
+\end{equation}
 
+Esta nueva ecuación demuestra que tener un valor de frecuencia de resonbancia estimado confiable depende no solo de la forma de la curva sino tambien de lo pequeños que sean los pasos. Evaluamos pues cuál debe ser el tamaño de los pasos para una curva como la obtenida hasta ahora, por ejemplo la incluida en la figura \ref{fig:resultado-serie}, de modos que $f_0$ tenga una confianza hasta de 10 cifras significativas.
 
+\begin{equation}
+    \sigma_{x_0} = \sqrt{\mathrm{Var}(x_0)} < x_0 \times 10^{-10} = 425{,}930\times 10^{-10} \approx 4{,}26\times 10^{-5}\;\text{Hz}
+\end{equation}
+
+\begin{equation}
+    \sqrt{\frac{4p\,\gamma^5\,\sigma_y^2}{A^2\,\pi}} < 4{,}26\times 10^{-5}
+    \;\Rightarrow\;
+    p < \frac{(4{,}26\times 10^{-5})^2\,A^2\,\pi}{4\,\gamma^5\,\sigma_y^2} \tag{19}
+\end{equation}
+
+\begin{equation}
+    p < 2{,}167\times 10^{-6}\;\text{Hz} = 2{,}167\;\mu\text{Hz}
+\end{equation}
+
+este valor está muy por debajo de lo que es capaz de generar el AD9833, incluso si se le hace modificaciones en su reloj de cristal.
 
 
 \section{Modificaciones propuestas} 

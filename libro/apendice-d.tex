@@ -11,9 +11,9 @@ El ajuste usando ODR busca los parámetros $\boldsymbol{\beta}$ y las correccion
     S = \sum_{i=1}^{N} \left( \frac{\epsilon_i^2}{d_{y_i}^2} + \frac{\delta_i^2}{d_{x_i}^2} \right) \label{eq:S}
 \end{equation}
 
-de modo que si la función de ajuste es $f$, entonces se cumplen las siguientes restricciones para cada punto $i$:
+de modo que si la función de ajuste es $F$, entonces se cumplen las siguientes restricciones para cada punto $i$:
 \begin{equation}
-    y_i - \epsilon_i = f\!\left(x_i - \delta_i\,,\, \boldsymbol{\beta}\right) \label{eq:restriccion}
+    y_i - \epsilon_i = F\!\left(x_i - \delta_i\,,\, \boldsymbol{\beta}\right) \label{eq:restriccion}
 \end{equation}
 
 donde
@@ -25,7 +25,7 @@ donde
 
 En nuestro caso la función $f$ es la función Lorentziana:
 \begin{equation}
-    f(x) = \frac{A}{(x - x_0)^2 + \gamma^2} + \text{offset} \label{eq:lorentz}
+    F(x) = \frac{A}{(x - x_0)^2 + \gamma^2} + \text{offset} \label{eq:lorentz}
 \end{equation}
 
 de modo que los parámetros de ajuste están dados por el vector
@@ -50,15 +50,15 @@ El ODR en \texttt{scipy} usa una versión modificada del algoritmo Levenberg-Mar
 
     \item \textbf{Linealización:} Se trabaja con la expansión de Taylor de primer orden de la función $f$ al rededor de la solución $\boldsymbol{\beta}$ y $\boldsymbol{\delta}$ en evaluación.
 
-    \item \textbf{Resolución del Sistema:} Como este algoritmo trata las correcciones $\delta_i$ como incógnitas adicionales, se plantea un sistema de ecuaciones de $4 + N$ incógnitas. Este se consigue al sustituir \eqref{eq:restriccion} en \eqref{eq:S} y aplicar la versión linealizada de la función $f$. Aquí podemos definir:
+    \item \textbf{Resolución del Sistema:} Como este algoritmo trata las correcciones $\delta_i$ como incógnitas adicionales, se plantea un sistema de ecuaciones de $4 + N$ incógnitas. Este se consigue al sustituir \eqref{eq:restriccion} en \eqref{eq:S} y aplicar la versión linealizada de la función $F$. Aquí podemos definir:
 \end{enumerate}
 
 \begin{align}
-    r_i &= y_i - f(x_i, \hat{\boldsymbol{\beta}}) \tag{5.1} \label{eq:residuo}
+    r_i &= y_i - F(x_i, \hat{\boldsymbol{\beta}}) \tag{5.1} \label{eq:residuo}
     && \text{residuo con el punto actual}\\[6pt]
-    j_i^T &= \left.\frac{\partial f}{\partial \boldsymbol{\beta}^T}\right|_{x_i,\,\hat{\boldsymbol{\beta}}} \tag{5.2} \label{eq:jacobfila}
+    j_i^T &= \left.\frac{\partial F}{\partial \boldsymbol{\beta}^T}\right|_{x_i,\,\hat{\boldsymbol{\beta}}} \tag{5.2} \label{eq:jacobfila}
     && \text{fila }i\text{ del jacobiano, vector }1\times p\\[6pt]
-    d_i &= \left.\frac{\partial f}{\partial x}\right|_{x_i,\,\hat{\boldsymbol{\beta}}} \tag{5.3} \label{eq:sensib}
+    d_i &= \left.\frac{\partial F}{\partial x}\right|_{x_i,\,\hat{\boldsymbol{\beta}}} \tag{5.3} \label{eq:sensib}
     && \text{sensibilidad local en }x\\[6pt]
     \Delta\boldsymbol{\beta} &= \boldsymbol{\beta} - \hat{\boldsymbol{\beta}} \tag{5.4} \label{eq:paso}
     && \text{paso de actualización}
@@ -187,12 +187,12 @@ y el resto de elementos
 \end{align}
 
 % =====================================================================
-\subsection*{Consideraciones}
+\subsubsection{Consideraciones}
 
-Digamos que los errores son homogéneos: $\sigma_{x_i} = \sigma_x$, $\sigma_{y_i} = \sigma_y$. Esto implica en el experimento que todos los puntos se midieron con igual precisión, lo cual es de esperar normalmente si se usa el mismo instrumento para todas las medidas. Asumimos también una distribución uniforme de los $N$ puntos entre $x_0 - L$ y $x_0 + L$. Por último, en el límite continuo las sumas se convierten en integrales:
+Digamos que los errores son homogéneos: $\sigma_{x_i} = \sigma_x$, $\sigma_{y_i} = \sigma_y$. Esto implica en el experimento que todos los puntos se midieron con igual precisión, lo cual es de esperar normalmente si se usa el mismo instrumento para todas las medidas. Asumimos también una distribución uniforme de los $N$ puntos entre $x_0 - l$ y $x_0 + l$. Por último, en el límite continuo las sumas se convierten en integrales:
 \begin{equation}
-    \sum_{i=1}^{N} w_i\,\mathbb{J}_{i,a}\,\mathbb{J}_{i,b} \approx \frac{N}{2L} \int_{-L}^{L} w(u)\,\mathbb{J}_{a}(u)\,\mathbb{J}_{b}(u)\,du \label{eq:integral}
-\end{equation}
+    \sum_{i=1}^{N} w_i\,\mathbb{J}_{i,a}\,\mathbb{J}_{i,b} \approx \frac{N}{2l} \int_{-l}^{l} w(u)\,\mathbb{J}_{a}(u)\,\mathbb{J}_{b}(u)\,du \label{eq:integral}
+\end{equation} 
 
 Para los pesos recordamos que $w_i = \dfrac{1}{\sigma_{y_i}^2 + d_i^2\,\sigma_{x_i}^2}$; si consideramos (5.4):
 \begin{equation}
@@ -222,9 +222,9 @@ La otra integral que aparece tiene $u$ en el numerador; sin embargo al ser simé
 Usando las consideraciones anteriores, integrando las ecuaciones \eqref{eq:diagonal}:
 
 \begin{align}
-    \left[\mathbb{J}^T W \mathbb{J}\right]_{x_0 x_0} &\approx \frac{N A^2 \pi}{8L\sigma_y^2\gamma^5} \\[4pt]
-    \left[\mathbb{J}^T W \mathbb{J}\right]_{AA} &\approx \frac{N\pi}{2L\sigma_y^2\gamma} \\[4pt]
-    \left[\mathbb{J}^T W \mathbb{J}\right]_{\gamma\gamma} &\approx -\frac{5}{8}\frac{A^2 N\pi}{\sigma_y^2 L\gamma^5} \\[4pt]
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{x_0 x_0} &\approx \frac{N A^2 \pi}{8l\sigma_y^2\gamma^5} \\[4pt]
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{AA} &\approx \frac{N\pi}{2l\sigma_y^2\gamma} \\[4pt]
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{\gamma\gamma} &\approx -\frac{5}{8}\frac{A^2 N\pi}{\sigma_y^2 l\gamma^5} \\[4pt]
     \left[\mathbb{J}^T W \mathbb{J}\right]_{\text{off\,off}} &= \frac{N}{\sigma_y^2}
 \end{align}
 
@@ -232,11 +232,11 @@ y en las ecuaciones \eqref{eq:fuera_diag}:
 
 \begin{align}
     \left[\mathbb{J}^T W \mathbb{J}\right]_{A x_0} &\approx 0 \\
-    \left[\mathbb{J}^T W \mathbb{J}\right]_{A\,\text{off}} &\approx \frac{N}{\sigma_y^2 2L}\cdot\frac{\pi}{\gamma} \\
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{A\,\text{off}} &\approx \frac{N}{\sigma_y^2 2l}\cdot\frac{\pi}{\gamma} \\
     \left[\mathbb{J}^T W \mathbb{J}\right]_{x_0\,\text{off}} &\approx 0 \\
-    \left[\mathbb{J}^T W \mathbb{J}\right]_{A\gamma} &\approx -\frac{3}{4}\frac{AN\pi}{\sigma_y^2 L\gamma^4} \\
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{A\gamma} &\approx -\frac{3}{4}\frac{AN\pi}{\sigma_y^2 l\gamma^4} \\
     \left[\mathbb{J}^T W \mathbb{J}\right]_{x_0\gamma} &\approx 0 \\
-    \left[\mathbb{J}^T W \mathbb{J}\right]_{\gamma\,\text{off}} &\approx -\frac{AN\pi}{2\sigma_y^2 L\gamma^2}
+    \left[\mathbb{J}^T W \mathbb{J}\right]_{\gamma\,\text{off}} &\approx -\frac{AN\pi}{2\sigma_y^2 l\gamma^2}
 \end{align}
 
 Entonces la matriz $\mathbb{J}^T W \mathbb{J}$ es:
@@ -244,10 +244,10 @@ Entonces la matriz $\mathbb{J}^T W \mathbb{J}$ es:
 \begin{equation}
     \mathbb{J}^T W \mathbb{J} \approx \frac{N}{\sigma_y^2}
     \begin{pmatrix}
-        \dfrac{A^2\pi}{8L\gamma^5} & 0 & 0 & 0 \\[10pt]
-        0 & \dfrac{\pi}{2L\gamma} & \dfrac{-3A\pi}{4L\gamma^4} & \dfrac{\pi}{4L\gamma} \\[10pt]
-        0 & \dfrac{-3A\pi}{4L\gamma^4} & \dfrac{-5A^2\pi}{8L\gamma^5} & \dfrac{-A\pi}{2L\gamma^2} \\[10pt]
-        0 & \dfrac{\pi}{4L\gamma} & \dfrac{-A\pi}{2L\gamma^2} & 1
+        \dfrac{A^2\pi}{8l\gamma^5} & 0 & 0 & 0 \\[10pt]
+        0 & \dfrac{\pi}{2l\gamma} & \dfrac{-3A\pi}{4l\gamma^4} & \dfrac{\pi}{4l\gamma} \\[10pt]
+        0 & \dfrac{-3A\pi}{4l\gamma^4} & \dfrac{-5A^2\pi}{8l\gamma^5} & \dfrac{-A\pi}{2l\gamma^2} \\[10pt]
+        0 & \dfrac{\pi}{4l\gamma} & \dfrac{-A\pi}{2l\gamma^2} & 1
     \end{pmatrix}
     \label{eq:matrizfinal}
 \end{equation}
@@ -264,14 +264,14 @@ Vemos que debido a la simetría de la Lorentziana, el vector $\mathbf{c}$ solo t
 \end{equation}
 
 \begin{equation}
-    \boxed{\mathrm{Var}(x_0) = \frac{1}{\dfrac{N}{\sigma_y^2}\cdot\dfrac{A^2\pi}{8L\gamma^5}} = \frac{8L\gamma^5\sigma_y^2}{NA^2\pi}} \label{eq:var_final}
+    \boxed{\mathrm{Var}(x_0) = \frac{1}{\dfrac{N}{\sigma_y^2}\cdot\dfrac{A^2\pi}{8l\gamma^5}} = \frac{8l\gamma^5\sigma_y^2}{NA^2\pi}} \label{eq:var_final}
 \end{equation}
 
 Para que este resultado sea cierto es necesario que:
 \begin{itemize}
     \item Todos los errores originales de las medidas sean iguales.
     \item Los $N$ puntos estén distribuidos de forma simétrica a cada lado del máximo de la curva.
-    \item Así mismo los puntos se distribuyen desde $x_0 - L$ hasta $x_0 + L$, donde $L$ es lo suficientemente grande para abarcar parte de la curva que se hace cero (esto para que la aproximación $w_i \approx 1/\sigma_y^2$ tenga sentido, al igual que la integración en el infinito).
+    \item Así mismo los puntos se distribuyen desde $x_0 - l$ hasta $x_0 + l$, donde $l$ es lo suficientemente grande para abarcar parte de la curva que se hace cero (esto para que la aproximación $w_i \approx 1/\sigma_y^2$ tenga sentido, al igual que la integración en el infinito).
     \item La curva sí tenga una forma simétrica, es decir que los datos se ajusten bien a la curva de Lorentz.
 \end{itemize}
 

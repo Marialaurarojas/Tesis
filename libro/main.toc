@@ -47,32 +47,33 @@
 \contentsline {subsection}{\numberline {3.5.1}Procedimiento experimental}{43}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Resultados}{46}{subsection.3.5.2}%
 \contentsline {section}{\numberline {3.6}Cálculo de la precisión necesaria: Ajuste de la curva por ODR}{47}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Modificaciones propuestas}{48}{section.3.7}%
-\contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{49}{chaptert.4}%
-\contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{49}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{49}{section.4.2}%
-\contentsline {section}{\numberline {4.3} Circuito LC con fem aplicada por inducción}{49}{section.4.3}%
-\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{50}{chapter*.59}%
-\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{51}{chapter*.60}%
+\contentsline {section}{\numberline {3.7}Modificaciones propuestas}{49}{section.3.7}%
+\contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{50}{chaptert.4}%
+\contentsline {section}{\numberline {4.1}Medición de la velocidad de la luz con gran precisión}{50}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Circuito LC en el espacio}{50}{section.4.2}%
+\contentsline {section}{\numberline {4.3} Circuito LC con fem aplicada por inducción}{50}{section.4.3}%
+\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{51}{chapter*.58}%
+\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{52}{chapter*.59}%
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Código Arduino}}{54}{chaptert.1}%
-\contentsline {section}{\numberline {A.1}Librerías y configuración de pines}{54}{section.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Inicialización}{54}{section.Alph1.2}%
-\contentsline {section}{\numberline {A.3}Ciclo principal}{55}{section.Alph1.3}%
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{Tratamiento de los datos con Python}}{56}{chaptert.2}%
-\contentsline {section}{\numberline {B.1}Programa de control del Arduino}{56}{section.Alph2.1}%
-\contentsline {section}{\numberline {B.2}Programa de ajuste de la curva}{57}{section.Alph2.2}%
-\contentsline {subsection}{\numberline {B.2.1}Función de ajuste}{57}{subsection.Alph2.2.1}%
-\contentsline {subsection}{\numberline {B.2.2}Estimación automática de parámetros iniciales}{57}{subsection.Alph2.2.2}%
-\contentsline {subsection}{\numberline {B.2.3}Ajuste y estimación de incertidumbres con \texttt {curve\_fit}}{58}{subsection.Alph2.2.3}%
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~C:~\MakeTextUppercase []{Esquemático completo del circuito resonante en serie}}{59}{chaptert.3}%
-\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~D:~\MakeTextUppercase []{Matemática detrás del ajuste por ODR}}{61}{chaptert.4}%
-\contentsline {section}{\numberline {D.1}ODR — Regresión Ortogonal de Distancias: ¿cómo funciona?}{61}{section.Alph4.1}%
-\contentsline {subsection}{\numberline {D.1.1}Ajuste de $\boldsymbol {\beta }$}{62}{subsection.Alph4.1.1}%
-\contentsline {section}{\numberline {D.2}Confiabilidad del resultado del ODR}{64}{section.Alph4.2}%
-\contentsline {subsection}{\numberline {D.2.1}Elementos del Jacobiano}{65}{subsection.Alph4.2.1}%
-\contentsline {subsection}{\numberline {D.2.2}Matriz final de $\mathbb {J}^T W \mathbb {J}$}{66}{subsection.Alph4.2.2}%
-\contentsline {subsection}{\numberline {D.2.3}Aplicando el complemento de Schur}{68}{subsection.Alph4.2.3}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~A:~\MakeTextUppercase []{Código Arduino}}{55}{chaptert.1}%
+\contentsline {section}{\numberline {A.1}Librerías y configuración de pines}{55}{section.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Inicialización}{55}{section.Alph1.2}%
+\contentsline {section}{\numberline {A.3}Ciclo principal}{56}{section.Alph1.3}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~B:~\MakeTextUppercase []{Tratamiento de los datos con Python}}{57}{chaptert.2}%
+\contentsline {section}{\numberline {B.1}Programa de control del Arduino}{57}{section.Alph2.1}%
+\contentsline {section}{\numberline {B.2}Programa de ajuste de la curva}{58}{section.Alph2.2}%
+\contentsline {subsection}{\numberline {B.2.1}Función de ajuste}{58}{subsection.Alph2.2.1}%
+\contentsline {subsection}{\numberline {B.2.2}Estimación automática de parámetros iniciales}{58}{subsection.Alph2.2.2}%
+\contentsline {subsection}{\numberline {B.2.3}Ajuste y estimación de incertidumbres con \texttt {curve\_fit}}{59}{subsection.Alph2.2.3}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~C:~\MakeTextUppercase []{Esquemático completo del circuito resonante en serie}}{60}{chaptert.3}%
+\contentsline {chapter}{\MakeTextUppercase []{Ap\'{e}ndice}~D:~\MakeTextUppercase []{Matemática detrás del ajuste por ODR}}{62}{chaptert.4}%
+\contentsline {section}{\numberline {D.1}ODR — Regresión Ortogonal de Distancias: ¿cómo funciona?}{62}{section.Alph4.1}%
+\contentsline {subsection}{\numberline {D.1.1}Ajuste de $\boldsymbol {\beta }$}{63}{subsection.Alph4.1.1}%
+\contentsline {section}{\numberline {D.2}Confiabilidad del resultado del ODR}{65}{section.Alph4.2}%
+\contentsline {subsection}{\numberline {D.2.1}Elementos del Jacobiano}{66}{subsection.Alph4.2.1}%
+\contentsline {subsubsection}{\numberline {D.2.1.1}Consideraciones}{67}{subsubsection.Alph4.2.1.1}%
+\contentsline {subsection}{\numberline {D.2.2}Matriz final de $\mathbb {J}^T W \mathbb {J}$}{67}{subsection.Alph4.2.2}%
+\contentsline {subsection}{\numberline {D.2.3}Aplicando el complemento de Schur}{69}{subsection.Alph4.2.3}%
