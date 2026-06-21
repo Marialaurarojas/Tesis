@@ -496,21 +496,21 @@ INPUT ./FOTO-circuito-temperatura.png
 INPUT ./FOTO-circuito-temperatura.png
 INPUT ./FOTO-circuito-temperatura.png
 INPUT ./FOTO-circuito-temperatura.png
-INPUT ./temperatura meses.pdf
-INPUT ./temperatura meses.pdf
-INPUT ./temperatura meses.pdf
-INPUT ./temperatura meses.pdf
-INPUT ./temperatura meses.pdf
-INPUT ./temperatura dia.pdf
-INPUT ./temperatura dia.pdf
-INPUT ./temperatura dia.pdf
-INPUT ./temperatura dia.pdf
-INPUT ./temperatura dia.pdf
-INPUT ./temperatura exterior vs interior.pdf
-INPUT ./temperatura exterior vs interior.pdf
-INPUT ./temperatura exterior vs interior.pdf
-INPUT ./temperatura exterior vs interior.pdf
-INPUT ./temperatura exterior vs interior.pdf
+INPUT ./temperatura_meses.pdf
+INPUT ./temperatura_meses.pdf
+INPUT ./temperatura_meses.pdf
+INPUT ./temperatura_meses.pdf
+INPUT ./temperatura_meses.pdf
+INPUT ./temperatura_dia.pdf
+INPUT ./temperatura_dia.pdf
+INPUT ./temperatura_dia.pdf
+INPUT ./temperatura_dia.pdf
+INPUT ./temperatura_dia.pdf
+INPUT ./temperatura_exterior_vs_interior.pdf
+INPUT ./temperatura_exterior_vs_interior.pdf
+INPUT ./temperatura_exterior_vs_interior.pdf
+INPUT ./temperatura_exterior_vs_interior.pdf
+INPUT ./temperatura_exterior_vs_interior.pdf
 INPUT ./Amplificador1-potencia-paralelo.png
 INPUT ./Amplificador1-potencia-paralelo.png
 INPUT ./Amplificador1-potencia-paralelo.png
@@ -571,11 +571,16 @@ INPUT ./resultado-serie-3Mar26-6.png
 INPUT ./resultado-serie-3Mar26-6.png
 INPUT ./resultado-serie-3Mar26-6.png
 INPUT ./resultado-serie-3Mar26-6.png
-INPUT ./CircuitoCAD.png
-INPUT ./CircuitoCAD.png
-INPUT ./CircuitoCAD.png
-INPUT ./CircuitoCAD.png
-INPUT ./CircuitoCAD.png
+INPUT ./MIT-circuito-induccion.png
+INPUT ./MIT-circuito-induccion.png
+INPUT ./MIT-circuito-induccion.png
+INPUT ./MIT-circuito-induccion.png
+INPUT ./MIT-circuito-induccion.png
+INPUT ./placaNueva.jpg
+INPUT ./placaNueva.jpg
+INPUT ./placaNueva.jpg
+INPUT ./placaNueva.jpg
+INPUT ./placaNueva.jpg
 INPUT ./capitulo-4.tex
 INPUT ./capitulo-4.tex
 INPUT ./capitulo-4.tex

@@ -17,12 +17,11 @@
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Foto del circuito autónomo que regula la temperatura.}}{39}{figure.caption.42}%
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Gráficas del comportamiento de la temperatura exterior (ambiente) e interior (regulada por el circuito estabilizador).}}{40}{figure.caption.43}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Esquemático de la etapa amplificadora de potencia perteneciente al Amplificador 1, en el montaje en paralelo.}}{41}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Foto de experimento RLC en paralelo.}}{41}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Foto de experimento RLC en paralelo.}}{42}{figure.caption.45}%
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Esquemático de todo el circuito del experimento RLC en paralelo.}}{42}{figure.caption.46}%
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Gráficas de los barridos de frecuencia con mejores resultados del experimento en paralelo, incluye los datos originales y la curva ajustada.}}{43}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Fotos de los dos principales prototipos elaborados con el circuito en serie.}}{45}{figure.caption.52}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Fotos de los dos principales prototipos elaborados con el circuito en serie.}}{46}{figure.caption.52}%
 \contentsline {figure}{\numberline {3.21}{\ignorespaces Dos barridos con las mismas características realizados consecutivamente con minutos de diferencia.}}{47}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Circuito donde se explica claramente la conexión del Arduino,}}{49}{figure.caption.57}%
 \addvspace {10\p@ }
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
@@ -31,5 +30,5 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Diagrama esquemático completo del prototipo conectado en serie diseñado en KiCad.}}{61}{figure.caption.60}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Diagrama esquemático completo del prototipo conectado en serie diseñado en KiCad.}}{64}{figure.caption.62}%
 \addvspace {10\p@ }

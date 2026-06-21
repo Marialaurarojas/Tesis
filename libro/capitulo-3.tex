@@ -239,7 +239,13 @@ Para que el experimento funcione es necesario que el barrido de frecuencia se ha
 \begin{itemize}
   \item Arduino uno: Es una placa de hardware de desarrollo libre que continene un microcontrolador facilmente programable y un conjunto de pines analógicos y digitales. Se escogió por su versatilidad, economía y el fácil acceso que se tenia a ella. En la figura \ref{fig:SOLO-ESQUEMA} se puede ver que el Arduino interactua con cada uno de los modulos antes presentados: controla el generador de funciones AD9833, es decir le dice qué generar y cuando hacerlo; enciende y apaga el transistor para la descarga del capacitor en el modulo de lectura, así como tambien recibe la conversión a digital hecha por el ADS1115. Para más detalles del funcionamiento del Arduino a nivel de la programación ver el apendice \ref{apx:Arduino}.
   
-  \item PC: una laptop Lenovo Ideapad 3 fué la escogida para controlar al Arduino, además se encarga de recibir y tratar los datos del barrido con el fin de ajustar la curva y dar con el valor de la frecuencia de resonancia. Para más detalles del software involucrado ver el apendice \ref{apx:PC}.
+  \item PC: una laptop Lenovo Ideapad 3 fué la escogida para controlar al Arduino, además se encarga de recibir y tratar los datos del barrido con el fin de ajustar la curva y dar con el valor de la frecuencia de resonancia. La ecuación a la que se le hace el ajuste es la siguiente:
+  
+  \begin{equation}\label{ecu:lorentz}
+    F(f) = \frac{A}{(f - f_0)^2 + \gamma^2} + \text{offset}
+\end{equation}
+
+  Para más detalles del software involucrado ver el apendice \ref{apx:PC}.
     
 \end{itemize}
 \subsection{Módulo estabilizador}
@@ -279,7 +285,7 @@ Este sistema ha demostrado funcionar por largos periodos de tiempo manteniendo u
     % Primera imagen (a)
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{temperatura meses.pdf} % Sustituye por tu archivo
+        \includegraphics[width=0.9\linewidth]{temperatura_meses.pdf} % Sustituye por tu archivo
         \caption{Temperaturas interior y exterior desde abril hasta julio del 2025.}
         \label{fig:tempMeses}
     \end{subfigure}
@@ -289,7 +295,7 @@ Este sistema ha demostrado funcionar por largos periodos de tiempo manteniendo u
     % Segunda imagen (b)
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{temperatura dia.pdf} % Sustituye por tu archivo
+        \includegraphics[width=0.9\linewidth]{temperatura_dia.pdf} % Sustituye por tu archivo
         \caption{Temperatura interior y exterior durante el día.}
         \label{fig:tempDia}
     \end{subfigure}
@@ -299,7 +305,7 @@ Este sistema ha demostrado funcionar por largos periodos de tiempo manteniendo u
     % Tercera imagen (c)
     \begin{subfigure}{\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{temperatura exterior vs interior.pdf}
+        \includegraphics[width=0.9\linewidth]{temperatura_exterior_vs_interior.pdf}
         \caption{Temperatura interior como función de la temperatura exterior.}
         \label{fig:tempVs}
     \end{subfigure}
@@ -464,7 +470,7 @@ Este experimento en serie se desarrolló por varios meses en los cuales se logr�
 %3Mar26-6 y 3Mar26-5 son lo mismo pero muestra que cada vez que se hacia el barrido se encontraba algo distinto
 %3Mar26-1 es lo mejorcito que hay
 
-Para un barrido entre 300 K HZ y 600 k Hz usando pasos de 10 K Hz se tiene la curva de la figura \ref{fig:resultado-serie}, estos resultado provienen del prototipo en \ac{PCB} cuyo esquematico completo se incluye en el apendice \ref{ape:esquematico}. La curva obtenida no tiene un alto factor $Q$ y la forma de la curva es peor (parámetros de ajuste se incluyen en la tabla \ref{tab:resultado-serie}), esto se evidencia si comparamos el error relativo porcentual de la frecuencia de resonancia en este caso que es de $0.34\%$ con el mismo parametro pero del primer barrido en paralelo, el cual se encuentra dos ordenes de magnitud por debajo, con un valor de $0.0036 \%$. Entonces en terminos de la forma de la curva los mejores resultados se dieron con la conexión en paralelo, aunque ambos siguen sin presentar una curva estrecha.
+Para un barrido entre 300 K HZ y 600 k Hz usando pasos de 10 K Hz se tiene la curva de la figura \ref{fig:resultado-serie}, estos resultado provienen del prototipo en \ac{PCB} cuyo esquematico completo se incluye en el apendice \ref{ape:esquematico}. La curva obtenida no tiene un alto factor $Q$ y la forma de la misma presenta una desmejoría (parámetros de ajuste se incluyen en la tabla \ref{tab:resultado-serie}), esto se evidencia si comparamos el error relativo porcentual de la frecuencia de resonancia en este caso que es de $0.34\%$ con el mismo parametro pero del primer barrido en paralelo, el cual se encuentra dos ordenes de magnitud por debajo, con un valor de $0.0036 \%$. Entonces en terminos de la forma de la curva los mejores resultados se dieron con la conexión en paralelo, aunque ambos siguen sin presentar una curva estrecha.
 
 \begin{figure}[h!]
 \centering
@@ -489,7 +495,7 @@ $(f_0)Hz$ & $(425930\pm 1475) $\\
 \label{tab:resultado-serie}
 \end{table}
 
-Posteriormente se buscó realizar barrido más pequeños y centrados en la cima de la curva, en esos casos se encontró que no exisita una estabilidad en la medida, es decir mediciones consecutivas no arrojaban el mismo resultado. Por ejemplo, para barridos entre 400 K Hz y 440 K Hz con pasos de 1000 Hz, se obtuvieron múltiples resultados distintos, dos de ellos se ejemplifican en la figura \ref{fig:resultado-malo-serie}. En estos casos es imposible ajustar nada, ya que los datos muestran una dispersión enorme y ruido. Para explicar este inusual comportamiento, que solo aparecia en los barrido más pequeños se hicieron algunas pruebas adicionales que no llegaron a resolver nada como: cambiar el tipo de diodo rectificador, hacer modificaciones en los tiempos de espera dentro del software de Arduino, colocar de frente al circuito un fuerte ventilador, entre otras. Por lo que la razón de no poder hacer medidas consecutivas iguales en barridos pequeños con este dispositivo permanece sin resolver.
+Posteriormente se buscó realizar barrido más pequeños y centrados en la cima de la curva, en esos casos se encontró que no exisita una estabilidad en la medida, es decir mediciones consecutivas no arrojaban el mismo resultado. Por ejemplo, para barridos entre 400 K Hz y 440 K Hz con pasos de 1000 Hz, se obtuvieron múltiples resultados distintos, dos de ellos se ejemplifican en la figura \ref{fig:resultado-malo-serie}. En estos casos es imposible ajustar nada, ya que los datos muestran una dispersión enorme y ruido. Para explicar este inusual comportamiento, que solo aparece en los barrido más pequeños se hicieron algunas pruebas adicionales que no llegaron a resolver nada como: cambiar el tipo de diodo rectificador, hacer modificaciones en los tiempos de espera dentro del software de Arduino, colocar de frente al circuito un fuerte ventilador, entre otras. Por lo que la razón de no poder hacer medidas consecutivas iguales en barridos pequeños con este dispositivo permanece sin resolver.
 
 \begin{figure}[htbp]
     \centering
@@ -514,6 +520,8 @@ Posteriormente se buscó realizar barrido más pequeños y centrados en la cima 
 
 %AGREGAR UN PARRAFO DONDE SE HABLE DEL FRACASO DE LOs EXPERIENTOS Y LAS BUSQUEDA DE MEJORAS Y REPSUESTAS y un puente para la siguiente sección
 
+
+
 \section{Cálculo de la precisión necesaria: Ajuste de la curva por ODR}
 %AQUI VA TOTAL O PARCIALMENTE LOS CALCULOS DEL ARCHIVO avances.pdf ENVIADO EL 6 DE ABRIL
 
@@ -531,13 +539,13 @@ donde $l$ es la mitad del ancho del barrido, $N$ la cantidad de puntos, $\sigma_
 \end{equation}
 
 \begin{equation} \label{eq:error_f0}
-    \Rightarrow \mathrm{Var}(x_0) \approx \frac{4p\,\gamma^5\,\sigma_y^2}{A^2\,\pi}
+    \Rightarrow \mathrm{Var}(f_0) \approx \frac{4p\,\gamma^5\,\sigma_y^2}{A^2\,\pi}
 \end{equation}
 
-Esta nueva ecuación demuestra que tener un valor de frecuencia de resonbancia estimado confiable depende no solo de la forma de la curva sino tambien de lo pequeños que sean los pasos. Evaluamos pues cuál debe ser el tamaño de los pasos para una curva como la obtenida hasta ahora, por ejemplo la incluida en la figura \ref{fig:resultado-serie}, de modos que $f_0$ tenga una confianza hasta de 10 cifras significativas.
+Esta nueva ecuación demuestra que tener un valor de frecuencia de resonancia estimado confiable depende no solo de la forma de la curva sino tambien de lo pequeños que sean los pasos. Evaluamos pues cuál debe ser el tamaño de los pasos para una curva como la obtenida hasta ahora, por ejemplo la incluida en la figura \ref{fig:resultado-serie}, de modo que $f_0$ tenga una confianza hasta de 10 cifras significativas.
 
 \begin{equation}
-    \sigma_{x_0} = \sqrt{\mathrm{Var}(x_0)} < x_0 \times 10^{-10} = 425{,}930\times 10^{-10} \approx 4{,}26\times 10^{-5}\;\text{Hz}
+    \sigma_{f_0} = \sqrt{\mathrm{Var}(f_0)} < f_0 \times 10^{-10} = 425{,}930\times 10^{-10} \approx 4{,}26\times 10^{-5}\;\text{Hz}
 \end{equation}
 
 \begin{equation}
@@ -553,26 +561,67 @@ Esta nueva ecuación demuestra que tener un valor de frecuencia de resonbancia e
 este valor está muy por debajo de lo que es capaz de generar el AD9833, incluso si se le hace modificaciones en su reloj de cristal.
 
 
-\section{Modificaciones propuestas} 
+\section{Propuestas de mejoras} 
+En el marco del uso de un circuito resonante, se plantean a continuación algunas prouestas que cambian total o parcialmente el experimento y que se cree que pueden mejorar los resultados obtenidos hasta ahora.
 
+\subsection{Circuito LC con fem aplicada por inducción}
+%por inducción
+El mayor problema de los circuitos que se realizaron es su poco estrecha curva de resonancia, para mejorar esto se necesita disminuir la perdida de energía, es decir que el circuito sea más eficiente. con el fin de lograrlo se propone seccionar el circuito en tres partes: una que genera la señal, una que resuena (RLC) y otra que lee la respuesta, y la conexión entre estas tres sería por medio de inducción y no por cables físicos, algo como lo que se hace en el Massachusetts Institute of Technology \cite{GuiaLAB-MIT}. La ejecución de este experimento requiere manufacturar a medida la bobina del circuito LC pero tambien las correctas boninas para las otras dos partes del circuito, para garantizar que la inducción se dé de la mejor manera posible. Una ventaja de esta configuración es que permite simplificar el circuito que hemos trabajado, ya que los dos amplificadores de voltaje ya no serian necesario si se contruyen unas bobinas que permitan aumentar el vojtaje en la medida adecuada.
 
+%AVERIGUAR ESTO:: yo creo que esto podria incluso elimiar el uso de amplificador, porque la induccion d euna bobina para otra es un transformador, osea que ya ahi se amplifica el voltaje
 
-
-hablar sobre la propuesta de prof Julio Wlater (usar un pulso en lugar de un senal sinusoidal).
-Hablar sobre cambiarse de Arduino a red pitaya
-
-Los pines del generador de funciones AD9833 en el diagrama son 
-  1-ref
-  2-VCC
-  3-GND
-  4-DAT
-  5-CLK
-  6-FNC
-  7-OUT
-
-\begin{figure}[hbt]
+\begin{figure}[h!]
 \centering
-\includegraphics[scale=0.5]{CircuitoCAD.png}
-\caption[Circuito donde se explica claramente la conexión del Arduino,]{Circuito donde se explica claramente la conexión del Arduino}
-\label{fig:figura1a}
+\includegraphics[scale=0.65]{MIT-circuito-induccion.png}
+\caption[]{Circuito resonante por inducción propuesto en \cite{GuiaLAB-MIT}}
+\label{fig:MIT-INDUCCION }
 \end{figure}
+
+
+En esta segunda forma se conectan la bobina y el condensador en serie, luego se enrolla un cable no aislado alrededor del inductor y los finales de este a un generador de frecuencia, de igual modo se usa otro cable para enrollarlo alrededor del condensador y se conectan sus extremos a un osciloscopio. Este montaje está basado en la referencia \cite{GuiaLAB-MIT}. En este caso la corriente variable $i_0(t)$ induce una fem $\varepsilon$ en el circuito (ley de Faraday) que varía con la misma frecuencia que la corriente original, a su vez $\varepsilon$ genera una corriente inducida $i(t)$ en el circuito LC que tiene la misma frecuencia que $i_0(t)$. Para realizar las mediciones, en la misma referencia [2] se plantea enrollar otro cable no aislado alrededor del inductor (en otra zona del mismo como se ve en la siguiente imagen) y conectar los extremos de este a un osciloscopio.
+
+\subsection{Uso de Red pitaya}
+%Hablar sobre cambiarse de Arduino a red pitaya
+Se propone cambiar el Arudino UNO por la Red Pitaya STEMlab 125-14. Este es un sofisticado y compacto equipo que puede sustituir las funciones del generador AD9833 y del Arduino UNO, y con un desempeño mejor que el de ambos. En la tabla \ref{tab:red-vs-ad9833} s epuede ver una compartativa entre Red Pitaya y el AD9833, considerando las caracteristicas más importantes para nuestro experimento. Vemos que encuanto a la resolución son comparables, sin embargo la grand diferencia de voltaje y potencia de salida puede permitirnos prescindir del primer amplificador, lo cual simplifica el circuito y a su vez deberia mejorar el factor $Q$. 
+
+\begin{table}[h!]
+\centering
+\caption{Comparativa técnica entre la plataforma Red Pitaya y el generador AD9833.}
+\label{tab:red-vs-ad9833}
+\begin{tabular}{@{}lll@{}}
+\hline
+                    & \textbf{Red Pitaya STEMlab 125-14} & \textbf{AD9833 (MCLK=25MHz)} \\ \midrule
+Tipo                & DDS + DAC 14 bits                 & DDS + DAC 10 bits           \\
+Reloj interno       & 125 MHz                           & 25 MHz (externo)            \\
+Acumulador de fase  & 32 bits                           & 28 bits                     \\
+Tabla SIN ROM       & 14 bits                           & 12 bits de fase $\rightarrow$ 10 bits amplitud \\ 
+Voltaje pico pico & 2 V & 0.6 V \\
+Impedancia de salida & 50 $\Omega$ (estándar) & Alta (requiere buffer) \\
+Potencia de salida & Moderada & Baja \\
+Armonicos relativos & $\approx$ 0.1\%  & $\approx$ 0.16\% \\
+Resolución & $\approx$ 0.03 Hz & $\approx$ 0.1 Hz \\
+\hline
+\end{tabular}
+\end{table}
+
+   
+Esta placa es como un arduino, en el sentido de que se puede programar para que haga lo que uno quiera pero de más alta gama, si el arduino está hecho pensando en los entusiastas de la electronica esta placa Red Pitaya STEMlab 125-14 es para usarse en laboratorios donde se necesitan mayores prestaciones de sus equipos electrónicos; y la diferencia entre ambos se refleja en el precio: si un Arduino te cuesta \$ 50 esta placa más sofisticada cuesta \$ 700.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.75]{placaNueva.jpg}
+\caption[]{Foto referencial de Red Pitaya STEMlab 125-14 }
+\end{figure}
+
+\subsubsection{simplificar más el circuito}
+
+Parte de propuesta de usar la Red Pitaya STEMlab 125-14 pasa porque la misma funciona como un osciloscopio, esto habre la posibilidad de simplificar aun más el circuito eliminando toda la parte encargada de rectificar el voltaje, de modo que la Red Pitaya lea directamente la respuesta senoidal del RLC y a partir de un ajsute se determine la amplitud de esa sinusoidal para usarse como dato de voltaje en el barrido de frecuencia. 
+
+%agregar la cuenta del avances.pdf que permite saber si red pitaya da la talla o no, comparativa con hantek
+
+\subsection{Pulso}
+%hablar sobre la propuesta de prof Julio Wlater (usar un pulso en lugar de un senal sinusoidal).
+
+Es posible replantear toda la forma de medir la respuesta del circuito resonante, en lugar de utilizar un barrido de frecuencia usar un único pulso y muestrar toda la respuesta del circuito resonante. La curva esperada seria una señal sinusoidal amortiguada, la cual puede ser predicha matemáticamente usando la ecuación diferencial que determina el compaortamiento de el circuito RLC en particular que se vaya a utilizar. La ventaja de este planteamiento es que simplifica mucho el circuito a estudiar, sin embargo es un cambio practicamente total del experimento.
+
+
