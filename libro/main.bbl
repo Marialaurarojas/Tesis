@@ -46,6 +46,10 @@
 \newblock \btxjournalfont {The International Hydrographic Review}, 41(1), \btxprintmonthyear{.}{Jun.}{2015}{long}.
 \newblock {\latintext \btxurlfont{https://journals.lib.unb.ca/index.php/ihr/article/view/24143}}.
 
+\bibitem {baird1979confirmation}
+\btxnamefont {\btxlastnamefont {Baird}, K.\btxfnamespacelong M.}, \btxnamefont {\btxlastnamefont {Smith}, D.\btxfnamespacelong S.}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Whitford}, B.\btxfnamespacelong G.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Confirmation of the currently accepted value 299 792 458 metres per second for the speed of light}{Confirmation of the currently accepted value 299 792 458 metres per second for the speed of light}}.
+\newblock \btxjournalfont {Optics Communications}, 31(3):367--368, \btxprintmonthyear{.}{December}{1979}{long}.
+
 \bibitem {introductiontoastro}
 \btxnamefont {\btxlastnamefont {Carroll}, B.W.} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Ostlie}, D.A.}\btxauthorcolon\ \btxtitlefont {An Introduction to Modern Astrophysics}.
 \newblock \btxpublisherfont {Cambridge University Press}, 2017\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {9781108422161}}}.
@@ -99,6 +103,16 @@
 \btxnamefont {\btxlastnamefont {Ramdani}, F.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Gravity constraints on the measurements of the speed of light}{Gravity Constraints on the Measurements of the Speed of Light}}.
 \newblock \btxjournalfont {International Journal of Astronomy and Astrophysics}, 9:265--273, \btxprintmonthyear{.}{Mar}{2019}{long}.
 \newblock {\latintext \btxurlfont{https://www.scirp.org/journal/paperinformation?paperid=94860}}.
+
+\bibitem {redpitaya-datasheet}
+\btxnamefont {\btxlastnamefont {{Red Pitaya d.o.o.}}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {{STEMlab 125-14 Hardware Documentation}}{{STEMlab 125-14 Hardware Documentation}}}.
+\newblock \url{https://redpitaya.readthedocs.io/en/latest/developerGuide/hardware/ORIG_GEN/125-14/top.html}, 2026.
+\newblock Accedido el 21 de junio de 2026.
+
+\bibitem {CHINA-SPACE-STATION}
+\btxnamefont {\btxlastnamefont {{Science and Technology Daily}}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {A look inside china space station}{A Look Inside China Space Station}}.
+\newblock \btxjournalfont {Science and Technology Daily}, \btxprintmonthyear{.}{jun}{2022}{long}.
+\newblock {\latintext \btxurlfont{https://pt.china-embassy.gov.cn/kjjl/202208/P020220831805597892710.pdf}}, Disponibilizado por la Embajada de la República Popular China en la República Portuguesa. Accedido el \today.
 
 \bibitem {scipy_odr}
 \btxnamefont {\btxlastnamefont {{SciPy Developers}}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {scipy.odr --- orthogonal distance regression --- {SciPy} documentation}{scipy.odr --- Orthogonal Distance Regression --- {SciPy} documentation}}.

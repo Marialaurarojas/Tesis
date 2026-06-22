@@ -10,7 +10,7 @@
 \contentsline {table}{\numberline {3.1}{\ignorespaces Estimaciones de la frecuencia de resonancia de un circuito RLC según \ac {HCC} en las tres localidades planteadas.}}{29}{table.caption.30}%
 \contentsline {table}{\numberline {3.2}{\ignorespaces Valores de los parámetros de ajuste de una curva lorentziana para el primer y segundo barrido del experimento en paralelo.}}{43}{table.caption.47}%
 \contentsline {table}{\numberline {3.3}{\ignorespaces Valores de los parámetros de ajuste de una curva lorentziana para el barrido del experimento en serie.}}{47}{table.caption.54}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Comparativa técnica entre la plataforma Red Pitaya y el generador AD9833.}}{51}{table.caption.58}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Comparativa técnica entre la plataforma Red Pitaya \cite {redpitaya-datasheet}y el generador AD9833 \cite {ad9833_datasheet}.}}{51}{table.caption.58}%
 \addvspace {10\p@ }
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
