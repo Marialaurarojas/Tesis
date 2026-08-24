@@ -83,7 +83,45 @@
 \input{dedicatoria}
 \input{agradecimientos}
 \begin{resumen}
-     Es una exposici\'on clara del tema tratado en el trabajo
+     Es una exposici\'on clara del tema tratado en el trabajo.
+%      Para redactar el **Resumen** de tu libro de tesis siguiendo estrictamente los lineamientos del Decanato de Estudios Profesionales (DEP) de la USB, debes tener en cuenta que este se escribe en **un único párrafo continuo de máximo 250 palabras**,, debe ir en la página romana **"v"**,, y **no debe contener citas bibliográficas** de ningún tipo,. Además, cualquier acrónimo que utilices por primera vez debe definirse inmediatamente entre paréntesis (por ejemplo, *Hipótesis de Céspedes-Curé (HCC)*),.
+
+% A continuación, te presento el esquema secuencial de las ideas que debes incluir y el orden exacto en el que deben fluir dentro de ese único párrafo para garantizar coherencia, rigor científico y apego a la normativa:
+
+% ---
+
+% # ESQUEMA SECUENCIAL PARA EL PÁRRAFO ÚNICO DE RESUMEN
+
+% ### 1. Contexto y Enunciado del Paradigma (Sentencias 1 y 2)
+% *   **Idea a incluir:** Comienza presentando de forma concisa el marco teórico y la hipótesis física que busca verificar tu investigación.
+% *   **Detalles a redactar:** Enuncia la Hipótesis de Céspedes-Curé (HCC), la cual postula que la velocidad de la luz (\\(c\\)) no es una constante universal en el vacío, sino que varía localmente en función de la densidad de energía gravitacional del medio (\\(c = k\sqrt{\rho}\\)).
+
+% ### 2. Objetivo Principal del Trabajo (Sentencia 3)
+% *   **Idea a incluir:** Define claramente qué hiciste en tu proyecto para abordar esta hipótesis.
+% *   **Detalles a redactar:** Declara el objetivo de diseñar, construir y evaluar un sistema experimental modular indirecto de alta precisión, basado en circuitos resonantes RLC, para medir variaciones infinitesimales de la permitividad eléctrica del vacío (\\(\epsilon_0\\)) como transductor de las fluctuaciones gravitacionales en la superficie terrestre.
+
+% ### 3. Metodología e Implementación de Ingeniería (Sentencias 4 y 5)
+% *   **Idea a incluir:** Resume el diseño de hardware, los módulos electrónicos implementados y el control de variables ambientales.
+% *   **Detalles a redactar:** Describe la arquitectura del montaje: el uso de un oscilador AD9833 controlado por un microcontrolador Arduino para barridos de frecuencia estables, un módulo de lectura con rectificador analógico y conversión digital (mediante el ADS1115), y un sistema de control térmico activo autónomo diseñado para neutralizar perturbaciones de temperatura ambiental en el circuito resonante.
+
+% ### 4. Tratamiento Matemático de los Datos (Sentencia 6)
+% *   **Idea a incluir:** Explica brevemente cómo se procesaron matemáticamente los datos para obtener la máxima precisión posible.
+% *   **Detalles a redactar:** Menciona el desarrollo del software en Python para la adquisición de datos y la implementación del algoritmo de Regresión Ortogonal de Distancias (ODR) como método estadístico para determinar la frecuencia de resonancia (\\(f_0\\)) minimizando la incertidumbre instrumental de ambos ejes.
+
+% ### 5. Resultados Clave Obtenidos (Sentencias 7 y 8)
+% *   **Idea a incluir:** Sintetiza los hallazgos experimentales más importantes y contrasta los prototipos desarrollados de manera cuantitativa.
+% *   **Detalles a redactar:** Expón que la configuración en paralelo superó con creces a la de serie en términos de estabilidad de la curva, alcanzando un error relativo mínimo de apenas **0,0036%** frente al **0,34%** de la serie. Sincera que, aunque los prototipos actuales demostraron gran robustez instrumental y térmica, se requiere de mayor resolución para discernir con certeza los corrimientos de frecuencia esperados en las tres altitudes geográficas propuestas (Carmen de Urea, USB y el Teleférico).
+
+% ### 6. Conclusión y Futuro Tecnológico (Sentencia 9)
+% *   **Idea a incluir:** Cierra con el impacto del trabajo y la ruta de experimentación avanzada propuesta.
+% *   **Detalles a redactar:** Concluye validando el método indirecto RLC como una alternativa viable frente al método directo con láser (Experimento I) y propone la transición tecnológica futura hacia la plataforma Red Pitaya y el acoplamiento por inducción para alcanzar la novena cifra significativa de resolución requerida.
+
+% ---
+
+% ### Palabras clave (Al final de la página, separadas por comas)
+% Debes incluir al final, fuera del párrafo del resumen, las siguientes 5 palabras clave de tu investigación,,:
+% > **Palabras clave:** hipótesis de Céspedes-Curé, circuitos resonantes RLC, regresión ortogonal de distancias, estabilidad térmica activa, velocidad de la luz.
+
 \end{resumen}
 \tableofcontents
 \listoffigures

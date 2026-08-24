@@ -30,7 +30,7 @@ Si por otro lado consideramos el campo gravitacional en un punto a una distancia
     g = \frac{GM}{r^2}
 \end{equation}
 
-La cual es una expresión similar a \ref{campoE}, solo que en este caso el papel de la constante de Coulomb lo cumple la constante de gravitación universal G. Si tomamos \ref{densidadElectrica} y sustituimos los parámetros por sus análogos gravitacionales obtenemos
+La cual es una expresión similar a \eqref{campoE}, solo que en este caso el papel de la constante de Coulomb lo cumple la constante de gravitación universal G. Si tomamos \eqref{densidadElectrica} y sustituimos los parámetros por sus análogos gravitacionales obtenemos
 
 \begin{equation} \label{densidad}
     \rho_g = \frac{g^2}{8 \pi G}
@@ -53,19 +53,19 @@ donde $r$ es la distancia al planeta. Si por otro lado se está llevando a cabo 
     \rho = \rho* + \frac{GM^2}{8 \pi r^4} + \frac{1}{2}\textbf{E} \cdot \textbf{D} + \frac{1}{2}\textbf{B} \cdot \textbf{H}   
 \end{equation}
 
-es decir, se debe considerar las contribuciones de los campos gravitatorios de las estrellas lejanas y de la Tierra, además de los campos eléctrico y magnético, donde se usa la expresión antes vista \ref{densidadElectrica} y su versión magnética $\rho_M = B^2/(2 \cdot \mu_0)$ . Recordemos que los vectores involucrados son $\textbf{E}$ campo eléctrico, $\textbf{D}$ vector de desplazamiento eléctrico, ya que se asume que no hay un medio polarizado,  $\textbf{B}$ campo magnético y su intensidad $\textbf{H}$.
+es decir, se debe considerar las contribuciones de los campos gravitatorios de las estrellas lejanas y de la Tierra, además de los campos eléctrico y magnético, donde se usa la expresión antes vista \eqref{densidadElectrica} y su versión magnética $\rho_M = B^2/(2 \cdot \mu_0)$ . Recordemos que los vectores involucrados son $\textbf{E}$ campo eléctrico, $\textbf{D}$ vector de desplazamiento eléctrico, ya que se asume que no hay un medio polarizado,  $\textbf{B}$ campo magnético y su intensidad $\textbf{H}$.
 
 \section{Propagación de la densidad de energía}
 
 Céspedes-Curé explica en su libro que, bajo el marco planteado antes, las ondas electromagnéticas son la propagación de la densidad de energía en el medio energético, a continuación un repaso matemático de su justificación para esta afirmación, el cual proviene de la página 166 de su libro \cite{bib:el-libro}.
 
-Consideremos un experimento dentro de un laboratorio terrestre, si tomamos la derivada parcial de la densidad de energía \ref{5-3}, los primeros dos términos se anulan. Si además se consideran las relaciones $\textbf{D}=\epsilon_0 \textbf{E}$, y $\textbf{H}=\textbf{B}/\mu_0$ se tiene
+Consideremos un experimento dentro de un laboratorio terrestre, si tomamos la derivada parcial de la densidad de energía \eqref{5-3}, los primeros dos términos se anulan. Si además se consideran las relaciones $\textbf{D}=\epsilon_0 \textbf{E}$, y $\textbf{H}=\textbf{B}/\mu_0$ se tiene
 
 \begin{equation} \label{5-4}
     \frac{\partial \rho}{\partial t}= - \nabla \cdot (\textbf{ExH})
 \end{equation}
 
-Al tomar nuevamente la derivada parcial con respecto al tiempo de \ref{5-4} se obtiene
+Al tomar nuevamente la derivada parcial con respecto al tiempo de \eqref{5-4} se obtiene
 
 \begin{equation} \label{5-5}
      \frac{\partial^2 \rho}{\partial t^2}= c^2 \nabla \cdot \{\textbf{Dx}(\nabla \textbf{xE})+\textbf{Bx}(\nabla \textbf{xH})\} 
@@ -77,7 +77,7 @@ en donde se usó la relación
 \end{equation}
 
 
-Por otro lado, si se calcula el gradiente de la ecuación \ref{5-3} se obtiene
+Por otro lado, si se calcula el gradiente de la ecuación~\ref{5-3} se obtiene
 
 \begin{equation} \label{5-6}
     \nabla \rho = \textbf{Dx}(\nabla \textbf{xE}) + \textbf{Bx}(\nabla \textbf{x H}) + \textbf{T}
@@ -89,21 +89,21 @@ Por otro lado, si se calcula el gradiente de la ecuación \ref{5-3} se obtiene
      \nabla ^2 \rho = \nabla \cdot \{\textbf{Dx}(\nabla\textbf{xE})+\textbf{Bx}(\nabla \textbf{xH})\}+\nabla \cdot \textbf{T}
  \end{equation}
 
-finalmente combinamos las ecuaciones \ref{5-5} y \ref{5-8} para obtener
+finalmente combinamos las ecuaciones~\ref{5-5} y~\ref{5-8} para obtener
 
 \begin{equation} \label{5-9}
      \nabla ^2 \rho -c^{-2} \frac{\partial^2 \rho}{\partial t^2} = \nabla \cdot \textbf{T}
 \end{equation}
 
-esta es la ecuación inhomogénea de D\textquotesingle Alembert, la cual nos dice que la densidad de energía se propaga como una onda longitudinal de velocidad igual a la velocidad de la luz, así Céspedes-Curé se basa en lo anterior para afirmar que las ondas electromagnéticas son ondas de densidad de energía. Es el mismo autor el que reconoce que en el caso de una onda electromagnética emitida en la Tierra y que se propaga en el espacio exterior, la ecuación anterior no se aplica, ya que los términos relacionados con la densidad de energía gravitatoria que se descartaron en la ecuación \ref{5-3} varían en el tiempo y por lo tanto adquieren relevancia.
+esta es la ecuación inhomogénea de D\textquotesingle Alembert, la cual nos dice que la densidad de energía se propaga como una onda longitudinal de velocidad igual a la velocidad de la luz, así Céspedes-Curé se basa en lo anterior para afirmar que las ondas electromagnéticas son ondas de densidad de energía. Es el mismo autor el que reconoce que en el caso de una onda electromagnética emitida en la Tierra y que se propaga en el espacio exterior, la ecuación anterior no se aplica, ya que los términos relacionados con la densidad de energía gravitatoria que se descartaron en la ecuación~\ref{5-3} varían en el tiempo y por lo tanto adquieren relevancia.
 
-Ecuaciones de ondas análogas a \ref{5-9} han sido aplicadas y estudiadas en otros contextos, como ondas a lo largo de una varilla sólida o de columnas de líquido \cite{vibracionesyondas}; por lo cual JCC propone un análogo de esos fenómenos físicos bien conocidos con la densidad de energía al decir que
+Ecuaciones de ondas análogas a \eqref{5-9} han sido aplicadas y estudiadas en otros contextos, como ondas a lo largo de una varilla sólida o de columnas de líquido \cite{vibracionesyondas}; por lo cual JCC propone un análogo de esos fenómenos físicos bien conocidos con la densidad de energía al decir que
 
 \begin{equation} \label{HCC}
     c = \frac{k}{\sqrt{\rho}}
 \end{equation}
 
-donde $k$ es una constante. Esta expresión \ref{HCC} es a lo que nos referiremos de ahora en adelante como \ac{HCC}, y será el objeto central de este estudio.
+donde $k$ es una constante. Esta expresión \eqref{HCC} es a lo que nos referiremos de ahora en adelante como \ac{HCC}, y será el objeto central de este estudio.
 
 \section{Antecedentes y justificación}
 Primero, es importante resaltar que ya existen algunos trabajos previos que fungen como respaldo de la \ac{HCC}, de los cuales se hará un breve repaso a continuación.
@@ -123,12 +123,12 @@ El efecto Doppler nos dice que si la nave se mueve con velocidad $v$ relativa a 
     \Delta f = f_i-f =f_i \left( \frac{v}{c}\right)
 \end{equation}
 
-como se explicó antes, en realidad la señal originada en la Tierra, frecuencia $f_e$, era recibida y retransmitida por la sonda Pioneer para llegar de nuevo a la Tierra, es decir, que existía un doble efecto Doppler. En este caso el cambio entre la frecuencia recibida $f$ y emitida por la Tierra es
+como se explicó antes, en realidad la señal originada en la Tierra, frecuencia $f_E$, era recibida y retransmitida por la sonda Pioneer para llegar de nuevo a la Tierra, es decir, que existía un doble efecto Doppler. En este caso el cambio entre la frecuencia recibida $f$ y emitida por la Tierra es
 
 \begin{equation} \label{doppler}
-    \Delta f = f_e - f = f_e \left( \frac{2v}{c} \right)
+    \Delta f = f_E - f = f_E \left( \frac{2v}{c} \right)
 \end{equation}
-Para el caso de una nave que se aleja del Sol hacia el espacio profundo, la velocidad $v$ no será una constante ya que la nave experimenta la fuerza gravitacional del Sol, lo que le induce una aceleración de  $a = G M_S / r_S^2$ en dirección radial hacia el Sol, donde $M_S$ es la masa del Sol y $R_S$ la distancia de la nave a su centro. Así mismo, es posible considerar la aceleración debida a la Tierra, de modo que la velocidad de la nave es
+Para el caso de una nave que se aleja del Sol hacia el espacio profundo, la velocidad $v$ no será una constante ya que la nave experimenta la fuerza gravitacional del Sol, lo que le induce una aceleración de  $a = G M_S / r_S^2$ en dirección radial hacia el Sol, donde $M_S$ es la masa del Sol y $r_S$ la distancia de la nave a su centro. Así mismo, es posible considerar la aceleración debida a la Tierra, de modo que la velocidad de la nave es
 
 \begin{equation} \label{velocidad}
     v = v_0 - \left( \frac{G M_s}{r_S^2} \right) t- \left( \frac{GM_E}{r_E^2}\right)t
@@ -139,19 +139,19 @@ donde $M_E$ es la masa de la Tierra, $r_E$ la distancia de la nave al centro de 
     c'=\frac{k}{\sqrt{\rho*+\rho_{S.Lejos}+\rho_{E.Lejos}}}
 \end{equation}
 
-El valor aceptado de $c$ es la velocidad de la luz afectada por la densidad gravitacional del Sol a 1 UA y la de la Tierra en su superficie. Asignamos el índice de refracción $n=1$ al espacio vacío cerca de la Tierra, y $n'$ al índice lejos del Sol. La ecuación \ref{5} implica que $c'$ aumenta al alejarse del Sol, y como $n'=c/c'$ entonces $n'<1$. Para $c$ podemos escribir una expresión similar a \ref{5} usando las densidades de energía en la Tierra, de modo que 
+El valor aceptado de $c$ es la velocidad de la luz afectada por la densidad gravitacional del Sol a 1 UA y la de la Tierra en su superficie. Asignamos el índice de refracción $n=1$ al espacio vacío cerca de la Tierra, y $n'$ al índice lejos del Sol. La ecuación~\ref{5} implica que $c'$ aumenta al alejarse del Sol, y como $n'=c/c'$ entonces $n'<1$. Para $c$ podemos escribir una expresión similar a \eqref{5} usando las densidades de energía en la Tierra, de modo que 
 
 \begin{equation} \label{7}
     n'=\frac{\sqrt{\rho*+\rho_{S.Lejos}+\rho_{E.Lejos}}}{\sqrt{\rho*+\rho_{S.1UA}+\rho_{E}}}
 \end{equation}
 
-Si consideramos en el efecto Doppler que en la región en la que se encuentra la sonda la velocidad de la luz es $c'$ tenemos que la ecuación \ref{doppler} es
+Si consideramos en el efecto Doppler que en la región en la que se encuentra la sonda la velocidad de la luz es $c'$ tenemos que la ecuación~\ref{doppler} es
 
 \begin{equation}
     \Delta f' = f_E - f' = f_E \left( \frac{2v}{c'} \right)
 \end{equation}
 
-donde la prima indica que la variable está sujeta a que la velocidad de la luz es $c'$. Si también consideramos que la velocidad cambia en el tiempo según la ecuación \ref{velocidad} tenemos 
+donde la prima indica que la variable está sujeta a que la velocidad de la luz es $c'$. Si también consideramos que la velocidad cambia en el tiempo según la ecuación~\ref{velocidad} tenemos 
 
 \begin{equation}
     \Delta f' = 2 f_E \left( v_0 - \left( \frac{G M_s}{r_S^2} \right) t- \left( \frac{GM_E}{r_E^2}\right)t \right) \frac{n'}{c}
@@ -178,9 +178,9 @@ Al comparar estas últimas dos expresiones se identifica la siguiente expresión
 \begin{equation} \label{18}
     a = G  \left(\frac{ M_S}{r_S^2} - \frac{M_E}{r_E^2} \right) (1-n')
 \end{equation}
-donde $n'$ está dada por la ecuación \ref{7}.
+donde $n'$ está dada por la ecuación~\ref{7}.
 
-Usando \ref{18} y la data publicada sobre la aceleración anómala \cite{anderson1998} Greaves calcula el índice de refracción $n'$ a 20 UA de distancia del Sol como $n'=0.9999735679$  \cite{Cisnotconstant}. Así mismo, usando la expresión \ref{7} y conociendo el valor de $n'$ Greaves estima la densidad de energía gravitacional debida a las estrellas lejanas como 
+Usando \eqref{18} y la data publicada sobre la aceleración anómala \cite{anderson1998} Greaves calcula el índice de refracción $n'$ a 20 UA de distancia del Sol como $n'=0.9999735679$  \cite{Cisnotconstant}. Así mismo, usando la expresión \eqref{7} y conociendo el valor de $n'$ Greaves estima la densidad de energía gravitacional debida a las estrellas lejanas como 
 
 \begin{equation}
     \rho *=1.0838 \times 10^{15} \text{ J/m}^3
@@ -199,7 +199,7 @@ Otra anomalía relacionada con el efecto Doppler es la llamada "Flyby anomaly", 
 
 Se ha detectado en diversas sondas como: Galileo, NEAR, Cassini, Rosetta y MESSENGE \cite{Anderson2008flyby} un cambio anormal de la energía cinética en los sobrevuelos cercanos a diferentes cuerpos, en especial a la Tierra, por ser más fácil de detectar. Este cambio inesperado va desde un aumento de la velocidad, una reducción de la misma e incluso ninguna anomalía. Para medir la velocidad en este caso también se usa el efecto Doppler que, como se vio en el apartado anterior, puede verse afectado por el valor distinto de $c'$ en la cercanía de la nave. En su artículo de 2020, Greaves y colaboradores \cite{Greavesflyby} plantean la hipótesis de Céspedes-Curé como posible explicación a Flyby Anomaly, y hacen cálculos para la anomalía en los sobre-vuelos a la Tierra hechos por Galileo 1 (diciembre de 1990) y NEAR (enero de 1998). A continuación un repaso por el razonamiento matemático detrás de sus resultados.
 
-Consideremos de nuevo que $c$ es la velocidad de la luz en la superficie de la Tierra, mientras que $c'$ es la velocidad en el punto en el espacio en el que se encuentra la sonda espacial. La ecuación \ref{7} sigue siendo válida, por lo que la podemos escribir como
+Consideremos de nuevo que $c$ es la velocidad de la luz en la superficie de la Tierra, mientras que $c'$ es la velocidad en el punto en el espacio en el que se encuentra la sonda espacial. La ecuación~\ref{7} sigue siendo válida, por lo que la podemos escribir como
 \begin{equation} \label{n'flyby}
     n'=\frac{c}{c'}=\frac{\sqrt{\rho'}}{\sqrt{\rho}}=\frac{\sqrt{\rho'}}{\sqrt{\rho*+\rho_S+\rho_E}}
 \end{equation}
@@ -209,7 +209,7 @@ Consideremos de nuevo que $c$ es la velocidad de la luz en la superficie de la T
     c'= c \frac{\sqrt{\rho}}{\sqrt{\rho'}}    
 \end{equation}
 
-Por otro lado, de la ecuación del efecto Doppler \ref{doppleroriginal} se tiene que la velocidad radial a la que se aleja la nave de la Tierra está dada por
+Por otro lado, de la ecuación del efecto Doppler~\ref{doppleroriginal} se tiene que la velocidad radial a la que se aleja la nave de la Tierra está dada por
 \begin{equation}
     v_r = c' \frac{\Delta f}{f} = c \frac{\Delta f}{f}\frac{\sqrt{\rho}}{\sqrt{\rho'}}   
 \end{equation}
@@ -242,23 +242,23 @@ Para el sistema de referencia de la Tierra, en su maniobra de asistencia la nave
     0=c \frac{\Delta f^+}{f} \sqrt{\frac{\rho}{\rho*+\frac{G M_s}{(r^+_S)^2} + \frac{GM_E}{(r^+_E)^2}}} - c \frac{\Delta f^-}{f} \sqrt{\frac{\rho}{\rho*+\frac{G M_s}{(r^-_S)^2} + \frac{GM_E}{(r^-_E)^2}} }
 \end{equation}
 
-En la práctica los valores numéricos de las ecuaciones \ref{velocidadessinHCC} son virtualmente iguales, difieren por una cantidad 6 órdenes de magnitud menor \cite{Greavesflyby}, por lo tanto digamos ahora que representan el valor $V_\infty$. Así mismo, la anomalía medida está dada por la diferencia de los términos en raiz cuadrada incluidos en la ecuación \ref{conservaciónenergía}, escribimos entonces que la anomalía realmente está dada por 
+En la práctica los valores numéricos de las ecuaciones~\ref{velocidadessinHCC} son virtualmente iguales, difieren por una cantidad 6 órdenes de magnitud menor \cite{Greavesflyby}, por lo tanto digamos ahora que representan el valor $V_\infty$. Así mismo, la anomalía medida está dada por la diferencia de los términos en raiz cuadrada incluidos en la ecuación~\ref{conservaciónenergía}, escribimos entonces que la anomalía realmente está dada por 
 \begin{equation} \label{flyanomalyREAL}
     V_{anom} = V_\infty \sqrt{\frac{\rho}{\rho*+\frac{G M_s}{(r^+_S)^2} + \frac{GM_E}{(r^+_E)^2}}} - V_\infty \sqrt{\frac{\rho}{\rho*+\frac{G M_s}{(r^-_S)^2} + \frac{GM_E}{(r^-_E)^2}} }
 \end{equation}
 
 esto nos dice que la cantidad de anomalía, e incluso su signo, depende de la ubicación de los puntos de entrada y salida de la sonda; de modo que se logran identificar tres casos:
 \begin{itemize}
-    \item $r_S^+=r_S^-$ y $r_E^+=r_E^-$: aquí los puntos de entrada y salida son simétricos respecto tanto a la Tierra como al Sol, así que los dos términos a la derecha de \ref{flyanomalyREAL} son iguales y no hay anomalía detectada.
+    \item $r_S^+=r_S^-$ y $r_E^+=r_E^-$: aquí los puntos de entrada y salida son simétricos respecto tanto a la Tierra como al Sol, así que los dos términos a la derecha de \eqref{flyanomalyREAL} son iguales y no hay anomalía detectada.
 
     
-    \item $r_S^+ \neq r_S^-$ y $r_E^+=r_E^-$: es este caso los dos términos de \ref{flyanomalyREAL} no son iguales, así que para que se cumpla la ecuación de conservación, ec. \ref{conservaciónenergía}, es necesario que $\Delta f^+ \neq \Delta f^-$ por lo que se podría medir una anomalía usando la ecuación \ref{nasaanomaly}, aunque según los cálculos la anomalía sería muy pequeña\cite{Greavesflyby}.
+    \item $r_S^+ \neq r_S^-$ y $r_E^+=r_E^-$: es este caso los dos términos de \eqref{flyanomalyREAL} no son iguales, así que para que se cumpla la ecuación de conservación, ec.~\ref{conservaciónenergía}, es necesario que $\Delta f^+ \neq \Delta f^-$ por lo que se podría medir una anomalía usando la ecuación~\ref{nasaanomaly}, aunque según los cálculos la anomalía sería muy pequeña\cite{Greavesflyby}.
 
     
-    \item $r_S^+ \neq r_S^-$ y $r_E^+ \neq r_E^-$: las distancias de entrada y salida respecto al Sol y a la Tierra son distintas, de modo que nada se simplifica en la ecuación \ref{flyanomalyREAL} y por ende una mayor anomalía es detectable con \ref{nasaanomaly}.
+    \item $r_S^+ \neq r_S^-$ y $r_E^+ \neq r_E^-$: las distancias de entrada y salida respecto al Sol y a la Tierra son distintas, de modo que nada se simplifica en la ecuación~\ref{flyanomalyREAL} y por ende una mayor anomalía es detectable con \eqref{nasaanomaly}.
 \end{itemize}
 
-Greaves y colaboradores usan la ecuación \ref{flyanomalyREAL} para calcular la anomalía en los casos de Galileo I y NEAR, los resultados se encuentran en la tabla \ref{tab:resultadoflyanomaly}. De ella podemos concluir que la Hipótesis de Céspedes-Curé logra predecir la anomalía de sobrevuelo con gran precisión, con diferencias de alrededor del $0.5\%$.
+Greaves y colaboradores usan la ecuación~\ref{flyanomalyREAL} para calcular la anomalía en los casos de Galileo I y NEAR, los resultados se encuentran en la tabla \ref{tab:resultadoflyanomaly}. De ella podemos concluir que la Hipótesis de Céspedes-Curé logra predecir la anomalía de sobrevuelo con gran precisión, con diferencias de alrededor del $0.5\%$.
 
 \begin{table}[h!] 
 \centering
@@ -277,7 +277,7 @@ Calculated Flyby Anomaly (mm/s) &\multicolumn{2}{c}{3.944}   &\multicolumn{2}{c}
 Difference (\%) &\multicolumn{2}{c}{+0.40}  &\multicolumn{2}{c}{-0.57} \\
 \hline
 \end{tabular}
-\caption{Distancias al Sol y a la Tierra con los puntos de entrada y salida calculados, predicciones usando \ref{flyanomalyREAL} de los valores de Flyby Anomaly para Galileo I (diciembre de 1990) y NEAR (enero de 1998). Tabla 2 de Graves y colaboradores \cite{Greavesflyby}.} \label{tab:resultadoflyanomaly}
+\caption{Distancias al Sol y a la Tierra con los puntos de entrada y salida calculados, predicciones usando \eqref{flyanomalyREAL} de los valores de Flyby Anomaly para Galileo I (diciembre de 1990) y NEAR (enero de 1998). Tabla 2 de Graves y colaboradores \cite{Greavesflyby}.} \label{tab:resultadoflyanomaly}
 \end{table}
 
 \subsection{Análisis de medidas previas de la velocidad de la luz y aplicación de HCC sobre cualquier punto en la Tierra}
@@ -320,13 +320,13 @@ Método & Año & {$C$ (m/s)} & {$C$-error (m/s)} & {$g$ (m/s$^2$)} \\
 \subsubsection{Aplicación sobre cualquier punto en la Tierra}
 
 La densidad de energía gravitacional en la superficie de la Tierra está dada por las contribuciones del Sol ($\rho_S$), la propia Tierra ($\rho_E$)y las estrellas lejanas ($\rho*$); ya que las contribuciones de la Luna y demás planetas en el sistema solar son insignificantes en la superficie terrestre, según Graves \cite{propiedadesdelespaciovacio}.
-Al aplicar la ecuación \ref{HCC} se tiene que la velocidad de la luz en la superficie de la Tierra es
+Al aplicar la ecuación~\ref{HCC} se tiene que la velocidad de la luz en la superficie de la Tierra es
 
 \begin{equation}
     c_E = \frac{k}{\sqrt{\rho*+\rho_S+\rho_E}}
 \end{equation}
 
-Si se considera otro punto cualquiera en la Tierra, digamos $i$ , con valor del campo gravitacional $g_i$, es posible usar la ecuación \ref{densidad} para encontrar la densidad de energía en ese punto y así tener que la velocidad de la luz allí está dada por
+Si se considera otro punto cualquiera en la Tierra, digamos $i$ , con valor del campo gravitacional $g_i$, es posible usar la ecuación~\ref{densidad} para encontrar la densidad de energía en ese punto y así tener que la velocidad de la luz allí está dada por
 
 \begin{equation}
     c_i = \frac{k}{\sqrt{\rho*+\rho_S+ \frac{g_i^2}{8\pi G}}}
@@ -349,7 +349,7 @@ Se puede graficar la ecuación anterior para estudiar su comportamiento como fun
 \begin{figure}[hbt]
 \centering
 \includegraphics[scale=0.60]{Curva c_i vs g_i.png}
-\caption[]{Comportamiento de la ecuación \ref{c_i} como función de $g_i$ en un rango de 0 a 100 m/s$^2$. }
+\caption[]{Comportamiento de la ecuación~\ref{c_i} como función de $g_i$ en un rango de 0 a 100 m/s$^2$. }
 \label{fig:c_itotal}
 \end{figure}
 
@@ -357,7 +357,7 @@ Se puede graficar la ecuación anterior para estudiar su comportamiento como fun
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.60]{curva c_i vs g_i zoom.png}
-\caption[]{Comportamiento de la ecuación \ref{c_i} como función de $g_i$ en un rango de 9 a 11 m/s$^2$. }
+\caption[]{Comportamiento de la ecuación~\ref{c_i} como función de $g_i$ en un rango de 9 a 11 m/s$^2$. }
 \label{fig:c_izoom}
 \end{center}
 \end{figure}
@@ -367,7 +367,7 @@ El resultado de superponer a la línea predicha por la \ac{HCC} los datos propor
 \begin{figure}[hbt]
 \begin{center}
 \includegraphics[scale=1]{Imagen4.png}
-\caption[]{Datos de velocidad de la luz vs gravedad incluidos en \ref{tab:ramdaniDatos} superpuestos a la linea predicha por \ac{HCC} en la ecuación \ref{c_i}}
+\caption[]{Datos de velocidad de la luz vs gravedad incluidos en la tabla \ref{tab:ramdaniDatos} superpuestos a la linea predicha por \ac{HCC} en la ecuación~\ref{c_i}}
 \label{fig:ramdanisigueHCC}
 \end{center}
 \end{figure}
@@ -375,7 +375,7 @@ El resultado de superponer a la línea predicha por la \ac{HCC} los datos propor
 
 \section{Resultados esperados}
 
-Con el fin de confirmar o refutar la Hipótesis de Céspedes-Curé, se plantea realizar mediciones precisas en tres localidades con diferente valor local de la gravedad, a saber  el campus de la \ac{USB} (Altura 1176 m. Gravedad 977967,685 miligales), en la localidad del teleférico de Caracas (2119 m. 977779,400 miligales) y en la población de Carmen de Urea (Altura  20,36 m. 978251,240 miligales); los valores de la gravedad fueron proporcionados por la Doctora Nuris Orihuela \cite{comunicacionpersonal}. Al aplicar la ecuación \ref{c_i} a cada localidad se tiene que la velocidad de la luz en esos puntos geográficos está dada por los valores incluidos en la tabla \ref{tab:Valores_c_esperados}. Vemos entonces  que los valores de $c$ difieren a partir de la novena cifra significativa, por lo que el mayor reto de la verificación experimental es lograr medidas suficientemente precisas para poder discernir el efecto de la \ac{HCC}.
+Con el fin de confirmar o refutar la Hipótesis de Céspedes-Curé, se plantea realizar mediciones precisas en tres localidades con diferente valor local de la gravedad, a saber  el campus de la \ac{USB} (Altura 1176 m. Gravedad 977967,685 miligales), en la localidad del teleférico de Caracas (2119 m. 977779,400 miligales) y en la población de Carmen de Urea (Altura  20,36 m. 978251,240 miligales); los valores de la gravedad fueron proporcionados por la Doctora Nuris Orihuela \cite{comunicacionpersonal}. Al aplicar la ecuación~\ref{c_i} a cada localidad se tiene que la velocidad de la luz en esos puntos geográficos está dada por los valores incluidos en la tabla \ref{tab:Valores_c_esperados}. Vemos entonces  que los valores de $c$ difieren a partir de la novena cifra significativa, por lo que el mayor reto de la verificación experimental es lograr medidas suficientemente precisas para poder discernir el efecto de la \ac{HCC}.
 
 \begin{table}[h]
 \centering
@@ -398,7 +398,7 @@ Teleférico & 9.777794 & 29979247\textcolor{blue}{5.47} \\
 \section{Implicaciones de la HCC}
 De demostrarse cierta, la Hipótesis de Céspedes-Curé tendría grandes implicaciones en la física sobre todo en la astronomía, algunas de ellas son:
  \begin{itemize}
-     \item \textbf{Explicación a la curva de rotación plana de las galaxias:} Al estudiar como se comporta la velocidad orbital de las estrellas en una galaxia como función de la distancia radial del centro de la misma, se ha encontrado que para una gran parte de los valores más grandes de distancia la velocidad es constante. Para un sistema de este tipo, en el que la mayor cantidad de la masa está en el centro, se espera que la velocidad orbital disminuya con la distancia como pasa, por ejemplo, con los planetas en el sistema solar. Las galaxias tiene mayor masa en su centro, esto se puede saber debido a la gran luminosidad de los mismos debida a la alta densidad de estrellas en esa zona, en comparación con los bordes. Por lo tanto, las velocidades esperadas y las observadas discrepan mucho en su comportamiento, esto ha llevado a interpretar que existe una gran masa distribuida de forma uniforme en las galaxias y la cual no emite luz, la cual se llamó materia oscura. Sin embargo, la \ac{HCC} puede demostrar que la discrepancia de la velocidad se debe, una vez más, a que el efecto Doppler no funciona correctamente por ignorar que la velocidad de la luz es distinta en la región en la que se encuentra la galaxia. De hecho, las estrellas cerca de los bordes experimentan una densidad de energía gravitacional adicional que no perciben las estrellas del centro: la densidad debida a la propia galaxia. Es así como la hipótesis puede solucionar el problema actual de encontrar la materia oscura, simplemente no existe.
+     \item \textbf{Explicación a la curva de rotación plana de las galaxias:} Al estudiar como se comporta la velocidad orbital de las estrellas en una galaxia como función de la distancia radial del centro de la misma, se ha encontrado que para una gran parte de los valores más grandes de distancia la velocidad es constante. Para un sistema de este tipo, en el que la mayor cantidad de la masa está en el centro, se espera que la velocidad orbital disminuya con la distancia como pasa, por ejemplo, con los planetas en el sistema solar. Las galaxias tiene mayor masa en su centro, esto se puede saber debido a la gran luminosidad de los mismos debida a la alta densidad de estrellas en esa zona, en comparación con los bordes. Por lo tanto, las velocidades esperadas y las observadas discrepan mucho en su comportamiento, esto ha llevado a interpretar que existe una gran masa distribuida de forma uniforme en las galaxias y la cual no emite luz, por lo que se llamó materia oscura. Sin embargo, la \ac{HCC} puede demostrar que la discrepancia de la velocidad se debe, una vez más, a que el efecto Doppler no funciona correctamente por ignorar que la velocidad de la luz es distinta dependiendo de la ubicación de la estrella dentro de la galaxia. La densidad de energía gravitacional en el centro de la galaxia es mucho mayor que en los bordes, lo que lleva a mayores valores de c en esas zonas alejadas, originando asi una sobreestimacion de la velocidad de las estrellas en los bordes. Es así como la hipótesis puede solucionar el problema actual de encontrar la materia oscura, simplemente no existe.
 
 \begin{figure}[hbt]
 \begin{center}
@@ -416,6 +416,6 @@ De demostrarse cierta, la Hipótesis de Céspedes-Curé tendría grandes implica
      
  \end{itemize}
 
-%AL TERMINAR EL CAPITULO PUEDES COMPRAR PAPELERÍA-tres clases del curso de acuarelas
+
 
 

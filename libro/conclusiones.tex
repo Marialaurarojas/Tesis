@@ -1,2 +1,47 @@
 \chapter*{Conclusiones}
 
+% Para la sección de **Conclusiones**, los lineamientos del Decanato de Estudios Profesionales (DEP) de la USB exigen que estas estén **bien razonadas, fundamentadas y que se deriven de forma lógica** de los resultados obtenidos. 
+
+% Un aspecto normativo crítico que debes cuidar al redactar (y que se observa en los trabajos aprobados de Jesús Ruiz o Celeste Méndez) es que **las conclusiones y las recomendaciones no deben numerarse**. Deben redactarse en forma de prosa fluida, párrafo por párrafo.
+
+% A continuación, te presento un esquema sumamente detallado, estructurado de manera lógica y coherente con el desarrollo experimental de tu tesis, para que te sirva como plantilla de redacción:
+
+% ---
+
+% # ESQUEMA DETALLADO PARA LA REDACCIÓN DE LAS CONCLUSIONES
+
+% ### Parte 1: Conclusión Principal y Viabilidad del Enfoque Indirecto
+% *   **Párrafo 1 (La superación del Experimento I y la validez del método RLC):**
+%     *   *De qué hablar:* Comienza concluyendo sobre el objetivo principal del trabajo: la viabilidad del método indirecto RLC para registrar variaciones en la velocidad de la luz inducidas por la gravedad, en comparación con el método directo.
+%     *   *Qué mencionar:* Contrasta el pobre desempeño del Experimento I (montaje directo con láser y osciloscopio, que solo obtuvo una precisión del 1% y donde el análisis digital a veces no seguía tendencias lineales) con el Experimento II, concluyendo que la vía indirecta a través de la permitividad eléctrica (\\(\epsilon_0\\)) es metodológicamente la única opción viable en el laboratorio para aproximarse a la resolución infinitesimal que exige la verificación de la Hipótesis de Céspedes-Curé (HCC).
+
+% ### Parte 2: Evaluación Técnica del Circuito Resonante
+% *   **Párrafo 2 (Configuración Serie vs. Paralelo y Factor de Calidad):**
+%     *   *De qué hablar:* Emite un veredicto técnico sobre cuál de las dos configuraciones de circuito resonante evaluadas ofreció un mejor comportamiento físico.
+%     *   *Qué mencionar:* Compara los resultados numéricos obtenidos. Explica que, en términos de dispersión y ajuste, los mejores resultados de barrido y estabilidad de la curva se dieron con la **conexión en paralelo** (cuyo error relativo de la frecuencia de resonancia se ubicó en un mínimo de **0.0036%**), mientras que la **conexión en serie** desmejoró notablemente alcanzando un error del **0.34%** (dos órdenes de magnitud por encima).
+
+% ### Parte 3: Desempeño del Control Ambiental e Instrumental
+% *   **Párrafo 3 (Estabilización Térmica Activa):**
+%     *   *De qué hablar:* Concluye sobre la efectividad del módulo estabilizador autónomo de temperatura y su rol en el control de variables ambientales parásitas.
+%     *   *Qué mencionar:* Resalta que el circuito regulador logró mantener la temperatura interna del espacio semiaislado prácticamente constante frente a las fluctuaciones del ambiente exterior. Concluye que esto es un logro indispensable, ya que la aproximación experimental asume que cualquier corrimiento en \\(f_0\\) se debe puramente a la gravedad y no a cambios térmicos que afecten físicamente a los componentes electrónicos.
+% *   **Párrafo 4 (La instrumentación y limitaciones del hardware comercial):**
+%     *   *De qué hablar:* Analiza críticamente el rendimiento del hardware modular seleccionado (Arduino, oscilador AD9833, convertidor ADS1115).
+%     *   *Qué mencionar:* Concluye que la automatización del barrido disminuyó el error humano y permitió registrar curvas suaves, pero el ruido del protoboard, la falta de resistencia de protección en algunos prototipos y la resolución de bits del ADC comercial representaron el principal cuello de botella de hardware para estabilizar la cima de la curva de resonancia.
+
+% ### Parte 4: Rigor Matemático y Análisis DACE (Dispositivos y Algoritmos)
+% *   **Párrafo 5 (La superioridad del ajuste ODR sobre el Curve Fit común):**
+%     *   *De qué hablar:* Explica la conclusión metodológica fundamental respecto al tratamiento estadístico de los datos.
+%     *   *Qué mencionar:* Concluye que, dado que el oscilador AD9833 posee un reloj con un margen de incertidumbre propio (0.1 Hz), el ajuste ordinario de mínimos cuadrados (`curve_fit`) resulta matemáticamente insuficiente porque asume que el eje \\(X\\) no tiene error. Concluye que el uso de la **Regresión Ortogonal de Distancias (ODR)** es obligatorio para ponderar correctamente los errores en ambos ejes, demostrando matemáticamente que la incertidumbre de la frecuencia de resonancia calculada (\\(Var(f_0)\\)) depende tanto de la estrechez de la curva como de la disminución milimétrica del tamaño del paso del barrido.
+
+% ### Parte 5: Alcance Final y Recomendaciones Tecnológicas (Trabajos Futuros)
+% *   **Párrafo 6 (El estado actual frente a las tres locaciones propuestas):**
+%     *   *De qué hablar:* Sincérate con los resultados finales frente a la meta utópica de medir la variación entre Carmen de Urea, la USB y el Teleférico.
+%     *   *Qué mencionar:* Concluye con honestidad científica que los prototipos actuales RLC, aunque estables para barridos macro, aún no alcanzan la resolución de la novena o décima cifra significativa requerida para diferenciar estas altitudes en la Tierra.
+% *   **Párrafo 7 (La ruta tecnológica recomendada para el futuro):**
+%     *   *De qué hablar:* Plantea soluciones de ingeniería concretas basadas en tus análisis matemáticos finales para las próximas tesis de la USB en esta línea de investigación.
+%     *   *Qué mencionar:* Recomienda explícitamente tres mejoras clave estudiadas en tu marco de discusión:
+%         1. Implementar la conexión de los módulos resonantes **por inducción** para eliminar la pérdida de energía por cables físicos y simplificar el circuito amplificador.
+%         2. Sustituir el Arduino por la plataforma **Red Pitaya STEMlab 125-14** para realizar un muestreo de alta frecuencia y ajustar directamente la señal sinusoidal sin necesidad de rectificación de voltaje.
+%         3. Evaluar el comportamiento del transductor mediante la respuesta a un **único pulso de excitación** (señal amortiguada) en lugar del barrido de frecuencia clásico.
+
+% ---

@@ -23,7 +23,7 @@ donde
     \item $d_{x_i},\, d_{y_i}$: desviaciones estándar (o pesos) que representan la incertidumbre de los datos.
 \end{itemize}
 
-En nuestro caso la función $f$ es la función Lorentziana:
+En nuestro caso la función $F$ es la función Lorentziana:
 \begin{equation}
     F(x) = \frac{A}{(x - x_0)^2 + \gamma^2} + \text{offset} \label{eq:lorentz}
 \end{equation}
@@ -33,7 +33,7 @@ de modo que los parámetros de ajuste están dados por el vector
     \boldsymbol{\beta} = \left(x_0,\, A,\, \gamma,\, \text{offset}\right) \label{eq:beta}
 \end{equation}
 
-En \texttt{scipy}, con la función \texttt{RealData(x, y, sx=sx, sy=sy)} se incluyen los valores del error de medición asociado a cada punto $x_i$ e $y_i$ como los correspondientes pesos en la ecuación de sumatoria \eqref{eq:S}:
+En \texttt{scipy}, con la función \texttt{RealData(x, y, sx=sx, sy=sy)} se incluyen los valores del error de medición asociado a cada punto $x_i$ e $y_i$ como los correspondientes pesos en la ecuación de sumatoria~\ref{eq:S}:
 \begin{equation}
     d_{x_i} = s_{x_i} \qquad \text{y} \qquad d_{y_i} = s_{y_i} \label{eq:pesos}
 \end{equation}
@@ -219,7 +219,7 @@ La otra integral que aparece tiene $u$ en el numerador; sin embargo al ser simé
 % =====================================================================
 \subsection{Matriz final de \texorpdfstring{$\mathbb{J}^T W \mathbb{J}$}{J^T W J}}
 
-Usando las consideraciones anteriores, integrando las ecuaciones \eqref{eq:diagonal}:
+Usando las consideraciones anteriores, integrando las ecuaciones~\ref{eq:diagonal}:
 
 \begin{align}
     \left[\mathbb{J}^T W \mathbb{J}\right]_{x_0 x_0} &\approx \frac{N A^2 \pi}{8l\sigma_y^2\gamma^5} \\[4pt]
@@ -228,7 +228,7 @@ Usando las consideraciones anteriores, integrando las ecuaciones \eqref{eq:diago
     \left[\mathbb{J}^T W \mathbb{J}\right]_{\text{off\,off}} &= \frac{N}{\sigma_y^2}
 \end{align}
 
-y en las ecuaciones \eqref{eq:fuera_diag}:
+y en las ecuaciones~\ref{eq:fuera_diag}:
 
 \begin{align}
     \left[\mathbb{J}^T W \mathbb{J}\right]_{A x_0} &\approx 0 \\

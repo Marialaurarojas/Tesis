@@ -28,7 +28,7 @@ Por otro lado, la capacitancia de un capacitor de placas paralelas está dada po
 \begin{equation} \label{capacitanciaplacasparalelas}
 C_a=\varepsilon_0\,\frac{A_c}{d}=\frac{1}{c^{2}\mu_0}\,\frac{A_c}{d}
 \end{equation}
-Con $A_c$ siendo el área de las placas y $d$ la separación entre ellas. En cualquier capacitor se cumple que su capacitancia depende de su geometría y del material, con ecuaciones análogas a \ref{capacitanciaplacasparalelas} en cada caso. Entonces, medir la capacitancia de un capacitor permite conocer el valor de $\epsilon_0$ que es equivalente a medir la velocidad de la luz. 
+Con $A_c$ siendo el área de las placas y $d$ la separación entre ellas. En cualquier capacitor se cumple que su capacitancia depende de su geometría y del material, con ecuaciones análogas a \eqref{capacitanciaplacasparalelas} en cada caso. Entonces, medir la capacitancia de un capacitor permite conocer el valor de $\epsilon_0$ que es equivalente a medir la velocidad de la luz. 
 
 Una manera de medir indirectamente la capacitancia $C$ es conectar dicho capacitor en serie (o en paralelo) con una resistencia R y un inductor L para crear un circuito R-L-C. %La característica principal de este tipo de circuitos es que la energía almacenada en el capacitor se va liberando y a su vez almacenando en el inductor, para ser luego este último el que proporcione la energía al capacitor, en este proceso la corriente eléctrica cambia su dirección de modo que la corriente es alterna. Al aplicarle una corriente de frecuencia $f$ al circuito este responde con la producción de una corriente con la misma frecuencia y distinta amplitud, la amplitud de la corriente será máxima cuando la frecuencia aplicada sea igual a la frecuencia de resonancia del circuito la cual está dada por 
 El comportamiento característico de este tipo de circuitos es la existencia de un intercambio entre la energía almacenada en el capacitor y el inductor, hasta que el capacitor queda vacío y ahora es la bobina quien surte de energía al circuito con una corriente de signo opuesto que va cargando al capacitor, en el tiempo este cambio de la dirección del flujo de la corriente se interpreta como una corriente alterna. Entonces, al aplicarle una corriente de frecuencia $f$ al circuito este responde con la producción de una corriente con la misma frecuencia y distinta amplitud, la amplitud de la corriente será máxima cuando la frecuencia aplicada sea igual a la frecuencia de resonancia del circuito la cual está dada por 
@@ -43,7 +43,7 @@ Aquí $L$ es la inductancia de la bobina. Si consideramos un solenoide toroidal 
 L=\frac{\mu_0\,N^{2}\,A_L}{2\pi r}
 \end{equation}
 
-Como el fin último es medir la velocidad de la luz en diferentes puntos geográficos, si se usa el mismo inductor en el circuito, la ecuación \ref{L-selenoide} indica que $L$ no se verá modificado razón por la cual lo tomamos como una constante. Así al hacer la sustitución de ecuación \ref{capacitanciaplacasparalelas} en \ref{frecuenciaResonancia} nos queda
+Como el fin último es medir la velocidad de la luz en diferentes puntos geográficos, si se usa el mismo inductor en el circuito, la ecuación~\ref{L-selenoide} indica que $L$ no se verá modificado razón por la cual lo tomamos como una constante. Así al hacer la sustitución de ecuación~\ref{capacitanciaplacasparalelas} en \eqref{frecuenciaResonancia} nos queda
 
 \begin{equation} \label{f0igualaK0c}
 f_0=\frac{c}{2\pi\sqrt{\dfrac{L\,A_c}{d\,\mu_0}}}=k_0\,c
@@ -55,7 +55,7 @@ Donde $k_0$ sería una constante dada por
 k_0=\frac{1}{2\pi\sqrt{\dfrac{L\,A_c}{d\,\mu_0}}}
 \end{equation}
 
-El experimento consiste entonces en hacer un barrido de frecuencias en la señal de entrada del circuito resonante y medir su respuesta, la curva obtenida tendrá un valor máximo correspondiente a la frecuencia de resonancia, la cual se relaciona directamente con c según la ecuación \ref{f0igualaK0c}. 
+El experimento consiste entonces en hacer un barrido de frecuencias en la señal de entrada del circuito resonante y medir su respuesta, la curva obtenida tendrá un valor máximo correspondiente a la frecuencia de resonancia, la cual se relaciona directamente con c según la ecuación~\ref{f0igualaK0c}. 
 
 Los valores esperados de $c$ según la hipótesis de Cespedes-Curé para cada uno de los puntos donde se realizarán mediciones ya se expusieron previamente en la tabla \ref{tab:Valores_c_esperados}. Para calcular los cambios esperados en la frecuencia de resonancia del mismo circuito pero en estas tres locaciones, que se resumen en la tabla \ref{tab:estimacionesdef0segunHCC},  se usó el valor de la constante como $k_0=0.002165397~\text{m}^{-1}$, el cuál es simplemente un valor genérico pero realista que se calculó con los siguientes datos $L=6.70\times 10^{-3}\,\text{H}$, $A_c=0.04\,\text{m}^{2}$, $d=0.001\,\text{m}$ y $\mu_0=4\pi\cdot 10^{-7} $ H/m.
 
@@ -93,7 +93,7 @@ Esto nos dice que basta con disminuir la resistencia y aumentar la inductancia p
 
 \section{Planteamiento del procedimiento experimental}
 
-Usar la relación \ref{permitividadyc} para estimar el valor de la velocidad de la luz no es algo nuevo \cite{GuiaLab-SUNY}\cite{GuiaLAB-MIT}. Tomemos como punto de partida el montaje experimental planteado en \cite{GuiaLab-SUNY}, donde se usa el esquema de la figura \ref{fig:circuitoGUIASUNY}. Ellos plantean determinar los valores de $L$ y $C$ a partir de las características físicas de los componentes electrónicos, sin embargo en nuestro caso eso no es necesario ya que el objetivo es comparar el comportamiento del circuito en las tres locaciones, y para ello basta con distinguir el pequeño corrimiento del pico en el barrido de frecuencia que predice la \ac{HCC}.
+Usar la relación \eqref{permitividadyc} para estimar el valor de la velocidad de la luz no es algo nuevo \cite{GuiaLab-SUNY}\cite{GuiaLAB-MIT}. Tomemos como punto de partida el montaje experimental planteado en \cite{GuiaLab-SUNY}, donde se usa el esquema de la figura \ref{fig:circuitoGUIASUNY}. Ellos plantean determinar los valores de $L$ y $C$ a partir de las características físicas de los componentes electrónicos, sin embargo en nuestro caso eso no es necesario ya que el objetivo es comparar el comportamiento del circuito en las tres locaciones, y para ello basta con distinguir el pequeño corrimiento del pico en el barrido de frecuencia que predice la \ac{HCC}.
 
 \begin{figure}[h!]\centering\includegraphics[width=0.5\linewidth]{SUNY-circuito.png}\caption{Circuito RLC en serie planteado por la referencia \cite{GuiaLab-SUNY}.} \label{fig:circuitoGUIASUNY}\end{figure}
 
@@ -109,7 +109,7 @@ Donde $Z$ es la impedancia, por lo tanto
 \begin{equation}
 I=\frac{V}{\sqrt{R^{2}+\left(2\pi f L-\dfrac{1}{2\pi f C}\right)^{2}}}
 \end{equation}
-Al sustituir la ecuación \ref{capacitanciaplacasparalelas} se tiene
+Al sustituir la ecuación~\ref{capacitanciaplacasparalelas} se tiene
 \begin{equation}
 I=\frac{V}{\sqrt{R^{2}+\left(2\pi f L-\dfrac{1}{2\pi f}\,\dfrac{c^{2}\mu_0\,d}{A_c}\right)^{2}}}
 \end{equation}
@@ -121,7 +121,7 @@ En la figura \ref{fig:simulacion1} se incluye la gráfica de esta función usand
 
 \begin{figure}[h!]\centering\includegraphics[width=0.70\linewidth]{Simulacion-respuesta1.png}\caption{Curvas $I(f)$ para las tres locaciones.}\label{fig:simulacion1}\end{figure}
 
-En la figura \ref{fig:simulacion2} se puede ver cómo de estrecha es la gráfica en realidad, en este caso se graficaron 10000 puntos igualmente espaciados, ya que con eso es suficiente para darnos una idea de la forma de la función \ref{curvacorriente}, en este caso donde el barrido es entre 103315 Hz y 103322 Hz.
+En la figura \ref{fig:simulacion2} se puede ver cómo de estrecha es la gráfica en realidad, en este caso se graficaron 10000 puntos igualmente espaciados, ya que con eso es suficiente para darnos una idea de la forma de la función \eqref{curvacorriente}, en este caso donde el barrido es entre 103315 Hz y 103322 Hz.
 
 \begin{figure}[h!]\centering\includegraphics[width=0.70\linewidth]{Simulacion-respuesta2.png}\caption{Detalle de la curva $I(f)$.}\label{fig:simulacion2}\end{figure}
 
@@ -156,7 +156,7 @@ Por otro lado, para determinar la amplitud de la corriente $I$ nos ayudamos de l
     V_1 = IR
 \end{equation}
  
-donde $V_1$ es la amplitud del voltaje generado por la fuente. Por eso es importante el valor de la resistencia. Finalmente, para poder calcular cuál será el cambio inducido por la hipótesis de Céspedes-Curé es necesario implementar la ecuación \ref{capacitanciaplacasparalelas} en la ecuación \ref{Vparalelo}. Por lo tanto, la amplitud del voltaje viene dada por:
+donde $V_1$ es la amplitud del voltaje generado por la fuente. Por eso es importante el valor de la resistencia. Finalmente, para poder calcular cuál será el cambio inducido por la hipótesis de Céspedes-Curé es necesario implementar la ecuación~\ref{capacitanciaplacasparalelas} en la ecuación~\ref{Vparalelo}. Por lo tanto, la amplitud del voltaje viene dada por:
  
 \begin{equation}
     V = \frac{2\pi V_1 f L/R}{\left|1 - 4\pi^2 f^2 L \dfrac{1}{c^2\mu_0}\dfrac{A_c}{d}\right|}
@@ -406,7 +406,7 @@ $(f_0)Hz$ & $(533274\pm 19) $ & $(532959 \pm 29)$ \\
     \label{fig:resultado-RLC-paralelo}
 \end{figure}
 
-Los resultados obtenidos con este experimento están lejos de tener un factor Q y una presión, en el ajuste de la curva, suficiente para verificar la \ac{HCC}. Después de realizar mejoras a nivel de software y hardware con resultados parecidos o peores a los aquí mostrados, se decidió cambiar la conexión del circuito resonante y con ello implementar un conjunto de mejoras más agresivas que se consideran como un nuevo experimento, el cual será desarrollado a mayor profundidad en la siguiente sección.
+Los resultados obtenidos con este experimento están lejos de tener un factor Q y una presición, en el ajuste de la curva, suficiente para verificar la \ac{HCC}. Después de realizar mejoras a nivel de software y hardware con resultados parecidos o peores a los aquí mostrados, se decidió cambiar la conexión del circuito resonante y con ello implementar un conjunto de mejoras más agresivas que se consideran como un nuevo experimento, el cual será desarrollado a mayor profundidad en la siguiente sección.
 
 
 
@@ -534,7 +534,7 @@ Se propone pues el uso de la técnica de ajuste “distancia de regresión ortog
     \mathrm{Var}(f_0) \approx \frac{8l\gamma^5\sigma_y^2}{NA^2\pi} 
 \end{equation}
 
-donde $l$ es la mitad del ancho del barrido, $N$ la cantidad de puntos, $\sigma_y^2$ el valor del error de la medida en en eje vertical, considerando que todos los puntos tienen igual incertidumbre; mientras que $\gamma$ y $A$ son los parámetros de ajuste de la curva. La ecuación \ref{eq:var} depende fuertemente de la forma de la curva. Una curva estrecha y alta tiene menor incertidumbre. Por otro lado, la $l$ se puede reescribir considerando el paso $p$, que es la diferencia en frecuencia entre un punto y el siguiente, es decir el paso en el barrido de frecuencia:
+donde $l$ es la mitad del ancho del barrido, $N$ la cantidad de puntos, $\sigma_y^2$ el valor del error de la medida en en eje vertical, considerando que todos los puntos tienen igual incertidumbre; mientras que $\gamma$ y $A$ son los parámetros de ajuste de la curva. La ecuación~\ref{eq:var} depende fuertemente de la forma de la curva. Una curva estrecha y alta tiene menor incertidumbre. Por otro lado, la $l$ se puede reescribir considerando el paso $p$, que es la diferencia en frecuencia entre un punto y el siguiente, es decir el paso en el barrido de frecuencia:
 \begin{equation}
     l = \frac{N}{2}\,p 
 \end{equation}
@@ -567,7 +567,7 @@ En el marco del uso de un circuito resonante, se plantean a continuación alguna
 
 \subsection{Aplicación de la corriente por inducción}
 
-El mayor problema de los circuitos que se realizaron es su poco estrecha curva de resonancia, para mejorar esto se necesita disminuir la perdida de energía, es decir que el circuito sea más eficiente. Con el fin de lograrlo se propone seccionar el circuito en tres partes: una que genera la señal, una que resuena (RLC) y otra que lee la respuesta, y la conexión entre estas tres sería por medio de inducción y no por cables físicos, algo como lo que se hace en el Massachusetts Institute of Technology \cite{GuiaLAB-MIT}. La ejecución de este experimento requiere manufacturar a medida la bobina del circuito LC pero tambien las correctas boninas para las otras dos partes del circuito, para garantizar que la inducción se dé de la mejor manera posible. Una ventaja de esta configuración es que permite simplificar el circuito que hemos trabajado, ya que los dos amplificadores de voltaje ya no serian necesario si se contruyen unas bobinas que permitan aumentar el voltaje en la medida adecuada.
+El mayor problema de los circuitos que se realizaron es su poco estrecha curva de resonancia, para mejorar esto se necesita disminuir la perdida de energía, es decir que el circuito sea más eficiente. Con el fin de lograrlo se propone seccionar el circuito en tres partes: una que genera la señal, una que resuena (RLC) y otra que lee la respuesta, y la conexión entre estas tres sería por medio de inducción y no por cables físicos, algo como lo que se hace en el Massachusetts Institute of Technology \cite{GuiaLAB-MIT}. La ejecución de este experimento requiere manufacturar a medida la bobina del circuito LC pero tambien las correctas bobinas para las otras dos partes del circuito, para garantizar que la inducción se dé de la mejor manera posible. Una ventaja de esta configuración es que permite simplificar el circuito que hemos trabajado, ya que los dos amplificadores de voltaje ya no serian necesario si se contruyen unas bobinas que permitan aumentar el voltaje en la medida adecuada.
 
 %AVERIGUAR ESTO:: yo creo que esto podria incluso elimiar el uso de amplificador, porque la induccion d euna bobina para otra es un transformador, osea que ya ahi se amplifica el voltaje
 
@@ -638,9 +638,9 @@ Buscamos ahora responder a la siguiente pregunta ¿Qué valor de precisión en e
     \sigma_y < 1{,}32\times 10^{-7}
 \end{equation}
 
-Donde se usó como paso $p = 0.03$ Hz y los valores de la curva contenidos en la tabla \ref{tab:resultado-serie}. El valor en \ref{sigma_y} es lo que habría que tener de incertidumbre en los valores de amplitud de voltaje estimados para poder llegar a la precisión que requerimos. Entonces ¿es posible llegar a dicho valor con el ajuste de la curva sinusoidal usando la Red Pitaya?.
+Donde se usó como paso $p = 0.03$ Hz y los valores de la curva contenidos en la tabla \ref{tab:resultado-serie}. El valor en \eqref{sigma_y} es lo que habría que tener de incertidumbre en los valores de amplitud de voltaje estimados para poder llegar a la precisión que requerimos. Entonces ¿es posible llegar a dicho valor con el ajuste de la curva sinusoidal usando la Red Pitaya?.
 
-Si el ajuste de la sinusoidal se hace con Python y mínimos cuadrados para la función \ref{eq:seno} la desviación estándar del parámetro estimado $a$ es:
+Si el ajuste de la sinusoidal se hace con Python y mínimos cuadrados para la función \eqref{eq:seno} la desviación estándar del parámetro estimado $a$ es:
 \begin{equation}
     \sigma_a = \sqrt{\left[\mathbb{J}^T \mathbb{J}\right]^{-1}_{00} \cdot \frac{\sum_{i=1}^{n}(V_{\text{obs},i} - V_{\text{calc},i})^2}{n-4}} \label{desviacionSeno}
 \end{equation}
@@ -665,7 +665,7 @@ La matriz involucrada es:
     \approx \frac{2{,}08}{n}
 \end{equation}
 
-Volviendo a \ref{desviacionSeno}, falta estimar el término de la sumatoria el cual nos dice cuánto se alejan los datos de la curva; reescribimos:
+Volviendo a \eqref{desviacionSeno}, falta estimar el término de la sumatoria el cual nos dice cuánto se alejan los datos de la curva; reescribimos:
 \begin{equation}
     \sigma_a = \sqrt{\left(\left[\mathbb{J}^T \mathbb{J}\right]^{-1}\right)_{aa} \cdot \frac{\sigma_r}{n-4}}
     \qquad \text{con} \quad \sigma_r = \sum_{i=1}^{n}(V_{\text{obs},i} - V_{\text{calc},i})^2 \tag{23}
@@ -702,7 +702,7 @@ Si hacemos el ruido introducido por el circuito cero, entonces tenemos una inecu
     \sigma_r > \sqrt{(0{,}35\times 10^{-4})^2 + (3{,}25\times 10^{-4})^2} \approx 3{,}27\times 10^{-4}
 \end{equation}
 
-Entonces la ecuación \ref{desviacionSeno} queda:
+Entonces la ecuación~\ref{desviacionSeno} queda:
 \begin{equation}
     \sigma_a > \sqrt{\frac{2,08}{n} \cdot \frac{3{,}27\times 10^{-4}}{n-4}}
 \end{equation}
@@ -718,7 +718,7 @@ Ahora evaluamos el $n$ necesario para que $\sigma_a \approx 1{,}32\times 10^{-7}
     n > 0.026/1{,}32\times 10^{-7} \approx 197000 \text{ Datos}
 \end{equation}
 
-Para dimensionar este número, tomemos en cuenta que la tasa de muestreo de Red Pitaya es de 125 MSPS (Mega muestras por segundo) y su buffer predeterminado es de 16,384 muestras \cite{redpitaya-datasheet}, sin embargo es posible activar el modo de DMA, acceso directo de memoria, lo que va a permitir escribir a una tasa de $125\text{ MHz}$ en la memoria RAM del equipo, esta memoria es por defecto de 512 MB. Entonces la cantidad de datos representa un porcentaje ínfimo de la memoria disponible, esto implica que es posible superar con creces el umbral mínimo dado por ecuación \ref{numero-de-datos}.
+Para dimensionar este número, tomemos en cuenta que la tasa de muestreo de Red Pitaya es de 125 MSPS (Mega muestras por segundo) y su buffer predeterminado es de 16,384 muestras \cite{redpitaya-datasheet}, sin embargo es posible activar el modo de DMA, acceso directo de memoria, lo que va a permitir escribir a una tasa de $125\text{ MHz}$ en la memoria RAM del equipo, esta memoria es por defecto de 512 MB. Entonces la cantidad de datos representa un porcentaje ínfimo de la memoria disponible, esto implica que es posible superar con creces el umbral mínimo dado por ecuación~\ref{numero-de-datos}.
 
 Otra ventaje de Red Pitaya es que puede correr python de forma nativa, esto junto con su memoria RAM nos va a permitir implementar el programa que hace el barrido de frecuencias junto con la recolección de los datos y el ajuste por ODR directamente en la placa, sin necesidad de computadora. Puede además conectarse con una batería comercial tipo ``Power Bank" que le suministre 5 V a 2 A estables, y colocarse completamente dentro del módulo estabilizador. 
 
@@ -728,6 +728,6 @@ En conclusión, hacer el experiemnto con Red Pitaya STEMlab 125-14 va a simplifi
 
 %hablar sobre la propuesta de prof Julio Wlater (usar un pulso en lugar de un senal sinusoidal).
 
-Es posible replantear toda la forma de medir la respuesta del circuito resonante, en lugar de utilizar un barrido de frecuencia usar un único pulso y muestrar toda la respuesta del circuito resonante. La curva esperada seria una señal sinusoidal amortiguada, la cual puede ser predicha matemáticamente usando la ecuación diferencial que determina el comportamiento del circuito RLC en particular que se vaya a utilizar. Es prácticamente seguro de que la ecuación resultante se va a poder escribir usando la frecuencia de resonancia, con la escuación $f_0 = 1 / 2 \pi \sqrt{LC}$. La ventaja de este planteamiento es que simplifica mucho el circuito a estudiar, sin embargo es un cambio practicamente total del experimento.
+Es posible replantear toda la forma de medir la respuesta del circuito resonante, en lugar de utilizar un barrido de frecuencia usar un único pulso y muestrar toda la respuesta del circuito resonante. La curva esperada seria una señal sinusoidal amortiguada, la cual puede ser predicha matemáticamente usando la ecuación diferencial que determina el comportamiento del circuito RLC en particular que se vaya a utilizar. Es prácticamente seguro de que la ecuación resultante se va a poder escribir usando la frecuencia de resonancia, con la ecuación $f_0 = 1 / 2 \pi \sqrt{LC}$. La ventaja de este planteamiento es que simplifica mucho el circuito a estudiar, sin embargo es un cambio practicamente total del experimento.
 
 
