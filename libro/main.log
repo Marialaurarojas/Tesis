@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  23 AUG 2026 19:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  23 AUG 2026 22:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -605,14 +605,14 @@ LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 11.
-LaTeX Info: Redefining \. on input line 371.
-LaTeX Info: Redefining \% on input line 371.
-LaTeX Info: Redefining \. on input line 372.
-LaTeX Info: Redefining \% on input line 372.
-LaTeX Info: Redefining \. on input line 391.
-LaTeX Info: Redefining \% on input line 391.
-LaTeX Info: Redefining \. on input line 392.
-LaTeX Info: Redefining \% on input line 392.
+LaTeX Info: Redefining \. on input line 374.
+LaTeX Info: Redefining \% on input line 374.
+LaTeX Info: Redefining \. on input line 375.
+LaTeX Info: Redefining \% on input line 375.
+LaTeX Info: Redefining \. on input line 394.
+LaTeX Info: Redefining \% on input line 394.
+LaTeX Info: Redefining \. on input line 395.
+LaTeX Info: Redefining \% on input line 395.
 
 
 LaTeX Warning: Label `eq:lorentz' multiply defined.
@@ -1280,6 +1280,14 @@ TESIS-USB: resetting all acronyms
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 1.
 
+Package acronym Info: Label `acro:HCC' overridden on input line 14.
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 27.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 27.
+
+Missing character: There is no ° in font cmr12!
 ) (./main.bbl [59
 
 ]
@@ -1448,7 +1456,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\MakeTextUppercase   ' on input line 1.
 
-<esquematico-kidcad-final.pdf, id=1374, 794.97pt x 614.295pt>
+<esquematico-kidcad-final.pdf, id=1376, 794.97pt x 614.295pt>
 File: esquematico-kidcad-final.pdf Graphic file (type pdf)
 <use esquematico-kidcad-final.pdf>
 Package pdftex.def Info: esquematico-kidcad-final.pdf  used on input line 9.
@@ -1487,14 +1495,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [75] [76]) [77] (./main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
-LaTeX Info: Redefining \. on input line 371.
-LaTeX Info: Redefining \% on input line 371.
-LaTeX Info: Redefining \. on input line 372.
-LaTeX Info: Redefining \% on input line 372.
-LaTeX Info: Redefining \. on input line 391.
-LaTeX Info: Redefining \% on input line 391.
-LaTeX Info: Redefining \. on input line 392.
-LaTeX Info: Redefining \% on input line 392.
+LaTeX Info: Redefining \. on input line 374.
+LaTeX Info: Redefining \% on input line 374.
+LaTeX Info: Redefining \. on input line 375.
+LaTeX Info: Redefining \% on input line 375.
+LaTeX Info: Redefining \. on input line 394.
+LaTeX Info: Redefining \% on input line 394.
+LaTeX Info: Redefining \. on input line 395.
+LaTeX Info: Redefining \% on input line 395.
 )
  ***********
 LaTeX2e <2025-11-01>
@@ -1511,21 +1519,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 62F9312061BE287A048A3641AD4E5AFE;16856.
+(rerunfilecheck)             Checksum: 7FD1C5469AD44E75F569F6F9451C59DE;16856.
  ) 
 Here is how much of TeX's memory you used:
- 30390 strings out of 467349
- 605488 string characters out of 5419856
- 999349 words of memory out of 5000000
+ 30391 strings out of 467349
+ 605499 string characters out of 5419856
+ 999336 words of memory out of 5000000
  58594 multiletter control sequences out of 15000+600000
  638781 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,14n,118p,1747b,1525s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,14n,118p,1747b,1527s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (92 pages, 4656720 bytes).
+Output written on main.pdf (92 pages, 4658450 bytes).
 PDF statistics:
- 1658 PDF objects out of 1728 (max. 8388607)
- 1426 compressed objects within 15 object streams
- 409 named destinations out of 1000 (max. 500000)
+ 1660 PDF objects out of 1728 (max. 8388607)
+ 1428 compressed objects within 15 object streams
+ 410 named destinations out of 1000 (max. 500000)
  844 words of extra memory for PDF output out of 10000 (max. 10000000)
 
