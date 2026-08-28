@@ -1,19 +1,6 @@
 \chapter{Experimento II: medición indirecta usando un circuito resonante} \label{cap:3}
 
-% recuerda incluir que las referencias GuiaLAB-MIT y GuiaLab-SUNY son guias de laboratorio donde se explican este experimento con circuito resonante
-
-%recuerda incluir porque en la suma de las densidades que dice la HCC en este caso importa poco la componente electromagnetica y no es una mala aproximación solo tratar con la parte gravitacional (secreto: esta ultima es muchos ordenes de magnitud (ya eso lo calculó greaves en algun lado) mayor y ademas como el circuito es el mismo la parte electromagnetica más cercana se mantiene) 
-
-AQUI VA EL RESUMEN DEL CAPITULO \newline
-AQUI VA EL RESUMEN DEL CAPITULO \newline
-AQUI VA EL RESUMEN DEL CAPITULO \newline
-AQUI VA EL RESUMEN DEL CAPITULO \newline
-AQUI VA EL RESUMEN DEL CAPITULO \newline
-AQUI VA EL RESUMEN DEL CAPITULO \newline
-AQUI VA EL RESUMEN DEL CAPITULO \newline
-AQUI VA EL RESUMEN DEL CAPITULO \newline
-AQUI VA EL RESUMEN DEL CAPITULO  \newline
-AQUI VA EL RESUMEN DEL CAPITULO
+Este capítulo presenta un nuevo experimento de medición indirecta. Primero se explica como la frecuencia de resonancia de un circuito resonante está afectada por la velocidad de la luz, y presenta el cambio de esta que cabe esperar en cada localidad. Luego se expone la idea del experimento, con las conexiones concretas de los componentes RLC y se hace simulación de los resultados. A continuación, se detalla la arquitectura por módulos instaurada en los prototipos desarrollados, describiendo la funcionalidad y el esquemático de cada uno. En cuanto al módulo de estabilización, se presentan además los resultados obtenidos tras su puesta en funcionamiento para el control de la temperatura. A esto le sigue, la caracterización, por separado, de los experimentos en paralelo y en serie  y  los resultados obtenidos con cada uno, los cuales no alcanzaron la precisión necesaria. Inmediatamente se introduce el ajuste por \ac{ODR} y se determina la carateristicas que el generador de funciones debe cumplir. Tras ello se plantean dos mejoras, una implica la aplicación de la corriente por inducción y la otra cambiar el hardware utilizado. Se propone un equipo en contreto,  Red Pitaya STEMlab, y se explica como simplificaria el montaje del experimento mejorando así los resultados. Para finalizar se propone otra forma de implementar el circuito resonante, en lugar de usar un barrido de frecuencia, sería haciendo la medición de la respuesta ante un único pulso.
 
 \section{Fundamentos teóricos: Electrodinámica y Resonancia}
 
@@ -257,14 +244,14 @@ Como se mencionó antes, el experimento parte del supuesto de que las condicione
 Se planteó y ejecutó un circuito completamente independiente de los demás módulos que regula de forma automática la temperatura en un espacio pequeño y semiaislado. El esquemático del circuito está en la figura \ref{fig:ESQUEMA-CIRCUITO-TEMP} y en la figura \ref{fig:FOTO-CIRCUITO-TEMP} se puede observar una foto del mismo.
 %PONLE LAS BARRAR HORIZONTALES DE ERROR A LA GRAFICA
 
-\begin{figure}[hbt]
+\begin{figure}[h]
 \centering
-\includegraphics[width=0.7\linewidth]{CIRCUITO CONTROL DE TEMP.JPG}
+\includegraphics[width=0.6\linewidth]{CIRCUITO CONTROL DE TEMP.JPG}
 \caption{Esquemático del circuito autónomo que regula la temperatura.}
 \label{fig:ESQUEMA-CIRCUITO-TEMP}
 \end{figure} 
 
-\begin{figure}[hbt]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.5\linewidth]{FOTO-circuito-temperatura.png}
 \caption{Foto del circuito autónomo que regula la temperatura.}
@@ -318,6 +305,7 @@ Este sistema ha demostrado funcionar por largos periodos de tiempo manteniendo u
 
 
 Más allá del control térmico, es importante mitigar las interferencias externas previamente enumeradas. Para el caso de señales externas, se propone la implementación de una jaula de Faraday diseñada a medida, cuyo propósito es aislar el montaje experimental de la radiación electromagnética ambiental. Este blindaje resulta crítico dado que el circuito tanque, por su naturaleza resonante, constituye la base de la sintonización de señales; en consecuencia, cualquier conductor con una longitud inadecuada podría actuar como una antena, introduciendo ruido espurio que comprometería la integridad de las mediciones.
+\newpage
 
 
 \section{Experimento RLC en paralelo}

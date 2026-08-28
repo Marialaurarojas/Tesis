@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1787537576.95266 "main.aux" "main.bbl" "main" 1787538283.39483 0
+["bibtex main"] 1787915863.59525 "main.aux" "main.bbl" "main" 1787915876.09198 0
   "./referencias.bib" 1787108100 10548 2dadad729950009fec5c8cc7929759d6 ""
   "c:/texlive/2026/texmf-dist/bibtex/bst/babelbib/babplain-lf.bst" 1777134898 27787 59c0e1ae1729e4dc6e42b51fa636506f ""
-  "main.aux" 1787538281 38497 cc4db34c8a7db28a06bc1c7f9bbb1fcd "pdflatex"
+  "main.aux" 1787915873 38814 1260d1cb425b97a0ba45b8300c78571c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1787538274.0795 "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" "main.pdf" "main" 1787538283.39574 0
+["pdflatex"] 1787915864.46413 "c:/Users/mlrg1/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/main.tex" "main.pdf" "main" 1787915876.09308 0
   "AjusteF0003CH2.png" 1777133371 29413 9679503fc89fc08f3b1fd3ef7e8e536d ""
   "Amplificador1-potencia-paralelo.png" 1778780108 48268 a72cc5e67113605ae324751e334e21cc ""
   "Amplificador1-potencia-serie.png" 1779382562 44160 8d24f137909b5f048c27acfdfdceda0b ""
@@ -239,9 +239,9 @@
   "c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1777153601 3648469 b0320031242cb6b7c7a0c982a2808190 ""
   "c:/texlive/2026/texmf.cnf" 1777153346 713 e69b156964470283e0530f5060668171 ""
   "capitulo-2.tex" 1787108863 16718 3e6afcd2f0a553b1234124d8fa734978 ""
-  "capitulo-3.tex" 1787108863 55115 5d5e218a4f5387c3721b312a69977071 ""
-  "capitulo-4.tex" 1787108862 2044 46924fb5e83cbc53e3e74fc8ca87c106 ""
-  "conclusiones.tex" 1787538272 8180 e218f69e57ca817ea14947d1d6b2f497 ""
+  "capitulo-3.tex" 1787915850 55651 fa59bf36d14fce944c97876603f2a8f3 ""
+  "capitulo-4.tex" 1787913248 2205 486853d34c11af66da5e48c85d771def ""
+  "conclusiones.tex" 1787912938 11004 c393e9bbcec8b298dd08dbb6895fe210 ""
   "curva c_i vs g_i zoom.png" 1777133371 26865 18bd7d838b87a97f50e80ba4b969df15 ""
   "dedicatoria.tex" 1787108862 228 7523cc4b7cd0c43d9e3a87a47aa853c5 ""
   "esquematico-kidcad-final.pdf" 1781716662 26397 c2e4a9babb8bcc2e05522b1a413183b0 ""
@@ -250,13 +250,13 @@
   "grafica-3Jun-10.png" 1779377283 35177 7b57e18f63e597b8e5b07e4ea292dc26 ""
   "grafica-3Jun-12.png" 1779377301 37452 deb9c3bd61f51bd5d649bddb6c588485 ""
   "introduccion.tex" 1787528958 15431 f31e8cd4139677c1a38b314c9347a4fa ""
-  "main.aux" 1787538281 38497 cc4db34c8a7db28a06bc1c7f9bbb1fcd "pdflatex"
-  "main.bbl" 1787537577 13488 4a2d729732a72631ba5f10ca32a9213c "bibtex main"
-  "main.lof" 1787538281 3656 fffc61888a2534aea1518242b4dd3f83 "pdflatex"
-  "main.lot" 1787538281 2306 22d711ad427749babaccebdeb0728168 "pdflatex"
-  "main.out" 1787538281 16856 7fd1c5469ad44e75f569f6f9451c59de "pdflatex"
+  "main.aux" 1787915873 38814 1260d1cb425b97a0ba45b8300c78571c "pdflatex"
+  "main.bbl" 1787915864 13488 4a2d729732a72631ba5f10ca32a9213c "bibtex main"
+  "main.lof" 1787915874 3656 d4bcee2f7681fbd43ff55903fbdd52c0 "pdflatex"
+  "main.lot" 1787915874 2306 dc839d6b6c32204e55fdc80ad500e28d "pdflatex"
+  "main.out" 1787915873 16856 cee604d3af9d02398ad37ca79d1cbbee "pdflatex"
   "main.tex" 1787494737 7399 ab2091d199f6fb5f5d30527bd41d04be ""
-  "main.toc" 1787538281 7943 9b5bae73aa2fdc08bce9fa7182efe7bf "pdflatex"
+  "main.toc" 1787915874 7943 0a5cbb96cd83d2dbc5838000953169cf "pdflatex"
   "n-1.png" 1777133371 27641 c5ca3d4f46120468d4c3ca4937bd8fb2 ""
   "n-2.png" 1777133371 31815 4dc0d73a087f776873fb0afcf8a8125f ""
   "n-3.png" 1777133371 34607 ac8f6550928694b01bad7a109edee6d9 ""
