@@ -1,13 +1,12 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\MakeTextUppercase []{Dedicatoria}}{iii}{chapter*.1}%
-\contentsline {chapter}{\MakeTextUppercase []{Agradecimientos}}{iv}{chapter*.2}%
-\contentsline {chapter}{\MakeTextUppercase []{Resumen}}{v}{chapter*.3}%
-\contentsline {chapter}{\MakeTextUppercase []{\'{I}ndice general}}{vi}{chapter*.5}%
-\contentsline {chapter}{\MakeTextUppercase []{\'{I}ndice de figuras}}{ix}{chapter*.6}%
-\contentsline {chapter}{\MakeTextUppercase []{\'{I}ndice de tablas}}{x}{chapter*.7}%
-\contentsline {chapter}{\MakeTextUppercase []{LISTA DE ACR\'ONIMOS}}{xi}{chapter*.8}%
-\contentsline {chapter}{\MakeTextUppercase []{Notaci\'on matem\'atica}}{xii}{chapter*.9}%
-\contentsline {chapter}{\MakeTextUppercase []{Introducci\'on}}{1}{chapter*.10}%
+\contentsline {chapter}{\MakeTextUppercase []{Agradecimientos}}{iii}{chapter*.1}%
+\contentsline {chapter}{\MakeTextUppercase []{Resumen}}{iv}{chapter*.2}%
+\contentsline {chapter}{\MakeTextUppercase []{\'{I}ndice general}}{v}{chapter*.4}%
+\contentsline {chapter}{\MakeTextUppercase []{\'{I}ndice de figuras}}{viii}{chapter*.5}%
+\contentsline {chapter}{\MakeTextUppercase []{\'{I}ndice de tablas}}{ix}{chapter*.6}%
+\contentsline {chapter}{\MakeTextUppercase []{LISTA DE ACR\'ONIMOS}}{x}{chapter*.7}%
+\contentsline {chapter}{\MakeTextUppercase []{Notaci\'on matem\'atica}}{xi}{chapter*.8}%
+\contentsline {chapter}{\MakeTextUppercase []{Introducci\'on}}{1}{chapter*.9}%
 \contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~I:~\MakeTextUppercase []{Hipótesis de Céspedes-Curé}}{4}{chaptert.1}%
 \contentsline {section}{\numberline {1.1}Introducción}{4}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Densidad de Energía}{5}{section.1.2}%
@@ -55,8 +54,8 @@
 \contentsline {chapter}{\MakeTextUppercase []{Cap\'{\i }tulo}~IV:~\MakeTextUppercase []{Experimentos propuestos}}{58}{chaptert.4}%
 \contentsline {section}{\numberline {4.1}Circuito LC en el espacio}{58}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Medición de la velocidad de la luz con gran precisión}{58}{section.4.2}%
-\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{60}{chapter*.66}%
-\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{62}{chapter*.69}%
+\contentsline {chapter}{\MakeTextUppercase []{Conclusiones}}{60}{chapter*.65}%
+\contentsline {chapter}{\MakeTextUppercase []{Referencias}}{62}{chapter*.68}%
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
 \babel@toc {spanish}{}\relax 
