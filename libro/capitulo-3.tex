@@ -250,7 +250,6 @@ Se planteó y ejecutó un circuito completamente independiente de los demás mó
 \caption{Esquemático del circuito autónomo que regula la temperatura.}
 \label{fig:ESQUEMA-CIRCUITO-TEMP}
 \end{figure} 
-
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\linewidth]{FOTO-circuito-temperatura.png}
@@ -260,7 +259,7 @@ Se planteó y ejecutó un circuito completamente independiente de los demás mó
 
 El funcionamiento es bástante sencillo, el potenciómetro de \(10\text{ k}\Omega\) permite establecer el umbral de activación del amplificador operacional (741) definiendo el voltaje de referencia en la entrada inversora (pin 2). El termistor es una resistencia que varia su valor dependiendo de la temperatura, si el operacional detecta que el voltaje en el termistor es distinto al de la referencia manda una señal para que se encienda un pequeño ventilador que sopla sobre una resistencia caliente, arrastrando el aire caliente sobre el resto del circuito y regulando así la temperatura de todo el contenedor. 
 
-Este sistema ha demostrado funcionar por largos periodos de tiempo manteniendo una temperatura alrededor de los 36°C. En la figura \ref{fig:graficasTemperatura} se incluyen las gráficas del comportamiento de la temperatura ambiente o exterior, y la temperatura interior, que es la regulada por el circuito estabilizador. Los datos gráficados se obtuvieron en el periodo entre abril y julio de 2025, donde se mantuvo funcionando el circuito practicamente de manera ininterrumpida en las instalaciones de la USB junto con un termómetro digital para ambas mediciones de temperatura. Se halló que durante ese tiempo la temperautra interna fue de $(36,5 \pm 0,4)$°C, para determinar si ese nivel de estabilización es suficiente habria que hacer pruebas con un circuito resonante final dentro del modulo estabilizador las cuales no se realizaron.
+Este sistema ha demostrado funcionar por largos periodos de tiempo manteniendo una temperatura alrededor de los 36°C. En la figura \ref{fig:graficasTemperatura} se incluyen las gráficas del comportamiento de la temperatura ambiente o exterior, y la temperatura interior, que es la regulada por el circuito estabilizador. Los datos gráficados se obtuvieron en el periodo entre abril y julio de 2025, donde se mantuvo funcionando el circuito practicamente de manera ininterrumpida en las instalaciones de la USB junto con un termómetro digital para ambas mediciones de temperatura. Se halló que durante ese tiempo la temperautra interna fue de $(36.5 \pm 0.4)$°C, para determinar si ese nivel de estabilización es suficiente habria que hacer pruebas con un circuito resonante final dentro del modulo estabilizador las cuales no se realizaron.
 
 
 
@@ -360,7 +359,7 @@ Este procedimiento se intentó múltiples veces, los mejores resultados se obtuv
 \hline
 Parámetro de ajuste &  Primer barrido & Segundo barrido\\
 \hline
-$(A) V \cdot Hz^2$ & $(151 \pm 11)\times 10^6$ & $(1,0\pm 1,1) \times 10^6$ \\
+$(A) V \cdot Hz^2$ & $(151 \pm 11)\times 10^6$ & $(1.0\pm 1.1) \times 10^6$ \\
 $(\gamma) V$ & $(21271 \pm 457 )$ & $(5819\pm 1915 )$ \\
 $(\text{offset})Hz$ & $(0.065 \pm 0.010)$ & $(0.37\pm 0.02)$ \\
 $(f_0)Hz$ & $(533274\pm 19) $ & $(532959 \pm 29)$ \\
@@ -534,17 +533,17 @@ donde $l$ es la mitad del ancho del barrido, $N$ la cantidad de puntos, $\sigma_
 Esta nueva ecuación demuestra que tener un valor de frecuencia de resonancia estimado confiable depende no solo de la forma de la curva sino tambien de lo pequeños que sean los pasos. Evaluamos pues cuál debe ser el tamaño de los pasos para una curva como la obtenida hasta ahora, por ejemplo la incluida en la figura \ref{fig:resultado-serie}, de modo que $f_0$ tenga una confianza hasta de 10 cifras significativas.
 
 \begin{equation}
-    \sigma_{f_0} = \sqrt{\mathrm{Var}(f_0)} < f_0 \times 10^{-10} = 425{,}930\times 10^{-10} \approx 4{,}26\times 10^{-5}\;\text{Hz}
+    \sigma_{f_0} = \sqrt{\mathrm{Var}(f_0)} < f_0 \times 10^{-10} = 425.930\times 10^{-10} \approx 4.26\times 10^{-5}\;\text{Hz}
 \end{equation}
 
 \begin{equation}
-    \sqrt{\frac{4p\,\gamma^5\,\sigma_y^2}{A^2\,\pi}} < 4{,}26\times 10^{-5}
+    \sqrt{\frac{4p\,\gamma^5\,\sigma_y^2}{A^2\,\pi}} < 4.26\times 10^{-5}
     \;\Rightarrow\;
-    p < \frac{(4{,}26\times 10^{-5})^2\,A^2\,\pi}{4\,\gamma^5\,\sigma_y^2} \tag{19}
+    p < \frac{(4.26\times 10^{-5})^2\,A^2\,\pi}{4\,\gamma^5\,\sigma_y^2} \tag{19}
 \end{equation}
 
 \begin{equation}
-    p < 2{,}167\times 10^{-6}\;\text{Hz} = 2{,}167\;\mu\text{Hz}
+    p < 2.167\times 10^{-6}\;\text{Hz} = 2.167\;\mu\text{Hz}
 \end{equation}
 
 este valor está muy por debajo de lo que es capaz de generar el AD9833, incluso si se le hace modificaciones en su reloj de cristal. Podemos concluir que el camino para mejorar la precisión pasa por hacer más alta y más estrecha la cuerva de resonacia.
@@ -617,13 +616,13 @@ Si bien es de esperar que esta configuración mejore la forma de la curva de res
 Buscamos ahora responder a la siguiente pregunta ¿Qué valor de precisión en el eje $y$ se necesita para alcanzar las 10 cifras de confianza en $f_0$? 
 
 \begin{equation}
-    4{,}26\times 10^{-5} > \sqrt{\frac{4p\,\gamma^5\,\sigma_y^2}{A^2\,\pi}}
+    4.26\times 10^{-5} > \sqrt{\frac{4p\,\gamma^5\,\sigma_y^2}{A^2\,\pi}}
     \;\Rightarrow\;
-    \sigma_y < \sqrt{\frac{(4{,}26\times 10^{-5})^2\,A^2\,\pi}{4\,p\,\gamma^5}} 
+    \sigma_y < \sqrt{\frac{(4.26\times 10^{-5})^2\,A^2\,\pi}{4\,p\,\gamma^5}} 
 \end{equation}
 
 \begin{equation} \label{sigma_y}
-    \sigma_y < 1{,}32\times 10^{-7}
+    \sigma_y < 1.32\times 10^{-7}
 \end{equation}
 
 Donde se usó como paso $p = 0.03$ Hz y los valores de la curva contenidos en la tabla \ref{tab:resultado-serie}. El valor en \eqref{sigma_y} es lo que habría que tener de incertidumbre en los valores de amplitud de voltaje estimados para poder llegar a la precisión que requerimos. Entonces ¿es posible llegar a dicho valor con el ajuste de la curva sinusoidal usando la Red Pitaya?.
@@ -649,8 +648,8 @@ La matriz involucrada es:
 \begin{equation}
     \left(\left[\mathbb{J}^T \mathbb{J}\right]^{-1}\right)_{aa}
     = \frac{1}{\left[\mathbb{J}^T \mathbb{J}\right]_{aa} - \mathbf{c}^T \mathbb{B}^{-1}\mathbf{c}}
-    = \frac{1}{\dfrac{n}{2} - n\cdot 0{,}02}
-    \approx \frac{2{,}08}{n}
+    = \frac{1}{\dfrac{n}{2} - n\cdot 0.02}
+    \approx \frac{2.08}{n}
 \end{equation}
 
 Volviendo a \eqref{desviacionSeno}, falta estimar el término de la sumatoria el cual nos dice cuánto se alejan los datos de la curva; reescribimos:
@@ -664,20 +663,20 @@ Este $\sigma_r$ se ve afectado por tres factores: el generador de funciones y el
 El ADC del Red Pitaya (en configuración de bajo voltaje) tiene una resolución de 14 bits con un rango de fondo de escala de $2\text{ V}$ ($\pm1\text{ V}$). Con esto podemos calcular el LSB (\textit{Least Significant Bit}) que es el voltaje equivalente de cada una de las $2^{14}$ divisiones:
 
 \begin{equation}
-\text{LSB} = \frac{2000\text{ mV}}{16384} \approx 0,122\text{ mV}
+\text{LSB} = \frac{2000\text{ mV}}{16384} \approx 0.122\text{ mV}
 \label{eq:lsb_rp_lv}
 \end{equation}
 
 Por el redondeo se asume un error uniformemente distribuido, cuya varianza e incertidumbre estándar de cuantización asociada ($\sigma_q$) son:
 
 \begin{equation}
-\sigma_q^2 = \frac{\text{LSB}^2}{12} \Rightarrow \sigma_q = \frac{\text{LSB}}{\sqrt{12}} \approx 0,035\text{ mV} = 3,5 \times 10^{-5}\text{ mV}
+\sigma_q^2 = \frac{\text{LSB}^2}{12} \Rightarrow \sigma_q = \frac{\text{LSB}}{\sqrt{12}} \approx 0.035\text{ mV} = 3.5 \times 10^{-5}\text{ mV}
 \label{eq:sigma_rp_lv}
 \end{equation}
 
 Por otro lado el generador introduce ruido por los armónicos; concretamente se tienen armónicos de amplitud relativa 0.1\%. Entonces la desviación estándar del error que introduce este factor es:
 \begin{equation}
-    \sigma_{\mathrm{THD}} = \frac{0{,}001 \cdot a}{\sqrt{2}} = 3{,}25\times 10^{-4}\;\mathrm{V}
+    \sigma_{\mathrm{THD}} = \frac{0.001 \cdot a}{\sqrt{2}} = 3.25\times 10^{-4}\;\mathrm{V}
 \end{equation}
 
 Entonces la desviación estándar debida a los residuos nos queda como:
@@ -687,26 +686,26 @@ Entonces la desviación estándar debida a los residuos nos queda como:
 
 Si hacemos el ruido introducido por el circuito cero, entonces tenemos una inecuación:
 \begin{equation}
-    \sigma_r > \sqrt{(0{,}35\times 10^{-4})^2 + (3{,}25\times 10^{-4})^2} \approx 3{,}27\times 10^{-4}
+    \sigma_r > \sqrt{(0.35\times 10^{-4})^2 + (3.25\times 10^{-4})^2} \approx 3.27\times 10^{-4}
 \end{equation}
 
 Entonces la ecuación~\ref{desviacionSeno} queda:
 \begin{equation}
-    \sigma_a > \sqrt{\frac{2,08}{n} \cdot \frac{3{,}27\times 10^{-4}}{n-4}}
+    \sigma_a > \sqrt{\frac{2.08}{n} \cdot \frac{3.27\times 10^{-4}}{n-4}}
 \end{equation}
 
 Cuando $n$ tiende a infinito, la dependencia de $n-4$ tiende a $n$ así que
 \begin{equation}
-    \sigma_a > \frac{1}{n}\sqrt{2{,}08 \cdot 3{,}27\times 10^{-4}} \approx 0,026 / n
+    \sigma_a > \frac{1}{n}\sqrt{2.08 \cdot 3.27\times 10^{-4}} \approx 0.026 / n
 \end{equation}
 
-Ahora evaluamos el $n$ necesario para que $\sigma_a \approx 1{,}32\times 10^{-7}$
+Ahora evaluamos el $n$ necesario para que $\sigma_a \approx 1.32\times 10^{-7}$
 
 \begin{equation} \label{numero-de-datos}
-    n > 0.026/1{,}32\times 10^{-7} \approx 197000 \text{ Datos}
+    n > 0.026/1.32\times 10^{-7} \approx 197000 \text{ Datos}
 \end{equation}
 
-Para dimensionar este número, tomemos en cuenta que la tasa de muestreo de Red Pitaya es de 125 MSPS (Mega muestras por segundo) y su buffer predeterminado es de 16,384 muestras \cite{redpitaya-datasheet}, sin embargo es posible activar el modo de DMA, acceso directo de memoria, lo que va a permitir escribir a una tasa de $125\text{ MHz}$ en la memoria RAM del equipo, esta memoria es por defecto de 512 MB. Entonces la cantidad de datos representa un porcentaje ínfimo de la memoria disponible, esto implica que es posible superar con creces el umbral mínimo dado por ecuación~\ref{numero-de-datos}.
+Para dimensionar este número, tomemos en cuenta que la tasa de muestreo de Red Pitaya es de 125 MSPS (Mega muestras por segundo) y su buffer predeterminado es de 16384 muestras \cite{redpitaya-datasheet}, sin embargo es posible activar el modo de DMA, acceso directo de memoria, lo que va a permitir escribir a una tasa de $125\text{ MHz}$ en la memoria RAM del equipo, esta memoria es por defecto de 512 MB. Entonces la cantidad de datos representa un porcentaje ínfimo de la memoria disponible, esto implica que es posible superar con creces el umbral mínimo dado por ecuación~\ref{numero-de-datos}.
 
 Otra ventaje de Red Pitaya es que puede correr python de forma nativa, esto junto con su memoria RAM nos va a permitir implementar el programa que hace el barrido de frecuencias junto con la recolección de los datos y el ajuste por ODR directamente en la placa, sin necesidad de computadora. Puede además conectarse con una batería comercial tipo ``Power Bank" que le suministre 5 V a 2 A estables, y colocarse completamente dentro del módulo estabilizador. 
 

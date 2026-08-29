@@ -1,15 +1,4 @@
-% Centro de Estadística y Matemática Aplicada
-% Universidad Simón Bolívar
-% Plantilla LaTeX para manuscritos (tesis y pasantías)
-% pregrado y postgrado
-%
-% Andrés M. Sajo-Castelli
-% Carlos Contreras
-%
-% 15 Abril 2015 -- primera versión pública
-% ...
-% 11 Mayo 2018 --- Se agrega bibliografía en castellano via babelbib
-%
+
 \documentclass[pregrado]{tesis-usb}
 
 % paquetes
@@ -50,15 +39,15 @@
 \autori{M. Rojas}
 \usbid{19-10256}
 \titulo{Efectos de la densidad de energía gravitacional sobre la velocidad de la luz: verificación experimental de la Hipótesis de Céspedes-Curé}
-\fecha{Junio~de~2026}
+\fecha{Septiembre~de~2026}
 \agno{2026}
-\fechadefensa{30~de~Junio~de~2026}
+\fechadefensa{}
 \tutor{Dr. Eduardo Greaves}
 % \usarcotutor
 \cotutor{Nombre y Apellido \mbox{(Afiliaci\'on)}} 
 \trabajo{Trabajo de grado}
 \coord{Física}
-\grado{Licenciado en física}
+\grado{Licenciada en física}
 \carrera{Física}
 \programa{Nombre del Programa}
 \juradouno{Nombre y Apellido}
@@ -83,7 +72,6 @@
 \input{dedicatoria}
 \input{agradecimientos}
 \begin{resumen}
-     Es una exposici\'on clara del tema tratado en el trabajo.
 %      Para redactar el **Resumen** de tu libro de tesis siguiendo estrictamente los lineamientos del Decanato de Estudios Profesionales (DEP) de la USB, debes tener en cuenta que este se escribe en **un único párrafo continuo de máximo 250 palabras**,, debe ir en la página romana **"v"**,, y **no debe contener citas bibliográficas** de ningún tipo,. Además, cualquier acrónimo que utilices por primera vez debe definirse inmediatamente entre paréntesis (por ejemplo, *Hipótesis de Céspedes-Curé (HCC)*),.
 
 % A continuación, te presento el esquema secuencial de las ideas que debes incluir y el orden exacto en el que deben fluir dentro de ese único párrafo para garantizar coherencia, rigor científico y apego a la normativa:
@@ -95,7 +83,7 @@
 % ### 1. Contexto y Enunciado del Paradigma (Sentencias 1 y 2)
 % *   **Idea a incluir:** Comienza presentando de forma concisa el marco teórico y la hipótesis física que busca verificar tu investigación.
 % *   **Detalles a redactar:** Enuncia la Hipótesis de Céspedes-Curé (HCC), la cual postula que la velocidad de la luz (\\(c\\)) no es una constante universal en el vacío, sino que varía localmente en función de la densidad de energía gravitacional del medio (\\(c = k\sqrt{\rho}\\)).
-
+Este trabajo busca idear y ejecutar experimentos que permitan verificar la \ac{HCC}, la cual postula que la velocidad de la luz no es una constante universal en el vacío sino que varía localmente en función de la densidad de energía del medio $\rho$, como $c=k/\sqrt{\rho}$, midiendo su valor en tres puntos geográficos con distinta gravedad. Se desarrollan dos experimentos:uno de medición directa (comparando el desfase y la diferencia de camino del haz de un láser He-Ne modulado) y otro indirecto (analizando la frecuencia de resonancia $f_0$ de un circuito RLC). En el primero los resultados fueron muy alejados de la precision necesaria. Para el segundo se diseñó un equipo modular, que consta de módulo generador de señal, uno de lectura y un sistema de control térmico activo autónomo. Se desarrollaron programas en Python y Arduino para el tratamiento (mínimos cuadrados) y adquisición de datos respectivamente. Los resultados obtenidos con los diferentes prototipos elaborados (serie y paralelo) replicaron curvas de frecuencia poco satisfactorias para pasos de barrido pequeños, además de un error relativo de $f_0$ de 0,0036\% muy alejado del 1$\times 10^-9$\%  que se requiere para discernir con certeza los corrimientos de frecuencia esperados en las localidades propuestas. Debido a la superioridad el método indirecto como una alternativa viable frente al método directo se explora la posibilidad de una transición tecnológica futura hacia la plataforma Red Pitaya y el acoplamiento por inducción para alcanzar la resolución requerida de la novena cifra significativa.
 % ### 2. Objetivo Principal del Trabajo (Sentencia 3)
 % *   **Idea a incluir:** Define claramente qué hiciste en tu proyecto para abordar esta hipótesis.
 % *   **Detalles a redactar:** Declara el objetivo de diseñar, construir y evaluar un sistema experimental modular indirecto de alta precisión, basado en circuitos resonantes RLC, para medir variaciones infinitesimales de la permitividad eléctrica del vacío (\\(\epsilon_0\\)) como transductor de las fluctuaciones gravitacionales en la superficie terrestre.
@@ -121,6 +109,7 @@
 % ### Palabras clave (Al final de la página, separadas por comas)
 % Debes incluir al final, fuera del párrafo del resumen, las siguientes 5 palabras clave de tu investigación,,:
 % > **Palabras clave:** hipótesis de Céspedes-Curé, circuitos resonantes RLC, regresión ortogonal de distancias, estabilidad térmica activa, velocidad de la luz.
+Palabras clave: hipótesis de Céspedes-Curé, velocidad de la luz, densidad de energía, gravedad, circuito resonante
 
 \end{resumen}
 \tableofcontents

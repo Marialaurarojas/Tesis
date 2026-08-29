@@ -297,7 +297,7 @@
                     \vskip 3.0cm%---
                     {\bfseries \MakeTextUppercase \@trabajo} \\%---
                     {Presentado ante la ilustre Universidad Sim\'on Bol\'ivar \\%---
-                    como requisito requisito parcial para optar al t\'itulo de \\%---
+                    como requisito parcial para optar al t\'itulo de \\%---
                     \@grado}%---
                     \vfill%---
                     {\bfseries Sartenejas, \@fecha}%%---
@@ -340,7 +340,7 @@
                     \vskip 3.0cm%---
                     {\bfseries \MakeTextUppercase \@trabajo} \\%---
                     {Presentado ante la ilustre Universidad Sim\'on Bol\'ivar \\%---
-                    como requisito requisito parcial para optar al t\'itulo de \\%---
+                    como requisito parcial para optar al t\'itulo de \\%---
                     \@grado}%---
                     \vfill%---
                     {\bfseries Sartenejas, \@fecha}%%---
