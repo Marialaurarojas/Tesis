@@ -102,9 +102,9 @@
 \setbeamertemplate{background}{%
 \begin{tikzpicture}[remember picture,overlay]
   \ifdefstring{\curlayout}{banda}{%
-    \fill[verde] \Pt{0}{28} rectangle \Pt{120}{31};
-    \fill[verde] \Pt{121}{28} rectangle \Pt{122.6}{39};
-    \fill[tarjeta] \Pt{0}{31} rectangle \Pt{119.6}{89};
+    \fill[verde] \Pt{0}{12.8} rectangle \Pt{120}{15.8};
+    \fill[verde] \Pt{121}{12.8} rectangle \Pt{122.6}{23.8};
+    \fill[tarjeta] \Pt{0}{15.8} rectangle \Pt{119.6}{89};
   }{}%
   \ifdefstring{\curlayout}{barra}{%
     \fill[verde] \Pt{3.5}{0} rectangle \Pt{9}{12.8};
@@ -113,8 +113,8 @@
     \fill[tarjeta] \Pt{6}{12.8} rectangle \Pt{122.6}{89};
   }{}%
   \ifdefstring{\curlayout}{foto}{%
-    \fill[verde] \Pt{1}{62} rectangle \Pt{3.5}{91};
-    \fill[verde] \Pt{4.5}{62} rectangle \Pt{128}{91};
+    \fill[verde] \Pt{1}{76.5} rectangle \Pt{3.5}{91};
+    \fill[verde] \Pt{4.5}{76.5} rectangle \Pt{128}{91};
     \fill[tarjeta] \Pt{54}{9.6} rectangle \Pt{122}{87.7};
   }{}%
   \ifdefstring{\curlayout}{bloque}{%
@@ -131,11 +131,12 @@
   \ifdefstring{\curlayout}{banda}{%
     \begin{tikzpicture}[remember picture,overlay]
       \node[anchor=base west,font=\fontsize{24}{26}\selectfont,text=black]
-        at \Pt{10}{21} {\insertframetitle};
+        at \Pt{11}{10} {\insertframetitle};
       \ifx\insertframesubtitle\empty\else
-      \node[anchor=north west,text width=110mm,font=\scriptsize,text=magenta,align=left]
-        at \Pt{10}{22} {\insertframesubtitle};\fi
-    \end{tikzpicture}\vspace*{24mm}}{}%
+      \node[anchor=north west,text width=106mm,font=\scriptsize,text=magenta,align=left]
+        at \Pt{10}{16.8} {\insertframesubtitle};\fi
+    \end{tikzpicture}%
+    \ifx\insertframesubtitle\empty\vspace*{9mm}\else\vspace*{15mm}\fi}{}%
   \ifdefstring{\curlayout}{barra}{%
     \begin{tikzpicture}[remember picture,overlay]
       \node[anchor=base west,font=\fontsize{24}{26}\selectfont,text=black]
@@ -641,7 +642,7 @@ n5.1 & $(3.0296\pm0.0556)\times10^{8}$ & \dest{1\%}\\
 
 % ---------------------------------------------------------------------
 \layout{banda}
-\begin{frame}{Cálculo de la precisión necesaria}
+\begin{frame}{Precisión necesaria}
 \begin{columns}[T]
 \begin{column}{0.50\textwidth}
 \small
@@ -703,7 +704,7 @@ estabilizado con metano, con equipos fuera de nuestro alcance.
 
 % ---------------------------------------------------------------------
 \layout{banda}
-\begin{frame}{Factor de calidad y simulaciones}
+\begin{frame}{Factor Q y simulaciones}
 \begin{columns}[T]
 \begin{column}{0.44\textwidth}
 \small
@@ -1005,7 +1006,7 @@ nativa.
 \end{frame}
 
 % ---------------------------------------------------------------------
-\begin{frame}{Red Pitaya: ¿basta la precisión?}
+\begin{frame}{Precisión con Red Pitaya}
 \begin{columns}[T]
 \begin{column}{0.50\textwidth}
 \small
