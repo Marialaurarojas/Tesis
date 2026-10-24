@@ -10,7 +10,6 @@
 %  Compilar con pdflatex (dos pasadas para el total de páginas).
 %  Este archivo vive en la subcarpeta  libro/presentacion/  y toma las
 %  figuras originales de la tesis desde la carpeta  libro/  (ver \graphicspath).
-%  Opcional: colocar el logo de la USB como  logo-usb.png  en esta carpeta.
 % =====================================================================
 \documentclass[10pt,aspectratio=43,xcolor={table}]{beamer}
 
@@ -202,9 +201,9 @@
   \draw[black!75,line width=0.6pt] \Pt{6.8}{8.7} rectangle \Pt{121.2}{87};
   \fill[verde] \Pt{93.8}{91.5} -- \Pt{124.4}{91.5} -- \Pt{124.4}{46.7} -- cycle;
   \node at \Pt{64}{17.5} {\IfFileExists{logo-usb.png}{\includegraphics[height=11mm]{logo-usb.png}}{}};
-  \node[align=center,text width=104mm,font=\fontsize{19}{22}\selectfont] at \Pt{64}{40}
-    {Efectos de la densidad de energía gravitacional sobre la velocidad de la luz:\\[1mm]
-     {\fontsize{16}{19}\selectfont Verificación experimental de la hipótesis de Céspedes-Curé}};
+  \node[align=center,text width=104mm,font=\fontsize{15}{22}\selectfont] at \Pt{64}{40}
+    {\hyphenpenalty=10000 Efectos de la densidad de energía gravitacional sobre la velocidad de la luz:\\[1mm]
+     {\fontsize{15}{62}\selectfont Verificación experimental de la hipótesis de Céspedes-Curé}};
   \node[anchor=north west,align=left,font=\normalsize] at \Pt{15}{62}
     {María Laura Rojas González\\[0.6mm]
      {\small Tutor: Dr. Eduardo Greaves}\\[1mm]
@@ -222,7 +221,7 @@
 \vspace{2mm}
 \begin{enumerate}\setlength{\itemsep}{2.2mm}
   \item Hipótesis de Céspedes-Curé (HCC)
-  \item Antecedentes y justificación: Pioneer, Flyby y datos históricos de $c$
+  \item Antecedentes y justificación
   \item Experimento I: medición directa de la velocidad de la luz
   \item Experimento II: medición indirecta con un circuito resonante
   \item Propuestas de mejora y experimentos propuestos
@@ -234,13 +233,27 @@
 \begin{frame}{Introducción}
 \small
 \begin{itemize}\setlength{\itemsep}{1.6mm}
-  \item La Relatividad Especial (1905) postula que la luz viaja a velocidad constante en el vacío.
-        Sobre ese postulado descansan el efecto Doppler astronómico y la definición actual del metro.
+  \item La Relatividad Especial (1905) postula que las leyes de las físicas son iguales para todos los observadores inerciales y que la luz viaja a velocidad constante en el vacío.
+        Sobre este último postulado descansan el efecto Doppler astronómico y la definición actual del metro.
+\end{itemize}
+\centerline{\textbf{Cambio de paradigma}}
+\begin{itemize}\setlength{\itemsep}{1.6mm}      
   \item Céspedes-Curé (2002) propone que el espacio no está vacío: es un \textbf{medio energético}
-        en el que $c$ depende de la densidad de energía local.
+        en el que $c$ depende de la densidad de energía local mediante una relación matemática concreta.
   \item Con esta idea se han explicado la \dest{Pioneer Anomaly} (2007) y la \dest{Flyby Anomaly} (2020).
-  \item Entre la USB, el Teleférico de Caracas y Carmen de Urea la HCC predice diferencias en $c$ sólo
-        a partir de la \textbf{novena cifra significativa}: se necesita una precisión mejor que $\pm1$~m/s.
+  \item Siendo la Hipótesis de Céspedes-Curé (HCC) una idea poco explorada de forma directa, el presente trabajo busca hacer un aporte en su verificación mediante el diseño, caracterización y evaluación de metodologías experimentales, que sean capaces de registrar variaciones en la Velocidad de la luz (c) inducidas por la densidad de energía gravitacional en la superficie terrestre.
+\end{itemize}
+\vspace{1mm}
+\end{frame}
+
+\begin{frame}{Introducción}
+\small
+\begin{itemize}\setlength{\itemsep}{1.6mm}
+ \item Se planteron y desarrollaron dos experimentos con principios físicos diferentes:
+ \begin{itemize}
+  \item Medición directa de c usando un láser modulado
+  \item Medición indirecta, con un circuito resonante RLC
+ \end{itemize}
 \end{itemize}
 \vspace{1mm}
 \begin{tikzpicture}
@@ -249,6 +262,10 @@
  del vacío, la velocidad de un haz láser modulado y la frecuencia de resonancia de un circuito RLC
  deben cambiar de forma medible con la altitud.};
 \end{tikzpicture}
+\begin{itemize}
+  \item \textbf{El reto:} Entre la USB, el Teleférico de Caracas y Carmen de Urea la HCC predice diferencias en $c$ sólo a partir de la \textbf{novena cifra significativa}, se necesita una precisión mejor que $\pm1$~m/s.
+\end{itemize}
+
 \end{frame}
 
 % =====================================================================
@@ -282,7 +299,7 @@ En un laboratorio terrestre la densidad total incluye las estrellas lejanas $\rh
 {\fontsize{30}{34}\selectfont Hipótesis de\\[1mm] Céspedes-Curé}
 \vspace{6mm}
 
-\small A partir de las ecuaciones de Maxwell, la densidad de energía obedece una ecuación de
+A partir de las ecuaciones de Maxwell, la densidad de energía obedece una ecuación de
 D'Alembert inhomogénea:
 \[
 \nabla^2\rho-c^{-2}\frac{\partial^2\rho}{\partial t^2}=\nabla\cdot\mathbf{T}
@@ -311,7 +328,7 @@ las ondas electromagnéticas son ondas de densidad de energía.
 \begin{frame}{Pioneer Anomaly}
 \begin{columns}[T]
 \begin{column}{0.56\textwidth}
-\small\justifying
+\justifying
 Las sondas Pioneer 10 y 11 mostraron, a más de 20~UA, una aceleración anómala constante hacia el Sol
 de $\sim 8\times10^{-8}$~cm/s$^2$ que ninguna causa sistemática logró justificar.
 
@@ -338,7 +355,6 @@ n'_{20\,\text{UA}}=0.9999735679
 
 % ---------------------------------------------------------------------
 \begin{frame}{Pioneer Anomaly}
-\small
 Con el índice de refracción necesario para explicar la aceleración observada se calcula la
 densidad de energía gravitacional de las estrellas lejanas $\rho^*$.
 

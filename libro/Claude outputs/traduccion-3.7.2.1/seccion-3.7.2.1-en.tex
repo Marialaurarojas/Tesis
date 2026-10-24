@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[margin=2.5cm]{geometry}
+\setcounter{section}{3}\setcounter{subsection}{7}\setcounter{subsubsection}{2}
+\renewcommand{\thesubsubsection}{3.7.2.1}
+\begin{document}
+\subsubsection*{3.7.2.1\quad Further simplifying the circuit}
+
+Part of the motivation for using the Red Pitaya STEMlab 125-14 is that it works as an oscilloscope. This opens the possibility of simplifying the circuit even further by removing the entire stage responsible for rectifying the voltage, so that the Red Pitaya reads the sinusoidal response of the RLC directly and, through a fit, the amplitude of that sinusoid is determined and used as the voltage value in the frequency sweep.
+
+Let us then calculate whether this approach using the Red Pitaya is sufficient to reach the required precision. Consider that the fit is performed for the function:
+\begin{equation} \label{eq:sine}
+    V(t) = a\,\sin(2\pi f\,t + \phi) + B
+\end{equation}
+
+Although this configuration is expected to improve the shape of the response curve, here we will use the previous curve as data (Figure 3.20), since it is the worst-case scenario. We now seek to answer the following question: what precision on the $y$ axis is needed to reach 10 significant figures of confidence in $f_0$?
+\begin{equation}
+    4.26\times 10^{-5} > \sqrt{\frac{4p\,\gamma^5\,\sigma_y^2}{A^2\,\pi}}
+    \;\Rightarrow\;
+    \sigma_y < \sqrt{\frac{(4.26\times 10^{-5})^2\,A^2\,\pi}{4\,p\,\gamma^5}}
+\end{equation}
+\begin{equation} \label{sigma_y}
+    \sigma_y < 1.32\times 10^{-7}
+\end{equation}
+
+Here a step of $p = 0.03$ Hz was used, together with the curve values listed in Table 3.3. The value in \eqref{sigma_y} is the uncertainty that the estimated voltage amplitude values would need to have in order to reach the precision we require. So, is it possible to reach that value by fitting the sinusoidal curve with the Red Pitaya?
+
+If the sinusoid is fitted in Python by least squares for function \eqref{eq:sine}, the standard deviation of the estimated parameter $a$ is:
+\begin{equation}
+    \sigma_a = \sqrt{\left[\mathbb{J}^T \mathbb{J}\right]^{-1}_{00} \cdot \frac{\sum_{i=1}^{n}(V_{\text{obs},i} - V_{\text{calc},i})^2}{n-4}} \label{sineDeviation}
+\end{equation}
+
+The matrix involved is:
+\begin{equation}
+    \left[\mathbb{J}\mathbb{J}\right] =
+    \begin{pmatrix}
+        n/2 & -\dfrac{an\pi}{2} & 0 & 0 \\[10pt]
+        -\dfrac{an\pi}{2} & \dfrac{\pi^2 a^2 n}{3}(8\pi^2-3) & a^2 n\pi^2 & 0 \\[10pt]
+        0 & a^2 n\pi^2 & \dfrac{a^2 n}{2} & 0 \\[10pt]
+        0 & 0 & 0 & n
+    \end{pmatrix}
+\end{equation}
+
+where $n$ is the number of data points, uniformly distributed over a time interval equal to an integer number of cycles. This allows us to estimate:
+\begin{equation}
+    \left(\left[\mathbb{J}^T \mathbb{J}\right]^{-1}\right)_{aa}
+    = \frac{1}{\left[\mathbb{J}^T \mathbb{J}\right]_{aa} - \mathbf{c}^T \mathbb{B}^{-1}\mathbf{c}}
+    = \frac{1}{\dfrac{n}{2} - n\cdot 0.02}
+    \approx \frac{2.08}{n}
+\end{equation}
+
+Returning to \eqref{sineDeviation}, it remains to estimate the summation term, which tells us how far the data deviate from the curve; we rewrite:
+\begin{equation}
+    \sigma_a = \sqrt{\left(\left[\mathbb{J}^T \mathbb{J}\right]^{-1}\right)_{aa} \cdot \frac{\sigma_r}{n-4}}
+    \qquad \text{with} \quad \sigma_r = \sum_{i=1}^{n}(V_{\text{obs},i} - V_{\text{calc},i})^2
+\end{equation}
+
+This $\sigma_r$ is affected by three factors: the function generator and the device that samples the data (in our case both are the Red Pitaya), and the third factor is the circuit setup itself.
+
+The Red Pitaya ADC (in low-voltage configuration) has a 14-bit resolution with a full-scale range of $2\text{ V}$ ($\pm1\text{ V}$). From this we can calculate the LSB (\textit{Least Significant Bit}), which is the voltage equivalent of each of the $2^{14}$ divisions:
+\begin{equation}
+\text{LSB} = \frac{2000\text{ mV}}{16384} \approx 0.122\text{ mV}
+\end{equation}
+
+Due to rounding, a uniformly distributed error is assumed, whose variance and associated standard quantization uncertainty ($\sigma_q$) are:
+\begin{equation}
+\sigma_q^2 = \frac{\text{LSB}^2}{12} \Rightarrow \sigma_q = \frac{\text{LSB}}{\sqrt{12}} \approx 0.035\text{ mV} = 3.5 \times 10^{-5}\text{ V}
+\end{equation}
+
+On the other hand, the generator introduces noise through harmonics; specifically, there are harmonics with a relative amplitude of 0.1\%. The standard deviation of the error introduced by this factor is therefore:
+\begin{equation}
+    \sigma_{\mathrm{THD}} = \frac{0.001 \cdot a}{\sqrt{2}} = 3.25\times 10^{-4}\;\mathrm{V}
+\end{equation}
+
+The standard deviation due to the residuals is then:
+\begin{equation}
+    \sigma_r = \sqrt{\sigma_q^2 + \sigma_{\mathrm{THD}}^2 + \sigma_{\text{circuit noise}}^2}
+\end{equation}
+
+If we set the noise introduced by the circuit to zero, we obtain an inequality:
+\begin{equation}
+    \sigma_r > \sqrt{(0.35\times 10^{-4})^2 + (3.25\times 10^{-4})^2} \approx 3.27\times 10^{-4}
+\end{equation}
+
+Equation~\eqref{sineDeviation} then becomes:
+\begin{equation}
+    \sigma_a > \sqrt{\frac{2.08}{n} \cdot \frac{3.27\times 10^{-4}}{n-4}}
+\end{equation}
+
+As $n$ tends to infinity, $n-4$ tends to $n$, so
+\begin{equation}
+    \sigma_a > \frac{1}{n}\sqrt{2.08 \cdot 3.27\times 10^{-4}} \approx 0.026 / n
+\end{equation}
+
+We now evaluate the $n$ required for $\sigma_a \approx 1.32\times 10^{-7}$:
+\begin{equation} \label{number-of-data}
+    n > 0.026/1.32\times 10^{-7} \approx 197\,000 \text{ data points}
+\end{equation}
+
+To put this number in perspective, note that the Red Pitaya sampling rate is 125 MSPS (mega samples per second) and its default buffer is 16384 samples [21]. However, it is possible to enable DMA (direct memory access) mode, which allows writing at a rate of $125\text{ MHz}$ into the device's RAM, which is 512 MB by default. The required amount of data therefore represents a negligible fraction of the available memory, which means the minimum threshold given by Equation~\eqref{number-of-data} can be exceeded by a wide margin.
+
+Another advantage of the Red Pitaya is that it can run Python natively. Together with its RAM, this will allow us to implement the program that performs the frequency sweep, the data acquisition and the ODR fit directly on the board, without the need for a computer. It can also be powered by a commercial ``power bank'' battery supplying a stable 5 V at 2 A, and be placed entirely inside the stabilization module.
+
+In conclusion, performing the experiment with the Red Pitaya STEMlab 125-14 will greatly reduce the complexity of what has been discussed so far. Most of the parts described in Section 3.3 will no longer be necessary; only the stabilization module would remain, so that only the resonant components (resistor, inductor and capacitor) would be connected to the board.
+\end{document}
