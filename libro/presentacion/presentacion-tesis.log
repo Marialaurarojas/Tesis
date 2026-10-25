@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  24 OCT 2026 19:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  24 OCT 2026 21:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -822,7 +822,7 @@ Package: figureversions 2025-04-29 v1.0.1 Figure versions
 )
 Already applied: [0000-00-00] Fall back to v1 on input line 76.
 ))
-LaTeX Font Info:    Trying to load font information for T1+Crlt-LF on input line 194.
+LaTeX Font Info:    Trying to load font information for T1+Crlt-LF on input line 195.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/carlito/T1Crlt-LF.fd
 File: T1Crlt-LF.fd 2022/10/05 (autoinst) Font definitions for T1/Crlt-LF.
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -836,24 +836,24 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `presentacion-tesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -908,57 +908,57 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 194.
+Package hyperref Info: Link coloring OFF on input line 195.
  (./presentacion-tesis.out) (./presentacion-tesis.out)
 \@outlinefile=\write5
 \openout5 = `presentacion-tesis.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 194.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 195.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 194.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 195.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/Crlt-LF/m/n on input line 194.
+(Font)                  OT1/cmss/m/n --> OT1/Crlt-LF/m/n on input line 195.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/Crlt-LF/b/n on input line 194.
+(Font)                  OT1/cmss/b/n --> OT1/Crlt-LF/b/n on input line 195.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/Crlt-LF/m/n --> T1/lmr/m/n on input line 194.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 194.
+(Font)                  OT1/Crlt-LF/m/n --> T1/lmr/m/n on input line 195.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/Crlt-LF/b/n on input line 194.
+(Font)                  OT1/lmr/bx/n --> T1/Crlt-LF/b/n on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/Crlt-LF/b/n on input line 194.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 194.
+(Font)                  OT1/lmr/bx/n --> T1/Crlt-LF/b/n on input line 195.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/Crlt-LF/m/n on input line 194.
+(Font)                  OT1/lmss/m/n --> T1/Crlt-LF/m/n on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/Crlt-LF/m/n on input line 194.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 194.
+(Font)                  OT1/lmss/bx/n --> T1/Crlt-LF/m/n on input line 195.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/Crlt-LF/m/it on input line 194.
+(Font)                  OT1/lmr/m/it --> T1/Crlt-LF/m/it on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/Crlt-LF/m/it on input line 194.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 194.
+(Font)                  OT1/lmr/bx/it --> T1/Crlt-LF/m/it on input line 195.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 194.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 194.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 195.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/Crlt-LF/m/n --> T1/Crlt-LF/b/n on input line 194.
+(Font)                  T1/Crlt-LF/m/n --> T1/Crlt-LF/b/n on input line 195.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/Crlt-LF/m/it --> T1/Crlt-LF/b/it on input line 194.
+(Font)                  T1/Crlt-LF/m/it --> T1/Crlt-LF/b/it on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/Crlt-LF/b/n --> T1/lmr/b/n on input line 194.
+(Font)                  OT1/Crlt-LF/b/n --> T1/lmr/b/n on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/Crlt-LF/b/n --> T1/Crlt-LF/b/n on input line 194.
+(Font)                  T1/Crlt-LF/b/n --> T1/Crlt-LF/b/n on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/Crlt-LF/m/n --> T1/Crlt-LF/b/n on input line 194.
+(Font)                  T1/Crlt-LF/m/n --> T1/Crlt-LF/b/n on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/Crlt-LF/m/it --> T1/Crlt-LF/b/it on input line 194.
+(Font)                  T1/Crlt-LF/m/it --> T1/Crlt-LF/b/it on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 194.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 195.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -972,76 +972,75 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 194.
-LaTeX Info: Redefining \% on input line 194.
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/translations/translations-basic-dictionary-spanish.trsl
 File: translations-basic-dictionary-spanish.trsl (spanish translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 194.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 195.
 \c@mv@tabular=\count404
 \c@mv@boldtabular=\count405
  (./presentacion-tesis.nav)
 <logo-usb.png, id=37, 84.315pt x 58.2175pt>
 File: logo-usb.png Graphic file (type png)
 <use logo-usb.png>
-Package pdftex.def Info: logo-usb.png  used on input line 216.
+Package pdftex.def Info: logo-usb.png  used on input line 217.
 (pdftex.def)             Requested size: 45.32742pt x 31.29802pt.
  [1{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/carlito/crlt_ys3vdn.enc}
 
  <./logo-usb.png>] [2
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+Crlt-LF on input line 247.
+LaTeX Font Info:    Trying to load font information for OT1+Crlt-LF on input line 248.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/carlito/OT1Crlt-LF.fd
 File: OT1Crlt-LF.fd 2022/10/05 (autoinst) Font definitions for OT1/Crlt-LF.
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 247.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 248.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 247.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 248.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 247.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 248.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 247.
+(Font)              <9> on input line 248.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 247.
+(Font)              <6> on input line 248.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 247.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 247.
+(Font)              <5> on input line 248.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 248.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 247.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 248.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [3
 
 {/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 269.
+(Font)              <7> on input line 270.
  [4
 
 ] [5
 
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 291.
- [6
+] [6
 
 {/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/carlito/crlt_lu4jub.enc}]
-LaTeX Font Info:    Calculating math sizes for size <26> on input line 321.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <26> on input line 321.
+(Font)              <10> on input line 326.
+LaTeX Font Info:    Calculating math sizes for size <26> on input line 326.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <18.19992> on input line 321.
+(Font)              <26> on input line 326.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13> on input line 321.
+(Font)              <18.19992> on input line 326.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <13> on input line 326.
  [7
 
 ] [8
@@ -1050,18 +1049,18 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 {/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 374.
+(Font)              <12> on input line 375.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 374.
+(Font)              <8> on input line 375.
  [10
 
 ]
-Overfull \hbox (9.21823pt too wide) in paragraph at lines 408--408
+Overfull \hbox (9.21823pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 408--408
+Underfull \hbox (badness 3323) in paragraph at lines 409--409
 []\T1/Crlt-LF/m/n/9 En Ga-li-leo, NEAR, Cas-si-ni, Ro-set-ta y
  []
 
@@ -1075,27 +1074,27 @@ Underfull \hbox (badness 3323) in paragraph at lines 408--408
 <../Imagen4.png, id=125, 337.86224pt x 222.23026pt>
 File: ../Imagen4.png Graphic file (type png)
 <use ../Imagen4.png>
-Package pdftex.def Info: ../Imagen4.png  used on input line 506.
+Package pdftex.def Info: ../Imagen4.png  used on input line 507.
 (pdftex.def)             Requested size: 169.01036pt x 111.16571pt.
 <../Curva c_i vs g_i.png, id=126, 422.7795pt x 328.8285pt>
 File: ../Curva c_i vs g_i.png Graphic file (type png)
 <use ../Curva c_i vs g_i.png>
-Package pdftex.def Info: ../Curva c_i vs g_i.png  used on input line 506.
+Package pdftex.def Info: ../Curva c_i vs g_i.png  used on input line 507.
 (pdftex.def)             Requested size: 125.19212pt x 97.36984pt.
 <../curva c_i vs g_i zoom.png, id=127, 419.166pt x 328.8285pt>
 File: ../curva c_i vs g_i zoom.png Graphic file (type png)
 <use ../curva c_i vs g_i zoom.png>
-Package pdftex.def Info: ../curva c_i vs g_i zoom.png  used on input line 506.
+Package pdftex.def Info: ../curva c_i vs g_i zoom.png  used on input line 507.
 (pdftex.def)             Requested size: 125.19212pt x 98.20776pt.
 
-Overfull \hbox (16.66673pt too wide) in paragraph at lines 506--506
+Overfull \hbox (16.66673pt too wide) in paragraph at lines 507--507
 [][]  
  []
 
 [14
 
  <../Imagen4.png> <../Curva c_i vs g_i.png> <../curva c_i vs g_i zoom.png>]
-Overfull \hbox (27.04892pt too wide) in paragraph at lines 540--540
+Overfull \hbox (27.04892pt too wide) in paragraph at lines 541--541
  [][] 
  []
 
@@ -1105,7 +1104,7 @@ Overfull \hbox (27.04892pt too wide) in paragraph at lines 540--540
 <../CurvaPlanaGalaxias.png, id=142, 473.97075pt x 336.0555pt>
 File: ../CurvaPlanaGalaxias.png Graphic file (type png)
 <use ../CurvaPlanaGalaxias.png>
-Package pdftex.def Info: ../CurvaPlanaGalaxias.png  used on input line 565.
+Package pdftex.def Info: ../CurvaPlanaGalaxias.png  used on input line 566.
 (pdftex.def)             Requested size: 129.06117pt x 91.50536pt.
  [16
 
@@ -1115,73 +1114,73 @@ Package pdftex.def Info: ../CurvaPlanaGalaxias.png  used on input line 565.
 <../experimento_guia.png, id=154, 443.256pt x 246.32025pt>
 File: ../experimento_guia.png Graphic file (type png)
 <use ../experimento_guia.png>
-Package pdftex.def Info: ../experimento_guia.png  used on input line 586.
+Package pdftex.def Info: ../experimento_guia.png  used on input line 587.
 (pdftex.def)             Requested size: 165.02597pt x 91.70459pt.
  [18
 
  <../experimento_guia.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 599.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 600.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 <../F0003TEK.png, id=161, 321.2pt x 240.9pt>
 File: ../F0003TEK.png Graphic file (type png)
 <use ../F0003TEK.png>
-Package pdftex.def Info: ../F0003TEK.png  used on input line 599.
+Package pdftex.def Info: ../F0003TEK.png  used on input line 600.
 (pdftex.def)             Requested size: 136.57323pt x 102.43076pt.
 <../AjusteF0003CH2.png, id=162, 392.46625pt x 279.0425pt>
 File: ../AjusteF0003CH2.png Graphic file (type png)
 <use ../AjusteF0003CH2.png>
-Package pdftex.def Info: ../AjusteF0003CH2.png  used on input line 599.
+Package pdftex.def Info: ../AjusteF0003CH2.png  used on input line 600.
 (pdftex.def)             Requested size: 142.26378pt x 101.14925pt.
  [19
 
 {/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <../F0003TEK.png> <../AjusteF0003CH2.png>]
-Overfull \hbox (6.36398pt too wide) in paragraph at lines 629--629
+Overfull \hbox (6.36398pt too wide) in paragraph at lines 630--630
  [][] 
  []
 
 <../n-1.png, id=172, 362.007pt x 217.467pt>
 File: ../n-1.png Graphic file (type png)
 <use ../n-1.png>
-Package pdftex.def Info: ../n-1.png  used on input line 629.
+Package pdftex.def Info: ../n-1.png  used on input line 630.
 (pdftex.def)             Requested size: 81.30879pt x 48.845pt.
 <../n-2.png, id=173, 342.735pt x 217.248pt>
 File: ../n-2.png Graphic file (type png)
 <use ../n-2.png>
-Package pdftex.def Info: ../n-2.png  used on input line 629.
+Package pdftex.def Info: ../n-2.png  used on input line 630.
 (pdftex.def)             Requested size: 81.30879pt x 51.53726pt.
 <../n-3.png, id=174, 361.788pt x 217.248pt>
 File: ../n-3.png Graphic file (type png)
 <use ../n-3.png>
-Package pdftex.def Info: ../n-3.png  used on input line 629.
+Package pdftex.def Info: ../n-3.png  used on input line 630.
 (pdftex.def)             Requested size: 81.30879pt x 48.82233pt.
 [20
 
  <../n-1.png> <../n-2.png> <../n-3.png>]
-Overfull \hbox (20.03926pt too wide) in paragraph at lines 657--657
+Overfull \hbox (20.03926pt too wide) in paragraph at lines 658--658
  [] 
  []
 
 <../n-5.1.png, id=183, 362.007pt x 217.248pt>
 File: ../n-5.1.png Graphic file (type png)
 <use ../n-5.1.png>
-Package pdftex.def Info: ../n-5.1.png  used on input line 657.
+Package pdftex.def Info: ../n-5.1.png  used on input line 658.
 (pdftex.def)             Requested size: 147.00838pt x 88.22363pt.
 <../n-5.2.png, id=184, 348.21pt x 227.322pt>
 File: ../n-5.2.png Graphic file (type png)
 <use ../n-5.2.png>
-Package pdftex.def Info: ../n-5.2.png  used on input line 657.
+Package pdftex.def Info: ../n-5.2.png  used on input line 658.
 (pdftex.def)             Requested size: 147.00838pt x 95.9706pt.
 [21
 
  <../n-5.1.png> <../n-5.2.png>]
-Overfull \hbox (10.50368pt too wide) detected at line 687
+Overfull \hbox (10.50368pt too wide) detected at line 688
 \T1/Crlt-LF/m/it/9 E[] \OMS/lmsy/m/n/9 ^^X \OML/lmm/m/it/9 ^^T \OMS/lmsy/m/n/9 ^^A \T1/Crlt-LF/m/n/9 2 \OMS/lmsy/m/n/9 ^^B \T1/Crlt-LF/m/n/9 10[] [] \T1/Crlt-LF/m/it/9 E[] \OMS/lmsy/m/n/9 ^^X \T1/Crlt-LF/m/it/9 F \OMS/lmsy/m/n/9 ^^A \T1/Crlt-LF/m/n/9 6\OML/lmm/m/it/9 :\T1/Crlt-LF/m/n/9 67 \OMS/lmsy/m/n/9 ^^B \T1/Crlt-LF/m/n/9 10[] []
  []
 
 
-Overfull \hbox (6.59889pt too wide) in paragraph at lines 687--687
+Overfull \hbox (6.59889pt too wide) in paragraph at lines 688--688
 [][]  
  []
 
@@ -1198,7 +1197,7 @@ Underfull \hbox (badness 2065) has occurred while \output is active
 <../FactorQ-zemansky.png, id=203, 272.81924pt x 205.9695pt>
 File: ../FactorQ-zemansky.png Graphic file (type png)
 <use ../FactorQ-zemansky.png>
-Package pdftex.def Info: ../FactorQ-zemansky.png  used on input line 719.
+Package pdftex.def Info: ../FactorQ-zemansky.png  used on input line 720.
 (pdftex.def)             Requested size: 108.12047pt x 81.6289pt.
  [24
 
@@ -1206,12 +1205,12 @@ Package pdftex.def Info: ../FactorQ-zemansky.png  used on input line 719.
 <../Simulacion-respuesta1.png, id=210, 556.32843pt x 368.1253pt>
 File: ../Simulacion-respuesta1.png Graphic file (type png)
 <use ../Simulacion-respuesta1.png>
-Package pdftex.def Info: ../Simulacion-respuesta1.png  used on input line 743.
+Package pdftex.def Info: ../Simulacion-respuesta1.png  used on input line 744.
 (pdftex.def)             Requested size: 142.70374pt x 94.42961pt.
 <../Simulacion-respuesta2.png, id=211, 465.99094pt x 335.75438pt>
 File: ../Simulacion-respuesta2.png Graphic file (type png)
 <use ../Simulacion-respuesta2.png>
-Package pdftex.def Info: ../Simulacion-respuesta2.png  used on input line 743.
+Package pdftex.def Info: ../Simulacion-respuesta2.png  used on input line 744.
 (pdftex.def)             Requested size: 116.15361pt x 83.68735pt.
  [25
 
@@ -1219,15 +1218,15 @@ Package pdftex.def Info: ../Simulacion-respuesta2.png  used on input line 743.
 <../SOLO-ESQUEMA.png, id=220, 605.26125pt x 274.02374pt>
 File: ../SOLO-ESQUEMA.png Graphic file (type png)
 <use ../SOLO-ESQUEMA.png>
-Package pdftex.def Info: ../SOLO-ESQUEMA.png  used on input line 762.
+Package pdftex.def Info: ../SOLO-ESQUEMA.png  used on input line 763.
 (pdftex.def)             Requested size: 282.70612pt x 127.99255pt.
 
-Underfull \hbox (badness 2173) in paragraph at lines 762--762
+Underfull \hbox (badness 2173) in paragraph at lines 763--763
 []|\T1/Crlt-LF/m/n/8 Control tér-mi-co au-
  []
 
 
-Overfull \hbox (13.85655pt too wide) in paragraph at lines 762--762
+Overfull \hbox (13.85655pt too wide) in paragraph at lines 763--763
  [][] 
  []
 
@@ -1237,7 +1236,7 @@ Overfull \hbox (13.85655pt too wide) in paragraph at lines 762--762
 <../Amplificador1-voltaje.png, id=227, 449.88075pt x 449.88075pt>
 File: ../Amplificador1-voltaje.png Graphic file (type png)
 <use ../Amplificador1-voltaje.png>
-Package pdftex.def Info: ../Amplificador1-voltaje.png  used on input line 776.
+Package pdftex.def Info: ../Amplificador1-voltaje.png  used on input line 777.
 (pdftex.def)             Requested size: 125.19212pt x 125.19005pt.
  [27
 
@@ -1245,12 +1244,12 @@ Package pdftex.def Info: ../Amplificador1-voltaje.png  used on input line 776.
 <../Rectificador.png, id=234, 654.64575pt x 395.67825pt>
 File: ../Rectificador.png Graphic file (type png)
 <use ../Rectificador.png>
-Package pdftex.def Info: ../Rectificador.png  used on input line 789.
+Package pdftex.def Info: ../Rectificador.png  used on input line 790.
 (pdftex.def)             Requested size: 159.33542pt x 96.30505pt.
 <../Amplificador2.png, id=235, 504.08325pt x 347.49825pt>
 File: ../Amplificador2.png Graphic file (type png)
 <use ../Amplificador2.png>
-Package pdftex.def Info: ../Amplificador2.png  used on input line 789.
+Package pdftex.def Info: ../Amplificador2.png  used on input line 790.
 (pdftex.def)             Requested size: 130.88268pt x 90.22545pt.
  [28
 
@@ -1258,7 +1257,7 @@ Package pdftex.def Info: ../Amplificador2.png  used on input line 789.
 <../esquematico-paralelo-total.png, id=243, 735.34724pt x 247.52475pt>
 File: ../esquematico-paralelo-total.png Graphic file (type png)
 <use ../esquematico-paralelo-total.png>
-Package pdftex.def Info: ../esquematico-paralelo-total.png  used on input line 804.
+Package pdftex.def Info: ../esquematico-paralelo-total.png  used on input line 805.
 (pdftex.def)             Requested size: 165.02597pt x 55.54713pt.
  [29
 
@@ -1266,12 +1265,12 @@ Package pdftex.def Info: ../esquematico-paralelo-total.png  used on input line 8
 <../FOTO-circuito-temperatura.png, id=250, 475.02469pt x 432.86719pt>
 File: ../FOTO-circuito-temperatura.png Graphic file (type png)
 <use ../FOTO-circuito-temperatura.png>
-Package pdftex.def Info: ../FOTO-circuito-temperatura.png  used on input line 817.
+Package pdftex.def Info: ../FOTO-circuito-temperatura.png  used on input line 818.
 (pdftex.def)             Requested size: 130.88268pt x 119.26671pt.
 <../CIRCUITO CONTROL DE TEMP.JPG, id=251, 578.16pt x 393.72093pt>
 File: ../CIRCUITO CONTROL DE TEMP.JPG Graphic file (type jpg)
 <use ../CIRCUITO CONTROL DE TEMP.JPG>
-Package pdftex.def Info: ../CIRCUITO CONTROL DE TEMP.JPG  used on input line 817.
+Package pdftex.def Info: ../CIRCUITO CONTROL DE TEMP.JPG  used on input line 818.
 (pdftex.def)             Requested size: 147.95433pt x 100.75496pt.
  [30
 
@@ -1279,12 +1278,12 @@ Package pdftex.def Info: ../CIRCUITO CONTROL DE TEMP.JPG  used on input line 817
 <../temperatura_meses.pdf, id=258, 908.39375pt x 272.01625pt>
 File: ../temperatura_meses.pdf Graphic file (type pdf)
 <use ../temperatura_meses.pdf>
-Package pdftex.def Info: ../temperatura_meses.pdf  used on input line 832.
+Package pdftex.def Info: ../temperatura_meses.pdf  used on input line 833.
 (pdftex.def)             Requested size: 245.83282pt x 73.61139pt.
 <../temperatura_dia.pdf, id=259, 908.39375pt x 226.8475pt>
 File: ../temperatura_dia.pdf Graphic file (type pdf)
 <use ../temperatura_dia.pdf>
-Package pdftex.def Info: ../temperatura_dia.pdf  used on input line 832.
+Package pdftex.def Info: ../temperatura_dia.pdf  used on input line 833.
 (pdftex.def)             Requested size: 245.83282pt x 61.38809pt.
  [31
 
@@ -1295,7 +1294,7 @@ pdfTeX warning: pdflatex (file ../temperatura_dia.pdf): PDF inclusion: multiple 
 <../temperatura_exterior_vs_interior.pdf, id=283, 908.39375pt x 226.8475pt>
 File: ../temperatura_exterior_vs_interior.pdf Graphic file (type pdf)
 <use ../temperatura_exterior_vs_interior.pdf>
-Package pdftex.def Info: ../temperatura_exterior_vs_interior.pdf  used on input line 851.
+Package pdftex.def Info: ../temperatura_exterior_vs_interior.pdf  used on input line 852.
 (pdftex.def)             Requested size: 184.3758pt x 46.0402pt.
  [32
 
@@ -1303,7 +1302,7 @@ Package pdftex.def Info: ../temperatura_exterior_vs_interior.pdf  used on input 
 <../Foto-paralelo-protoboard.png, id=298, 519.44063pt x 692.5875pt>
 File: ../Foto-paralelo-protoboard.png Graphic file (type png)
 <use ../Foto-paralelo-protoboard.png>
-Package pdftex.def Info: ../Foto-paralelo-protoboard.png  used on input line 865.
+Package pdftex.def Info: ../Foto-paralelo-protoboard.png  used on input line 866.
 (pdftex.def)             Requested size: 119.50053pt x 159.33542pt.
  [33
 
@@ -1311,12 +1310,12 @@ Package pdftex.def Info: ../Foto-paralelo-protoboard.png  used on input line 865
 <../grafica-3Jun-10.png, id=305, 424.2249pt x 308.5929pt>
 File: ../grafica-3Jun-10.png Graphic file (type png)
 <use ../grafica-3Jun-10.png>
-Package pdftex.def Info: ../grafica-3Jun-10.png  used on input line 892.
+Package pdftex.def Info: ../grafica-3Jun-10.png  used on input line 893.
 (pdftex.def)             Requested size: 147.49782pt x 107.2934pt.
 <../grafica-3Jun-12.png, id=306, 430.0065pt x 308.5929pt>
 File: ../grafica-3Jun-12.png Graphic file (type png)
 <use ../grafica-3Jun-12.png>
-Package pdftex.def Info: ../grafica-3Jun-12.png  used on input line 892.
+Package pdftex.def Info: ../grafica-3Jun-12.png  used on input line 893.
 (pdftex.def)             Requested size: 147.49782pt x 105.85252pt.
  [34
 
@@ -1324,12 +1323,12 @@ Package pdftex.def Info: ../grafica-3Jun-12.png  used on input line 892.
 <../En-serie-prototipo1.jpg, id=314, 836.12375pt x 488.82625pt>
 File: ../En-serie-prototipo1.jpg Graphic file (type jpg)
 <use ../En-serie-prototipo1.jpg>
-Package pdftex.def Info: ../En-serie-prototipo1.jpg  used on input line 907.
+Package pdftex.def Info: ../En-serie-prototipo1.jpg  used on input line 908.
 (pdftex.def)             Requested size: 142.26378pt x 83.16649pt.
 <../En-serie-prototipo2.jpg, id=315, 1080.035pt x 837.1275pt>
 File: ../En-serie-prototipo2.jpg Graphic file (type jpg)
 <use ../En-serie-prototipo2.jpg>
-Package pdftex.def Info: ../En-serie-prototipo2.jpg  used on input line 907.
+Package pdftex.def Info: ../En-serie-prototipo2.jpg  used on input line 908.
 (pdftex.def)             Requested size: 125.19212pt x 97.02765pt.
  [35
 
@@ -1337,26 +1336,26 @@ Package pdftex.def Info: ../En-serie-prototipo2.jpg  used on input line 907.
 <../resultado-serie-3Mar26-1.png, id=321, 430.0065pt x 308.5929pt>
 File: ../resultado-serie-3Mar26-1.png Graphic file (type png)
 <use ../resultado-serie-3Mar26-1.png>
-Package pdftex.def Info: ../resultado-serie-3Mar26-1.png  used on input line 939.
+Package pdftex.def Info: ../resultado-serie-3Mar26-1.png  used on input line 940.
 (pdftex.def)             Requested size: 159.79204pt x 114.672pt.
 <../resultado-serie-3Mar26-5.png, id=322, 433.62pt x 308.5929pt>
 File: ../resultado-serie-3Mar26-5.png Graphic file (type png)
 <use ../resultado-serie-3Mar26-5.png>
-Package pdftex.def Info: ../resultado-serie-3Mar26-5.png  used on input line 939.
+Package pdftex.def Info: ../resultado-serie-3Mar26-5.png  used on input line 940.
 (pdftex.def)             Requested size: 66.25279pt x 47.14864pt.
 <../resultado-serie-3Mar26-6.png, id=323, 427.1157pt x 307.8702pt>
 File: ../resultado-serie-3Mar26-6.png Graphic file (type png)
 <use ../resultado-serie-3Mar26-6.png>
-Package pdftex.def Info: ../resultado-serie-3Mar26-6.png  used on input line 939.
+Package pdftex.def Info: ../resultado-serie-3Mar26-6.png  used on input line 940.
 (pdftex.def)             Requested size: 66.25279pt x 47.75226pt.
  [36
 
  <../resultado-serie-3Mar26-1.png> <../resultado-serie-3Mar26-5.png> <../resultado-serie-3Mar26-6.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 971.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 972.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (7.05545pt too wide) in paragraph at lines 971--971
+Overfull \hbox (7.05545pt too wide) in paragraph at lines 972--972
 []  
  []
 
@@ -1368,7 +1367,7 @@ Overfull \hbox (7.05545pt too wide) in paragraph at lines 971--971
 <../MIT-circuito-induccion.png, id=345, 449.88075pt x 269.20575pt>
 File: ../MIT-circuito-induccion.png Graphic file (type png)
 <use ../MIT-circuito-induccion.png>
-Package pdftex.def Info: ../MIT-circuito-induccion.png  used on input line 991.
+Package pdftex.def Info: ../MIT-circuito-induccion.png  used on input line 992.
 (pdftex.def)             Requested size: 165.02597pt x 98.75015pt.
  [39
 
@@ -1376,24 +1375,24 @@ Package pdftex.def Info: ../MIT-circuito-induccion.png  used on input line 991.
 <../placaNueva.jpg, id=352, 467.7475pt x 335.2525pt>
 File: ../placaNueva.jpg Graphic file (type jpg)
 <use ../placaNueva.jpg>
-Package pdftex.def Info: ../placaNueva.jpg  used on input line 1022.
+Package pdftex.def Info: ../placaNueva.jpg  used on input line 1023.
 (pdftex.def)             Requested size: 101.40622pt x 72.6815pt.
  [40
 
  <../placaNueva.jpg>]
-Overfull \hbox (20.92778pt too wide) detected at line 1046
+Overfull \hbox (20.92778pt too wide) detected at line 1047
 [] \OT1/Crlt-LF/m/n/9 = [] \OMS/lmsy/m/n/9 ^^Y \T1/Crlt-LF/m/n/9 0\OML/lmm/m/it/9 :\T1/Crlt-LF/m/n/9 122 []\OML/lmm/m/it/9 ;  ^^[[] \OMS/lmsy/m/n/9 ^^Y \T1/Crlt-LF/m/n/9 0\OML/lmm/m/it/9 :\T1/Crlt-LF/m/n/9 035 []
  []
 
 
-Overfull \hbox (0.90834pt too wide) in paragraph at lines 1046--1046
+Overfull \hbox (0.90834pt too wide) in paragraph at lines 1047--1047
 []  
  []
 
 [41
 
 ]
-Overfull \hbox (6.947pt too wide) in paragraph at lines 1074--1074
+Overfull \hbox (6.947pt too wide) in paragraph at lines 1075--1075
 [][]  
  []
 
@@ -1431,15 +1430,15 @@ Package rerunfilecheck Info: File `presentacion-tesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 51397 strings out of 467525
- 1256604 string characters out of 5418982
- 1868645 words of memory out of 5000000
- 79505 multiletter control sequences out of 15000+600000
+ 51398 strings out of 467525
+ 1256607 string characters out of 5418982
+ 1868676 words of memory out of 5000000
+ 79506 multiletter control sequences out of 15000+600000
  970003 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,17n,123p,494b,1436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/google/carlito/Crlt-Bold.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/google/carlito/Crlt-Italic.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/google/carlito/Crlt-Regular.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on presentacion-tesis.pdf (47 pages, 3996344 bytes).
+Output written on presentacion-tesis.pdf (47 pages, 3996295 bytes).
 PDF statistics:
  516 PDF objects out of 1000 (max. 8388607)
  327 compressed objects within 4 object streams

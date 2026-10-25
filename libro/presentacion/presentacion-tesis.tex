@@ -60,6 +60,7 @@
 \newcommand{\cita}[1]{{\color{magenta}\scriptsize #1}}
 \newcommand{\dest}[1]{{\color{magenta}#1}}
 \newcommand{\etq}[1]{{\color{marron}#1}}
+\newcommand{\eqn}{\refstepcounter{equation}\tag*{\textcolor{marron}{(\theequation)}}}
 
 % ---------------------------------------------------------------------
 %  Imagen con respaldo (si falta el archivo se dibuja un recuadro)
@@ -275,18 +276,22 @@
 \layout{banda}
 \begin{frame}{Densidad de Energía}
 \vspace{1mm}
-Es la cantidad de energía por unidad de volumen almacenada en un espacio debido a un campo.
-\vspace{2mm}
+\small
+Jorge Céspedes-Curé (JCC) plantea la existencia de un medio energético cósmico que se sustenta en la presencia de campos
+eléctricos, magnéticos y gravitacionales. Para el estudio del mismo propone usar la densidad de energía en lugar de los valores del campo.
+
+\textbf{Densidad de energía:} Es la cantidad de energía por unidad de volumen almacenada en un espacio debido a un campo.
+\vspace{0mm}
 \begin{align*}
- &\etq{\text{Campo Eléctrico}}\quad \rho_e=\frac{E^2}{8\pi K_e}\;\etq{=}\;\frac{K_eQ^2}{8\pi r^4}\\[0.5mm]
- &\etq{\text{Campo Magnético}}\quad \rho_m=\frac{B^2}{2\mu_0}\\[0.5mm]
- &\etq{\text{Campo Gravitacional}}\quad \rho_g=\frac{\etq{g}^2}{8\pi G}\;\etq{=}\;\frac{GM^2}{8\pi r^4}
+ &\etq{\text{Campo Eléctrico}}\quad \rho_e=\frac{E^2}{8\pi K_e}\;\etq{=}\;\frac{K_eQ^2}{8\pi r^4} \eqn\\[0.5mm]
+ &\etq{\text{Campo Magnético}}\quad \rho_m=\frac{B^2}{2\mu_0} \eqn\\[0.5mm]
+ &\etq{\text{Campo Gravitacional}}\quad \rho_g=\frac{\etq{g}^2}{8\pi G}\;\etq{=}\;\frac{GM^2}{8\pi r^4} \eqn
 \end{align*}
-\vspace{1mm}
+\vspace{2mm}
 En un laboratorio terrestre la densidad total incluye las estrellas lejanas $\rho^*$:
 \[
-\rho=\rho^*+\frac{GM^2}{8\pi r^4}+\frac{1}{2}\,\mathbf{E}\cdot\mathbf{D}+\frac{1}{2}\,\mathbf{B}\cdot\mathbf{H}
-\]
+\rho=\frac{1}{2}\,\mathbf{E}\cdot\mathbf{D}+\frac{1}{2}\,\mathbf{B}\cdot\mathbf{H}+\rho^*+\frac{GM_E^2}{8\pi r_E^4}+\frac{GM_S^2}{8\pi r_S^4}
+ \eqn \]
 \cita{Céspedes-Curé, J.: Einstein on Trial or Metaphysical Principles of Natural Philosophy, 2002.}
 \end{frame}
 
@@ -303,7 +308,7 @@ A partir de las ecuaciones de Maxwell, la densidad de energía obedece una ecuac
 D'Alembert inhomogénea:
 \[
 \nabla^2\rho-c^{-2}\frac{\partial^2\rho}{\partial t^2}=\nabla\cdot\mathbf{T}
-\]
+ \eqn \]
 las ondas electromagnéticas son ondas de densidad de energía.
 \end{column}
 \begin{column}{0.36\textwidth}
@@ -315,7 +320,7 @@ las ondas electromagnéticas son ondas de densidad de energía.
 \end{tikzpicture}
 
 \vspace{3mm}
-{\scriptsize $k$: constante\\ $\rho$: densidad de energía total}
+{\scriptsize $k$: constante\\ $\rho$: densidad de energía total \\ $\mathbf{T}$: Tensor de estrés de Maxwell}
 \end{column}
 \end{columns}
 \end{frame}
@@ -323,11 +328,8 @@ las ondas electromagnéticas son ondas de densidad de energía.
 % =====================================================================
 \seccion{Antecedentes\\ y justificación}
 % =====================================================================
-
 \layout{barra}
 \begin{frame}{Pioneer Anomaly}
-\begin{columns}[T]
-\begin{column}{0.56\textwidth}
 \justifying
 Las sondas Pioneer 10 y 11 mostraron, a más de 20~UA, una aceleración anómala constante hacia el Sol
 de $\sim 8\times10^{-8}$~cm/s$^2$ que ninguna causa sistemática logró justificar.
@@ -335,22 +337,21 @@ de $\sim 8\times10^{-8}$~cm/s$^2$ que ninguna causa sistemática logró justific
 \vspace{2mm}
 La velocidad se mide por efecto Doppler suponiendo $c$ constante. Greaves$^*$ propone que el cambio de
 $c$ debido a la HCC explica la anomalía:
-\end{column}
-\begin{column}{0.40\textwidth}
 \vspace{2mm}
 \[
 n'=\frac{\sqrt{\rho^*+\rho_{S,\text{lejos}}+\rho_{E,\text{lejos}}}}{\sqrt{\rho^*+\rho_{S,1\text{UA}}+\rho_E}}
-\]
+ \eqn \]
+ \vspace{2mm}
 \[
 a=G\left(\frac{M_S}{r_S^2}-\frac{M_E}{r_E^2}\right)(1-n')
-\]
+ \eqn \]
+ \vspace{2mm}
 \[
 n'_{20\,\text{UA}}=0.9999735679
-\]
-\end{column}
-\end{columns}
-\vfill
-\cita{$^*$Greaves, E. D.: NASA's astonishing evidence that c is not constant: The pioneer anomaly, 2007. https://arxiv.org/abs/physics/0701130.}
+ \eqn \]
+
+\vspace{2mm}
+\cita{$^*$Greaves, E. D.: NASA's astonishing evidence that c is not constant: The pioneer anomaly, 2007.}
 \end{frame}
 
 % ---------------------------------------------------------------------
@@ -367,7 +368,7 @@ totalmente distinto (deflexión de la luz en eclipses, ley de Merat).
 \renewcommand{\arraystretch}{1.6}
 \begin{tabular}{p{45mm}p{45mm}}
 \cabecera \thc{Calculado por Greaves a partir de Pioneer Anomaly} & \thc{Calculado por Céspedes-Curé a partir de los eclipses}\\
-\filalila \rule{0pt}{8mm}\large $1{,}0838\times10^{15}$ J/m$^3$ & \large $1{,}094291\times10^{15}$ J/m$^3$\\
+\filalila \rule{0pt}{8mm}\large $1{.}0838\times10^{15}$ J/m$^3$ & \large $1{.}094291\times10^{15}$ J/m$^3$\\
 \end{tabular}
 \vfill
 \raggedright\cita{Greaves, E. D.: NASA's astonishing evidence that c is not constant: The pioneer anomaly, 2007.}
@@ -393,11 +394,11 @@ sobrevuelos cercanos a la Tierra: aumento, reducción o ninguna anomalía.
 La anomalía depende de los puntos de entrada ($-$) y salida ($+$):
 \[
 V_{anom}=V_\infty\left(\sqrt{\frac{\rho}{\rho'_+}}-\sqrt{\frac{\rho}{\rho'_-}}\right)
-\]
+ \eqn \]
 \vspace{-2mm}
 \[
 \rho'_\pm=\rho^*+\frac{GM_E}{(r_E^\pm)^2}+\frac{GM_S}{(r_S^\pm)^2}
-\]
+ \eqn \]
 \begin{itemize}\setlength{\itemsep}{0.5mm}
 \item $r_S^+=r_S^-$, $r_E^+=r_E^-$: sin anomalía.
 \item $r_S^+\neq r_S^-$, $r_E^+=r_E^-$: anomalía muy pequeña.
@@ -444,7 +445,7 @@ Las medidas históricas de $c$ discrepan a partir de la séptima cifra significa
 Aplicando la HCC en un punto $i$ de la Tierra con gravedad $g_i$:
 \[
 c_i=c_E\,\frac{\sqrt{\rho^*+\rho_S+\rho_E}}{\sqrt{\rho^*+\rho_S+\dfrac{g_i^2}{8\pi G}}}
-\]
+ \eqn \]
 {\scriptsize $\rho^*=1.0838\times10^{15}$, $\rho_S=2.097\times10^{4}$, $\rho_E=5.726\times10^{10}$ J/m$^3$}
 \end{column}
 \begin{column}{0.48\textwidth}
@@ -478,7 +479,7 @@ c_i=c_E\,\frac{\sqrt{\rho^*+\rho_S+\rho_E}}{\sqrt{\rho^*+\rho_S+\dfrac{g_i^2}{8\
 \begin{columns}[T]
 \begin{column}{0.55\textwidth}
 \begin{tikzpicture}
-\node[tarjeta,inner sep=2mm] {\small$\displaystyle c_i=c_E\,\frac{\sqrt{\rho^*+\rho_S+\rho_E}}{\sqrt{\rho^*+\rho_S+\frac{g_i^2}{8\pi G}}}$};
+\node[tarjeta,inner sep=2mm] {\small$\displaystyle c_i=c_E\,\frac{\sqrt{\rho^*+\rho_S+\rho_E}}{\sqrt{\rho^*+\rho_S+\frac{g_i^2}{8\pi G}}}$\quad\refstepcounter{equation}\textcolor{marron}{(\theequation)}};
 \end{tikzpicture}
 
 \vspace{6mm}
@@ -573,7 +574,7 @@ sobreestiman las velocidades de recesión.
 \begin{izquierda}
 Un haz láser de He-Ne modulado se divide: un brazo recorre una distancia variable y el otro una fija.
 El desfase crece con la diferencia de camino:
-\[ \Delta x=c\,\Delta t \]
+\[ \Delta x=c\,\Delta t  \eqn \]
 \vspace{-2mm}
 \begin{itemize}\setlength{\itemsep}{0mm}\footnotesize
 \item Láser He-Ne, lente, espejo, divisor de haz
@@ -592,8 +593,8 @@ El desfase crece con la diferencia de camino:
 \item Desfase medido con los cursores del osciloscopio (promedio de varias lecturas).
 \item Datos digitales (.csv) ajustados con Python: FFT para la frecuencia inicial y \texttt{curve\_fit}.
 \end{itemize}
-\[ A\sin(\omega t+\phi)+\text{offset} \]
-\[ \Delta t=2\,\frac{|\phi_2-\phi_1|}{\omega_2+\omega_1} \]
+\[ A\sin(\omega t+\phi)+\text{offset}  \eqn \]
+\[ \Delta t=2\,\frac{|\phi_2-\phi_1|}{\omega_2+\omega_1}  \eqn \]
 \end{izquierda}
 \derecha{\img{width=48mm}{F0003TEK.png}\\[2mm]\img{width=50mm}{AjusteF0003CH2.png}}
 \end{frame}
@@ -665,12 +666,12 @@ n5.1 & $(3.0296\pm0.0556)\times10^{8}$ & \dest{1\%}\\
 Para distinguir las localidades se necesita $E_c\le1$ m/s. Con $c=\Delta x/\Delta t$:
 \[
 E_c=\frac{E_{\Delta x}}{\Delta t}+\frac{\Delta x}{(\Delta t)^2}E_{\Delta t}
-\]
+ \eqn \]
 Con $\Delta t\approx200$ ns y $\Delta x\approx60$ m, repartiendo el error en fracciones $\kappa+F=1$:
 \[
 E_{\Delta x}\sim\kappa\cdot2\times10^{-7}\ \text{m}\qquad
 E_{\Delta t}\sim F\cdot6.67\times10^{-16}\ \text{s}
-\]
+ \eqn \]
 \end{column}
 \begin{column}{0.46\textwidth}
 \begin{tikzpicture}
@@ -708,13 +709,13 @@ estabilizado con metano, con equipos fuera de nuestro alcance.
 \node[anchor=north west,draw=black!70,fill=white,text width=52mm,inner sep=2mm,font=\footnotesize]
  at \Pt{65}{20} {%
  La frecuencia de resonancia depende de la capacitancia:
- \[ f_0=\frac{1}{2\pi\sqrt{LC}} \]
+ \[ f_0=\frac{1}{2\pi\sqrt{LC}}  \eqn \]
  La capacitancia depende de la permitividad eléctrica:
- \[ C=\varepsilon_0\frac{A_c}{d}=\frac{1}{c^2\mu_0}\frac{A_c}{d} \]
+ \[ C=\varepsilon_0\frac{A_c}{d}=\frac{1}{c^2\mu_0}\frac{A_c}{d}  \eqn \]
  La velocidad de la luz se relaciona con la permitividad y la permeabilidad:
- \[ c=\frac{1}{\sqrt{\varepsilon_0\etq{\mu_0}}},\quad \mu_0=4\pi\times10^{-7}\,\text{H/m} \]
+ \[ c=\frac{1}{\sqrt{\varepsilon_0\etq{\mu_0}}},\quad \mu_0=4\pi\times10^{-7}\,\text{H/m}  \eqn \]
  \vspace{-3mm}
- \[ \Rightarrow\ f_0=\frac{c}{2\pi}\sqrt{\frac{d\,\mu_0}{L A_c}}=\dest{k_0\,c} \]};
+ \[ \Rightarrow\ f_0=\frac{c}{2\pi}\sqrt{\frac{d\,\mu_0}{L A_c}}=\dest{k_0\,c}  \eqn \]};
 \end{tikzpicture}
 \end{frame}}
 
@@ -727,11 +728,11 @@ estabilizado con metano, con equipos fuera de nuestro alcance.
 Un $Q$ alto implica una curva de resonancia estrecha.
 \[
 Q_{\text{serie}}=\frac{1}{R}\sqrt{\frac{L}{C}}\qquad Q_{\text{paralelo}}=R\sqrt{\frac{C}{L}}
-\]
+ \eqn \]
 Respuesta en serie con $c$ de la HCC:
 \[
 I=\frac{V}{\sqrt{R^2+\left(2\pi fL-\dfrac{2c^2d\cdot10^{-7}}{fA_c}\right)^2}}
-\]
+ \eqn \]
 {\footnotesize $R=0.0168\ \Omega$, $V=1$ mV, pasos de 0.1 $\mu$Hz.}
 \end{column}
 \begin{column}{0.54\textwidth}
@@ -797,7 +798,7 @@ Un Arduino UNO controla el AD9833, la descarga del capacitor y la lectura del AD
 Una laptop recibe el barrido y ajusta una curva lorentziana:
 \[
 F(f)=\frac{A}{(f-f_0)^2+\gamma^2}+\text{offset}
-\]
+ \eqn \]
 \end{izquierda}
 \derecha{\img{width=58mm}{esquematico-paralelo-total.png}\\[1mm]
 {\tiny Esquemático completo del montaje en paralelo.}}
@@ -859,7 +860,7 @@ del contenedor.
 \item Sin amplificador 2 y sin resistencia de protección en el ADC.
 \item Fuente $\pm12$ V de regulador de laptop.
 \end{itemize}
-\[ V=\frac{2\pi V_1 fL/R}{\left|1-4\pi^2f^2L\dfrac{A_c}{c^2\mu_0 d}\right|} \]
+\[ V=\frac{2\pi V_1 fL/R}{\left|1-4\pi^2f^2L\dfrac{A_c}{c^2\mu_0 d}\right|}  \eqn \]
 \end{izquierda}
 \derecha{\img{height=56mm,angle=-90}{Foto-paralelo-protoboard.png}}
 \end{frame}
@@ -948,20 +949,20 @@ En barridos pequeños (400 a 440 kHz, pasos de 1 kHz) medidas consecutivas no co
 0.1 Hz. La \textbf{regresión de distancia ortogonal} (ODR) pondera los errores en ambos ejes.
 \[
 \mathrm{Var}(f_0)\approx\frac{8\,l\,\gamma^5\sigma_y^2}{N A^2\pi},\qquad l=\frac{Np}{2}
-\]
+ \eqn \]
 \[
 \Rightarrow\ \mathrm{Var}(f_0)\approx\frac{4\,p\,\gamma^5\sigma_y^2}{A^2\pi}
-\]
+ \eqn \]
 \end{column}
 \begin{column}{0.44\textwidth}
 \small
 Para 10 cifras confiables en $f_0$:
 \[
 \sigma_{f_0}<f_0\times10^{-10}\approx4.26\times10^{-5}\ \text{Hz}
-\]
+ \eqn \]
 \[
 \Rightarrow\ p<2.167\ \mu\text{Hz}
-\]
+ \eqn \]
 \begin{tikzpicture}
 \node[fill=amarillo,rounded corners=3mm,text width=46mm,inner sep=2mm,font=\footnotesize]
 {Muy por debajo de lo que genera el AD9833: hay que hacer la curva \textbf{más alta y más estrecha}.};
@@ -1027,15 +1028,15 @@ nativa.
 \begin{column}{0.50\textwidth}
 \small
 Leyendo directamente la sinusoide $V(t)=a\sin(2\pi ft+\phi)+B$ con $p=0.03$ Hz, se necesita:
-\[ \sigma_y<1.32\times10^{-7} \]
+\[ \sigma_y<1.32\times10^{-7}  \eqn \]
 Fuentes de error del ajuste:
-\[ \text{LSB}=\frac{2000\ \text{mV}}{2^{14}}\approx0.122\ \text{mV},\quad \sigma_q\approx0.035\ \text{mV} \]
-\[ \sigma_{THD}=\frac{0.001\,a}{\sqrt2}=3.25\times10^{-4}\ \text{V} \]
+\[ \text{LSB}=\frac{2000\ \text{mV}}{2^{14}}\approx0.122\ \text{mV},\quad \sigma_q\approx0.035\ \text{mV}  \eqn \]
+\[ \sigma_{THD}=\frac{0.001\,a}{\sqrt2}=3.25\times10^{-4}\ \text{V}  \eqn \]
 \end{column}
 \begin{column}{0.46\textwidth}
 \small
-\[ \sigma_r>\sqrt{\sigma_q^2+\sigma_{THD}^2}\approx3.27\times10^{-4} \]
-\[ \Rightarrow\ n\gtrsim1.97\times10^{5}\ \text{datos} \]
+\[ \sigma_r>\sqrt{\sigma_q^2+\sigma_{THD}^2}\approx3.27\times10^{-4}  \eqn \]
+\[ \Rightarrow\ n\gtrsim1.97\times10^{5}\ \text{datos}  \eqn \]
 \begin{tikzpicture}
 \node[fill=amarillo,rounded corners=3mm,text width=46mm,inner sep=2mm,font=\footnotesize]
 {Con 125 MS/s y 512 MB de RAM (modo DMA) el umbral se supera con creces. Sólo quedaría el módulo

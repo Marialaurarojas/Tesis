@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1792883061.4486 "/Users/mlrg/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/presentacion/presentacion-tesis.tex" "presentacion-tesis.pdf" "presentacion-tesis" 1792883065.20734 0
+["pdflatex"] 1792893537.68577 "/Users/mlrg/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/presentacion/presentacion-tesis.tex" "presentacion-tesis.pdf" "presentacion-tesis" 1792893541.42666 0
   "../AjusteF0003CH2.png" 1788729565.49536 29413 33eb80bf10325bcaeafb429d9178679f ""
   "../Amplificador1-voltaje.png" 1788729565.49705 52402 5cbd2d7d51b95f654cd56d2e3d0dc87e ""
   "../Amplificador2.png" 1788729565.49738 31805 c57ccf8b51e4a9ed2f0cc4238aa302dc ""
@@ -35,7 +35,7 @@
   "../temperatura_dia.pdf" 1788729565.53955 26051 30a7ebebb72af9050584ec02ef25764f ""
   "../temperatura_exterior_vs_interior.pdf" 1788729565.53973 23426 2c7dc96ec3516754e360769780f556f1 ""
   "../temperatura_meses.pdf" 1788729565.54027 27045 413f829ccfc152312f51e406e3e6c19c ""
-  "/Users/mlrg/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/presentacion/presentacion-tesis.tex" 1792883061.28448 46575 6671157bfeca4f60f3a35f4e1ef14994 ""
+  "/Users/mlrg/Documents/TESIS_CON_GREAVES/TESIS-GIT/Tesis/libro/presentacion/presentacion-tesis.tex" 1792893529.81971 47176 2b8296b6558b29d0bee300e1ab9a0b57 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/carlito/crlt_lu4jub.enc" 1664999222 3014 7fbd216c3361a810ecbb3621c30566e7 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/carlito/crlt_ys3vdn.enc" 1664999222 3036 b1e8e675b66735cd359ae1785943f688 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
@@ -335,10 +335,10 @@
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774209607 3636776 dc5fa9b6b1453b9d196cd42edf876004 ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
   "logo-usb.png" 1791156864.14963 8682 1d1515bae6539da0632ac18c0747010e ""
-  "presentacion-tesis.aux" 1792883065.05408 10462 8a0e537c7e150261dd095b0edad2eb7d "pdflatex"
-  "presentacion-tesis.nav" 1792883065.05627 4550 b4d3ccc89edac41d3aa3b69df3037b93 "pdflatex"
-  "presentacion-tesis.out" 1792883062.36705 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "presentacion-tesis.tex" 1792883061.28448 46575 6671157bfeca4f60f3a35f4e1ef14994 ""
+  "presentacion-tesis.aux" 1792893541.27494 10462 8a0e537c7e150261dd095b0edad2eb7d "pdflatex"
+  "presentacion-tesis.nav" 1792893541.27732 4550 b4d3ccc89edac41d3aa3b69df3037b93 "pdflatex"
+  "presentacion-tesis.out" 1792893538.56831 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "presentacion-tesis.tex" 1792893529.81971 47176 2b8296b6558b29d0bee300e1ab9a0b57 ""
   (generated)
   "presentacion-tesis.aux"
   "presentacion-tesis.log"
