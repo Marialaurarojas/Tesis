@@ -587,8 +587,6 @@ INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/google/carlito/Crlt-Italic-lf
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/google/carlito/Crlt-Italic-lf-t1.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/vf/google/carlito/Crlt-lf-t1.vf
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/google/carlito/Crlt-lf-t1--base.tfm
-INPUT /usr/local/texlive/2026/texmf-dist/fonts/vf/google/carlito/Crlt-Italic-lf-t1.vf
-INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/google/carlito/Crlt-Italic-lf-t1--base.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/vf/google/carlito/Crlt-lf-t1.vf
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/google/carlito/Crlt-lf-t1--base.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/vf/google/carlito/Crlt-Italic-lf-t1.vf
@@ -605,6 +603,8 @@ INPUT ../curva c_i vs g_i zoom.png
 INPUT ../curva c_i vs g_i zoom.png
 INPUT ../curva c_i vs g_i zoom.png
 INPUT ../curva c_i vs g_i zoom.png
+INPUT /usr/local/texlive/2026/texmf-dist/fonts/vf/google/carlito/Crlt-Italic-lf-t1.vf
+INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/google/carlito/Crlt-Italic-lf-t1--base.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/vf/google/carlito/Crlt-Bold-lf-t1.vf
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/google/carlito/Crlt-Bold-lf-t1--base.tfm
 INPUT ../CurvaPlanaGalaxias.png
