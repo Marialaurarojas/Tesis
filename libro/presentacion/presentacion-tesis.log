@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  4 NOV 2026 12:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  5 NOV 2026 12:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1055,345 +1055,376 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [10
 
 ]
-Overfull \hbox (2.27802pt too wide) in paragraph at lines 412--412
+Overfull \hbox (2.27802pt too wide) in paragraph at lines 416--416
 [][]  
+ []
+
+<Imagen-flyby.jpg, id=107, 710.655pt x 529.98pt>
+File: Imagen-flyby.jpg Graphic file (type jpg)
+<use Imagen-flyby.jpg>
+Package pdftex.def Info: Imagen-flyby.jpg  used on input line 416.
+(pdftex.def)             Requested size: 156.71326pt x 116.8709pt.
+
+Overfull \hbox (8.09169pt too wide) in paragraph at lines 416--416
+[][]\T1/Crlt-LF/m/n/9 La 
  []
 
 [11
 
-] [12
-
-] [13
-
-]
-<../Imagen4.png, id=123, 337.86224pt x 222.23026pt>
-File: ../Imagen4.png Graphic file (type png)
-<use ../Imagen4.png>
-Package pdftex.def Info: ../Imagen4.png  used on input line 513.
-(pdftex.def)             Requested size: 169.01036pt x 111.16571pt.
-<../Curva c_i vs g_i.png, id=124, 422.7795pt x 328.8285pt>
-File: ../Curva c_i vs g_i.png Graphic file (type png)
-<use ../Curva c_i vs g_i.png>
-Package pdftex.def Info: ../Curva c_i vs g_i.png  used on input line 513.
-(pdftex.def)             Requested size: 125.19212pt x 97.36984pt.
-<../curva c_i vs g_i zoom.png, id=125, 419.166pt x 328.8285pt>
-File: ../curva c_i vs g_i zoom.png Graphic file (type png)
-<use ../curva c_i vs g_i zoom.png>
-Package pdftex.def Info: ../curva c_i vs g_i zoom.png  used on input line 513.
-(pdftex.def)             Requested size: 125.19212pt x 98.20776pt.
-
-Overfull \hbox (16.66673pt too wide) in paragraph at lines 513--513
+ <./Imagen-flyby.jpg>]
+Overfull \hbox (2.27802pt too wide) in paragraph at lines 454--454
 [][]  
  []
 
-[14
+[12
 
- <../Imagen4.png> <../Curva c_i vs g_i.png> <../curva c_i vs g_i zoom.png>]
-Overfull \hbox (27.04892pt too wide) in paragraph at lines 547--547
- [][] 
+] [13
+
+] [14
+
+]
+<../Imagen4.png, id=129, 337.86224pt x 222.23026pt>
+File: ../Imagen4.png Graphic file (type png)
+<use ../Imagen4.png>
+Package pdftex.def Info: ../Imagen4.png  used on input line 555.
+(pdftex.def)             Requested size: 169.01036pt x 111.16571pt.
+<../Curva c_i vs g_i.png, id=130, 422.7795pt x 328.8285pt>
+File: ../Curva c_i vs g_i.png Graphic file (type png)
+<use ../Curva c_i vs g_i.png>
+Package pdftex.def Info: ../Curva c_i vs g_i.png  used on input line 555.
+(pdftex.def)             Requested size: 125.19212pt x 97.36984pt.
+<../curva c_i vs g_i zoom.png, id=131, 419.166pt x 328.8285pt>
+File: ../curva c_i vs g_i zoom.png Graphic file (type png)
+<use ../curva c_i vs g_i zoom.png>
+Package pdftex.def Info: ../curva c_i vs g_i zoom.png  used on input line 555.
+(pdftex.def)             Requested size: 125.19212pt x 98.20776pt.
+
+Overfull \hbox (16.66673pt too wide) in paragraph at lines 555--555
+[][]  
  []
 
 [15
 
-]
-<../CurvaPlanaGalaxias.png, id=141, 473.97075pt x 336.0555pt>
-File: ../CurvaPlanaGalaxias.png Graphic file (type png)
-<use ../CurvaPlanaGalaxias.png>
-Package pdftex.def Info: ../CurvaPlanaGalaxias.png  used on input line 572.
-(pdftex.def)             Requested size: 129.06117pt x 91.50536pt.
- [16
+ <../Imagen4.png> <../Curva c_i vs g_i.png> <../curva c_i vs g_i zoom.png>]
+<foto-carmen.png, id=141, 127.47626pt x 101.37875pt>
+File: foto-carmen.png Graphic file (type png)
+<use foto-carmen.png>
+Package pdftex.def Info: foto-carmen.png  used on input line 591.
+(pdftex.def)             Requested size: 68.28957pt x 48.37042pt.
+<foto-USB.png, id=142, 125.46875pt x 93.34875pt>
+File: foto-USB.png Graphic file (type png)
+<use foto-USB.png>
+Package pdftex.def Info: foto-USB.png  used on input line 591.
+(pdftex.def)             Requested size: 68.29007pt x 48.36926pt.
+<foto-avila.png, id=143, 123.46124pt x 94.3525pt>
+File: foto-avila.png Graphic file (type png)
+<use foto-avila.png>
+Package pdftex.def Info: foto-avila.png  used on input line 591.
+(pdftex.def)             Requested size: 68.29007pt x 48.36963pt.
 
- <../CurvaPlanaGalaxias.png>] [17
-
-]
-<../experimento_guia.png, id=153, 443.256pt x 246.32025pt>
-File: ../experimento_guia.png Graphic file (type png)
-<use ../experimento_guia.png>
-Package pdftex.def Info: ../experimento_guia.png  used on input line 593.
-(pdftex.def)             Requested size: 165.02597pt x 91.70459pt.
- [18
-
- <../experimento_guia.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 606.
- (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-<../F0003TEK.png, id=160, 321.2pt x 240.9pt>
-File: ../F0003TEK.png Graphic file (type png)
-<use ../F0003TEK.png>
-Package pdftex.def Info: ../F0003TEK.png  used on input line 606.
-(pdftex.def)             Requested size: 136.57323pt x 102.43076pt.
-<../AjusteF0003CH2.png, id=161, 392.46625pt x 279.0425pt>
-File: ../AjusteF0003CH2.png Graphic file (type png)
-<use ../AjusteF0003CH2.png>
-Package pdftex.def Info: ../AjusteF0003CH2.png  used on input line 606.
-(pdftex.def)             Requested size: 142.26378pt x 101.14925pt.
- [19
-
-{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <../F0003TEK.png> <../AjusteF0003CH2.png>]
-Overfull \hbox (6.36398pt too wide) in paragraph at lines 636--636
+Overfull \hbox (1.44144pt too wide) in paragraph at lines 591--591
  [][] 
  []
 
-<../n-1.png, id=172, 362.007pt x 217.467pt>
+[16
+
+ <./foto-carmen.png> <./foto-USB.png> <./foto-avila.png>]
+<../CurvaPlanaGalaxias.png, id=152, 473.97075pt x 336.0555pt>
+File: ../CurvaPlanaGalaxias.png Graphic file (type png)
+<use ../CurvaPlanaGalaxias.png>
+Package pdftex.def Info: ../CurvaPlanaGalaxias.png  used on input line 616.
+(pdftex.def)             Requested size: 129.06117pt x 91.50536pt.
+ [17
+
+ <../CurvaPlanaGalaxias.png>] [18
+
+]
+<../experimento_guia.png, id=165, 443.256pt x 246.32025pt>
+File: ../experimento_guia.png Graphic file (type png)
+<use ../experimento_guia.png>
+Package pdftex.def Info: ../experimento_guia.png  used on input line 637.
+(pdftex.def)             Requested size: 165.02597pt x 91.70459pt.
+ [19
+
+ <../experimento_guia.png>]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 650.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<../F0003TEK.png, id=173, 321.2pt x 240.9pt>
+File: ../F0003TEK.png Graphic file (type png)
+<use ../F0003TEK.png>
+Package pdftex.def Info: ../F0003TEK.png  used on input line 650.
+(pdftex.def)             Requested size: 136.57323pt x 102.43076pt.
+<../AjusteF0003CH2.png, id=174, 392.46625pt x 279.0425pt>
+File: ../AjusteF0003CH2.png Graphic file (type png)
+<use ../AjusteF0003CH2.png>
+Package pdftex.def Info: ../AjusteF0003CH2.png  used on input line 650.
+(pdftex.def)             Requested size: 142.26378pt x 101.14925pt.
+ [20
+
+{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <../F0003TEK.png> <../AjusteF0003CH2.png>]
+Overfull \hbox (6.36398pt too wide) in paragraph at lines 680--680
+ [][] 
+ []
+
+<../n-1.png, id=184, 362.007pt x 217.467pt>
 File: ../n-1.png Graphic file (type png)
 <use ../n-1.png>
-Package pdftex.def Info: ../n-1.png  used on input line 636.
+Package pdftex.def Info: ../n-1.png  used on input line 680.
 (pdftex.def)             Requested size: 81.30879pt x 48.845pt.
-<../n-2.png, id=173, 342.735pt x 217.248pt>
+<../n-2.png, id=185, 342.735pt x 217.248pt>
 File: ../n-2.png Graphic file (type png)
 <use ../n-2.png>
-Package pdftex.def Info: ../n-2.png  used on input line 636.
+Package pdftex.def Info: ../n-2.png  used on input line 680.
 (pdftex.def)             Requested size: 81.30879pt x 51.53726pt.
-<../n-3.png, id=174, 361.788pt x 217.248pt>
+<../n-3.png, id=186, 361.788pt x 217.248pt>
 File: ../n-3.png Graphic file (type png)
 <use ../n-3.png>
-Package pdftex.def Info: ../n-3.png  used on input line 636.
+Package pdftex.def Info: ../n-3.png  used on input line 680.
 (pdftex.def)             Requested size: 81.30879pt x 48.82233pt.
-[20
+[21
 
  <../n-1.png> <../n-2.png> <../n-3.png>]
-Overfull \hbox (20.03926pt too wide) in paragraph at lines 664--664
+Overfull \hbox (20.03926pt too wide) in paragraph at lines 708--708
  [] 
  []
 
-<../n-5.1.png, id=183, 362.007pt x 217.248pt>
+<../n-5.1.png, id=195, 362.007pt x 217.248pt>
 File: ../n-5.1.png Graphic file (type png)
 <use ../n-5.1.png>
-Package pdftex.def Info: ../n-5.1.png  used on input line 664.
+Package pdftex.def Info: ../n-5.1.png  used on input line 708.
 (pdftex.def)             Requested size: 147.00838pt x 88.22363pt.
-<../n-5.2.png, id=184, 348.21pt x 227.322pt>
+<../n-5.2.png, id=196, 348.21pt x 227.322pt>
 File: ../n-5.2.png Graphic file (type png)
 <use ../n-5.2.png>
-Package pdftex.def Info: ../n-5.2.png  used on input line 664.
+Package pdftex.def Info: ../n-5.2.png  used on input line 708.
 (pdftex.def)             Requested size: 147.00838pt x 95.9706pt.
-[21
+[22
 
  <../n-5.1.png> <../n-5.2.png>]
-Overfull \hbox (10.50368pt too wide) detected at line 694
+Overfull \hbox (10.50368pt too wide) detected at line 738
 \T1/Crlt-LF/m/it/9 E[] \OMS/lmsy/m/n/9 ^^X \OML/lmm/m/it/9 ^^T \OMS/lmsy/m/n/9 ^^A \T1/Crlt-LF/m/n/9 2 \OMS/lmsy/m/n/9 ^^B \T1/Crlt-LF/m/n/9 10[] [] \T1/Crlt-LF/m/it/9 E[] \OMS/lmsy/m/n/9 ^^X \T1/Crlt-LF/m/it/9 F \OMS/lmsy/m/n/9 ^^A \T1/Crlt-LF/m/n/9 6\OML/lmm/m/it/9 :\T1/Crlt-LF/m/n/9 67 \OMS/lmsy/m/n/9 ^^B \T1/Crlt-LF/m/n/9 10[] []
  []
 
 
-Overfull \hbox (6.59889pt too wide) in paragraph at lines 694--694
+Overfull \hbox (6.59889pt too wide) in paragraph at lines 738--738
 [][]  
  []
 
-[22
+[23
 
 ]
 Underfull \hbox (badness 2065) has occurred while \output is active
  \T1/Crlt-LF/m/n/30 II:
  []
 
-[23
+[24
 
 ]
-<../FactorQ-zemansky.png, id=203, 272.81924pt x 205.9695pt>
+<../FactorQ-zemansky.png, id=215, 272.81924pt x 205.9695pt>
 File: ../FactorQ-zemansky.png Graphic file (type png)
 <use ../FactorQ-zemansky.png>
-Package pdftex.def Info: ../FactorQ-zemansky.png  used on input line 726.
+Package pdftex.def Info: ../FactorQ-zemansky.png  used on input line 770.
 (pdftex.def)             Requested size: 108.12047pt x 81.6289pt.
- [24
-
- <../FactorQ-zemansky.png>]
-<../Simulacion-respuesta1.png, id=210, 556.32843pt x 368.1253pt>
-File: ../Simulacion-respuesta1.png Graphic file (type png)
-<use ../Simulacion-respuesta1.png>
-Package pdftex.def Info: ../Simulacion-respuesta1.png  used on input line 750.
-(pdftex.def)             Requested size: 142.70374pt x 94.42961pt.
-<../Simulacion-respuesta2.png, id=211, 465.99094pt x 335.75438pt>
-File: ../Simulacion-respuesta2.png Graphic file (type png)
-<use ../Simulacion-respuesta2.png>
-Package pdftex.def Info: ../Simulacion-respuesta2.png  used on input line 750.
-(pdftex.def)             Requested size: 116.15361pt x 83.68735pt.
  [25
 
+ <../FactorQ-zemansky.png>]
+<../Simulacion-respuesta1.png, id=223, 556.32843pt x 368.1253pt>
+File: ../Simulacion-respuesta1.png Graphic file (type png)
+<use ../Simulacion-respuesta1.png>
+Package pdftex.def Info: ../Simulacion-respuesta1.png  used on input line 794.
+(pdftex.def)             Requested size: 142.70374pt x 94.42961pt.
+<../Simulacion-respuesta2.png, id=224, 465.99094pt x 335.75438pt>
+File: ../Simulacion-respuesta2.png Graphic file (type png)
+<use ../Simulacion-respuesta2.png>
+Package pdftex.def Info: ../Simulacion-respuesta2.png  used on input line 794.
+(pdftex.def)             Requested size: 116.15361pt x 83.68735pt.
+ [26
+
  <../Simulacion-respuesta1.png> <../Simulacion-respuesta2.png>]
-<../SOLO-ESQUEMA.png, id=220, 605.26125pt x 274.02374pt>
+<../SOLO-ESQUEMA.png, id=232, 605.26125pt x 274.02374pt>
 File: ../SOLO-ESQUEMA.png Graphic file (type png)
 <use ../SOLO-ESQUEMA.png>
-Package pdftex.def Info: ../SOLO-ESQUEMA.png  used on input line 769.
+Package pdftex.def Info: ../SOLO-ESQUEMA.png  used on input line 813.
 (pdftex.def)             Requested size: 282.70612pt x 127.99255pt.
 
-Underfull \hbox (badness 2173) in paragraph at lines 769--769
+Underfull \hbox (badness 2173) in paragraph at lines 813--813
 []|\T1/Crlt-LF/m/n/8 Control tér-mi-co au-
  []
 
 
-Overfull \hbox (13.85655pt too wide) in paragraph at lines 769--769
+Overfull \hbox (13.85655pt too wide) in paragraph at lines 813--813
  [][] 
  []
 
-[26
+[27
 
  <../SOLO-ESQUEMA.png>]
-<../Amplificador1-voltaje.png, id=227, 449.88075pt x 449.88075pt>
+<../Amplificador1-voltaje.png, id=239, 449.88075pt x 449.88075pt>
 File: ../Amplificador1-voltaje.png Graphic file (type png)
 <use ../Amplificador1-voltaje.png>
-Package pdftex.def Info: ../Amplificador1-voltaje.png  used on input line 783.
+Package pdftex.def Info: ../Amplificador1-voltaje.png  used on input line 827.
 (pdftex.def)             Requested size: 125.19212pt x 125.19005pt.
- [27
-
- <../Amplificador1-voltaje.png>]
-<../Rectificador.png, id=234, 654.64575pt x 395.67825pt>
-File: ../Rectificador.png Graphic file (type png)
-<use ../Rectificador.png>
-Package pdftex.def Info: ../Rectificador.png  used on input line 796.
-(pdftex.def)             Requested size: 159.33542pt x 96.30505pt.
-<../Amplificador2.png, id=235, 504.08325pt x 347.49825pt>
-File: ../Amplificador2.png Graphic file (type png)
-<use ../Amplificador2.png>
-Package pdftex.def Info: ../Amplificador2.png  used on input line 796.
-(pdftex.def)             Requested size: 130.88268pt x 90.22545pt.
  [28
 
- <../Rectificador.png> <../Amplificador2.png>]
-<../esquematico-paralelo-total.png, id=243, 735.34724pt x 247.52475pt>
-File: ../esquematico-paralelo-total.png Graphic file (type png)
-<use ../esquematico-paralelo-total.png>
-Package pdftex.def Info: ../esquematico-paralelo-total.png  used on input line 811.
-(pdftex.def)             Requested size: 165.02597pt x 55.54713pt.
+ <../Amplificador1-voltaje.png>]
+<../Rectificador.png, id=246, 654.64575pt x 395.67825pt>
+File: ../Rectificador.png Graphic file (type png)
+<use ../Rectificador.png>
+Package pdftex.def Info: ../Rectificador.png  used on input line 840.
+(pdftex.def)             Requested size: 159.33542pt x 96.30505pt.
+<../Amplificador2.png, id=247, 504.08325pt x 347.49825pt>
+File: ../Amplificador2.png Graphic file (type png)
+<use ../Amplificador2.png>
+Package pdftex.def Info: ../Amplificador2.png  used on input line 840.
+(pdftex.def)             Requested size: 130.88268pt x 90.22545pt.
  [29
 
- <../esquematico-paralelo-total.png>]
-<../FOTO-circuito-temperatura.png, id=250, 475.02469pt x 432.86719pt>
-File: ../FOTO-circuito-temperatura.png Graphic file (type png)
-<use ../FOTO-circuito-temperatura.png>
-Package pdftex.def Info: ../FOTO-circuito-temperatura.png  used on input line 824.
-(pdftex.def)             Requested size: 130.88268pt x 119.26671pt.
-<../CIRCUITO CONTROL DE TEMP.JPG, id=251, 578.16pt x 393.72093pt>
-File: ../CIRCUITO CONTROL DE TEMP.JPG Graphic file (type jpg)
-<use ../CIRCUITO CONTROL DE TEMP.JPG>
-Package pdftex.def Info: ../CIRCUITO CONTROL DE TEMP.JPG  used on input line 824.
-(pdftex.def)             Requested size: 147.95433pt x 100.75496pt.
+ <../Rectificador.png> <../Amplificador2.png>]
+<../esquematico-paralelo-total.png, id=255, 735.34724pt x 247.52475pt>
+File: ../esquematico-paralelo-total.png Graphic file (type png)
+<use ../esquematico-paralelo-total.png>
+Package pdftex.def Info: ../esquematico-paralelo-total.png  used on input line 855.
+(pdftex.def)             Requested size: 165.02597pt x 55.54713pt.
  [30
 
+ <../esquematico-paralelo-total.png>]
+<../FOTO-circuito-temperatura.png, id=262, 475.02469pt x 432.86719pt>
+File: ../FOTO-circuito-temperatura.png Graphic file (type png)
+<use ../FOTO-circuito-temperatura.png>
+Package pdftex.def Info: ../FOTO-circuito-temperatura.png  used on input line 868.
+(pdftex.def)             Requested size: 130.88268pt x 119.26671pt.
+<../CIRCUITO CONTROL DE TEMP.JPG, id=263, 578.16pt x 393.72093pt>
+File: ../CIRCUITO CONTROL DE TEMP.JPG Graphic file (type jpg)
+<use ../CIRCUITO CONTROL DE TEMP.JPG>
+Package pdftex.def Info: ../CIRCUITO CONTROL DE TEMP.JPG  used on input line 868.
+(pdftex.def)             Requested size: 147.95433pt x 100.75496pt.
+ [31
+
  <../FOTO-circuito-temperatura.png> <../CIRCUITO CONTROL DE TEMP.JPG>]
-<../temperatura_meses.pdf, id=258, 908.39375pt x 272.01625pt>
+<../temperatura_meses.pdf, id=271, 908.39375pt x 272.01625pt>
 File: ../temperatura_meses.pdf Graphic file (type pdf)
 <use ../temperatura_meses.pdf>
-Package pdftex.def Info: ../temperatura_meses.pdf  used on input line 839.
+Package pdftex.def Info: ../temperatura_meses.pdf  used on input line 883.
 (pdftex.def)             Requested size: 245.83282pt x 73.61139pt.
-<../temperatura_dia.pdf, id=259, 908.39375pt x 226.8475pt>
+<../temperatura_dia.pdf, id=272, 908.39375pt x 226.8475pt>
 File: ../temperatura_dia.pdf Graphic file (type pdf)
 <use ../temperatura_dia.pdf>
-Package pdftex.def Info: ../temperatura_dia.pdf  used on input line 839.
+Package pdftex.def Info: ../temperatura_dia.pdf  used on input line 883.
 (pdftex.def)             Requested size: 245.83282pt x 61.38809pt.
- [31
+ [32
 
  <../temperatura_meses.pdf> <../temperatura_dia.pdf
 
 pdfTeX warning: pdflatex (file ../temperatura_dia.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../temperatura_exterior_vs_interior.pdf, id=283, 908.39375pt x 226.8475pt>
+<../temperatura_exterior_vs_interior.pdf, id=295, 908.39375pt x 226.8475pt>
 File: ../temperatura_exterior_vs_interior.pdf Graphic file (type pdf)
 <use ../temperatura_exterior_vs_interior.pdf>
-Package pdftex.def Info: ../temperatura_exterior_vs_interior.pdf  used on input line 858.
+Package pdftex.def Info: ../temperatura_exterior_vs_interior.pdf  used on input line 902.
 (pdftex.def)             Requested size: 184.3758pt x 46.0402pt.
- [32
-
- <../temperatura_exterior_vs_interior.pdf>]
-<../Foto-paralelo-protoboard.png, id=298, 519.44063pt x 692.5875pt>
-File: ../Foto-paralelo-protoboard.png Graphic file (type png)
-<use ../Foto-paralelo-protoboard.png>
-Package pdftex.def Info: ../Foto-paralelo-protoboard.png  used on input line 872.
-(pdftex.def)             Requested size: 119.50053pt x 159.33542pt.
  [33
 
- <../Foto-paralelo-protoboard.png>]
-<../grafica-3Jun-10.png, id=305, 424.2249pt x 308.5929pt>
-File: ../grafica-3Jun-10.png Graphic file (type png)
-<use ../grafica-3Jun-10.png>
-Package pdftex.def Info: ../grafica-3Jun-10.png  used on input line 899.
-(pdftex.def)             Requested size: 147.49782pt x 107.2934pt.
-<../grafica-3Jun-12.png, id=306, 430.0065pt x 308.5929pt>
-File: ../grafica-3Jun-12.png Graphic file (type png)
-<use ../grafica-3Jun-12.png>
-Package pdftex.def Info: ../grafica-3Jun-12.png  used on input line 899.
-(pdftex.def)             Requested size: 147.49782pt x 105.85252pt.
+ <../temperatura_exterior_vs_interior.pdf>]
+<../Foto-paralelo-protoboard.png, id=310, 519.44063pt x 692.5875pt>
+File: ../Foto-paralelo-protoboard.png Graphic file (type png)
+<use ../Foto-paralelo-protoboard.png>
+Package pdftex.def Info: ../Foto-paralelo-protoboard.png  used on input line 916.
+(pdftex.def)             Requested size: 119.50053pt x 159.33542pt.
  [34
 
- <../grafica-3Jun-10.png> <../grafica-3Jun-12.png>]
-<../En-serie-prototipo1.jpg, id=314, 836.12375pt x 488.82625pt>
-File: ../En-serie-prototipo1.jpg Graphic file (type jpg)
-<use ../En-serie-prototipo1.jpg>
-Package pdftex.def Info: ../En-serie-prototipo1.jpg  used on input line 914.
-(pdftex.def)             Requested size: 142.26378pt x 83.16649pt.
-<../En-serie-prototipo2.jpg, id=315, 1080.035pt x 837.1275pt>
-File: ../En-serie-prototipo2.jpg Graphic file (type jpg)
-<use ../En-serie-prototipo2.jpg>
-Package pdftex.def Info: ../En-serie-prototipo2.jpg  used on input line 914.
-(pdftex.def)             Requested size: 125.19212pt x 97.02765pt.
+ <../Foto-paralelo-protoboard.png>]
+<../grafica-3Jun-10.png, id=317, 424.2249pt x 308.5929pt>
+File: ../grafica-3Jun-10.png Graphic file (type png)
+<use ../grafica-3Jun-10.png>
+Package pdftex.def Info: ../grafica-3Jun-10.png  used on input line 943.
+(pdftex.def)             Requested size: 147.49782pt x 107.2934pt.
+<../grafica-3Jun-12.png, id=318, 430.0065pt x 308.5929pt>
+File: ../grafica-3Jun-12.png Graphic file (type png)
+<use ../grafica-3Jun-12.png>
+Package pdftex.def Info: ../grafica-3Jun-12.png  used on input line 943.
+(pdftex.def)             Requested size: 147.49782pt x 105.85252pt.
  [35
 
- <../En-serie-prototipo1.jpg> <../En-serie-prototipo2.jpg>]
-<../resultado-serie-3Mar26-1.png, id=321, 430.0065pt x 308.5929pt>
-File: ../resultado-serie-3Mar26-1.png Graphic file (type png)
-<use ../resultado-serie-3Mar26-1.png>
-Package pdftex.def Info: ../resultado-serie-3Mar26-1.png  used on input line 946.
-(pdftex.def)             Requested size: 159.79204pt x 114.672pt.
-<../resultado-serie-3Mar26-5.png, id=322, 433.62pt x 308.5929pt>
-File: ../resultado-serie-3Mar26-5.png Graphic file (type png)
-<use ../resultado-serie-3Mar26-5.png>
-Package pdftex.def Info: ../resultado-serie-3Mar26-5.png  used on input line 946.
-(pdftex.def)             Requested size: 66.25279pt x 47.14864pt.
-<../resultado-serie-3Mar26-6.png, id=323, 427.1157pt x 307.8702pt>
-File: ../resultado-serie-3Mar26-6.png Graphic file (type png)
-<use ../resultado-serie-3Mar26-6.png>
-Package pdftex.def Info: ../resultado-serie-3Mar26-6.png  used on input line 946.
-(pdftex.def)             Requested size: 66.25279pt x 47.75226pt.
+ <../grafica-3Jun-10.png> <../grafica-3Jun-12.png>]
+<../En-serie-prototipo1.jpg, id=326, 836.12375pt x 488.82625pt>
+File: ../En-serie-prototipo1.jpg Graphic file (type jpg)
+<use ../En-serie-prototipo1.jpg>
+Package pdftex.def Info: ../En-serie-prototipo1.jpg  used on input line 958.
+(pdftex.def)             Requested size: 142.26378pt x 83.16649pt.
+<../En-serie-prototipo2.jpg, id=327, 1080.035pt x 837.1275pt>
+File: ../En-serie-prototipo2.jpg Graphic file (type jpg)
+<use ../En-serie-prototipo2.jpg>
+Package pdftex.def Info: ../En-serie-prototipo2.jpg  used on input line 958.
+(pdftex.def)             Requested size: 125.19212pt x 97.02765pt.
  [36
 
+ <../En-serie-prototipo1.jpg> <../En-serie-prototipo2.jpg>]
+<../resultado-serie-3Mar26-1.png, id=333, 430.0065pt x 308.5929pt>
+File: ../resultado-serie-3Mar26-1.png Graphic file (type png)
+<use ../resultado-serie-3Mar26-1.png>
+Package pdftex.def Info: ../resultado-serie-3Mar26-1.png  used on input line 990.
+(pdftex.def)             Requested size: 159.79204pt x 114.672pt.
+<../resultado-serie-3Mar26-5.png, id=334, 433.62pt x 308.5929pt>
+File: ../resultado-serie-3Mar26-5.png Graphic file (type png)
+<use ../resultado-serie-3Mar26-5.png>
+Package pdftex.def Info: ../resultado-serie-3Mar26-5.png  used on input line 990.
+(pdftex.def)             Requested size: 66.25279pt x 47.14864pt.
+<../resultado-serie-3Mar26-6.png, id=335, 427.1157pt x 307.8702pt>
+File: ../resultado-serie-3Mar26-6.png Graphic file (type png)
+<use ../resultado-serie-3Mar26-6.png>
+Package pdftex.def Info: ../resultado-serie-3Mar26-6.png  used on input line 990.
+(pdftex.def)             Requested size: 66.25279pt x 47.75226pt.
+ [37
+
  <../resultado-serie-3Mar26-1.png> <../resultado-serie-3Mar26-5.png> <../resultado-serie-3Mar26-6.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 978.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 1022.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (7.05545pt too wide) in paragraph at lines 978--978
+Overfull \hbox (7.05545pt too wide) in paragraph at lines 1022--1022
 []  
  []
 
-[37
+[38
 
-] [38
+] [39
 
 ]
-<../MIT-circuito-induccion.png, id=345, 449.88075pt x 269.20575pt>
+<../MIT-circuito-induccion.png, id=357, 449.88075pt x 269.20575pt>
 File: ../MIT-circuito-induccion.png Graphic file (type png)
 <use ../MIT-circuito-induccion.png>
-Package pdftex.def Info: ../MIT-circuito-induccion.png  used on input line 998.
+Package pdftex.def Info: ../MIT-circuito-induccion.png  used on input line 1042.
 (pdftex.def)             Requested size: 165.02597pt x 98.75015pt.
- [39
-
- <../MIT-circuito-induccion.png>]
-<../placaNueva.jpg, id=352, 467.7475pt x 335.2525pt>
-File: ../placaNueva.jpg Graphic file (type jpg)
-<use ../placaNueva.jpg>
-Package pdftex.def Info: ../placaNueva.jpg  used on input line 1029.
-(pdftex.def)             Requested size: 101.40622pt x 72.6815pt.
  [40
 
+ <../MIT-circuito-induccion.png>]
+<../placaNueva.jpg, id=364, 467.7475pt x 335.2525pt>
+File: ../placaNueva.jpg Graphic file (type jpg)
+<use ../placaNueva.jpg>
+Package pdftex.def Info: ../placaNueva.jpg  used on input line 1073.
+(pdftex.def)             Requested size: 101.40622pt x 72.6815pt.
+ [41
+
  <../placaNueva.jpg>]
-Overfull \hbox (20.92778pt too wide) detected at line 1053
+Overfull \hbox (20.92778pt too wide) detected at line 1097
 [] \OT1/Crlt-LF/m/n/9 = [] \OMS/lmsy/m/n/9 ^^Y \T1/Crlt-LF/m/n/9 0\OML/lmm/m/it/9 :\T1/Crlt-LF/m/n/9 122 []\OML/lmm/m/it/9 ;  ^^[[] \OMS/lmsy/m/n/9 ^^Y \T1/Crlt-LF/m/n/9 0\OML/lmm/m/it/9 :\T1/Crlt-LF/m/n/9 035 []
  []
 
 
-Overfull \hbox (0.90834pt too wide) in paragraph at lines 1053--1053
+Overfull \hbox (0.90834pt too wide) in paragraph at lines 1097--1097
 []  
- []
-
-[41
-
-]
-Overfull \hbox (6.947pt too wide) in paragraph at lines 1081--1081
-[][]  
  []
 
 [42
 
-] [43
+]
+Overfull \hbox (6.947pt too wide) in paragraph at lines 1125--1125
+[][]  
+ []
+
+[43
 
 ] [44
 
@@ -1402,6 +1433,8 @@ Overfull \hbox (6.947pt too wide) in paragraph at lines 1081--1081
 ] [46
 
 ] [47
+
+] [48
 
 ]
 \tf@nav=\write6
@@ -1425,18 +1458,18 @@ Package rerunfilecheck Info: File `presentacion-tesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 51398 strings out of 467525
- 1256607 string characters out of 5418982
- 1868676 words of memory out of 5000000
- 79506 multiletter control sequences out of 15000+600000
+ 51433 strings out of 467525
+ 1257299 string characters out of 5418982
+ 1868758 words of memory out of 5000000
+ 79539 multiletter control sequences out of 15000+600000
  970003 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,17n,123p,494b,1436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/google/carlito/Crlt-Bold.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/google/carlito/Crlt-Italic.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/google/carlito/Crlt-Regular.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on presentacion-tesis.pdf (47 pages, 3995818 bytes).
+Output written on presentacion-tesis.pdf (48 pages, 4475950 bytes).
 PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 95 named destinations out of 1000 (max. 500000)
- 319 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 529 PDF objects out of 1000 (max. 8388607)
+ 332 compressed objects within 4 object streams
+ 97 named destinations out of 1000 (max. 500000)
+ 339 words of extra memory for PDF output out of 10000 (max. 10000000)
 

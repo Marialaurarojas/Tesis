@@ -390,6 +390,48 @@ En Galileo, NEAR, Cassini, Rosetta y MESSENGER se detectó un cambio anormal de 
 sobrevuelos cercanos a la Tierra: aumento, reducción o ninguna anomalía.
 \end{column}
 \begin{column}{0.51\textwidth}
+% imagen encima; el contenido original queda invisible para conservar el espacio
+\noindent\smash{\raisebox{-\height}{\includegraphics[width=\linewidth,height=45mm,keepaspectratio]{Imagen-flyby.jpg}}}%
+\invisible{%
+\small
+La anomalía depende de los puntos de entrada ($-$) y salida ($+$):
+\[
+V_{anom}=V_\infty\left(\sqrt{\frac{\rho}{\rho'_+}}-\sqrt{\frac{\rho}{\rho'_-}}\right)
+\]
+\vspace{-2mm}
+\[
+\rho'_\pm=\rho^*+\frac{GM_E}{(r_E^\pm)^2}+\frac{GM_S}{(r_S^\pm)^2}
+\]
+\begin{itemize}\setlength{\itemsep}{0.5mm}
+\item $r_S^+=r_S^-$, $r_E^+=r_E^-$: sin anomalía.
+\item $r_S^+\neq r_S^-$, $r_E^+=r_E^-$: anomalía muy pequeña.
+\item $r_S^+\neq r_S^-$, $r_E^+\neq r_E^-$: anomalía detectable.
+\end{itemize}
+}
+\end{column}
+\end{columns}
+\medskip %(espacio mediano)
+%\vspace{4mm}
+\cita{Greaves, Bracho y Mikoss: A Solution to the Flyby Anomaly Riddle. Progress in Physics, 16:49--57, 2020.}
+\end{frame}
+
+% --------misma-lamina-sin-foto-------------------------------------------------------------
+
+\layout{banda}
+\begin{frame}{Flyby Anomaly}
+\begin{columns}[T]
+\begin{column}{0.40\textwidth}
+\begin{tikzpicture}
+\node[fill=amarillo,rounded corners=3mm,text width=40mm,inner sep=2mm,font=\small,align=justify]
+{La maniobra de asistencia gravitatoria usa un cuerpo masivo para cambiar la trayectoria de las sondas.};
+\end{tikzpicture}
+
+\vspace{2mm}
+\small %\justifying
+En Galileo, NEAR, Cassini, Rosetta y MESSENGER se detectó un cambio anormal de energía cinética en
+sobrevuelos cercanos a la Tierra: aumento, reducción o ninguna anomalía.
+\end{column}
+\begin{column}{0.51\textwidth}
 \small
 La anomalía depende de los puntos de entrada ($-$) y salida ($+$):
 \[
@@ -410,7 +452,6 @@ V_{anom}=V_\infty\left(\sqrt{\frac{\rho}{\rho'_+}}-\sqrt{\frac{\rho}{\rho'_-}}\r
 %\vspace{4mm}
 \cita{Greaves, Bracho y Mikoss: A Solution to the Flyby Anomaly Riddle. Progress in Physics, 16:49--57, 2020.}
 \end{frame}
-
 % ---------------------------------------------------------------------
 \begin{frame}{Flyby Anomaly}
 \small
@@ -440,14 +481,13 @@ Anomalía calculada (mm/s) & \multicolumn{2}{c}{3.944} & \multicolumn{2}{c}{13.3
 \end{frame}
 
 % ---------------------------------------------------------------------
-\begin{frame}{Datos históricos}{Ramdani, F.: Gravity Constraints on the Measurements of the Speed of Light. Int. J. of Astronomy and Astrophysics, 9:265--273, 2019.}
+\begin{frame}{Datos históricos}
 \begin{columns}[T]
 \begin{column}{0.50\textwidth}
 \small\justifying
 Las medidas históricas de $c$ discrepan a partir de la séptima cifra significativa. Ramdani halla una
 \textbf{relación lineal de pendiente negativa} entre $c$ medida y la gravedad local del laboratorio.
-
-\vspace{2mm}
+%\vspace{2mm}
 Aplicando la HCC en un punto $i$ de la Tierra con gravedad $g_i$:
 \[
 c_i=c_E\,\frac{\sqrt{\rho^*+\rho_S+\rho_E}}{\sqrt{\rho^*+\rho_S+\dfrac{g_i^2}{8\pi G}}}
@@ -460,24 +500,26 @@ c_i=c_E\,\frac{\sqrt{\rho^*+\rho_S+\rho_E}}{\sqrt{\rho^*+\rho_S+\dfrac{g_i^2}{8\
 \setlength{\tabcolsep}{3pt}
 \begin{tabular}{lccc}
 \cabecera \thc{Año} & \thc{$c$ (m/s)} & \thc{Error} & \thc{$g$ (m/s$^2$)}\\
-1953 & 299\,792\,400 & 110 & 9.811856\\
-\filalila 1953$^\dagger$ & 299\,792\,200 & 130 & 9.818074\\
-1955 & 299\,792\,400 & 400 & 9.816501\\
-\filalila 1967 & 299\,792\,500 & 50 & 9.810565\\
-1971 & 299\,792\,375 & 60 & 9.819047\\
-\filalila 1972 & 299\,792\,460 & 6 & 9.794161\\
+\filalila 1953 & 299\,792\,400 & 110 & 9.811856\\
+\filalila 1953 & 299\,792\,200 & 130 & 9.818074\\
+\filalila 1955 & 299\,792\,400 & 400 & 9.816501\\
+ \filalila 1967 & 299\,792\,500 & 50 & 9.810565\\
+\filalila 1971 & 299\,792\,375 & 60 & 9.819047\\
+1972 & 299\,792\,460 & 6 & 9.794161\\
 1974 & 299\,792\,459 & 0.8 & 9.811856\\
-\filalila 1978 & 299\,792\,458.8 & 0.2 & 9.811856\\
+1978 & 299\,792\,458.8 & 0.2 & 9.811856\\
 1979 & 299\,792\,458.1 & 1.9 & 9.80616\\
-\filalila 1983 & 299\,792\,458.6 & 0.3 & 9.800849\\
+1983 & 299\,792\,458.6 & 0.3 & 9.800849\\
 \end{tabular}
-
 \vspace{1mm}
-{\tiny $^\dagger$Geodímetro. 1953 a 1971: geodímetro; 1972 a 1983: láser.}
+
+{\tiny 1953 a 1971: geodímetro; 1972 a 1983: láser.}
 \end{column}
 \end{columns}
-\end{frame}
 
+\vspace{5mm}
+\cita{Ramdani, F.: Gravity Constraints on the Measurements of the Speed of Light. Int. J. of Astronomy and Astrophysics, 9:265--273, 2019.}
+\end{frame}
 % ---------------------------------------------------------------------
 \layout{limpio}
 \begin{frame}
@@ -495,11 +537,11 @@ c_i=c_E\,\frac{\sqrt{\rho^*+\rho_S+\rho_E}}{\sqrt{\rho^*+\rho_S+\dfrac{g_i^2}{8\
 \img{width=\linewidth}{Imagen4.png}
 
 \vspace{1mm}
-{\scriptsize La mayoría de los puntos concuerdan con la predicción dentro de su error.}
+{\small La mayoría de los puntos concuerdan con la predicción dentro de su error.}
 \end{column}
 \begin{column}{0.42\textwidth}
 \begin{tikzpicture}
-\node[tarjeta,inner sep=1.5mm] {\begin{tabular}{c}
+\node[inner sep=1.5mm] {\begin{tabular}{c}
 \img{width=44mm}{Curva c_i vs g_i.png}\\[1mm]
 \img{width=44mm}{curva c_i vs g_i zoom.png}\end{tabular}};
 \end{tikzpicture}
@@ -528,21 +570,23 @@ c_i=c_E\,\frac{\sqrt{\rho^*+\rho_S+\rho_E}}{\sqrt{\rho^*+\rho_S+\dfrac{g_i^2}{8\
 \vspace{3mm}
 \renewcommand{\arraystretch}{1.7}
 \small
-\begin{tabular}{>{\columncolor{morado}\color{white}\bfseries}l p{27mm}p{27mm}p{27mm}}
+\begin{tabular}{>{\columncolor{morado}\color{white}\bfseries}l p{24mm}p{24mm}p{24mm}}
  & \textbf{Carmen de Urea} & \textbf{USB} & \textbf{Teleférico}\\
+ & \includegraphics[width=\linewidth,height=17mm]{foto-carmen.png} & \includegraphics[width=\linewidth,height=17mm]{foto-USB.png} & \includegraphics[width=\linewidth,height=17mm]{foto-avila.png}\\
 Altura & 20.36 m & 1176 m & 2119 m\\
 \filalila \cellcolor{morado}Gravedad m/s$^2$ & 9.7825124 & 9.77967685 & 9.777794\\
 Velocidad m/s & 29979247\dest{1.69} & 29979247\dest{3.97} & 29979247\dest{5.47}\\
-\filalila \cellcolor{morado}$f_0$ Hz & 103318.57\dest{0664} & 103318.57\dest{1449} & 103318.57\dest{1966}\\
+%\filalila \cellcolor{morado}$f_0$ Hz & 103318.57\dest{0664} & 103318.57\dest{1449} & 103318.57\dest{1966}\\
 \end{tabular}
 
 \vspace{4mm}
 \begin{minipage}{108mm}\footnotesize
-Los valores de $c$ difieren a partir de la \textbf{novena cifra significativa}. $f_0$: frecuencia de
-resonancia de un mismo circuito RLC con $k_0=0.002165397$ m$^{-1}$ ($f_0/f_{\text{Carmen}}=1.000000013$ en el Teleférico).
+Los valores de $c$ difieren a partir de la \textbf{novena cifra significativa}. %$f_0$: frecuencia de resonancia de un mismo circuito RLC con $k_0=0.002165397$ m$^{-1}$ ($f_0/f_{\text{Carmen}}=1.000000013$ en el Teleférico).
 \end{minipage}
 
+
 \vfill
+\vspace{4mm}
 {\scriptsize\color{white!20!black} Gravedad: comunicación personal de la Dra. Nuris Orihuela (UCV).}
 \end{frame}}
 
@@ -550,20 +594,20 @@ resonancia de un mismo circuito RLC con $k_0=0.002165397$ m$^{-1}$ ($f_0/f_{\tex
 \layout{banda}
 \begin{frame}{Implicaciones de la HCC}
 \begin{columns}[T]
-\begin{column}{0.56\textwidth}
+\begin{column}{0.45\textwidth}
 \footnotesize
 \begin{itemize}\setlength{\itemsep}{1mm}
 \item \textbf{Curvas de rotación planas:} $\rho_g$ es mayor en el centro galáctico, $c$ crece hacia los
-bordes y el Doppler sobreestima la velocidad de las estrellas. No haría falta la materia oscura.
-\item \textbf{Expansión acelerada:} $\rho_g$ decrece hacia los límites, $n'$ disminuye y se
-sobreestiman las velocidades de recesión.
-\item \textbf{Deflexión de la luz en eclipses:} refracción por el índice $n(r)$ cerca del Sol.
+bordes y el efecto Doppler sobreestima la velocidad de las estrellas. No haría falta la materia oscura.
+\item \textbf{Expansión acelerada:} $\rho_g$ decrece hacia los límites del universo, $n'$ disminuye, el corrimiento Doppler
+sobreestima las velocidades de las estrellas del borde.
+\item \textbf{Deflexión de la luz en eclipses:} refracción por el índice $n'$ cerca del Sol.
 \item \textbf{Agujeros negros:} $\rho_g$ tan grande que $c$ se hace muy pequeña.
 \end{itemize}
 \end{column}
 \begin{column}{0.42\textwidth}
 \vspace{2mm}
-\centering
+%\centering
 \img{width=\linewidth}{CurvaPlanaGalaxias.png}
 
 {\tiny Curvas de rotación de galaxias espirales (Carroll y Ostlie).}
