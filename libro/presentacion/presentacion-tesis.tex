@@ -838,10 +838,11 @@ I=\frac{V}{\sqrt{R^2+\left(2\pi fL-\dfrac{2c^2d\cdot10^{-7}}{fA_c}\right)^2}}
 ganancia constante entre 100 kHz y 1 MHz.
 \end{itemize}
 \end{izquierda}
-\derecha{\img{width=44mm}{Amplificador1-voltaje.png}\\[1mm]{\tiny Etapa amplificadora de voltaje.}}
+\derecha{\img{width=25mm,angle=-90}{foto-AD9833.png}\\[1mm]\img{width=44mm}{Amplificador1-voltaje.png}\\[1mm]}
 \end{frame}
 
-% ---------------------------------------------------------------------
+
+% -----------------------------------------------------------------
 \begin{frame}{Módulo\\de lectura}
 \begin{izquierda}
 \begin{itemize}\setlength{\itemsep}{1mm}
@@ -852,10 +853,12 @@ condensador de forma automática.
 \end{itemize}
 
 \vspace{5mm}
-\footnotesize{$^*$ Excluido dependiendo del modelo del prototipo}
+\tiny{$^*$ Excluido dependiendo del modelo del prototipo}
 
 \end{izquierda}
-\derecha{\img{width=56mm}{Rectificador.png}\\[2mm]\img{width=46mm}{Amplificador2.png}}
+\derecha{\img{width=50mm}{Rectificador.png}\\[2mm]%
+\begin{minipage}[c]{38mm}\centering\includegraphics[width=\linewidth]{Amplificador2.png}\end{minipage}\hfill
+\begin{minipage}[c]{22mm}\centering\includegraphics[height=\linewidth,angle=90]{foto-ad1115}\end{minipage}}
 \end{frame}
 
 % ---------------------------------------------------------------------
@@ -869,8 +872,7 @@ Una laptop recibe el barrido y ajusta una curva lorentziana:
 F(f)=\frac{A}{(f-f_0)^2+\gamma^2}+\text{offset}
  \eqn \]
 \end{izquierda}
-\derecha{\img{width=58mm}{esquematico-paralelo-total.png}\\[1mm]
-{\tiny Esquemático completo del montaje en paralelo.}}
+\derecha{\img{width=58mm}{foto-arduino.png}}
 \end{frame}
 
 % ---------------------------------------------------------------------
@@ -882,17 +884,17 @@ F(f)=\frac{A}{(f-f_0)^2+\gamma^2}+\text{offset}
 \item Se propone además una jaula de Faraday contra interferencias.
 \end{itemize}
 \end{izquierda}
-\derecha{\img{width=46mm}{FOTO-circuito-temperatura.png}\\[1mm]
-\img{width=52mm}{CIRCUITO CONTROL DE TEMP.JPG}}
+\derecha{\img{width=40mm}{FOTO-circuito-temperatura.png}\\[0mm]
+\img{width=56mm}{CIRCUITO CONTROL DE TEMP.JPG}}
 \end{frame}
 
 % ---------------------------------------------------------------------
 \layout{bloque}
-\begin{frame}{Módulo estabilizador}
+\begin{frame}{\fontsize{17}{19}\selectfont\bfseries\color{morado}Módulo estabilizador}
 \vspace{-1mm}
 \centering
-\img{width=0.80\linewidth}{temperatura_meses.pdf}\\[0.5mm]
-\img{width=0.80\linewidth}{temperatura_dia.pdf}
+\img{width=\linewidth}{temperatura_meses.pdf}\\[0.5mm]
+\img{width=\linewidth}{temperatura_dia.pdf}
 
 \vspace{1mm}
 \begin{tikzpicture}
@@ -903,21 +905,18 @@ F(f)=\frac{A}{(f-f_0)^2+\gamma^2}+\text{offset}
 
 % ---------------------------------------------------------------------
 \layout{barra}
-\begin{frame}{Módulo estabilizador}
-\begin{columns}[c]
-\begin{column}{0.60\textwidth}
+\begin{frame}{\fontsize{17}{19}\selectfont\bfseries\color{morado}Módulo estabilizador}
+
 \centering
 \img{width=\linewidth}{temperatura_exterior_vs_interior.pdf}
-\end{column}
-\begin{column}{0.36\textwidth}
+
 \small
 La temperatura interior no depende de la exterior en el rango de 20 a 25 $^\circ$C.
 
 \vspace{2mm}
 Queda pendiente verificar si esta estabilidad es suficiente con el circuito resonante final dentro
 del contenedor.
-\end{column}
-\end{columns}
+
 \end{frame}
 
 % ---------------------------------------------------------------------
