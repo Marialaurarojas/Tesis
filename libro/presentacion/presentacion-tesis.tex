@@ -169,7 +169,7 @@
 
 % Texto de la columna izquierda en el diseño "foto"
 \newenvironment{izquierda}[1][10mm]{%
-  \vspace*{#1}\hspace*{-3mm}\begin{minipage}[t]{43mm}\footnotesize\raggedright}{\end{minipage}}
+  \vspace*{#1}\hspace*{-3mm}\begin{minipage}[t]{43mm}\small\raggedright}{\end{minipage}}
 
 % ---------------------------------------------------------------------
 %  Portadilla de sección
@@ -617,7 +617,7 @@ sobreestima las velocidades de las estrellas del borde.
 \end{frame}
 
 % =====================================================================
-\seccion{Experimento I:\\ medición\\ directa}
+\seccion{Experimento I\\ medición\\ directa}
 % =====================================================================
 
 \layout{foto}
@@ -631,11 +631,6 @@ Un haz láser de He-Ne modulado se divide: un brazo recorre una distancia variab
 \[ \Delta x=c\,\Delta t  \eqn \]};
 \end{tikzpicture}
 \vspace{-2mm}
-\begin{itemize}\setlength{\itemsep}{0mm}\footnotesize
-\item Láser He-Ne, lente, espejo, divisor de haz
-\item Generador de señal modulada con fotodetectores
-\item Osciloscopio Tektronix TDS 2024B
-\end{itemize}
 \end{izquierda}
 \derecha{\img{width=64mm}{foto-experimento1.png}\\[1mm]\img{width=64mm}{experimento_guia.png}\\
 {\tiny Esquema de la práctica de Laboratorio 3, USB.}}
@@ -726,9 +721,9 @@ n5.1 & $(3.0296\pm0.0556)\times10^{8}$ & \dest{1\%}\\
 \layout{banda}
 \begin{frame}{Precisión necesaria}
 \begin{columns}[T]
-\begin{column}{0.50\textwidth}
+\begin{column}{0.60\textwidth}
 \small
-Para distinguir las localidades se necesita $E_c\le1$ m/s. Con $c=\Delta x/\Delta t$:
+Para distinguir el cambio entre las localidades se necesita $E_c\le1$ m/s. Con $c=\Delta x/\Delta t$:
 \[
 E_c=\frac{E_{\Delta x}}{\Delta t}+\frac{\Delta x}{(\Delta t)^2}E_{\Delta t}
  \eqn \]
@@ -737,42 +732,46 @@ Con $\Delta t\approx200$ ns y $\Delta x\approx60$ m, repartiendo el error en fra
 E_{\Delta x}\sim\kappa\cdot2\times10^{-7}\ \text{m}\qquad
 E_{\Delta t}\sim F\cdot6.67\times10^{-16}\ \text{s}
  \eqn \]
-\end{column}
-\begin{column}{0.46\textwidth}
-\begin{tikzpicture}
-\node[fill=amarillo,rounded corners=3mm,text width=47mm,inner sep=2.5mm,font=\small,align=left]
-{Se requieren distancias con precisión de \textbf{decenas de nanómetros} y desfases de
-\textbf{femtosegundos}. La cinta métrica aprecia 1 mm y el ajuste da $\sim2\times10^{-10}$ s.};
-\end{tikzpicture}
 
+ Se requieren distancias con precisión de \textbf{decenas de nanómetros} y desfases de
+\textbf{femtosegundos}. La cinta métrica aprecia 1 mm y el ajuste da $\sim2\times10^{-10}$ s.
+
+\end{column}
+\begin{column}{0.36\textwidth}
+\begin{tikzpicture}
+\node[fill=amarillo,rounded corners=3mm,text width=30mm,inner sep=2.5mm,font=\small,align=left]
+{\footnotesize Evenson (1972) obtuvo $c=299792456.2(1.1)$ m/s midiendo $f$ y $\lambda$ de un láser
+estabilizado con metano, con equipos fuera de nuestro\\ alcance.};
+\end{tikzpicture}
 \vspace{3mm}
-\footnotesize Evenson (1972) obtuvo $c=299792456.2(1.1)$ m/s midiendo $f$ y $\lambda$ de un láser
-estabilizado con metano, con equipos fuera de nuestro alcance.
+\
 \end{column}
 \end{columns}
 \end{frame}
 
 % =====================================================================
-\seccion{Experimento II:\\ circuito\\ resonante}
+\seccion{Experimento II\\ circuito\\ resonante}
 % =====================================================================
 
-{\setbeamertemplate{background}{%
+{%\setbeamertemplate{background}{%
+%\begin{tikzpicture}[remember picture,overlay]
+ % \draw[black!75,line width=0.6pt] \Pt{6.8}{8.7} rectangle \Pt{121.2}{87};
+  %\fill[verde] \Pt{90.2}{91.5} -- \Pt{124.4}{91.5} -- \Pt{124.4}{46.7} -- cycle;
+  %\numeracion
+%\end{tikzpicture}}
+\layout{barra}
+\begin{frame}[plain]{Circuitos LC}
+% el circuito se arma fuera del tikzpicture overlay para que no se deforme
+\sbox0{\resizebox{36mm}{!}{%
+ \begin{circuitikz}
+  \draw (0,0) to[sV] (0,3) -- (2.5,3) to[L,l=$L$] (2.5,0) -- (0,0);
+  \draw (2.5,3) -- (5,3) to[C,l=$C$] (5,0) -- (2.5,0);
+ \end{circuitikz}}}%
 \begin{tikzpicture}[remember picture,overlay]
-  \draw[black!75,line width=0.6pt] \Pt{6.8}{8.7} rectangle \Pt{121.2}{87};
-  \fill[verde] \Pt{90.2}{91.5} -- \Pt{124.4}{91.5} -- \Pt{124.4}{46.7} -- cycle;
-  \numeracion
-\end{tikzpicture}}
-\begin{frame}[plain]
-\begin{tikzpicture}[remember picture,overlay]
-\node[anchor=base west,font=\fontsize{30}{32}\selectfont] at \Pt{10}{22} {Circuitos LC};
-\node[anchor=north] at \Pt{34}{30} {%
- \begin{circuitikz}[scale=0.85,transform shape]
-  \draw (0,0) to[sV] (0,2.2) -- (1.8,2.2) to[L,l=$L$] (1.8,0) -- (0,0);
-  \draw (1.8,2.2) -- (3.4,2.2) to[C,l=$C$] (3.4,0) -- (1.8,0);
- \end{circuitikz}};
-\node[anchor=north] at \Pt{34}{60} {\img{width=38mm}{FactorQ-zemansky.png}};
-\node[anchor=north west,draw=black!70,fill=white,text width=52mm,inner sep=2mm,font=\footnotesize]
- at \Pt{65}{20} {%
+\node[anchor=north] at \Pt{34}{22} {\usebox0};
+\node[anchor=north] at \Pt{34}{50} {\img{width=38mm}{FactorQ-zemansky.png}};
+\node[anchor=north west,fill=white,text width=60mm,inner sep=2mm,font=\footnotesize]
+ at \Pt{57}{20} {%
  La frecuencia de resonancia depende de la capacitancia:
  \[ f_0=\frac{1}{2\pi\sqrt{LC}}  \eqn \]
  La capacitancia depende de la permitividad eléctrica:
@@ -786,9 +785,10 @@ estabilizado con metano, con equipos fuera de nuestro alcance.
 
 % ---------------------------------------------------------------------
 \layout{banda}
+{\tikzset{tarjeta/.style={fill=white,draw=none}}% sin sombra solo en esta lámina
 \begin{frame}{Factor Q y simulaciones}
 \begin{columns}[T]
-\begin{column}{0.44\textwidth}
+\begin{column}{0.42\textwidth}
 \small
 Un $Q$ alto implica una curva de resonancia estrecha.
 \[
@@ -800,31 +800,32 @@ I=\frac{V}{\sqrt{R^2+\left(2\pi fL-\dfrac{2c^2d\cdot10^{-7}}{fA_c}\right)^2}}
  \eqn \]
 {\footnotesize $R=0.0168\ \Omega$, $V=1$ mV, pasos de 0.1 $\mu$Hz.}
 \end{column}
-\begin{column}{0.54\textwidth}
+\begin{column}{0.58\textwidth}
 \centering
-\img{width=0.86\linewidth}{Simulacion-respuesta1.png}\\
-\img{width=0.70\linewidth}{Simulacion-respuesta2.png}
+% una gráfica por paso (mismo número de lámina)
+\only<1>{\img{width=\linewidth}{Simulacion-respuesta2.png}}%
+\only<2>{\img{width=\linewidth}{Simulacion-respuesta1.png}}
 \end{column}
 \end{columns}
-\end{frame}
+\end{frame}}
 
 % ---------------------------------------------------------------------
 \layout{barra}
 \begin{frame}{Arquitectura modular}
 \centering
-\vspace{1mm}
-\img{width=0.92\linewidth}{SOLO-ESQUEMA.png}
+\img{width=0.99\linewidth}{SOLO-ESQUEMA.png}
 
-\vspace{3mm}
+\vspace{1mm}
 \small
 \renewcommand{\arraystretch}{1.3}
-\begin{tabular}{p{24mm}p{24mm}p{24mm}p{24mm}}
+\begin{tabular}{p{23mm}p{23mm}p{23mm}p{23mm}}
 \cabecera \thc{Generador} & \thc{Lectura} & \thc{Automatización} & \thc{Estabilizador}\\
 \filalila \footnotesize AD9833 y amplificador 1 &
 \footnotesize Rectificador, amplificador 2 y ADS1115 &
 \footnotesize Arduino UNO y PC &
 \footnotesize Control térmico autónomo\\
 \end{tabular}
+\vspace{3mm}
 \end{frame}
 
 % ---------------------------------------------------------------------
@@ -832,9 +833,8 @@ I=\frac{V}{\sqrt{R^2+\left(2\pi fL-\dfrac{2c^2d\cdot10^{-7}}{fA_c}\right)^2}}
 \begin{frame}{Módulo\\generador}
 \begin{izquierda}
 \begin{itemize}\setlength{\itemsep}{1mm}
-\item \textbf{AD9833:} señales de 0 a 12.5 MHz controladas por Arduino, resolución de 0.1 Hz
-(4 mHz con reloj de 1 MHz).
-\item \textbf{Amplificador 1:} aumenta voltaje y potencia de la señal (0.65 V, 12.65 mW) con
+\item \textbf{AD9833:} señales de 0 a 12.5 MHz controladas por Arduino, resolución de 0.1 Hz, voltaje pico-pico de 0.6V.
+\item \textbf{Amplificador 1:} aumenta voltaje y potencia de la señal con
 ganancia constante entre 100 kHz y 1 MHz.
 \end{itemize}
 \end{izquierda}
@@ -847,9 +847,13 @@ ganancia constante entre 100 kHz y 1 MHz.
 \begin{itemize}\setlength{\itemsep}{1mm}
 \item \textbf{Rectificador:} convierte la respuesta AC en DC. Un transistor (pin 9) descarga el
 condensador de forma automática.
-\item \textbf{Amplificador 2:} operacional que amplifica la señal DC.
+\item \textbf{\textcolor{morado}{Amplificador 2$^*$:}} operacional que amplifica la señal DC.
 \item \textbf{ADS1115:} convertidor analógico digital de 16 bits, I2C, hasta $\pm6.144$ V.
 \end{itemize}
+
+\vspace{5mm}
+\footnotesize{$^*$ Excluido dependiendo del modelo del prototipo}
+
 \end{izquierda}
 \derecha{\img{width=56mm}{Rectificador.png}\\[2mm]\img{width=46mm}{Amplificador2.png}}
 \end{frame}
