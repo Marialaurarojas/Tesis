@@ -834,9 +834,13 @@ I=\frac{V}{\sqrt{R^2+\left(2\pi fL-\dfrac{2c^2d\cdot10^{-7}}{fA_c}\right)^2}}
 \begin{izquierda}
 \begin{itemize}\setlength{\itemsep}{1mm}
 \item \textbf{AD9833:} señales de 0 a 12.5 MHz controladas por Arduino, resolución de 0.1 Hz, voltaje pico-pico de 0.6V.
-\item \textbf{Amplificador 1:} aumenta voltaje y potencia de la señal con
+\item \textbf{Amplificador 1:} aumenta voltaje y potencia$^*$ de la señal con
 ganancia constante entre 100 kHz y 1 MHz.
 \end{itemize}
+
+\vspace{8mm}
+\tiny{$^*$ El esquemático concreto del aplificador de potencia depende del modelo del prototipo}
+
 \end{izquierda}
 \derecha{\img{width=25mm,angle=-90}{foto-AD9833.png}\\[1mm]\img{width=44mm}{Amplificador1-voltaje.png}\\[1mm]}
 \end{frame}
@@ -881,7 +885,6 @@ F(f)=\frac{A}{(f-f_0)^2+\gamma^2}+\text{offset}
 \begin{itemize}\setlength{\itemsep}{1mm}
 \item Circuito autónomo: termistor, operacional 741, resistencia caliente y ventilador.
 \item El potenciómetro fija el umbral de temperatura.
-\item Se propone además una jaula de Faraday contra interferencias.
 \end{itemize}
 \end{izquierda}
 \derecha{\img{width=40mm}{FOTO-circuito-temperatura.png}\\[0mm]
@@ -904,24 +907,26 @@ F(f)=\frac{A}{(f-f_0)^2+\gamma^2}+\text{offset}
 \end{frame}
 
 % ---------------------------------------------------------------------
-\layout{barra}
+\layout{bloque}
 \begin{frame}{\fontsize{17}{19}\selectfont\bfseries\color{morado}Módulo estabilizador}
 
 \centering
 \img{width=\linewidth}{temperatura_exterior_vs_interior.pdf}
 
-\small
+\small\justifying
 La temperatura interior no depende de la exterior en el rango de 20 a 25 $^\circ$C.
 
-\vspace{2mm}
+\vspace{2mm} 
 Queda pendiente verificar si esta estabilidad es suficiente con el circuito resonante final dentro
 del contenedor.
+Se propone además una jaula de Faraday contra interferencias.
+
 
 \end{frame}
 
 % ---------------------------------------------------------------------
 \layout{foto}
-\begin{frame}{Experimento\\RLC en paralelo}
+\begin{frame}{\fontsize{24}{26}\selectfont\mdseries\color{black}Experimento RLC en paralelo}
 \begin{izquierda}
 \begin{itemize}\setlength{\itemsep}{0.8mm}\footnotesize
 \item Primer prototipo, montado en protoboard.
@@ -962,10 +967,10 @@ offset & $0.065\pm0.010$ & $0.37\pm0.02$\\
 
 % ---------------------------------------------------------------------
 \layout{foto}
-\begin{frame}{Experimento\\RLC en serie}
+\begin{frame}{\fontsize{24}{26}\selectfont\mdseries\color{black}Experimento \\RLC en serie}
 \begin{izquierda}
 \begin{itemize}\setlength{\itemsep}{0.8mm}\footnotesize
-\item Placas perforadas y PCB en lugar de protoboard (capacitancias parásitas, cables como antenas).
+\item Placas perforadas y PCB en lugar de protoboard.
 \item Nueva etapa de potencia y amplificador 2.
 \item Fuente $\pm12$ V del LFN con baterías de 6 V.
 \item Resistencia de protección en el ADC.
@@ -996,13 +1001,15 @@ offset & $0.22\pm0.03$\\
 \end{column}
 \begin{column}{0.44\textwidth}
 \small
-Error relativo de $f_0$: \dest{0.34\%} en serie frente a \dest{0.0036\%} en paralelo.
 
-\vspace{1mm}
 En barridos pequeños (400 a 440 kHz, pasos de 1 kHz) medidas consecutivas no coinciden:
 
-\centering
-\img{width=0.49\linewidth}{resultado-serie-3Mar26-5.png}\hfill\img{width=0.49\linewidth}{resultado-serie-3Mar26-6.png}
+\centering 
+\vspace{2mm}
+\img{width=0.64\linewidth}{resultado-serie-3Mar26-5.png} \\ \img{width=0.64\linewidth}{resultado-serie-3Mar26-6.png}
+
+Error relativo de $f_0$: \dest{0.34\%} en serie frente a \dest{0.0036\%} en paralelo.
+
 \end{column}
 \end{columns}
 \end{frame}
@@ -1011,18 +1018,18 @@ En barridos pequeños (400 a 440 kHz, pasos de 1 kHz) medidas consecutivas no co
 \layout{banda}
 \begin{frame}{Ajuste por ODR}
 \begin{columns}[T]
-\begin{column}{0.52\textwidth}
+\begin{column}{0.44\textwidth}
 \small
-\texttt{curve\_fit} supone que la frecuencia no tiene error, pero el AD9833 tiene una incertidumbre de
-0.1 Hz. La \textbf{regresión de distancia ortogonal} (ODR) pondera los errores en ambos ejes.
+La función \texttt{curve\_fit} usa método de mínimos cuadrados aplicando el algoritmo de la región de confianza reflectiva, esto supone que la frecuencia no tiene error, pero el AD9833 tiene una incertidumbre de
+0.1 Hz. La \textbf{regresión de distancia ortogonal} (ODR) pondera los errores en ambos ejes. Si se usa ese método de ajuste la incertidumbre de la $f_0$ es:
 \[
-\mathrm{Var}(f_0)\approx\frac{8\,l\,\gamma^5\sigma_y^2}{N A^2\pi},\qquad l=\frac{Np}{2}
+\mathrm{Var}(f_0)\approx\frac{8\,\mathnormal{l}\,\gamma^5\sigma_y^2}{N A^2\pi},\qquad\mathnormal{l}=\frac{Np}{2}
  \eqn \]
 \[
 \Rightarrow\ \mathrm{Var}(f_0)\approx\frac{4\,p\,\gamma^5\sigma_y^2}{A^2\pi}
  \eqn \]
 \end{column}
-\begin{column}{0.44\textwidth}
+\begin{column}{0.49\textwidth}
 \small
 Para 10 cifras confiables en $f_0$:
 \[
@@ -1035,6 +1042,12 @@ Para 10 cifras confiables en $f_0$:
 \node[fill=amarillo,rounded corners=3mm,text width=46mm,inner sep=2mm,font=\footnotesize]
 {Muy por debajo de lo que genera el AD9833: hay que hacer la curva \textbf{más alta y más estrecha}.};
 \end{tikzpicture}
+
+\vspace{2mm}
+\scriptsize
+\textbf{Términos:} $f_0$ frecuencia de resonancia; $\sigma_{f_0}$ su desviación estándar;
+$A$ amplitud de la lorentziana; $\gamma$ semiancho de la curva; $\sigma_y$ incertidumbre de cada
+medición; $N$ número de puntos del barrido; $p$ paso en frecuencia; $l$ semiancho del intervalo barrido.
 \end{column}
 \end{columns}
 \end{frame}
@@ -1044,7 +1057,8 @@ Para 10 cifras confiables en $f_0$:
 % =====================================================================
 
 \layout{foto}
-\begin{frame}{Corriente por\\inducción}
+\begin{frame}{\fontsize{24}{26}\selectfont\mdseries\color{black}Corriente \\por inducción}
+
 \begin{izquierda}
 Separar el circuito en tres partes acopladas por inducción: generador, resonador LC y lectura.
 
@@ -1080,57 +1094,77 @@ Armónicos relativos & $\approx0.1\%$ & $\approx0.16\%$\\
 \end{tabular}
 \end{column}
 \begin{column}{0.33\textwidth}
-\centering
-\img{width=\linewidth}{placaNueva.jpg}
+\raggedright
+\img{width=0.94\linewidth}{placaNueva.jpg}
 
 \vspace{1mm}
-\footnotesize Sustituye al AD9833 y al Arduino, funciona como osciloscopio y corre Python de forma
+\centering
+\footnotesize Sustituye al AD9833 y al Arduino, funciona como osciloscopio y corre Python\\de forma
 nativa.
 \end{column}
 \end{columns}
 \end{frame}
 
 % ---------------------------------------------------------------------
+{\tikzset{tarjeta/.style={fill=white,draw=none}}% sin sombra solo en esta lámina
 \begin{frame}{Precisión con Red Pitaya}
-\begin{columns}[T]
+  \begin{columns}[T]
 \begin{column}{0.50\textwidth}
 \small
-Leyendo directamente la sinusoide $V(t)=a\sin(2\pi ft+\phi)+B$ con $p=0.03$ Hz, se necesita:
-\[ \sigma_y<1.32\times10^{-7}  \eqn \]
-Fuentes de error del ajuste:
-\[ \text{LSB}=\frac{2000\ \text{mV}}{2^{14}}\approx0.122\ \text{mV},\quad \sigma_q\approx0.035\ \text{mV}  \eqn \]
-\[ \sigma_{THD}=\frac{0.001\,a}{\sqrt2}=3.25\times10^{-4}\ \text{V}  \eqn \]
+Si se usa Red Pitaya para generar la señal, con $p=0.03$ Hz y las forma que ya tiene la curva, para la precision necesaria de $f_0$ el error de los datos de voltaje debe ser:
+\[ \sigma_y<1.32\times10^{-7} \text{V} \eqn \]
+
+Si tambien se usa como sustituto del modulo de lectura (como un osciloscopio) lee directamente la sinusoide
+$V(t)=a\sin(2\pi ft+\phi)+B$
+así que:
+\[ \sigma_{y}=\sqrt{\frac{2.08}{n}\frac{\sigma_{r}}{n-4}}  \eqn \]
+
+El valor de $\sigma_r$ depende del generador de funciones (por sus armónicos), $\sigma_{THD}$, del ADC del muestreo del voltaje $\sigma_q$ y del ruido del propio montaje del circuito.
+
 \end{column}
 \begin{column}{0.46\textwidth}
 \small
-\[ \sigma_r>\sqrt{\sigma_q^2+\sigma_{THD}^2}\approx3.27\times10^{-4}  \eqn \]
+
+\[\sigma_q\approx0.035\ \text{mV}  \eqn \]
+\[ \sigma_{THD}=3.25\times10^{-4}\ \text{V}  \eqn \]
+
+\[ \sigma_r>\sqrt{\sigma_q^2+\sigma_{THD}^2}\approx3.27\times10^{-4} \text{V}  \eqn \]
 \[ \Rightarrow\ n\gtrsim1.97\times10^{5}\ \text{datos}  \eqn \]
-\begin{tikzpicture}
-\node[fill=amarillo,rounded corners=3mm,text width=46mm,inner sep=2mm,font=\footnotesize]
-{Con 125 MS/s y 512 MB de RAM (modo DMA) el umbral se supera con creces. Sólo quedaría el módulo
-estabilizador y los componentes R, L y C.};
+
+\begin{tikzpicture}\centering
+\node[fill=amarillo,rounded corners=3mm,text width=45mm,inner sep=2mm,font=\footnotesize]
+{Con 125 MSPS y 512 MB de RAM \\(modo DMA) el umbral se supera con creces.};
 \end{tikzpicture}
+ \begin{itemize}
+  \item Se puede conectar a una bateria
+  \item Corre python, elimina el uso de la computadora
+  \item Simplifica el experimento al los componentes RLC y el módulo estabilizador
+ \end{itemize}
+
 \end{column}
 \end{columns}
-\end{frame}
-
+\end{frame}}
 % ---------------------------------------------------------------------
 \layout{barra}
+
+{\tikzset{tarjeta/.style={fill=white,draw=none}}% sin sombra
 \begin{frame}{Otras propuestas}
 \begin{columns}[T]
-\begin{column}{0.48\textwidth}
+\begin{column}{0.46\textwidth}
 \textcolor{morado}{\textbf{Pulso único}}
 
 \small Medir la respuesta del RLC a un solo pulso: una sinusoide amortiguada cuya forma depende de
 $f_0=1/2\pi\sqrt{LC}$. Simplifica el circuito, pero cambia todo el experimento.
 
-\vspace{3mm}
+\vspace{2mm}
 \textcolor{morado}{\textbf{Medición directa de alta precisión}}
 
-\small Replicar la medida de $f$ y $\lambda$ de un láser He-Ne estabilizado con metano
-(Baird et al., 1979: $\pm1.9$ m/s). Requiere colaboración entre universidades.
+\small Replicar la medida de $f$ y $\lambda$ de un láser He-Ne estabilizado con metano$^*$. Requiere colaboración entre universidades ya que el experimento dejaria de ser portable.
+
+%{\scriptsize\cita{Baird, Smith y Whitford: Optics Communications, 31(3):367--368, 1979.\\
+%Science and Technology Daily: A Look Inside China Space Station, 2022.\par}}
 \end{column}
-\begin{column}{0.48\textwidth}
+\begin{column}{0.50\textwidth}
 \begin{tikzpicture}
 \node[fill=verde!12,draw=verde,line width=0.8pt,rounded corners=2mm,text width=48mm,inner sep=3mm,align=justify]
 {\textcolor{morado}{\textbf{Circuito LC en el espacio}}\\[1mm]
@@ -1138,9 +1172,15 @@ $f_0=1/2\pi\sqrt{LC}$. Simplifica el circuito, pero cambia todo el experimento.
 autónomo funcionando a bordo por un periodo largo daría muchos puntos de frecuencia de resonancia
 frente a gravedad local.};
 \end{tikzpicture}
+
+\vspace{2mm}
+\centering\includegraphics[angle=90,width=34mm]{foto-estacion-espacial.png}
 \end{column}
 \end{columns}
-\end{frame}
+
+
+{\scriptsize\cita{$^*$Baird, Smith y Whitford: Optics Communications,\\ 31(3):367--368, 1979. Science and Technology Daily:\\A Look Inside China Space Station, 2022.\par}}
+\end{frame}}
 
 % =====================================================================
 \seccion{Conclusiones}
