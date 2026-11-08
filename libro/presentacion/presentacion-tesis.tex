@@ -16,7 +16,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
-\usepackage[spanish,es-noshorthands,es-nodecimaldot]{babel}
+\usepackage[english,spanish,es-noshorthands,es-nodecimaldot]{babel}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -229,6 +229,25 @@
   \item Mejoras y experimentos propuestos
   \item Conclusiones
 \end{enumerate}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}{Overview}
+\small
+\begin{itemize}\setlength{\itemsep}{1.6mm}
+  \item \textbf{Céspedes-Curé Hypothesis (CCH):} space is an energetic medium, and the speed of light
+        $c$ depends on the local energy density, including the gravitational one.
+  \item The CCH has been used to explain the \dest{Pioneer} and \dest{Flyby} anomalies.
+  \item \textbf{Goal:} design and evaluate experiments able to detect changes in $c$ caused by
+        gravity at different altitudes on Earth.
+  \item Two approaches:
+  \begin{itemize}
+    \item Direct measurement of $c$ with a modulated laser.
+    \item Indirect measurement through the resonant frequency of an RLC circuit.
+  \end{itemize}
+  \item \textbf{Challenge:} between the three sites (USB, Mountain El Ávila, Carmen de Urea) the CCH
+        predicts differences only in the \textbf{ninth significant figure} of $c$.
+\end{itemize}
 \end{frame}
 
 % ---------------------------------------------------------------------
@@ -1217,6 +1236,28 @@ la correlación entre $g$ local y las mediciones históricas de $c$. La pregunta
 mayor exploración.};
 \end{tikzpicture}
 \end{frame}
+
+% ---------------------------------------------------------------------
+{\tikzset{tarjeta/.style={fill=white,draw=none}}% sin sombra solo en esta lámina
+\begin{frame}{Summary of results}
+\small
+\begin{itemize}\setlength{\itemsep}{1.6mm}
+\item The direct laser measurement reached at best \textbf{1\%} precision: not enough to test the CCH.
+\item The resonant circuit is the most promising route. The \textbf{parallel} configuration gave a
+relative error in $f_0$ of \dest{0.0036\%}, versus \dest{0.34\%} in series.
+\item Our simple thermal stabilizer kept a litter container at $(36.5\pm0.4)\,^\circ$C for weeks.
+\item Commercial hardware used (AD9833, ADS1115) limits the precision; ODR fitting shows the uncertainty
+depends on the curve width and the frequency step.
+\item The \textbf{ninth significant figure} was not reached. Proposed next steps: inductive excitation,
+Red Pitaya hardware, and an autonomous circuit on the China Space Station.
+\end{itemize}
+\vspace{1mm}
+\begin{tikzpicture}
+\node[fill=amarillo,rounded corners=3mm,text width=94mm,inner sep=2.5mm,font=\small]
+{\foreignlanguage{english}{Applying the CCH to Ramdani's data suggests it could explain the correlation between local $g$
+and historical measurements of $c$. The question remains open.}};
+\end{tikzpicture}
+\end{frame}}
 
 % ---------------------------------------------------------------------
 \begin{frame}{Referencias}
