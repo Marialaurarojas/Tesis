@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  25 NOV 2026 21:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  25 NOV 2026 22:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1519,12 +1519,12 @@ Package pdftex.def Info: foto-estacion-espacial.png  used on input line 1204.
 <../SUNY-circuito.png, id=463, 353.52075pt x 157.7895pt>
 File: ../SUNY-circuito.png Graphic file (type png)
 <use ../SUNY-circuito.png>
-Package pdftex.def Info: ../SUNY-circuito.png  used on input line 1312.
+Package pdftex.def Info: ../SUNY-circuito.png  used on input line 1311.
 (pdftex.def)             Requested size: 147.49782pt x 65.83293pt.
 <../CL-paralelo-sencillo.png, id=464, 548.595pt x 284.919pt>
 File: ../CL-paralelo-sencillo.png Graphic file (type png)
 <use ../CL-paralelo-sencillo.png>
-Package pdftex.def Info: ../CL-paralelo-sencillo.png  used on input line 1312.
+Package pdftex.def Info: ../CL-paralelo-sencillo.png  used on input line 1311.
 (pdftex.def)             Requested size: 147.49782pt x 76.60309pt.
  [57
 
@@ -1532,7 +1532,7 @@ Package pdftex.def Info: ../CL-paralelo-sencillo.png  used on input line 1312.
 <../esquematico-paralelo-total.png, id=472, 735.34724pt x 247.52475pt>
 File: ../esquematico-paralelo-total.png Graphic file (type png)
 <use ../esquematico-paralelo-total.png>
-Package pdftex.def Info: ../esquematico-paralelo-total.png  used on input line 1321.
+Package pdftex.def Info: ../esquematico-paralelo-total.png  used on input line 1320.
 (pdftex.def)             Requested size: 307.28987pt x 103.4347pt.
  [58
 
@@ -1540,7 +1540,7 @@ Package pdftex.def Info: ../esquematico-paralelo-total.png  used on input line 1
 <esquematico-kidcad-crop.pdf, id=479, 665.48625pt x 324.21124pt>
 File: esquematico-kidcad-crop.pdf Graphic file (type pdf)
 <use esquematico-kidcad-crop.pdf>
-Package pdftex.def Info: esquematico-kidcad-crop.pdf  used on input line 1329.
+Package pdftex.def Info: esquematico-kidcad-crop.pdf  used on input line 1328.
 (pdftex.def)             Requested size: 307.29515pt x 149.70789pt.
  [59
 
@@ -1548,12 +1548,12 @@ Package pdftex.def Info: esquematico-kidcad-crop.pdf  used on input line 1329.
 <../Amplificador1-potencia-paralelo.png, id=488, 572.73975pt x 355.92975pt>
 File: ../Amplificador1-potencia-paralelo.png Graphic file (type png)
 <use ../Amplificador1-potencia-paralelo.png>
-Package pdftex.def Info: ../Amplificador1-potencia-paralelo.png  used on input line 1345.
+Package pdftex.def Info: ../Amplificador1-potencia-paralelo.png  used on input line 1344.
 (pdftex.def)             Requested size: 169.01036pt x 105.03094pt.
 <../Amplificador1-potencia-serie.png, id=489, 386.6445pt x 355.92975pt>
 File: ../Amplificador1-potencia-serie.png Graphic file (type png)
 <use ../Amplificador1-potencia-serie.png>
-Package pdftex.def Info: ../Amplificador1-potencia-serie.png  used on input line 1345.
+Package pdftex.def Info: ../Amplificador1-potencia-serie.png  used on input line 1344.
 (pdftex.def)             Requested size: 125.98996pt x 115.97993pt.
  [60
 
@@ -1589,7 +1589,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  128i,17n,123p,494b,1249s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/google/carlito/Crlt-Bold.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/google/carlito/Crlt-Italic.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/google/carlito/Crlt-Regular.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on presentacion-tesis.pdf (61 pages, 11665617 bytes).
+Output written on presentacion-tesis.pdf (61 pages, 11665666 bytes).
 PDF statistics:
  628 PDF objects out of 1000 (max. 8388607)
  394 compressed objects within 4 object streams
