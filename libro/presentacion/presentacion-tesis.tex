@@ -766,6 +766,8 @@ estabilizado con metano, con equipos fuera de nuestro\\ alcance.};
 \
 \end{column}
 \end{columns}
+\vspace{1mm}
+{\scriptsize\cita{Evenson, K. M. et al.: Speed of Light from Direct Frequency and Wavelength Measurements of the Methane-Stabilized Laser. Physical Review Letters, 29:1346, 1972.\par}}
 \end{frame}
 
 % =====================================================================
@@ -1055,7 +1057,7 @@ Para 10 cifras confiables en $f_0$:
 \sigma_{f_0}<f_0\times10^{-10}\approx4.26\times10^{-5}\ \text{Hz}
  \eqn \]
 \[
-\Rightarrow\ p<2.167\ \mu\text{Hz}
+\Rightarrow\ p<2.167\ \times10^{-6}\text{Hz}
  \eqn \]
 \begin{tikzpicture}
 \node[fill=amarillo,rounded corners=3mm,text width=46mm,inner sep=2mm,font=\footnotesize]
@@ -1088,7 +1090,7 @@ Separar el circuito en tres partes acopladas por inducción: generador, resonado
 \item Requiere bobinas fabricadas a medida.
 \end{itemize}
 \end{izquierda}
-\derecha{\img{width=58mm}{MIT-circuito-induccion.png}\\[1mm]
+\derecha{\img{width=63mm}{MIT-circuito-induccion.png}\\[1mm]
 {\tiny Circuito resonante por inducción (MIT, Junior Physics Lab).}}
 \end{frame}
 
@@ -1215,7 +1217,7 @@ para verificar la HCC con el equipamiento actual.
 error relativo de $f_0$ (\dest{0.0036\%}), frente a \dest{0.34\%} en serie.
 \item El módulo estabilizador mantuvo $(36.5\pm0.4)\,^\circ$C durante semanas con un circuito sencillo.
 \item La automatización produjo curvas suaves en barridos amplios, pero el hardware comercial
-(AD9833, ADS1115) limita el ancho de la curva y la dispersión en pasos pequeños.
+(AD9833, ADS1115) limita el factor Q de la curva y genera dispersión en pasos pequeños.
 \end{itemize}
 \end{frame}
 
@@ -1245,7 +1247,7 @@ mayor exploración.};
 \item The direct laser measurement reached at best \textbf{1\%} precision: not enough to test the CCH.
 \item The resonant circuit is the most promising route. The \textbf{parallel} configuration gave a
 relative error in $f_0$ of \dest{0.0036\%}, versus \dest{0.34\%} in series.
-\item Our simple thermal stabilizer kept a litter container at $(36.5\pm0.4)\,^\circ$C for weeks.
+\item Our simple thermal stabilizer kept a little container at $(36.5\pm0.4)\,^\circ$C for weeks.
 \item Commercial hardware used (AD9833, ADS1115) limits the precision; ODR fitting shows the uncertainty
 depends on the curve width and the frequency step.
 \item The \textbf{ninth significant figure} was not reached. Proposed next steps: inductive excitation,
@@ -1286,5 +1288,91 @@ and historical measurements of $c$. The question remains open.}};
   \numeracion
 \end{tikzpicture}}
 \begin{frame}[plain]\end{frame}}
+
+% =====================================================================
+\seccion{Anexos}
+% =====================================================================
+% ---------------------------------------------------------------------
+\layout{barra}
+\begin{frame}{Anexo: circuitos base}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\centering\textcolor{morado}{\textbf{Serie (guía SUNY)}}\\[2mm]
+\img{width=\linewidth}{SUNY-circuito.png}\\[2mm]
+\raggedright\footnotesize Se mide el voltaje en la resistencia; es máximo cuando $f=f_0$.
+\end{column}
+\begin{column}{0.48\textwidth}
+\centering\textcolor{morado}{\textbf{Paralelo (circuito tanque)}}\\[2mm]
+\img{width=\linewidth}{CL-paralelo-sencillo.png}\\[2mm]
+\raggedright\footnotesize $L$ y $C$ almacenan la energía; la impedancia equivalente es máxima en $f_0$.
+\end{column}
+\end{columns}
+\vspace{3mm}
+\centering\small En ambos casos $f_0=1/2\pi\sqrt{LC}\propto c$.
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}{Anexo: montaje paralelo}
+\centering
+\img{width=\linewidth}{esquematico-paralelo-total.png}
+
+\vspace{3mm}
+\small Esquemático de todo el circuito del experimento RLC en paralelo.
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}{Anexo: prototipo serie}
+\centering
+\img{width=\linewidth,height=62mm,keepaspectratio}{esquematico-kidcad-crop.pdf}
+
+\small Esquemático completo del prototipo en serie (KiCad), base de las placas perforada y PCB.
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}{Anexo: amplificador 1}
+\begin{columns}[T]
+\begin{column}{0.55\textwidth}
+\centering\textcolor{morado}{\textbf{Montaje en paralelo}}\\[2mm]
+\img{width=\linewidth}{Amplificador1-potencia-paralelo.png}
+\end{column}
+\begin{column}{0.41\textwidth}
+\centering\textcolor{morado}{\textbf{Montaje en serie}}\\[2mm]
+\img{width=\linewidth}{Amplificador1-potencia-serie.png}
+\end{column}
+\end{columns}
+\vspace{2mm}
+\small Etapa de potencia: amplifica la señal del AD9833 para excitar el circuito resonante con suficiente potencia.
+\end{frame}
+
+% ---------------------------------------------------------------------
+\layout{banda}
+\begin{frame}{Anexo: programas}
+\begin{columns}[T]
+\begin{column}{0.50\textwidth}
+\textcolor{morado}{\textbf{Arduino UNO}, por cada punto:}
+\footnotesize
+\begin{enumerate}\setlength{\itemsep}{0.5mm}
+\item El AD9833 genera $f$; espera 100 ms.
+\item Lee el canal 2 del ADS1115 en voltios.
+\item Envía \texttt{f,voltaje} por serial.
+\item Pin 9 descarga el capacitor (100 ms): cada punto es independiente.
+\item $f \mathrel{+}= f_{\text{inc}}$; espera 50 ms.
+\end{enumerate}
+La PC envía \texttt{f, f\_final, f\_inc} para iniciar el barrido.
+\end{column}
+\begin{column}{0.46\textwidth}
+\textcolor{morado}{\textbf{Python}, sobre el CSV:}
+\footnotesize
+\begin{itemize}\setlength{\itemsep}{0.5mm}
+\item Filtra valores no finitos.
+\item Estima automáticamente $A$, $f_0$, $\gamma$ y offset iniciales.
+\item Ajusta la lorentziana con \texttt{curve\_fit}:
+\[F(f)=\frac{A}{(f-f_0)^2+\gamma^2}+\text{offset}\]
+\item Reporta parámetros y errores, y grafica datos y ajuste.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
 
 \end{document}
